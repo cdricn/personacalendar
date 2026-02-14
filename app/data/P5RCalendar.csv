@@ -1,0 +1,216 @@
+month,day,day_code,day_weather,night_weather,special_day_weather,special_night_weather,city,confidant_events,events,events_spoiler,day_activities,night_activities
+april,1,6,,,,,,,,,,
+april,2,7,,,,,,,,,,
+april,3,1,,,,,,,,,,
+april,4,2,,,,,,,,,,
+april,5,3,,,,,,,,,,
+april,6,4,,,,,,,,,,
+april,7,5,,,,,,,,,,
+april,8,6,,,,,,,,,,
+april,9,7,cloudy,cloudy,,,,,Game start.,,unavailable,unavailable
+april,10,1,cloudy,cloudy,,,,,,,unavailable,unavailable
+april,11,2,clear,cloudy,,,,,,,unavailable,unavailable
+april,12,3,rainy,cloudy,,,,,,,unavailable,unavailable
+april,13,4,cloudy,cloudy,,,,,,,unavailable,unavailable
+april,14,5,clear,cloudy,,,,,,,unavailable,unavailable
+april,15,6,cloudy,cloudy,,,,,,,unavailable,unavailable
+april,16,7,clear,clear,,,Unlock Takemi Medical Clinic,,,,unavailable,unavailable
+april,17,1,clear,clear,,,Unlock Shibuya;Unlock Airsoft Shop;Unlock Crafting,,,,unavailable,unavailable
+april,18,2,cloudy,cloudy,,,Leblanc Crossword Puzzle,,Palace Mission Start!,,free,leblanc
+april,19,3,clear,cloudy,,,,,,,free,leblanc
+april,20,4,rainy,rainy,,,Unlock Challenge Battles,,,,free,leblanc
+april,21,5,rainy,cloudy,,,,,,,free,leblanc
+april,22,6,cloudy,cloudy,,,Unlock night-time Yongen-Jaya,,,,free,yongen-jaya
+april,23,7,clear,clear,,,,,,,free,yongen-jaya
+april,24,1,clear,clear,,,,,,,free,yongen-jaya
+april,25,2,cloudy,cloudy,,,,,,,free,yongen-jaya
+april,26,3,clear,clear,,,,,,,free,yongen-jaya
+april,27,4,cloudy,cloudy,,,Leblanc Crossword Puzzle,,,,free,yongen-jaya
+april,28,5,cloudy,cloudy,,,,,,,free,yongen-jaya
+april,29,6,clear,clear,,,No classes: Showa Day,,Palace Treasure Route Deadline,,free,yongen-jaya
+april,30,7,clear,clear,,,,,,,free,yongen-jaya
+may,1,1,clear,clear,,,,,,,free,free
+may,2,2,clear,clear,,,,,Palace Plan Execution Deadline,,unavailable,free
+may,3,3,clear,cloudy,,,No Classes: Constitution Memorial Day,,,,unavailable,leblanc
+may,4,4,cloudy,cloudy,,,No Classes: Greenery Day,,,,unavailable,leblanc
+may,5,5,clear,clear,,,No Classes: Children's Day,,Palace Completion Celebration,,unavailable,leblanc
+may,6,6,cloudy,cloudy,,,Unlock night-time Tokyo,,,,free,free
+may,7,7,clear,clear,,,Unlock Mementos,,,,unavailable,leblanc
+may,8,1,clear,cloudy,,,,,,,unavailable,free
+may,9,2,cloudy,cloudy,pollen,pollen,,,,,free,free
+may,10,3,cloudy,cloudy,pollen,pollen,Leblanc Crossword Puzzle,,,,free,free
+may,11,4,cloudy,cloudy,,,,,Midterms Exam,,unavailable,unavailable
+may,12,5,cloudy,cloudy,,,,,Midterms Exam,,unavailable,unavailable
+may,13,6,cloudy,cloudy,,,,,Midterms Exam,,unavailable,unavailable
+may,14,7,cloudy,cloudy,,,,,Midterms Exam,,unavailable,leblanc
+may,15,1,rainy,cloudy,,,,,Story Event,,unavailable,leblanc
+may,16,2,clear,clear,,,,,Story Event,,unavailable,unavailable
+may,17,3,clear,clear,,,,,Story Event,,unavailable,leblanc
+may,18,4,cloudy,cloudy,,,Leblanc Crossword Puzzle,,Palace Mission Start!,,free,free
+may,19,5,rainy,rainy,,,Leblanc TV Quiz,,,,free,free
+may,20,6,cloudy,cloudy,pollen,pollen,,,Exam scores posted,,free,free
+may,21,7,clear,clear,,,,,,,free,free
+may,22,1,clear,clear,,,,,,,free,free
+may,23,2,cloudy,clear,pollen,pollen,,,,,free,free
+may,24,3,cloudy,cloudy,,,,,,,free,free
+may,25,4,clear,clear,,,,,,,free,free
+may,26,5,clear,clear,pollen,pollen,"Leblanc Crossword Puzzle
+Leblanc TV Quiz",,,,free,free
+may,27,6,clear,clear,,,,,,,free,free
+may,28,7,clear,cloudy,,,,Visit Harajuku with Ruji,,,free,free
+may,29,1,clear,cloudy,,,,Watch movie with Ryuji,,,free,free
+may,30,2,clear,cloudy,,,,,Field Trip,,unavailable,free
+may,31,3,cloudy,cloudy,,,,,Palace Day 1 Deadline,,free,free
+june,1,4,clear,clear,pollen,pollen,,,Palace Day 2 Deadline,,free,free
+june,2,5,clear,clear,pollen,pollen,,,Palace Day 3 Deadline,,free,free
+june,3,6,cloudy,cloudy,,,,,,,free,free
+june,4,7,rainy,cloudy,,,,,,,free,free
+june,5,1,clear,clear,,,,,Palace Plan Execution Deadline,,unavailable,free
+june,6,2,rainy,cloudy,,,,,,,free,free
+june,7,3,rainy,cloudy,,,,,,,free,free
+june,8,4,clear,cloudy,,,,,,,free,free
+june,9,5,clear,clear,,,,,School Event Day 1,,unavailable,unavailable
+june,10,6,clear,clear,,,,,School Event Day 2,,unavailable,free
+june,11,7,cloudy,cloudy,,,,,Palace Completion Celebration,,unavailable,unavailable
+june,12,1,clear,cloudy,,,,,,,free,free
+june,13,2,cloudy,rainy,,,,,,,unavailable,unavailable
+june,14,3,cloudy,rainy,,,,,Story Event,,unavailable,free
+june,15,4,cloudy,rainy,,,,,Story Event,,unavailable,free
+june,16,5,cloudy,rainy,,,,,Story Event,,unavailable,free
+june,17,6,cloudy,rainy,,,,,,,unavailable,free
+june,18,7,clear,cloudy,,,Unlock Shinjuku,,,,free,leblanc
+june,19,1,clear,cloudy,,,,,Story Event,,unavailable,leblanc
+june,20,2,cloudy,cloudy,,,,,Story Event,,unavailable,leblanc
+june,21,3,cloudy,rainy,,,,,Palace Mission Start!,,free,free
+june,22,4,cloudy,cloudy,,,,,,,free,free
+june,23,5,rainy,cloudy,,,,,,,free,free
+june,24,6,cloudy,rainy,,,,,,,free,free
+june,25,7,cloudy,cloudy,,,,,,,free,free
+june,26,1,cloudy,cloudy,,,,,,,free,free
+june,27,2,rainy,rainy,,,,,,,free,free
+june,28,3,clear,clear,,,,,,,free,free
+june,29,4,cloudy,cloudy,,,,,,,free,free
+june,30,5,rainy,cloudy,,,,,,,free,free
+july,1,6,clear,clear,,,,,,,free,free
+july,2,7,cloudy,cloudy,,,,,,,free,free
+july,3,1,clear,clear,,,,,,,free,free
+july,4,2,rainy,cloudy,,,,,,,free,free
+july,5,3,cloudy,cloudy,,,,,,,free,free
+july,6,4,rainy,rainy,,,,,,,free,free
+july,7,5,cloudy,clear,,,,,,,free,free
+july,8,6,clear,clear,,,,,,,free,free
+july,9,7,clear,clear,,,,,Palace Plan Execution Deadline,,unavailable,free
+july,10,1,clear,clear,,,,,,,unavailable,leblanc
+july,11,2,cloudy,cloudy,,,,Hangout with Kasumi and Akechi,,,unavailable,free
+july,12,3,clear,cloudy,,,,,,,free,free
+july,13,4,,,,,,,Final Exams,,unavailable,unavailable
+july,14,5,,,,,,,Final Exams,,unavailable,unavailable
+july,15,6,,,,,,,Final Exams,,unavailable,unavailable
+july,16,7,,rainy,,,,,Final Exams,,unavailable,unavailable
+july,17,1,clear,cloudy,,,,Hangout with Yusuke and Ryuji,,,unavailable,free
+july,18,2,cloudy,rainy,,,No classes: Marine Day,,Story Event,,unavailable,leblanc
+july,19,3,clear,clear,,,,,Exam scores posted,,free,free
+july,20,4,cloudy,clear,,,,,Story Event,,unavailable,leblanc
+july,21,5,clear,clear,,,,,Story Event,,unavailable,leblanc
+july,22,6,clear,clear,,,,,Story Event,,unavailable,leblanc
+july,23,7,clear,clear,,,,,Story Event,,unavailable,leblanc
+july,24,1,clear,cloudy,,,,,Palace Completion Celebration;Start of Summer Break,,unavailable,unavailable
+july,25,2,clear,clear,,,,,Story Event,,unavailable,leblanc
+july,26,3,clear,cloudy,heat wave,,,,Palace Mission Start!,,free,free
+july,27,4,rainy,rainy,heavy rain,heavy rain,,,,,free,free
+july,28,5,clear,cloudy,heat wave,,,,,,free,free
+july,29,6,cloudy,rainy,,heavy rain,,,,,free,free
+july,30,7,clear,clear,heat wave,heat wave,,,,,free,free
+july,31,1,clear,clear,heat wave,heat wave,,,,,free,free
+august,1,2,rainy,clear,heavy rain,,,,,,free,free
+august,2,3,clear,clear,heat wave,heat wave,,,,,free,free
+august,3,4,rainy,rainy,heavy rain,heavy rain,,,,,free,free
+august,4,5,clear,clear,heat wave,heat wave,,,,,free,free
+august,5,6,cloudy,clear,,,,,,,free,free
+august,6,7,clear,clear,heat wave,heat wave,,,,,free,free
+august,7,1,clear,clear,heat wave,heat wave,,,,,free,free
+august,8,2,cloudy,rainy,,heavy rain,,,,,free,free
+august,9,3,clear,clear,heat wave,heat wave,,,,,free,free
+august,10,4,clear,rainy,,heavy rain,,,,,free,free
+august,11,5,rainy,clear,heavy rain,,No classes: Mountain Day,,,,free,free
+august,12,6,clear,clear,heat wave,heat wave,,,,,free,free
+august,13,7,cloudy,clear,,,,,,,free,free
+august,14,1,cloudy,cloudy,,,,,,,free,free
+august,15,2,clear,clear,heat wave,heat wave,,,,,free,free
+august,16,3,rainy,clear,heavy rain,,,,,,free,free
+august,17,4,clear,rainy,heat wave,heavy rain,,,,,free,free
+august,18,5,rainy,clear,heavy rain,,,,,,free,free
+august,19,6,cloudy,rainy,,,,,,,free,free
+august,20,7,clear,clear,,,,,,,free,free
+august,21,1,clear,clear,,,,,Palace Plan Execution Deadline,,unavailable,leblanc
+august,22,2,clear,clear,,heat wave,,,Story Event,,unavailable,free
+august,23,3,clear,clear,,heat wave,,,,,unavailable,free
+august,24,4,clear,clear,,heat wave,,,,,unavailable,free
+august,25,5,clear,clear,,heat wave,,,,,unavailable,free
+august,26,6,clear,rainy,heat wave,heavy rain,,,,,unavailable,free
+august,27,7,rainy,rainy,,heavy rain,,,,,unavailable,free
+august,28,1,clear,clear,,heat wave,,,,,unavailable,free
+august,29,2,clear,clear,,,,,Story Event,,unavailable,free
+august,30,3,clear,clear,heat wave,heat wave,,,,,unavailable,free
+august,31,4,clear,clear,,,,,Summer Break Ends,,unavailable,leblanc
+september,1,5,clear,clear,,,,,,,unavailable,free
+september,2,6,cloudy,cloudy,,,,,,,free,free
+september,3,7,clear,clear,,,,,,,unavailable,free
+september,4,1,clear,clear,,,,,,,free,free
+september,5,2,cloudy,clear,,,,,,,free,free
+september,6,3,clear,clear,,,,,,,free,unavailable
+september,7,4,clear,clear,,,,,School Event,,unavailable,unavailable
+september,8,5,clear,clear,,,,,School Event,,unavailable,unavailable
+september,9,6,clear,clear,,,,,School Event,,unavailable,unavailable
+september,10,7,clear,clear,,,,,School Event,,unavailable,unavailable
+september,11,1,clear,clear,,,,,School Event,,unavailable,unavailable
+september,12,2,clear,clear,,,,,Story Event,,unavailable,unavailable
+september,13,3,clear,clear,,,,,Story Event,,unavailable,unavailable
+september,14,4,clear,rainy,,,,,Story Event,,unavailable,unavailable
+september,15,5,cloudy,clear,,,,,Story Event,,unavailable,unavailable
+september,16,6,cloudy,clear,,,,,Story Event,,unavailable,unavailable
+september,17,7,clear,clear,,,,,Story Event,,unavailable,unavailable
+september,18,1,clear,clear,,,,,Story Event,,unavailable,leblanc
+september,19,2,clear,clear,,,No classes: Respect for the Aged Day,,Palace Mission Start!,,free,free
+september,20,3,clear,clear,,,,,,,free,free
+september,21,4,clear,cloudy,,,,,,,free,free
+september,22,5,cloudy,cloudy,,,No classes: Autumnal Equinox Day,,,,free,free
+september,23,6,clear,cloudy,,,,,,,free,free
+september,24,7,cloudy,cloudy,,,,,,,free,free
+september,25,1,cloudy,cloudy,,,,,,,free,free
+september,26,2,cloudy,rainy,,,,,,,free,free
+september,27,3,clear,clear,,,,,,,free,free
+september,28,4,clear,clear,,,,,,,free,free
+september,29,5,clear,clear,,,,,,,free,free
+september,30,6,clear,clear,,,,,,,free,free
+october,1,7,,,,,,,,,,
+october,2,1,,,,,,,,,,
+october,3,2,,,,,,,,,,
+october,4,3,,,,,,,,,,
+october,5,4,,,,,,,,,,
+october,6,5,,,,,,,,,,
+october,7,6,,,,,,,,,,
+october,8,7,,,,,,,,,,
+october,9,1,,,,,,,,,,
+october,10,2,,,,,,,,,,
+october,11,3,,,,,,,,,,
+october,12,4,,,,,,,,,,
+october,13,5,,,,,,,,,,
+october,14,6,,,,,,,,,,
+october,15,7,,,,,,,,,,
+october,16,1,,,,,,,,,,
+october,17,2,,,,,,,,,,
+october,18,3,,,,,,,,,,
+october,19,4,,,,,,,,,,
+october,20,5,,,,,,,,,,
+october,21,6,,,,,,,,,,
+october,22,7,,,,,,,,,,
+october,23,1,,,,,,,,,,
+october,24,2,,,,,,,,,,
+october,25,3,,,,,,,,,,
+october,26,4,,,,,,,,,,
+october,27,5,,,,,,,,,,
+october,28,6,,,,,,,,,,
+october,29,7,,,,,,,,,,
+october,30,1,,,,,,,,,,
+october,31,2,,,,,,,,,,
