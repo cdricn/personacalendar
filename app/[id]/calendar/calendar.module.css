@@ -1,0 +1,10 @@
+.months-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  max-width: 400px;
+}
+
+.month {
+  text-align: center;
+}
