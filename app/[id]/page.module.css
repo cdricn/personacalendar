@@ -1,0 +1,19 @@
+.main-content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.calendar-container {
+  width: 400px;
+  flex: initial;
+}
+
+
+.schedule-container {
+  flex: auto;
+  max-width: 500px;
+}
