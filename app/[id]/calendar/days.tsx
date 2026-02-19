@@ -31,19 +31,19 @@ export default function Days({
   }
 
   return (
-    <>
+    <div className={styles['days-container']}>
       <div className={styles['day-names']}>
-        <div><span>Sun</span></div>
-        <div><span>Mon</span></div>
-        <div><span>Tue</span></div>
-        <div><span>Wed</span></div>
-        <div><span>Thu</span></div>
-        <div><span>Fri</span></div>
-        <div><span>Sat</span></div>
+        <span>Sun</span>
+        <span>Mon</span>
+        <span>Tue</span>
+        <span>Wed</span>
+        <span>Thu</span>
+        <span>Fri</span>
+        <span>Sat</span>
       </div>
-      <div className={styles['day-container']}>
+      <div className={styles['days-grid']}>
         {populateDays()}
       </div>
-    </>
+    </div>
   )
 }

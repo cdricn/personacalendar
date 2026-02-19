@@ -1,5 +1,10 @@
+.date-container, .schedule-options, .schedule-info {
+  font-family: var(--font-schedule-header);
+}
+
 .schedule-options {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
+

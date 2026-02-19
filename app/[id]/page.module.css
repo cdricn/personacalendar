@@ -1,3 +1,6 @@
+.main {
+}
+
 .main-content {
   position: relative;
   display: flex;
@@ -8,12 +11,16 @@
 }
 
 .calendar-container {
-  width: 400px;
   flex: initial;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 550px;
 }
 
 
 .schedule-container {
+  padding: 10px;
   flex: auto;
   max-width: 500px;
 }

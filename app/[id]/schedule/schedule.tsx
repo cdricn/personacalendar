@@ -28,36 +28,42 @@ export default function Schedule({scheduleData}:{scheduleData:CalendarData}) {
   };
 
   function handleScheduleClick() {
-
+    
   }
 
   function handleTimeClick() {
     setIsDay(!isDay);
-  } 
+  }
 
   return (
     <>
       <div className={styles['date-container']}>
         <div className={styles['time-icon']} onClick={handleTimeClick}>
           <div className={styles['weather-icon']}>
-
+          </div>
+          <div className={styles['special-weather-icon']}>
           </div>
         </div>
-        <span>{`${monthMapping[month]}/${day}`}</span>
-        <span>{isDay ? day_activities : night_activities}</span>
-      </div>
-      <div className={styles['schedule-options']}>
-        <span id='events' onClick={handleScheduleClick}>Story Events</span>
-        <span id='confidant_events' onClick={handleScheduleClick}>Confidants</span>
-        <span id='city_events' onClick={handleScheduleClick}>City Events</span>
+        <div className={styles['date']}>
+          <span>{`${monthMapping[month]}/${day}`}</span>
+        </div>
         <div className={styles['spoiler-button']}>
           <span id='spoiler' onClick={()=>setSpoiler(!spoiler)}>Spoiler</span>
           {spoiler ? 
             <span>ON</span> : <span>OFF</span>}
         </div>
       </div>
+      <div className={styles['schedule-options']}>
+        <span id='all' onClick={handleScheduleClick}>All</span>
+        <span id='events' onClick={handleScheduleClick}>Story Events</span>
+        <span id='confidant_events' onClick={handleScheduleClick}>Confidants</span>
+        <span id='world' onClick={handleScheduleClick}>World</span>
+        <span id='activities' onClick={handleScheduleClick}>Activities</span>
+      </div>
       <div className={styles['schedule-info']}>
-
+        <h3>Day <span>({day_activities})</span></h3>
+        {city_events}
+        <h3>Night <span>({night_activities})</span></h3>
       </div>
     </>
   )
