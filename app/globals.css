@@ -20,15 +20,15 @@
   --fs-small: 16px;
   --fs-tiny: 14px;
 
-  --fs-months: var(--fs-medium-2);
-  --fs-day-names: var(--fs-big);
-  --fs-day-number: var(--fs-huge);
+  --fs-months: var(--fs-normal);
+  --fs-day-names: var(--fs-medium);
+  --fs-day-number: var(--fs-big-2);
 }
 
 @media (width < 900px) {
   :root {
-    --fs-months: var(--fs-medium);
-    --fs-day-names: var(--fs-medium-2);
+    --fs-months: var(--fs-small);
+    --fs-day-names: var(--fs-normal);
     --fs-day-number: var(--fs-medium-2);
   }
 }
@@ -42,7 +42,7 @@
 }
 
 [data-theme="persona5_royal"]{
-  --font-months: var(--ff-arsenal);
+  --font-months: var(--ff-inter);
   --font-days: var(--ff-inter);
   --font-days-number: var(--ff-inter);
   --font-schedule-header: var(--ff-arsenal);

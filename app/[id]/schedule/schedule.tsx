@@ -54,16 +54,16 @@ export default function Schedule({scheduleData}:{scheduleData:CalendarData}) {
         </div>
       </div>
       <div className={styles['schedule-options']}>
-        <span id='all' onClick={handleScheduleClick}>All</span>
-        <span id='events' onClick={handleScheduleClick}>Story Events</span>
+        <span id='all' onClick={handleScheduleClick}>Schedule</span>
         <span id='confidant_events' onClick={handleScheduleClick}>Confidants</span>
-        <span id='world' onClick={handleScheduleClick}>World</span>
-        <span id='activities' onClick={handleScheduleClick}>Activities</span>
       </div>
       <div className={styles['schedule-info']}>
+        <h3>Events</h3>
+        <p></p>
         <h3>Day <span>({day_activities})</span></h3>
-        {city_events}
+        <p>{city_events}</p>
         <h3>Night <span>({night_activities})</span></h3>
+        <p></p>
       </div>
     </>
   )
