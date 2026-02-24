@@ -3,7 +3,11 @@
 import styles from './weather.module.css';
 import { GameContext } from '@/app/utils/context';
 import { use } from 'react';
+import { IconContext } from 'react-icons';
 import { FaVirus } from "react-icons/fa6";
+import { IoMdFlower, IoMdSnow } from "react-icons/io";
+import { IoThunderstorm } from "react-icons/io5";
+import { LuWaves } from "react-icons/lu";
 
 export default function Weather({
   iconName, special_iconName
@@ -16,13 +20,17 @@ export default function Weather({
   const iconMap = {
     persona5_royal: {
       normal: {
-        clear: {src: './P5_Weather_Clear.webp', alt:''},
-        cloudy: {src: './P5_Weather_Cloudy.webp', alt:''},
-        rainy: {src: './P5_Weather_Rainy.webp', alt:''},
-        snowy: {src: '', alt:''},
+        clear: {src: './P5_Weather_Clear.webp', alt:'Clear weather icon'},
+        cloudy: {src: './P5_Weather_Cloudy.webp', alt:'Cloudy weather icon'},
+        rainy: {src: './P5_Weather_Rainy.webp', alt:'Rainy weather icon'},
+        snowy: {src: './P5_Weather_Snowy.webp', alt:'Snowy weather icon'},
       },
       special: {
-        ['pollen']: <FaVirus />,
+        ['pollen']: <IoMdFlower />,
+        ['heat wave']: <LuWaves />,
+        ['heavy rain']: <IoThunderstorm />,
+        ['flu']: <FaVirus />,
+        ['cold wave']: <IoMdSnow />,
       }
     }
   }
@@ -30,14 +38,17 @@ export default function Weather({
   return (
     <div className={styles['icon-container']}>
       {
-        iconName !== null ? 
+        iconName === null ? null :
           <img className={styles['icon']} 
             src={iconMap[game].normal[iconName].src} 
-            alt={iconMap[game].normal[iconName].alt} /> : null
+            alt={iconMap[game].normal[iconName].alt} 
+          />
       }
       {
-        special_iconName !== null ? 
-          <div>{iconMap[game].special[special_iconName]}</div> : null
+        special_iconName === null ? null :
+          <div className={styles['special-icon']}>
+            {iconMap[game].special[special_iconName]}
+          </div>
       }
     </div>
   )
