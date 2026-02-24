@@ -1,4 +1,4 @@
-import { CalendarData, Calendar } from '../lib/interface';
+import { Calendar } from '../lib/interface';
 
 export default async function getData(path:string) {
   switch(path) {
