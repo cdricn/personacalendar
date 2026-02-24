@@ -6,10 +6,11 @@ export interface CalendarData {
   night_weather: string | null,
   special_day_weather: string | null,
   special_night_weather: string | null,
-  city_events: Array<string> | null| string,
-  confidant_events: Array<string> | null| string,
-  events: Array<string> | null | string,
-  events_spoiler: Array<string> | null | string,
+  world: Array<string> | null,
+  activities: Array<string> | null,
+  confidant_events: Array<string> | null,
+  events: Array<string> | null,
+  events_spoiler: Array<string> | null,
   day_activities: string | null,
   night_activities: string | null
 }
