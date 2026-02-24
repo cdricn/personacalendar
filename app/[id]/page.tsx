@@ -5,6 +5,7 @@ import useSWR from 'swr';
 import getData from "../utils/getData";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { GameContext } from "../utils/context";
 import Months from "./calendar/months";
 import Days from "./calendar/days";
 import Schedule from "./schedule/schedule";
@@ -35,23 +36,24 @@ export default function CalendarPage() {
   }
 
   return (
-    <main className={styles['main']}>
-      <h1>Calendar</h1>
-      <section className={styles['main-content']}>
-        {!isLoading && data !== undefined ?
-          <>
-            <div className={styles['calendar-container']}>
-              <Months setMonth={setMonth}/>
-              <Days setDay={setDay} data={data[currentMonth]}/>
-            </div>
-            <div className={styles['schedule-container']}>
-              <Schedule scheduleData={data[currentMonth][currentDay]}/>
-            </div>
-          </>
-          :
-          <>err</>
-        }
-      </section>
-    </main>
+      <main className={styles['main']}>
+        <section className={styles['main-content']}>
+          {!isLoading && data !== undefined ?
+            <>
+              <div className={styles['calendar-container']}>
+                <Months setMonth={setMonth}/>
+                <Days setDay={setDay} data={data[currentMonth]}/>
+              </div>
+              <div className={styles['schedule-container']}>
+                <GameContext value={path.slice(1)}>
+                  <Schedule scheduleData={data[currentMonth][currentDay]}/>
+                </GameContext>
+              </div>
+            </>
+            :
+            <>err</>
+          }
+        </section>
+      </main>
   )
 }
