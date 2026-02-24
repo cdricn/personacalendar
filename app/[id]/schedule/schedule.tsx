@@ -3,13 +3,14 @@
 import { CalendarData } from '@/app/lib/interface';
 import styles from './schedule.module.css';
 import { useState } from 'react';
+import Weather from './components/weather';
 
 export default function Schedule({scheduleData}:{scheduleData:CalendarData}) {
-  const [isDay, setIsDay] = useState(true);
+  const [clickedOption, setClickedOption] = useState('schedule');
   const [spoiler, setSpoiler] = useState(false);
   const { 
     month, day, day_code, day_weather, night_weather, special_day_weather, special_night_weather,
-    city_events, confidant_events, events, events_spoiler, day_activities, night_activities    
+    world, activities, confidant_events, events, events_spoiler, day_activities, night_activities    
   } = scheduleData;
 
   const monthMapping : {[month:string]: string} = {
@@ -27,60 +28,54 @@ export default function Schedule({scheduleData}:{scheduleData:CalendarData}) {
     december: '12',
   };
 
-  function handleScheduleClick() {
-    
+  function handleScheduleClick(option:string) {
+    setClickedOption(option);
   }
 
-  function handleTimeClick() {
-    setIsDay(!isDay);
+  function showInfo(info:Array<string> | null) {
+    if (info!==null) {
+      return info.map((i)=>{
+        return <><span className={styles['spoiler']}>{i}</span><br/></>
+      })
+    } else return null
   }
 
   return (
     <>
-      <div className={styles['date-container']}>
-        <div className={styles['time-icon']} onClick={handleTimeClick}>
-          <div className={styles['weather-icon']}>
-          </div>
-          <div className={styles['special-weather-icon']}>
-          </div>
-        </div>
+      <div className={styles['schedule-date']}>
         <div className={styles['date']}>
           <span>{`${monthMapping[month]}/${day}`}</span>
         </div>
-        <div className={styles['spoiler-button']}>
-          <span id='spoiler' onClick={()=>setSpoiler(!spoiler)}>Spoiler</span>
-          {spoiler ? 
-            <span>ON</span> : <span>OFF</span>}
+        <div className={styles['spoiler-button-container']}>
+          <span>Spoiler</span>
+          <div className={styles['spoiler-button']}>
+            <span onClick={()=>setSpoiler(true)}>ON</span>
+            <span onClick={()=>setSpoiler(false)}>OFF</span>
+          </div>
         </div>
       </div>
-      <div className={styles['schedule-options']}>
-        <span id='all' onClick={handleScheduleClick}>Schedule</span>
-        <span id='confidant_events' onClick={handleScheduleClick}>Confidants</span>
-      </div>
-      <div className={styles['schedule-info']}>
-        <h3>Events</h3>
-        <p></p>
-        <h3>Day <span>({day_activities})</span></h3>
-        <p>{city_events}</p>
-        <h3>Night <span>({night_activities})</span></h3>
-        <p></p>
+
+      <div className={styles['info-body']}>
+        <div className={styles['schedule-options']}>
+          <span onClick={()=>handleScheduleClick('schedule')}>Schedule</span>
+          <span onClick={()=>handleScheduleClick('confidants')}>Confidants</span>
+          <span onClick={()=>handleScheduleClick('info')}>Info</span>
+        </div>
+
+        <div className={styles['schedule-info']}>
+          <div className={styles['info-container']}>
+            <div className={styles['info-header']}>
+              <Weather iconName={day_weather} special_iconName={special_day_weather}/>
+              <h3>Day</h3>
+            </div>
+          </div>
+          <div className={styles['info-container']}>
+            <div className={styles['info-header']}>
+              <h3>Night</h3>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )
 }
-
-/*
-  month: string,
-  day: number,
-  day_code: number,
-  day_weather: string | null,
-  night_weather: string | null,
-  special_day_weather: string | null,
-  special_night_weather: string | null,
-  city_events: Array<string> | null| string,
-  confidant_events: Array<string> | null| string,
-  events: Array<string> | null | string,
-  events_spoiler: Array<string> | null | string,
-  =day_activities: string | null,
-  =night_activities: string | null
-*/
