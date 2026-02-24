@@ -1,5 +1,6 @@
 .months-container {
   padding: 15px;
+  margin-bottom: 30px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -41,9 +42,12 @@
   font-size: var(--fs-day-names);
 }
 
-.day {
+.day, .day-inactive {
   position: relative;
   padding-block: 7px;
   user-select: none;
   font-weight: 700;
+}
+.day-inactive {
+  color: var(--color-inactive-day);
 }

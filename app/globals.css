@@ -5,6 +5,7 @@
   
   --ff-inter: 'Inter';
   --ff-arsenal: 'arsenal';
+  --color-inactive-day: #363636;
   --color-persona5r: #da1212;
   --color-persona3r: #0650da;
   --color-persona4g: #eedf0f;
@@ -21,6 +22,7 @@
   --fs-tiny: 14px;
 
   --fs-months: var(--fs-normal);
+  --fs-date: var(--fs-normal);
   --fs-day-names: var(--fs-medium);
   --fs-day-number: var(--fs-big-2);
 }
