@@ -1,12 +1,11 @@
+import { CalendarData } from '@/app/lib/interface';
 import styles from './calendar.module.css';
 
 export default function Days({
-  monthLength,
-  monthStart,
+  data,
   setDay
 }:{
-  monthLength:number,
-  monthStart:number,
+  data: CalendarData[],
   setDay:(item:number)=>void
 }) {
 
@@ -14,18 +13,28 @@ export default function Days({
     setDay(currentDay);
   }
 
+  const monthStart = data[0].day_code;
+
   function populateDays() {
     let daysArray = [];
-    for(let i=0; i<monthLength; i++) {
-      let dayKey = 'day' + (i+1);
-      daysArray.push(
-        <div className={styles['day']} 
-          key={dayKey}
-          onClick={()=>{handleClick(i)}}
-          style={i==0?{gridColumnStart: `${monthStart}`}:undefined}>
-          <span>{i+1}</span>
-        </div>
-      );
+    for(let i=0; i<data.length; i++) {
+      const dayKey = 'day' + (i+1);
+      if(data[i].day_activities !== null && data[i].night_activities !== null) {
+        daysArray.push(
+          <div key={dayKey} className={styles['day']} 
+            onClick={()=>{handleClick(i)}}
+            style={i==0?{gridColumnStart: `${monthStart}`}:undefined}>
+            <span>{i+1}</span>
+          </div>
+        );
+      } else {
+        daysArray.push(
+          <div key={dayKey} className={styles['day-inactive']} 
+            style={i==0?{gridColumnStart: `${monthStart}`}:undefined}>
+            <span>{i+1}</span>
+          </div>
+        );
+      }
     }
     return daysArray;
   }

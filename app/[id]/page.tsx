@@ -34,8 +34,6 @@ export default function CalendarPage() {
     setCurrentDay(clickedDay);
   }
 
-  
-
   return (
     <main className={styles['main']}>
       <h1>Calendar</h1>
@@ -44,9 +42,7 @@ export default function CalendarPage() {
           <>
             <div className={styles['calendar-container']}>
               <Months setMonth={setMonth}/>
-              <Days monthLength={data[currentMonth].length} 
-                monthStart={data[currentMonth][0].day_code}
-                setDay={setDay}/>
+              <Days setDay={setDay} data={data[currentMonth]}/>
             </div>
             <div className={styles['schedule-container']}>
               <Schedule scheduleData={data[currentMonth][currentDay]}/>
