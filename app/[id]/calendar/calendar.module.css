@@ -19,7 +19,7 @@
 
 .days-container {
   position: relative;
-  font-size: var(--fs-day-number);
+  font-size: var(--fs-calendar-number);
 }
 
 .day-names, .days-grid {
@@ -39,7 +39,7 @@
 .day-names {
   grid-template-columns: repeat(7, 1fr);
   font-family: var(--font-days-number);
-  font-size: var(--fs-day-names);
+  font-size: var(--fs-calendar-day);
 }
 
 .day, .day-inactive {

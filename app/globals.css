@@ -7,7 +7,8 @@
   --ff-arsenal: 'arsenal';
   --color-inactive-day: #363636;
   --color-border: #363636;
-  --color-persona5r: #da1212;
+  --color-special-icon: #f10404;
+  --color-persona5r: #f10c0c;
   --color-persona3r: #0650da;
   --color-persona4g: #eedf0f;
 
@@ -23,16 +24,20 @@
   --fs-tiny: 14px;
 
   --fs-months: var(--fs-normal);
+  --fs-calendar-day: var(--fs-normal);
+  --fs-calendar-number: var(--fs-big);
   --fs-date: var(--fs-normal);
-  --fs-day-names: var(--fs-medium);
-  --fs-day-number: var(--fs-big);
+  --fs-schedule-options: var(--fs-normal);
+  --fs-body: var(--fs-normal);
 }
 
 @media (width < 700px) {
   :root {
     --fs-months: var(--fs-small);
-    --fs-day-names: var(--fs-small);
-    --fs-day-number: var(--fs-medium);
+    --fs-calendar-day: var(--fs-small);
+    --fs-calendar-number: var(--fs-medium);
+    --fs-schedule-options: var(--fs-small);
+    --fs-body: var(--fs-small);
   }
 }
 
@@ -51,6 +56,7 @@
   --font-schedule-header: var(--ff-arsenal);
   --font-schedule-info: var(--ff-arsenal);
   --main-color: var(--color-persona5r);
+  --complement-color: var(--color-persona5r);
 }
 
 *, *::before, *::after {
