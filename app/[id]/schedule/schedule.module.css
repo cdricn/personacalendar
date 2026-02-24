@@ -31,15 +31,33 @@
   font-size: var(--fs-body);
 }
 
-.schedule-body {
+.info-body {
   padding: 15px;
 }
 .schedule-options {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  font-size: var(--fs-schedule-options);
+  line-height: 110%;
 }
 
+.schedule-info {
+  padding-top: 10px;
+  font-size: var(--fs-body);
+}
+.info-container {
+
+}
+.info-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.info-header > h3 {
+  display: inline-block;
+  width: fit-content;
+}
 
 
 
