@@ -64,15 +64,20 @@ export default function Schedule({scheduleData}:{scheduleData:CalendarData}) {
 
         <div className={styles['schedule-info']}>
           <div className={styles['info-container']}>
-            <div className={styles['info-header']}>
-              <Weather iconName={day_weather} special_iconName={special_day_weather}/>
-              <h3>Day</h3>
-            </div>
+            {day_weather === null ? null :
+              <div className={styles['info-header']}>
+                <Weather iconName={day_weather} special_iconName={special_day_weather}/>
+                <h3>Day</h3>
+              </div>
+            }
           </div>
           <div className={styles['info-container']}>
-            <div className={styles['info-header']}>
-              <h3>Night</h3>
-            </div>
+            {night_weather === null ? null :
+              <div className={styles['info-header']}>
+                <Weather iconName={night_weather} special_iconName={special_night_weather}/>
+                <h3>Night</h3>
+              </div>
+            }
           </div>
         </div>
       </div>
