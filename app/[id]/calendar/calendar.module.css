@@ -1,6 +1,7 @@
 .months-container {
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--color-border);
   padding: 15px;
-  margin-bottom: 30px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -33,7 +34,6 @@
   grid-template-rows: repeat(6, 1fr);
   font-family: var(--font-days);
   line-height: 100%;
-  gap: 10px;
 }
 
 .day-names {
@@ -43,8 +43,8 @@
 }
 
 .day, .day-inactive {
+  padding-bottom: 7px;
   position: relative;
-  padding-block: 7px;
   user-select: none;
   font-weight: 700;
 }
