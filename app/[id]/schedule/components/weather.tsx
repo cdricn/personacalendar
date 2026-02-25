@@ -4,14 +4,16 @@ import styles from './weather.module.css';
 import { GameContext } from '@/app/utils/context';
 import { use } from 'react';
 import { IconContext } from 'react-icons';
-import { FaVirus } from "react-icons/fa6";
+import { FaCloudSun } from "react-icons/fa";
+import { FaVirus, FaSun, FaMoon } from "react-icons/fa6";
 import { IoMdFlower, IoMdSnow } from "react-icons/io";
 import { IoThunderstorm } from "react-icons/io5";
 import { LuWaves } from "react-icons/lu";
 
 export default function Weather({
-  iconName, special_iconName
+  time, iconName, special_iconName
 }:{
+  time: string, 
   iconName: string | null, 
   special_iconName: string | null
 }) {
@@ -37,19 +39,22 @@ export default function Weather({
   
   return (
     <div className={styles['icon-container']}>
-      {
-        iconName === null ? null :
-          <img className={styles['icon']} 
+      <div className={styles['icon-time']}>
+        {time==='day' ? <FaSun /> : <FaMoon />}
+      </div>
+      <div className={styles['icon-weather']}>
+        {iconName === null ? null :
+          <img className={styles['normal-icon']} 
             src={iconMap[game].normal[iconName].src} 
             alt={iconMap[game].normal[iconName].alt} 
           />
-      }
-      {
-        special_iconName === null ? null :
+        }
+        {special_iconName === null ? null :
           <div className={styles['special-icon']}>
             {iconMap[game].special[special_iconName]}
           </div>
-      }
+        }
+      </div>
     </div>
   )
 }
