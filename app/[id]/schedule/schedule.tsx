@@ -58,8 +58,29 @@ export default function Schedule({scheduleData}:{scheduleData:CalendarData}) {
           <span>{night_activities ? night_activities : 'N/A'}</span>
         </div>
       </div>
-      <div className={styles['events']}>
-
+      <div className={styles['schedule']}>
+        <div className={styles['schedule-type']}>
+          <div className={styles['events-header']}>
+            <h3>Schedule</h3>
+            <div className={styles['spoiler-button']}>
+              Spoiler On Off
+            </div>
+          </div>
+          {events ? 
+            <p>{events}</p> 
+            : <p>Free.</p>
+          }
+        </div>
+        <div className={styles['schedule-type']}>
+          <h3>Confidants</h3>
+        </div>
+        <div className={styles['schedule-type']}>
+          <h3>Activities</h3>
+          {activities ? 
+            <p>{activities}</p> 
+            : <p>None.</p>
+          }
+        </div>
       </div>
     </>
   )
