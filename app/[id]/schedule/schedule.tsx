@@ -42,44 +42,28 @@ export default function Schedule({scheduleData}:{scheduleData:CalendarData}) {
 
   return (
     <>
-      <div className={styles['schedule-date']}>
+      <div className={styles['schedule-header']}>
+        <h2>WORLD</h2>
         <div className={styles['date']}>
           <span>{`${monthMapping[month]}/${day}`}</span>
         </div>
-        <div className={styles['spoiler-button-container']}>
-          <span>Spoiler</span>
-          <div className={styles['spoiler-button']}>
-            <span onClick={()=>setSpoiler(true)}>ON</span>
-            <span onClick={()=>setSpoiler(false)}>OFF</span>
-          </div>
+      </div>
+      <div className={styles['day-modifiers']}>
+        <div className={styles['modifier']}>
+          {day_weather === null ? null :
+            <Weather time='day' iconName={day_weather} special_iconName={special_day_weather}/>
+          }
+          <span>{day_activities ? day_activities : '---'}</span>
+        </div>
+        <div className={styles['modifier']}>
+          {night_weather === null ? null :
+            <Weather time='night' iconName={night_weather} special_iconName={special_night_weather}/>
+          }
+          <span>{night_activities ? night_activities : '---'}</span>
         </div>
       </div>
+      <div className={styles['events']}>
 
-      <div className={styles['info-body']}>
-        <div className={styles['schedule-options']}>
-          <span onClick={()=>handleScheduleClick('schedule')}>Schedule</span>
-          <span onClick={()=>handleScheduleClick('confidants')}>Confidants</span>
-          <span onClick={()=>handleScheduleClick('info')}>Info</span>
-        </div>
-
-        <div className={styles['schedule-info']}>
-          <div className={styles['info-container']}>
-            {day_weather === null ? null :
-              <div className={styles['info-header']}>
-                <Weather iconName={day_weather} special_iconName={special_day_weather}/>
-                <h3>Day</h3>
-              </div>
-            }
-          </div>
-          <div className={styles['info-container']}>
-            {night_weather === null ? null :
-              <div className={styles['info-header']}>
-                <Weather iconName={night_weather} special_iconName={special_night_weather}/>
-                <h3>Night</h3>
-              </div>
-            }
-          </div>
-        </div>
       </div>
     </>
   )
