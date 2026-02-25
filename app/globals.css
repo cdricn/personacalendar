@@ -7,7 +7,7 @@
   --ff-arsenal: 'arsenal';
   --color-inactive-day: #363636;
   --color-border: #363636;
-  --color-special-icon: #f10404;
+  --color-special-icon: #ca0a0a;
   --color-persona5r: #f10c0c;
   --color-persona3r: #0650da;
   --color-persona4g: #eedf0f;
@@ -29,6 +29,7 @@
   --fs-calendar-number: var(--fs-medium-2);
   --fs-schedule-header: var(--fs-large-2);
   --fs-modifier: var(--fs-medium);
+  --fs-body-header: var(--fs-normal);
   --fs-body: var(--fs-normal);
 }
 
@@ -43,7 +44,8 @@
     --fs-calendar-day: var(--fs-small);
     --fs-calendar-number: var(--fs-normal);
     --fs-schedule-header: var(--fs-huge-2);
-    --fs-modifier: var(--fs-small);
+    --fs-modifier: var(--fs-normal);
+    --fs-body-header: var(--fs-small);
     --fs-body: var(--fs-small);
   }
 }
