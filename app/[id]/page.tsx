@@ -37,23 +37,23 @@ export default function CalendarPage() {
 
   return (
       <main className={styles['main']}>
-        <section className={styles['main-content']}>
+        <div className={styles['main-content']}>
           {!isLoading && data !== undefined ?
             <>
-              <div className={styles['calendar-container']}>
+              <section className={styles['calendar-container']}>
                 <Months setMonth={setMonth}/>
                 <Days setDay={setDay} data={data[currentMonth]}/>
-              </div>
-              <div className={styles['schedule-container']}>
+              </section>
+              <section className={styles['schedule-container']}>
                 <GameContext value={path.slice(1)}>
                   <Schedule scheduleData={data[currentMonth][currentDay]}/>
                 </GameContext>
-              </div>
+              </section>
             </>
             :
             <>err</>
           }
-        </section>
+        </div>
       </main>
   )
 }
