@@ -1,0 +1,40 @@
+.days-container {
+  position: relative;
+  font-size: var(--fs-calendar-number);
+}
+
+.days, .numbers-grid {
+  display: grid;
+  position: relative;
+}
+
+.days {
+  grid-template-columns: repeat(7, 1fr);
+  font-family: var(--font-days-number);
+  font-size: var(--fs-calendar-day);
+  text-align: center;
+}
+
+.numbers-grid {
+  padding-top: 10px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  font-family: var(--font-days);
+  line-height: 100%;
+  text-align: right;
+}
+
+/*Set -1 for the margins to prevent border overlap which makes inside of the calendar thicker*/
+.number {
+  margin-right: -1px;
+  margin-bottom: -1px;
+  border: 1px solid var(--color-border);
+  padding: 5px;
+  position: relative;
+  user-select: none;
+  font-weight: 700;
+  height: clamp(50px, calc(3.125rem + ((1vw - 3px) * 6.1728)), 150px);
+}
+.inactive {
+  color: var(--color-inactive-day);
+}

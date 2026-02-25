@@ -1,5 +1,5 @@
+import styles from './days.module.css';
 import { CalendarData } from '@/app/lib/interface';
-import styles from './calendar.module.css';
 
 export default function Days({
   data,
@@ -21,7 +21,7 @@ export default function Days({
       const dayKey = 'day' + (i+1);
       if(data[i].day_activities !== null && data[i].night_activities !== null) {
         daysArray.push(
-          <div key={dayKey} className={styles['day']} 
+          <div key={dayKey} className={styles['number']} 
             onClick={()=>{handleClick(i)}}
             style={i==0?{gridColumnStart: `${monthStart}`}:undefined}>
             <span>{i+1}</span>
@@ -29,7 +29,7 @@ export default function Days({
         );
       } else {
         daysArray.push(
-          <div key={dayKey} className={styles['day-inactive']} 
+          <div key={dayKey} className={[styles['number'], styles['inactive']].join(' ')} 
             style={i==0?{gridColumnStart: `${monthStart}`}:undefined}>
             <span>{i+1}</span>
           </div>
@@ -41,7 +41,7 @@ export default function Days({
 
   return (
     <div className={styles['days-container']}>
-      <div className={styles['day-names']}>
+      <div className={styles['days']}>
         <span>Sun</span>
         <span>Mon</span>
         <span>Tue</span>
@@ -50,7 +50,7 @@ export default function Days({
         <span>Fri</span>
         <span>Sat</span>
       </div>
-      <div className={styles['days-grid']}>
+      <div className={styles['numbers-grid']}>
         {populateDays()}
       </div>
     </div>
