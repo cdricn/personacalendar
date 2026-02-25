@@ -50,16 +50,12 @@ export default function Schedule({scheduleData}:{scheduleData:CalendarData}) {
       </div>
       <div className={styles['day-modifiers']}>
         <div className={styles['modifier']}>
-          {day_weather === null ? null :
-            <Weather time='day' iconName={day_weather} special_iconName={special_day_weather}/>
-          }
-          <span>{day_activities ? day_activities : '---'}</span>
+          <Weather time='day' iconName={day_weather} special_iconName={special_day_weather}/>
+          <span>{day_activities ? day_activities : 'N/A'}</span>
         </div>
         <div className={styles['modifier']}>
-          {night_weather === null ? null :
-            <Weather time='night' iconName={night_weather} special_iconName={special_night_weather}/>
-          }
-          <span>{night_activities ? night_activities : '---'}</span>
+          <Weather time='night' iconName={night_weather} special_iconName={special_night_weather}/>
+          <span>{night_activities ? night_activities : 'N/A'}</span>
         </div>
       </div>
       <div className={styles['events']}>
