@@ -12,6 +12,7 @@
   --color-persona3r: #0650da;
   --color-persona4g: #eedf0f;
 
+  --fs-large-2: 96px;
   --fs-large: 64px;
   --fs-huge-2: 48px;
   --fs-huge: 40px;
@@ -23,29 +24,31 @@
   --fs-small: 16px;
   --fs-tiny: 14px;
 
-  --fs-months: var(--fs-normal);
+  --fs-months: var(--fs-medium-2);
   --fs-calendar-day: var(--fs-normal);
-  --fs-calendar-number: var(--fs-big);
-  --fs-date: var(--fs-normal);
-  --fs-schedule-options: var(--fs-normal);
+  --fs-calendar-number: var(--fs-medium-2);
+  --fs-schedule-header: var(--fs-large-2);
+  --fs-modifier: var(--fs-medium);
   --fs-body: var(--fs-normal);
 }
 
-@media (width < 700px) {
+@media (width < 1200px) {
   :root {
-    --fs-months: var(--fs-small);
+    --fs-schedule-header: var(--fs-large);
+  }
+}
+@media (width < 900px) {
+  :root {
+    --fs-months: var(--fs-normal);
     --fs-calendar-day: var(--fs-small);
-    --fs-calendar-number: var(--fs-medium);
-    --fs-schedule-options: var(--fs-small);
+    --fs-calendar-number: var(--fs-normal);
+    --fs-schedule-header: var(--fs-huge-2);
+    --fs-modifier: var(--fs-small);
     --fs-body: var(--fs-small);
   }
 }
 
 [data-theme="main"]{
-  --font-months: var(--ff-inter);
-  --font-days: var(--ff-inter);
-  --font-days-number: var(--ff-inter);
-  --font-schedule-header: var(--ff-inter);
   --font-schedule-info: var(--ff-inter);
 }
 
