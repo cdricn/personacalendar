@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './calendar.module.css';
+import styles from './months.module.css';
 import { useEffect, useState } from 'react';
 
 export default function Months({setMonth}:{setMonth:(item:string)=>void,}) {
@@ -25,16 +25,14 @@ export default function Months({setMonth}:{setMonth:(item:string)=>void,}) {
 
   return (
     <div className={styles['months-container']}>
-      <div className={styles['month-nav']}
-        onClick={()=>handleClick('prev')}>
-          {'<'}
+      <div className={styles['month-nav']} onClick={()=>handleClick('prev')}>
+        <span>{'<'}</span>
       </div>
       <span className={styles['month']}>
         {months[monthIndex].slice(0, 1).toUpperCase() + months[monthIndex].slice(1)} 20XX
       </span>
-      <div className={styles['month-nav']}
-        onClick={()=>handleClick('next')}>
-          {'>'}
+      <div className={styles['month-nav']}onClick={()=>handleClick('next')}>
+        <span>{'>'}</span>
       </div>
     </div>
   )

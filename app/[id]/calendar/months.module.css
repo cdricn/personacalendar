@@ -1,0 +1,18 @@
+.months-container {
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--color-border);
+  padding: 15px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.month {
+  position: relative;
+  font-size: var(--fs-months);
+  font-family: var(--font-months);
+}
+.month-nav {
+  cursor: pointer;
+  user-select: none;
+}
