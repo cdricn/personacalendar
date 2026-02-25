@@ -33,8 +33,15 @@
   position: relative;
   user-select: none;
   font-weight: 700;
-  height: clamp(50px, calc(3.125rem + ((1vw - 3px) * 6.1728)), 150px);
+  height: clamp(70px, calc(4.375rem + ((1vw - 8px) * 7.1429)), 150px);
+  min-width: 50px;
 }
 .inactive {
   color: var(--color-inactive-day);
+}
+
+@media (width < 800px) {
+  .number {
+    height: clamp(50px, calc(3.125rem + ((1vw - 3px) * 4)), 70px);
+  }
 }

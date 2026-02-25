@@ -57,7 +57,7 @@
   --font-days: var(--ff-inter);
   --font-days-number: var(--ff-inter);
   --font-schedule-header: var(--ff-arsenal);
-  --font-schedule-info: var(--ff-arsenal);
+  --font-schedule-body: var(--ff-arsenal);
   --main-color: var(--color-persona5r);
   --complement-color: var(--color-persona5r);
 }
