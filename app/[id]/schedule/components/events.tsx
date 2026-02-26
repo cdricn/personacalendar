@@ -36,16 +36,18 @@ export default function Events({
         {events ? 
           <>
             <p>{events}</p>
-            <details style={spoiler ? undefined : {display:'none'}}>
-              <summary>Spoilers:</summary>
-              {events_spoiler?.map((item, index)=>{
-                return (
-                  <li key={'events_spoilerItem'+index} className={styles['events-spoiler']}>
-                    <p>{item}</p>
-                  </li>
-                )
-              })}
-            </details>
+            {events_spoiler===null ? null :
+              <details style={spoiler ? undefined : {display:'none'}}>
+                <summary>Spoilers:</summary>
+                {events_spoiler.map((item, index)=>{
+                  return (
+                    <li key={'events_spoilerItem'+index} className={styles['events-spoiler']}>
+                      <p>{item}</p>
+                    </li>
+                  )
+                })}
+              </details>
+            }
           </>
           : 
           <>
