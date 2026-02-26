@@ -1,0 +1,17 @@
+.events-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.events-header > h3 {
+  display: inline-block;
+  font-weight: bold;
+}
+.events-spoiler {
+  margin-left: 10px;
+  position: relative;
+  list-style-type: none;
+}
+.events-spoiler > p::before {
+  content: '- ';
+}
