@@ -33,12 +33,7 @@
   --fs-body: var(--fs-normal);
 }
 
-@media (width < 1200px) {
-  :root {
-    --fs-schedule-header: var(--fs-large);
-  }
-}
-@media (width < 900px) {
+@media (width < 800px) {
   :root {
     --fs-months: var(--fs-normal);
     --fs-calendar-day: var(--fs-small);
