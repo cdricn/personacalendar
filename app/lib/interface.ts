@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface CalendarData {
   month: string,
   day: number,
@@ -18,3 +20,20 @@ export interface CalendarData {
 export interface Calendar {
   [month: string] : Array<CalendarData>;
 }
+
+interface IconMap {
+  normal: {
+    [modifier:string]: {
+      src: string,
+      alt: string,
+    }
+  },
+  special: {
+    [modifier:string]: ReactNode
+  }
+}
+
+export interface GameIcons {
+  [game:string]: IconMap
+}
+
