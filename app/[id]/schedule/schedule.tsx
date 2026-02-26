@@ -1,13 +1,12 @@
 'use client';
 
-import { CalendarData } from '@/app/lib/interface';
 import styles from './schedule.module.css';
-import { useState } from 'react';
+import { CalendarData } from '@/app/lib/interface';
 import Weather from './components/weather';
+import Events from './components/events';
+import Confidants from './components/confidants';
 
 export default function Schedule({scheduleData}:{scheduleData:CalendarData}) {
-  const [clickedOption, setClickedOption] = useState('schedule');
-  const [spoiler, setSpoiler] = useState(false);
   const { 
     month, day, day_code, day_weather, night_weather, special_day_weather, special_night_weather,
     world, activities, confidant_events, events, events_spoiler, day_activities, night_activities    
@@ -28,26 +27,17 @@ export default function Schedule({scheduleData}:{scheduleData:CalendarData}) {
     december: '12',
   };
 
-  function handleScheduleClick(option:string) {
-    setClickedOption(option);
-  }
-
-  function showInfo(info:Array<string> | null) {
-    if (info!==null) {
-      return info.map((i)=>{
-        return <><span className={styles['spoiler']}>{i}</span><br/></>
-      })
-    } else return null
-  }
-
   return (
     <>
       <div className={styles['schedule-header']}>
         <h2>WORLD</h2>
         <div className={styles['date']}>
-          <span>{`${monthMapping[month]}/${day}`}</span>
+          <span>{monthMapping[month]}</span>
+          <span>/</span>
+          <span>{day}</span>
         </div>
       </div>
+
       <div className={styles['day-modifiers']}>
         <div className={styles['modifier']}>
           <Weather time='day' iconName={day_weather} special_iconName={special_day_weather}/>
@@ -58,28 +48,17 @@ export default function Schedule({scheduleData}:{scheduleData:CalendarData}) {
           <span>{night_activities ? night_activities : 'N/A'}</span>
         </div>
       </div>
+
       <div className={styles['schedule']}>
-        <div className={styles['schedule-type']}>
-          <div className={styles['events-header']}>
-            <h3>Schedule</h3>
-            <div className={styles['spoiler-button']}>
-              Spoiler On Off
-            </div>
-          </div>
-          {events ? 
-            <p>{events}</p> 
-            : <p>Free.</p>
-          }
+        <div className={styles['schedule-info-block']}>
+          <Events invalidDay={day_activities===null} world={world} events={events} events_spoiler={events_spoiler}/>
         </div>
-        <div className={styles['schedule-type']}>
-          <h3>Confidants</h3>
+        <div className={styles['schedule-info-block']}>
+          <Confidants confidant_events={confidant_events}/>
         </div>
-        <div className={styles['schedule-type']}>
+        <div className={styles['schedule-info-block']}>
           <h3>Activities</h3>
-          {activities ? 
-            <p>{activities}</p> 
-            : <p>None.</p>
-          }
+          <h3>Limited Activities</h3>
         </div>
       </div>
     </>

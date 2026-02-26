@@ -51,18 +51,7 @@
   font-family: var(--font-schedule-body);
   font-size: var(--fs-body);
 }
-.schedule-type > h3 {
-  font-weight: bold;
-}
-
-
-.events-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.events-header > h3 {
-  display: inline-block;
+.schedule-info-block > h3 {
   font-weight: bold;
 }
 
@@ -82,7 +71,7 @@
   }
 }
 
-@media (width < 1000px) {
+@media (width < 800px) {
   .date {
     width: 140px;
   }
