@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-
 export interface CalendarData {
   month: string,
   day: number,
@@ -29,7 +27,7 @@ interface IconMap {
     }
   },
   special: {
-    [modifier:string]: ReactNode
+    [modifier:string]: React.ReactElement
   }
 }
 
