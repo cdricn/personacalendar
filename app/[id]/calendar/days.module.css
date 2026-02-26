@@ -33,15 +33,34 @@
   position: relative;
   user-select: none;
   font-weight: 700;
-  height: clamp(70px, calc(4.375rem + ((1vw - 8px) * 7.1429)), 150px);
-  min-width: 50px;
+  height: 150px;
+  overflow: hidden;
+}
+.number > span {
+  z-index: 5;
 }
 .inactive {
   color: var(--color-inactive-day);
 }
 
+.hint-icons-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.hint-icon {
+  display: inline-block;
+  height: auto;
+  transform: rotate(25deg) translateX(5px) translateY(10px);
+  z-index: 1;
+}
+
 @media (width < 800px) {
   .number {
-    height: clamp(50px, calc(3.125rem + ((1vw - 3px) * 4)), 70px);
+    padding: 1px;
+    height: clamp(60px, calc(3.75rem + ((1vw - 3px) * 8)), 100px);
+  }
+  .hint-icon {
+    transform: rotate(25deg) translateX(2px) translateY(5px);
   }
 }
