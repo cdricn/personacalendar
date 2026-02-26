@@ -17,15 +17,28 @@ export default function CalendarPage() {
   const [currentDay, setCurrentDay] = useState(0);
 
   useEffect(()=>{
+    // Set data theme
     const theme = path.slice(1);
     document.querySelector('body')?.setAttribute('data-theme', theme);
+
+    // Make sure we start on a non-empty day
+    if (data) {
+      for(let i=0; i<data[currentMonth].length; i++){
+        if(data[currentMonth][i].day_activities !== null) {
+          setCurrentDay(data[currentMonth][i-1].day);
+          break;
+        }
+      }
+    }
+
     return () => {
       document.body.removeAttribute('data-theme');
     }
-  }, [])
+  }, [data])
 
   if (isLoading) return <>Loading</>;
   if (error) return <>Error</>;
+  
 
   function setMonth(clickedMonth:string) {
     setCurrentMonth(clickedMonth);
