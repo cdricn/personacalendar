@@ -29,7 +29,7 @@ export default function Months({setMonth}:{setMonth:(item:string)=>void,}) {
         <span>{'<'}</span>
       </div>
       <span className={styles['month']}>
-        {months[monthIndex].slice(0, 1).toUpperCase() + months[monthIndex].slice(1)} 20XX
+        {months[monthIndex].slice(0, 1).toUpperCase() + months[monthIndex].slice(1)}
       </span>
       <div className={styles['month-nav']}onClick={()=>handleClick('next')}>
         <span>{'>'}</span>
