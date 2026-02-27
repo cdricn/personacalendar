@@ -5,7 +5,7 @@ import useSWR from 'swr';
 import getData from "../../utils/getData";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { GameContext } from "../../utils/context";
+import { GameContext, DataContext } from "../../utils/context";
 import { personaDays, personaMonths } from "@/app/lib/months";
 import Months from "../components/months";
 import Days from "./calendar/days";
@@ -40,7 +40,6 @@ export default function CalendarPage() {
 
   if (isLoading) return <>Loading</>;
   if (error) return <>Error</>;
-  
 
   function setMonth(clickedMonth:string) {
     setCurrentMonth(clickedMonth);
@@ -54,18 +53,17 @@ export default function CalendarPage() {
     <main className={styles['main']}>
       <div className={styles['main-content']}>
         {!isLoading && data !== undefined ?
-          <>
+          <DataContext value={data[currentMonth]}>
             <section className={styles['calendar-container']}>
               <Months months={personaMonths} setMonth={setMonth}/>
-              <Days days={personaDays} setDay={setDay}
-                maxRows={6} data={data[currentMonth]} />
+              <Days days={personaDays} setDay={setDay} maxRows={6}/>
             </section>
             <section className={styles['schedule-container']}>
               <GameContext value={path.slice(6)}>
-                <Schedule scheduleData={data[currentMonth][currentDay]}/>
+                <Schedule currentDay={currentDay}/>
               </GameContext>
             </section>
-          </>
+          </DataContext>
           :
           <>HELLLOOO</>
         }
