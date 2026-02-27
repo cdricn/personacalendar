@@ -12,7 +12,8 @@ export interface CalendarData {
   events: Array<string> | null,
   events_spoiler: Array<string> | null,
   day_activities: string | null,
-  night_activities: string | null
+  night_activities: string | null,
+  invalidDay: boolean
 }
 
 export interface Calendar {
