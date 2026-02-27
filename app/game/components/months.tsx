@@ -1,0 +1,35 @@
+'use client';
+
+import styles from './months.module.css';
+import { useEffect, useState } from 'react';
+
+export default function Months({months, setMonth}:{months:Array<string>, setMonth:(item:string)=>void,}) {
+  const [monthIndex, setMonthIndex] = useState(0);
+
+  useEffect(()=>{
+    setMonth(months[monthIndex]);
+  }, [monthIndex])
+
+  function handleClick(action:string) {
+    if(action == 'prev' && monthIndex > 0) {
+      setMonthIndex(monthIndex-1);
+    }
+    if(action == 'next' && monthIndex < 11) {
+      setMonthIndex(monthIndex+1);
+    }
+  }
+
+  return (
+    <div className={styles['months-container']}>
+      <div className={styles['month-nav']} onClick={()=>handleClick('prev')}>
+        <span>{'<'}</span>
+      </div>
+      <span className={styles['month']}>
+        {months[monthIndex].slice(0, 1).toUpperCase() + months[monthIndex].slice(1)}
+      </span>
+      <div className={styles['month-nav']}onClick={()=>handleClick('next')}>
+        <span>{'>'}</span>
+      </div>
+    </div>
+  )
+}
