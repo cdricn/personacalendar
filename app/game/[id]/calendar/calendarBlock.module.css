@@ -1,0 +1,17 @@
+.hint-icons-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.hint-icon {
+  display: inline-block;
+  height: auto;
+  transform: rotate(25deg) translateX(5px) translateY(10px);
+  z-index: 1; 
+}
+
+@media (width < 800px) {
+  .hint-icon {
+    transform: rotate(25deg) translateX(2px) translateY(5px);
+  }
+}
