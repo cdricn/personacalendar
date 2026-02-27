@@ -13,7 +13,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "april",
@@ -29,7 +30,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "april",
@@ -45,7 +47,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "april",
@@ -61,7 +64,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "april",
@@ -77,7 +81,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "april",
@@ -93,7 +98,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "april",
@@ -109,7 +115,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "april",
@@ -125,7 +132,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "april",
@@ -141,7 +149,8 @@
    "events": ["Start of the game."],
    "events_spoiler": ["Protagonist moves in Cafe Leblanc."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -157,7 +166,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Visiting Shujin Academy.", "Mental shutdown incident."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -173,7 +183,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist's first day in school.", "First visit to Kamoshida's Palace where the Protagonist awakens.", "First meeting with Morgana.", "Unlocks the Magician confidant."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -185,11 +196,12 @@
    "special_night_weather": null,
    "world": null,
    "activities": null,
-   "confidant_events": null,
+   "confidant_events": ["Unlocks the Chariot confidant."],
    "events": ["Story event."],
    "events_spoiler": ["Second visit to Kamoshida's Palace where Ryuji awakens.", "Unlocks the Chariot confidant."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -205,7 +217,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Protagonist and Ryuji investigate Suguru Kamoshida."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -221,7 +234,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist, Ryuji, and Morgana discuss how to deal with Kamoshida.", "The Protagonist meets Ann Takamaki."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -233,11 +247,12 @@
    "special_night_weather": null,
    "world": null,
    "activities": null,
-   "confidant_events": null,
+   "confidant_events": ["Unlocks the Lovers confidant."],
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist and Ryuji confronts Kamoshida after Shiho is hospitalized.", "Ann follows Ryuji and the Protagonist on their third visit to Kamoshida's Palace and awakens.", "Unlocks the Lovers confidant."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -253,7 +268,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist visits Takemi Medical Clinic to prepare for the palace infiltration."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -266,10 +282,11 @@
    "world": ["Shibuya is unlocked."],
    "activities": ["Airsoft Shop is unlocked.", "Crafting is unlocked."],
    "confidant_events": null,
-   "events": ["Story event with crafting tutorial."],
+   "events": ["Story event."],
    "events_spoiler": ["The Protagonist visits the Airsoft Shop in Shibuya to prepare for the palace infiltration."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -285,7 +302,8 @@
    "events": ["Start of the first Palace infiltration mission."],
    "events_spoiler": ["Start of Kamoshida's Palace infiltration mission."],
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -301,7 +319,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -317,7 +336,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -333,7 +353,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -349,7 +370,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -365,7 +387,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -381,7 +404,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -397,7 +421,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -413,7 +438,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -429,7 +455,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -445,7 +472,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -455,13 +483,14 @@
    "night_weather": "clear",
    "special_day_weather": null,
    "special_night_weather": null,
-   "world": ["No classes: Showa Day"],
+   "world": ["No classes: Showa Day."],
    "activities": null,
    "confidant_events": null,
    "events": ["Last day to secure a route to the first palace's treasure."],
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "april",
@@ -477,7 +506,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -493,7 +523,8 @@
    "events": ["Last day to steal the first palace's treasure."],
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -506,10 +537,11 @@
    "world": null,
    "activities": null,
    "confidant_events": null,
-   "events": ["Consequences of the first palace's infiltration mission."],
+   "events": ["Result of the first palace's infiltration mission."],
    "events_spoiler": ["Mission deadline for Kamoshida's Palace.", "Either Kamoshida confesses his crimes or the Protagonist is expelled if he fails to steal the treasure."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -519,13 +551,14 @@
    "night_weather": "cloudy",
    "special_day_weather": null,
    "special_night_weather": null,
-   "world": ["No Classes: Constitution Memorial Day"],
+   "world": ["No Classes: Constitution Memorial Day."],
    "activities": null,
    "confidant_events": null,
    "events": ["The Protagonist helps out at Cafe Leblanc."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -535,13 +568,14 @@
    "night_weather": "cloudy",
    "special_day_weather": null,
    "special_night_weather": null,
-   "world": ["No Classes: Greenery Day"],
+   "world": ["No Classes: Greenery Day."],
    "activities": null,
    "confidant_events": null,
    "events": ["The Protagonist sells the palace treasure."],
    "events_spoiler": ["The Protagonist visits the Airsoft Shop to sell Kamoshida's treasure."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -557,7 +591,8 @@
    "events": ["Celebration for completing the palace."],
    "events_spoiler": ["Protagonist celebrates with Ann, Ryuji, and Morgana at Wilton Buffet hotel for successfully exposing Kamoshida.", "The Phantom Thieves of Hearts are formed."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -573,7 +608,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -589,7 +625,8 @@
    "events": ["The Phantom Thieves go to a Palace."],
    "events_spoiler": ["The Phantom Thieves go to Mementos for the first time.", "First meeting with Jose, a mysterious boy inside the Mementos."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -605,7 +642,8 @@
    "events": ["Event tutorial for gaining Mementos targets."],
    "events_spoiler": ["Mishima invites the Protagonist to talk about his Phan-site, which allows you to discover new targets in Mementos."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -621,7 +659,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -637,7 +676,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -653,7 +693,8 @@
    "events": ["Midterms exam."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -669,7 +710,8 @@
    "events": ["Midterms exam."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -685,7 +727,8 @@
    "events": ["Midterms exam."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -701,7 +744,8 @@
    "events": ["Last day of the midterms exam."],
    "events_spoiler": ["The Phantom Thieves meet Yusuke Kitagawa."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -717,7 +761,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves go to Ichiryusai Madarame's exhibit."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -733,7 +778,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves goes to Madarame's house and discover his Palace."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -749,7 +795,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves visits Yusuke to investigate about Madarame.", "First meeting with Ohya, the Devil confidant."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -765,7 +812,8 @@
    "events": ["Start of the second Palace infiltration mission."],
    "events_spoiler": ["Start of Madarame's Palace infiltration mission."],
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -781,7 +829,8 @@
    "events": ["Earliest possible day to breach the palace obstacle."],
    "events_spoiler": ["Earliest possible day for Yusuke's awakening."],
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -797,7 +846,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -813,7 +863,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -829,7 +880,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -845,7 +897,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -861,7 +914,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -877,7 +931,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -893,7 +948,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -909,7 +965,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -925,7 +982,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -941,7 +999,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -957,7 +1016,8 @@
    "events": ["School field trip."],
    "events_spoiler": ["School field trip", "First meeting with Yoshizawa.", "Unlocks the Faith confidant."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "may",
@@ -973,7 +1033,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -989,7 +1050,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1005,7 +1067,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1021,7 +1084,8 @@
    "events": ["Last day to send the calling card."],
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1037,7 +1101,8 @@
    "events": ["Last day to steal the second palace's treasure."],
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1050,10 +1115,11 @@
    "world": ["Kichijoji is unlocked."],
    "activities": null,
    "confidant_events": null,
-   "events": ["Consequences of the second palace's infiltration mission."],
+   "events": ["Result of the second palace's infiltration mission."],
    "events_spoiler": ["Mission deadline for Madarame's Palace.", "Either Madarame confesses his crimes or the Protagonist is arrested if he fails to steal the treasure.", "The Protagonist and Ryuji goes to Kichijoji to play darts."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1069,7 +1135,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1085,7 +1152,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1101,7 +1169,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1114,10 +1183,11 @@
    "world": null,
    "activities": null,
    "confidant_events": null,
-   "events": ["Day 1 of the social studies school trip."],
-   "events_spoiler": ["Day 1 of the social studies school trip at the TV station.", "First meeting with Akechi."],
+   "events": ["School trip."],
+   "events_spoiler": ["1st day of the social studies school trip at the TV station.", "First meeting with Akechi."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1130,10 +1200,11 @@
    "world": null,
    "activities": null,
    "confidant_events": null,
-   "events": ["Day 2 of the social studies school trip."],
-   "events_spoiler": ["Day 2 of the social studies school trip at the TV station.", "Second meeting with Akechi and unlocks the Justice confidant."],
+   "events": ["School trip."],
+   "events_spoiler": ["2nd day of the social studies school trip at the TV station.", "Second meeting with Akechi and unlocks the Justice confidant."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1149,7 +1220,8 @@
    "events": ["Celebration for completing the palace."],
    "events_spoiler": ["The Phantom Thieves eat hot pot as celebration for exposing Madarame in Cafe Leblanc"],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1165,7 +1237,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1181,7 +1254,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Makoto Niijima confronts the Phantom Thieves."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1197,7 +1271,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Makoto Niijima blackmails the Phantom Thieves into invesitgating a mafia boss."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1213,7 +1288,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Investigation of the mafia boss at school."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1229,7 +1305,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Investigation of the mafia boss at Shibuya."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1245,7 +1322,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves meet to talk about the investigation."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1255,13 +1333,14 @@
    "night_weather": "cloudy",
    "special_day_weather": null,
    "special_night_weather": null,
-   "world": ["Unlock Shinjuku"],
+   "world": ["Shinjuku is unlocked."],
    "activities": null,
    "confidant_events": null,
    "events": ["Story event at night."],
    "events_spoiler": ["The Protagonist and Ryuji goes to Shinjuku to meet Ohya and learns about Junya Kaneshiro."],
    "day_activities": "Free",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1277,7 +1356,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves discovers Kaneshiro's palace in the nav and investigates."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1293,7 +1373,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves personally meet Kaneshiro and brings Makoto inside Kaneshiro's Palace.", "Makoto's first awakening."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1309,7 +1390,8 @@
    "events": ["Start of the third Palace infiltration mission."],
    "events_spoiler": ["Start of Kaneshiro's Palace infiltration mission."],
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1325,7 +1407,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1341,7 +1424,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1357,7 +1441,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1373,7 +1458,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1389,7 +1475,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1405,7 +1492,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1421,7 +1509,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1437,7 +1526,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "june",
@@ -1453,7 +1543,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1469,7 +1560,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1485,7 +1577,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1501,7 +1594,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1517,7 +1611,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1533,7 +1628,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1549,7 +1645,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1565,7 +1662,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1581,7 +1679,8 @@
    "events": ["Last day to steal the third palace's treasure."],
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1594,10 +1693,11 @@
    "world": null,
    "activities": null,
    "confidant_events": null,
-   "events": ["Consequences of the third palace's infiltration mission."],
+   "events": ["Result of the third palace's infiltration mission."],
    "events_spoiler": ["Mission deadline for Kaneshiro's Palace.", "Kaneshiro's turns himself over to the police or the photo is leaked if the Phantom Thieves fail to steal the treasure."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1613,7 +1713,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves have a study group at Cafe Leblanc."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1629,7 +1730,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist hangs out with Yoshizawa and Akechi at a cafe."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1645,7 +1747,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1661,7 +1764,8 @@
    "events": ["Final exams."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1677,7 +1781,8 @@
    "events": ["Final exams."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1693,7 +1798,8 @@
    "events": ["Final exams."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1709,7 +1815,8 @@
    "events": ["Last day of the final exams."],
    "events_spoiler": ["Doctor Mayuki invites the Protagonist for counseling.", "The Phantom Thieves meet to talk about recent events."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1725,7 +1832,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagnist goes on a fair with Yusuke and Ryuji."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1735,13 +1843,14 @@
    "night_weather": "rainy",
    "special_day_weather": null,
    "special_night_weather": null,
-   "world": ["No classes: Marine Day"],
+   "world": ["No classes: Marine Day."],
    "activities": null,
    "confidant_events": null,
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves goes to a Fireworks Festival", "Medjed declares hacking threat."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1757,7 +1866,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1773,7 +1883,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Alibaba contacts the Protagonist.", "The Phantom Thieves discuss Medjed and Alibaba."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1789,7 +1900,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Alibaba asks the Protagonist to steal Futaba Sakura's heart.", "The Phantom Thieves meet to discuss about Alibaba and Futaba."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1805,7 +1917,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist asks around Yongen-Jaya for clues about Futaba Sakura."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1815,13 +1928,14 @@
    "night_weather": "clear",
    "special_day_weather": null,
    "special_night_weather": null,
-   "world": ["School Closing Ceremony"],
+   "world": ["School Closing Ceremony."],
    "activities": null,
    "confidant_events": null,
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves meet again to discuss clues about Futaba, but Alibaba rescinds their request to steal Futaba's heart."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1831,13 +1945,14 @@
    "night_weather": "cloudy",
    "special_day_weather": null,
    "special_night_weather": null,
-   "world": ["Start of Summer Break"],
+   "world": ["Start of Summer Break."],
    "activities": ["Free train seat."],
    "confidant_events": null,
    "events": ["Celebration for completing the palace."],
    "events_spoiler": ["The Phantom Thieves eat sushi at Ginza Sushi Bar as celebration for exposing Kaneshiro and discuss about Futaba.", "The Phantom Thieves visit Sojiro's house and talks about Futaba Sakura and her past."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1853,7 +1968,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves try to confront Futaba and visits her palace."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1869,7 +1985,8 @@
    "events": ["Start of the fourth Palace infiltration mission."],
    "events_spoiler": ["Start of Futaba's Palace infiltration mission."],
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1885,7 +2002,8 @@
    "events": ["Earliest possible day to complete the fourth palace."],
    "events_spoiler": ["Earliest possible day for Futaba to awaken."],
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1901,7 +2019,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1917,7 +2036,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1933,7 +2053,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "july",
@@ -1949,7 +2070,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -1965,7 +2087,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -1981,7 +2104,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -1997,7 +2121,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2013,7 +2138,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2029,7 +2155,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2045,7 +2172,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2061,7 +2189,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2077,7 +2206,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2093,7 +2223,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2109,7 +2240,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2119,13 +2251,14 @@
    "night_weather": "clear",
    "special_day_weather": "heavy rain",
    "special_night_weather": null,
-   "world": ["Mountain Day"],
+   "world": ["Mountain Day."],
    "activities": null,
    "confidant_events": null,
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2141,7 +2274,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2157,7 +2291,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2173,7 +2308,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2189,7 +2325,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2205,7 +2342,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2221,7 +2359,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2237,7 +2376,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2253,7 +2393,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2269,7 +2410,8 @@
    "events": ["Last day to steal the fourth palace's treasure."],
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2282,10 +2424,11 @@
    "world": null,
    "activities": null,
    "confidant_events": null,
-   "events": ["Consequences of the fourth palace's infiltration mission."],
+   "events": ["Result of the fourth palace's infiltration mission."],
    "events_spoiler": ["Mission deadline for Futaba's Palace.", "Either Futaba takes care of Medjed or the Protagonist is arrested if he fails to steal the treasure."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2301,7 +2444,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves discuss about Medjed and how to try to get Futaba to open up."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2317,7 +2461,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist, Yusuke, and Makoto help Futaba open up."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2333,7 +2478,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist, Ryuji, and Ann help Futaba open up."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2349,7 +2495,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist helps Futaba serve customers in Cafe Leblanc."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2365,7 +2512,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist hangs out with the Phantom Thieves at Cafe Leblanc."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2381,7 +2529,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist hangs out with Ryuji, Yusuke, and Futaba at Cafe Leblanc."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2397,7 +2546,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Akechi visits Cafe Leblanc."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2413,7 +2563,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves visit the beach."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2429,7 +2580,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves meet at Leblanc to finish their summer homeworks."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "august",
@@ -2445,7 +2597,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Sojiro takes Futaba and the Protagonist out for sushi."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2455,13 +2608,14 @@
    "night_weather": "clear",
    "special_day_weather": null,
    "special_night_weather": null,
-   "world": ["First day of school after Summer Break"],
+   "world": ["First day of school after Summer Break."],
    "activities": null,
    "confidant_events": null,
    "events": ["Story event."],
    "events_spoiler": ["First day of school.", "The Phantom Thieves discuss their next move."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2477,7 +2631,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2493,7 +2648,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves discuss mental breakdowns."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2509,7 +2665,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2525,7 +2682,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2541,7 +2699,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2557,7 +2716,8 @@
    "events": ["School trip."],
    "events_spoiler": ["The Protagonist goes to the airport for their school trip to Hawaii."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2573,7 +2733,8 @@
    "events": ["School trip."],
    "events_spoiler": ["First day of the Hawaii trip."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2589,7 +2750,8 @@
    "events": ["School trip."],
    "events_spoiler": ["Second day of the Hawaii trip.", "Yusuke arrives in Hawaii."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2605,7 +2767,8 @@
    "events": ["School trip."],
    "events_spoiler": ["Third day of the Hawaii trip.", "The Protagonist hangs out with a confidant of his choosing."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2621,7 +2784,8 @@
    "events": ["School trip."],
    "events_spoiler": ["Last day of the Hawaii Trip."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2637,7 +2801,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist returns home from Hawaii."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2653,7 +2818,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves discuss the school principal's death and their next target.", "Morgana gets in an argument with Ryuji and leaves the Phantom Thieves."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2669,7 +2835,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Morgana goes inside Okumura's Palace without the Phantom Thieves."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2685,7 +2852,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves investigate Kunikazu Okumura's Palace.", "The Phantom Thieves encounter Morgana and Beauty Thief."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2701,7 +2869,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist, Ryuji, Ann, and Makoto try to find the identity of Beauty Thief."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2717,7 +2886,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves try to reconcile with Morgana inside Mementos."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2733,7 +2903,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves discuss Okumura with Haru.", "Haru joins the Phantom Thieves."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2743,13 +2914,14 @@
    "night_weather": "clear",
    "special_day_weather": null,
    "special_night_weather": null,
-   "world": ["No classes: Respect for the Aged Day"],
+   "world": ["No classes: Respect for the Aged Day."],
    "activities": null,
    "confidant_events": null,
    "events": ["Start of the fifth Palace infiltration mission."],
    "events_spoiler": ["Start of Okumura's Palace infiltration mission."],
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2765,7 +2937,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2781,7 +2954,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2791,13 +2965,14 @@
    "night_weather": "cloudy",
    "special_day_weather": null,
    "special_night_weather": null,
-   "world": ["No classes: Autumnal Equinox Day"],
+   "world": ["No classes: Autumnal Equinox Day."],
    "activities": null,
    "confidant_events": null,
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2813,7 +2988,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2829,7 +3005,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2845,7 +3022,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2861,7 +3039,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2877,7 +3056,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2893,7 +3073,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2909,7 +3090,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "september",
@@ -2925,7 +3107,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -2941,7 +3124,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -2957,7 +3141,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -2973,7 +3158,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist tries to meet up with Yoshizawa, where they encounter a mysterious palace and she awakens."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -2989,7 +3175,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3005,7 +3192,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3021,7 +3209,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3037,7 +3226,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3053,7 +3243,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3069,7 +3260,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3079,13 +3271,14 @@
    "night_weather": "cloudy",
    "special_day_weather": null,
    "special_night_weather": null,
-   "world": ["No classes: Health and Sports Day"],
+   "world": ["No classes: Health and Sports Day."],
    "activities": null,
    "confidant_events": null,
    "events": ["Last day to steal the fifth palace's treasure."],
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3098,10 +3291,11 @@
    "world": null,
    "activities": null,
    "confidant_events": null,
-   "events": ["Consequences of the fifth palace's infiltration mission."],
+   "events": ["Result of the fifth palace's infiltration mission."],
    "events_spoiler": ["Mission deadline for Okumura's Palace.", "Either Okumura dies at his press conference or the Protagonist is arrested if he fails to steal the treasure.", "The Phantom Thieves goes to Destinyland as a welcoming party for Haru."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3117,7 +3311,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The police investigates Okumura household."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3133,7 +3328,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Phantom Thieves meet to discuss about Okumura's death."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3149,7 +3345,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3165,7 +3362,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3181,7 +3379,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3197,7 +3396,8 @@
    "events": ["Midterms exams."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3213,7 +3413,8 @@
    "events": ["Midterms exams."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3229,7 +3430,8 @@
    "events": ["Midterms exams."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3245,7 +3447,8 @@
    "events": ["Last day of the midterms exams."],
    "events_spoiler": ["The Phantom Thieves discuss the possibility of someone targeting them."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3261,7 +3464,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Police comes to Shujin Academy to interrogate students.", "The Phantom Thieves meet to discuss current events."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3277,7 +3481,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves lay low at school by preparing for the school festival."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3293,7 +3498,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves discuss bringing Akechi as a guest for the school festival panel to get information from the police."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3309,7 +3515,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Akechi visits Cafe Leblanc."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3325,7 +3532,8 @@
    "events": ["School cultural festival."],
    "events_spoiler": ["The Phantom Thieves spend time together at the school festival."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3341,7 +3549,8 @@
    "events": ["School cultural festival."],
    "events_spoiler": ["Akechi confronts the Phantom Thieves and makes a deal with them.", "The Protagonist spends time with with the Yoshizawa and hangs out with another confidant of his choosing.", "Sojiro confronts Futaba and the Protagonist about being Phantom Thieves."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3357,7 +3566,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves becomes the most wanted fugitives in the country and meet to discuss the current situation."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3373,7 +3583,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Akechi meets with the Phantom Thieves at Cafe Leblanc and requests that they change Sae Nijima's heart."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3389,7 +3600,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves visit Sae Nijima's Palace."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3405,7 +3617,8 @@
    "events": ["Start of the sixth Palace infiltration mission."],
    "events_spoiler": ["Start of Nijima's Palace infiltration mission."],
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "october",
@@ -3421,7 +3634,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3437,7 +3651,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3453,7 +3668,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3469,7 +3685,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3485,7 +3702,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3501,7 +3719,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3517,7 +3736,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3533,7 +3753,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3549,7 +3770,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3565,7 +3787,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3581,7 +3804,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3597,7 +3821,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3613,7 +3838,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3629,7 +3855,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3645,7 +3872,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3661,7 +3889,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3677,7 +3906,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3693,7 +3923,8 @@
    "events": ["Last day to secure a route to the sixth palace's treasure."],
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3707,9 +3938,10 @@
    "activities": null,
    "confidant_events": ["Councillor Arcana automatically levels up to level 10 if the player has reached level 9 before this day."],
    "events": ["Story event."],
-   "events_spoiler": ["Maruki invites the Protagonist for a meal as thanks on his last day at Shujin Academy.", "The Phantom Thieves sends the calling card to Sae Nijima."],
+   "events_spoiler": ["Maruki's last day at Shujin Academy.", "The Phantom Thieves sends the calling card to Sae Nijima."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3725,7 +3957,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves fight Sae Nijima's shadow.", "The Protagonist is captured by the police."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3741,7 +3974,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist sent to an underground facility and interrogated by the police."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3757,7 +3991,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist escapes and meets up with the Phantom Thieves at Cafe Leblanc."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3773,7 +4008,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves investigate Masayoshi Shido's Palace."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3789,7 +4025,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves meet at Cafe Leblanc to discuss keywords for Shido's Palace."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3805,7 +4042,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves investigate Shido's Palace at the Diet building and successfully find his palace in the Nav."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3821,7 +4059,8 @@
    "events": ["Start of the seventh Palace infiltration mission."],
    "events_spoiler": ["Start of Shido's Palace infiltration mission."],
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3837,7 +4076,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3853,7 +4093,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3869,7 +4110,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3885,7 +4127,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "november",
@@ -3901,7 +4144,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -3917,7 +4161,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -3933,7 +4178,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -3949,7 +4195,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -3965,7 +4212,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -3981,7 +4229,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -3997,7 +4246,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4013,7 +4263,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4029,7 +4280,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4045,7 +4297,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4061,7 +4314,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4077,7 +4331,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4093,7 +4348,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4109,7 +4365,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4125,7 +4382,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4141,7 +4399,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4157,7 +4416,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4173,7 +4433,8 @@
    "events": ["Last day to steal the seventh palace's treasure."],
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4186,10 +4447,11 @@
    "world": null,
    "activities": null,
    "confidant_events": null,
-   "events": ["Consequences of the seventh palace's infiltration mission."],
+   "events": ["Result of the seventh palace's infiltration mission."],
    "events_spoiler": ["Mission deadline for Shido's Palace.", "Either Shido confesses his crimes or the Protagonist is arrested if he fails to steal the treasure.", "The Phantom Thieves celebrate at Cafe Leblanc."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4205,7 +4467,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves hold a study group at Cafe Leblanc."],
    "day_activities": "Unavailable",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4221,7 +4484,8 @@
    "events": ["Final exams."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4237,7 +4501,8 @@
    "events": ["Final exams."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4253,7 +4518,8 @@
    "events": ["Last day of final exams."],
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4267,9 +4533,10 @@
    "activities": null,
    "confidant_events": null,
    "events": ["Story event."],
-   "events_spoiler": ["The Phantom Thieves discuss more about Shido and the lack of consequences resulting from his confession."],
+   "events_spoiler": ["The Phantom Thieves discuss more about Shido and the lack of Result resulting from his confession."],
    "day_activities": "Unavailable",
-   "night_activities": "Cafe Leblanc"
+   "night_activities": "Limited",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4285,7 +4552,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves investigate Mementos for clues about the distorted masses.", "Yaldabaoth reveals himself inside the Velvet Room.", "The Phantom Thieves defeats Yaldabaoth."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4301,7 +4569,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves hold a Christmas party at Cafe Leblanc."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4317,7 +4586,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "december",
@@ -4333,7 +4603,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "december",
@@ -4349,7 +4620,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "december",
@@ -4365,7 +4637,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "december",
@@ -4381,7 +4654,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves make plans for a year-end party on the phone."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "december",
@@ -4397,7 +4671,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves holds a year-end party in Cafe Leblanc.", "If the Player maxes the Councillor Arcana, they will enter the third semester."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4413,7 +4688,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist goes on the first shrine visit of the year with Yoshizawa and meets the other Phantom Thieves."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4429,7 +4705,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Weird events occur in the city which causes the Protagonist to join forces with Akechi to solve it.", "The Protagonist and Akechi meet with Yoshizawa to investigate the mysterious palace from before, owned by Maruki.", "Maruki reveals Yoshizawa's past and tries to reason with the Protagonist, suggesting he return after a week after seeing the fake reality for himself."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4445,7 +4722,8 @@
    "events": ["The Protagonist checks on a friend to see how they're doing in the false reality."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4461,7 +4739,8 @@
    "events": ["The Protagonist checks on a friend to see how they're doing in the false reality."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4477,7 +4756,8 @@
    "events": ["The Protagonist checks on a friend to see how they're doing in the false reality."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4493,7 +4773,8 @@
    "events": ["The Protagonist checks on a friend to see how they're doing in the false reality."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4509,7 +4790,8 @@
    "events": ["The Protagonist checks on a friend to see how they're doing in the false reality."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4525,7 +4807,8 @@
    "events": ["The Protagonist checks on a friend to see how they're doing in the false reality."],
    "events_spoiler": null,
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4541,7 +4824,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist returns to Maruki's palace with Akechi.", "The duo fights Yoshizawa and Maruki while the rest of the Phantom Thieves arrive to help."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4557,7 +4841,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves meet to discuss about Maruki and his fake reality."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4573,7 +4858,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves meet with Lavenza to talk about Maruki's powers and how to deal with him."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4589,7 +4875,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves infiltrate Maruki's palace.", "Yoshizawa officially joins the Phantom Thieves.", "Faith confidant levels 6-10 is unlocked.", "Earliest possible day to reach the palace obstacle."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4605,7 +4892,8 @@
    "events": ["Earliest possible day to remove the Palace obstacle."],
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4621,7 +4909,8 @@
    "events": ["Earliest possible day to secure the route for the Palace treasure."],
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4637,7 +4926,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4653,7 +4943,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4669,7 +4960,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4685,7 +4977,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4701,7 +4994,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4717,7 +5011,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4733,7 +5028,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4749,7 +5045,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4765,7 +5062,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4781,7 +5079,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4797,7 +5096,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4813,7 +5113,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4829,7 +5130,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4845,7 +5147,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4861,7 +5164,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4877,7 +5181,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "january",
@@ -4893,7 +5198,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "february",
@@ -4909,7 +5215,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": "Free",
-   "night_activities": "Free"
+   "night_activities": "Free",
+   "invalidDay": false
  },
  {
    "month": "february",
@@ -4925,7 +5232,8 @@
    "events": ["Story event at night.", "Last day to secure a route to the final palace's treasure."],
    "events_spoiler": ["Yoshizawa's third awakening occurs if her confidant is maxed prior to this day.", "Last chance for the Protagonist to accept Maruki's reality.", "The Protagonist talks with Maruki in Cafe Leblanc and gives him the Phantom Thieves calling card.", "Akechi's third awakening occurs if his promise is fulfilled."],
    "day_activities": "Free",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "february",
@@ -4941,7 +5249,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves fight their final battle with Maruki."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "february",
@@ -4957,7 +5266,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Reality returns back to its original state.", "The Phantom Thieves search for the Protagonist and learns of his incarceration.", "Confidants fight for the Protagonist's innocence."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "february",
@@ -4973,7 +5283,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -4989,7 +5300,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5005,7 +5317,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5021,7 +5334,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5037,7 +5351,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5053,7 +5368,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5069,7 +5385,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5085,7 +5402,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5101,7 +5419,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist is released from juvenile detention."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "february",
@@ -5114,10 +5433,11 @@
    "world": ["Valentines day."],
    "activities": null,
    "confidant_events": null,
-   "events": ["Valentines day."],
+   "events": ["The Protagonist celebrates Valentines day."],
    "events_spoiler": ["The Protagonist spends time with his partner."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "february",
@@ -5133,7 +5453,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist receives chocolate from all maxed female Confidants that they are not in a relationship with.", "The Protagonist is confronted by his lovers, if he has multiple."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "february",
@@ -5149,7 +5470,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5165,7 +5487,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5181,7 +5504,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5197,7 +5521,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5213,7 +5538,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5229,7 +5555,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5245,7 +5572,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5261,7 +5589,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5277,7 +5606,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5293,7 +5623,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5309,7 +5640,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5325,7 +5657,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "february",
@@ -5341,7 +5674,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5357,7 +5691,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5373,7 +5708,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist makes plans for the day after on the phone."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "march",
@@ -5389,7 +5725,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Phantom Thieves members announce their plans for the future."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "march",
@@ -5405,7 +5742,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5421,7 +5759,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5437,7 +5776,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5453,7 +5793,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5469,7 +5810,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5485,7 +5827,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5501,7 +5844,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5517,7 +5861,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5533,7 +5878,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5549,7 +5895,8 @@
    "events": ["Story event."],
    "events_spoiler": ["Sojiro helps the Protagonist make plans for White Day."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "march",
@@ -5562,10 +5909,11 @@
    "world": ["White Day."],
    "activities": null,
    "confidant_events": null,
-   "events": ["White Day."],
+   "events": ["The Protagonist celebrates White Day."],
    "events_spoiler": ["The Protagonist goes on a date with their partner."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "march",
@@ -5581,7 +5929,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5597,7 +5946,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5613,7 +5963,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5629,7 +5980,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5645,7 +5997,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist says his goodbyes to his friends."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "march",
@@ -5661,7 +6014,8 @@
    "events": ["Story event."],
    "events_spoiler": ["The Protagonist leaves Tokyo."],
    "day_activities": "Unavailable",
-   "night_activities": "Unavailable"
+   "night_activities": "Unavailable",
+   "invalidDay": false
  },
  {
    "month": "march",
@@ -5677,7 +6031,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5693,7 +6048,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5709,7 +6065,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5725,7 +6082,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5741,7 +6099,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5757,7 +6116,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5773,7 +6133,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5789,7 +6150,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5805,7 +6167,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5821,7 +6184,8 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  },
  {
    "month": "march",
@@ -5837,6 +6201,7 @@
    "events": null,
    "events_spoiler": null,
    "day_activities": null,
-   "night_activities": null
+   "night_activities": null,
+   "invalidDay": true
  }
 ]
