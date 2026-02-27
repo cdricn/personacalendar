@@ -1,11 +1,17 @@
 'use client';
 
 import styles from './schedule.module.css';
-import { CalendarData } from '@/app/lib/interface';
+import { DataContext } from '@/app/utils/context';
+import { use } from 'react';
 import Weather from './components/weather';
 import InfoBlock from '../../components/infoBlock';
 
-export default function Schedule({scheduleData}:{scheduleData:CalendarData}) {
+export default function Schedule({currentDay}:{currentDay:number}) {
+  const data = use(DataContext);
+
+  if (!data) return <></>;
+  
+  const scheduleData = data[currentDay];
   const { 
     month, day, day_code, day_weather, night_weather, special_day_weather, special_night_weather,
     world, activities, confidant_events, events, events_spoiler, day_activities, night_activities    
