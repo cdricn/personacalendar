@@ -3,7 +3,6 @@ import styles from './days.module.css';
 import { DataContext } from '@/app/utils/context';
 import { use } from 'react';
 import CalendarBlock from './calendarBlock';
-// icons used: FaExclamation, FaGlobeAsia, GiCardAceHearts ri/fa, ri/gi
 
 export default function Days({
   days, setDay, maxRows
