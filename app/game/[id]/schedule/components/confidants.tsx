@@ -1,14 +1,26 @@
-import styles from './confidants.module.css'
+'use client';
 
-export default function Confidants({confidant_events}:{confidant_events: Array<string> | null}) {
+import styles from './confidants.module.css'
+import { GetConfidants } from '@/app/data/confidants'
+import { Confidant } from '@/app/lib/interface';
+import { GameContext } from '@/app/utils/context';
+import { use } from 'react';
+
+export default function Confidants({currentDay}:{currentDay:number}) {
+
+  const gameContext = use(GameContext);
+  
+  if (!gameContext) return <></>
+  const { priestess, empress, emperor, hierophant, lovers, chariot,
+    justice, hermit, fortune, hanged_man, death, temperance, devil,
+    tower, star, moon, sun, councillor
+  } : Confidant = GetConfidants(gameContext);
+
+  console.log(priestess)
+
   return (
-    <>
-      <h3>Confidant Events</h3>
-      {confidant_events===null?null :
-        
-        <p></p>
-      }
+    <div className={styles['info-block']}>
       <h3>Available Confidants</h3>
-    </>
+    </div>
   )
 }

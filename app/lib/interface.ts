@@ -31,8 +31,22 @@ interface IconMap {
     [modifier:string]: React.ReactElement
   }
 }
-
 export interface GameIcons {
   [game:string]: IconMap
 }
 
+interface ConfidantData {
+  name: "Igor",
+  short_name: "Igor",
+  arcana: "Fool",
+  type: "auto",
+  schedule: {
+    rainy: true,
+    time: "day",
+    availability: {[day:string]:string}
+  }
+}
+
+export interface Confidant {
+  [arcana:string]: ConfidantData;
+}

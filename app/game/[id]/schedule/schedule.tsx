@@ -5,10 +5,10 @@ import { DataContext } from '@/app/utils/context';
 import { use } from 'react';
 import Weather from './components/weather';
 import InfoBlock from '../../components/infoBlock';
+import Confidants from './components/confidants';
 
 export default function Schedule({currentDay}:{currentDay:number}) {
   const data = use(DataContext);
-
   if (!data) return <></>;
   
   const scheduleData = data[currentDay];
@@ -67,6 +67,7 @@ export default function Schedule({currentDay}:{currentDay:number}) {
           content_spoiler={null}
           noContentMessage={'None.'}
           isDayInvalid={day_activities===null}/>
+        <Confidants currentDay={currentDay}/>
         <InfoBlock 
           header={'Activities'}
           content={activities}
