@@ -6,7 +6,7 @@ import getData from "../../utils/getData";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { GameContext, DataContext } from "../../utils/context";
-import { personaDays, personaMonths } from "@/app/lib/months";
+import { personaDays, personaMonths } from "@/app/lib/calendarDetails";
 import Months from "../components/months";
 import Days from "./calendar/days";
 import Schedule from "./schedule/schedule";
