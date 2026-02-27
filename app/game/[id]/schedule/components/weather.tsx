@@ -13,7 +13,6 @@ export default function Weather({
   iconName: string | null, 
   special_iconName: string | null
 }) {
-
   const game = use(GameContext);
   
   return (

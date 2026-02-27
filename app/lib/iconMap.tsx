@@ -7,10 +7,10 @@ import { GameIcons } from "./interface";
 export const iconMap : GameIcons = {
     persona5_royal: {
       normal: {
-        clear: {src: './P5_Weather_Clear.webp', alt:'Clear weather icon'},
-        cloudy: {src: './P5_Weather_Cloudy.webp', alt:'Cloudy weather icon'},
-        rainy: {src: './P5_Weather_Rainy.webp', alt:'Rainy weather icon'},
-        snowy: {src: './P5_Weather_Snowy.webp', alt:'Snowy weather icon'},
+        clear: {src: '/P5_Weather_Clear.webp', alt:'Clear weather icon'},
+        cloudy: {src: '/P5_Weather_Cloudy.webp', alt:'Cloudy weather icon'},
+        rainy: {src: '/P5_Weather_Rainy.webp', alt:'Rainy weather icon'},
+        snowy: {src: '/P5_Weather_Snowy.webp', alt:'Snowy weather icon'},
       },
       special: {
         ['pollen']: <IoMdFlower />,

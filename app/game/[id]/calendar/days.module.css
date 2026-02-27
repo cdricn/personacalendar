@@ -17,8 +17,6 @@
 
 .numbers-grid {
   padding-top: 10px;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(6, 1fr);
   font-family: var(--font-days);
   line-height: 100%;
   text-align: right;
@@ -33,7 +31,7 @@
   position: relative;
   user-select: none;
   font-weight: 700;
-  height: 150px;
+  height: 130px;
   overflow: hidden;
 }
 .number > span {
@@ -52,8 +50,9 @@
   display: inline-block;
   height: auto;
   transform: rotate(25deg) translateX(5px) translateY(10px);
-  z-index: 1;
+  z-index: 1; 
 }
+
 
 @media (width < 800px) {
   .number {

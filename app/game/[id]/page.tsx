@@ -2,23 +2,25 @@
 
 import styles from "./page.module.css";
 import useSWR from 'swr';
-import getData from "../utils/getData";
+import getData from "../../utils/getData";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { GameContext } from "../utils/context";
-import Months from "./calendar/months";
+import { GameContext } from "../../utils/context";
+import { personaDays, personaMonths } from "@/app/lib/months";
+import Months from "../components/months";
 import Days from "./calendar/days";
 import Schedule from "./schedule/schedule";
 
 export default function CalendarPage() {
   const path = usePathname();
-  const { data, error, isLoading } = useSWR(`${path}`, getData);
+  const swrPath = path.slice(5);
+  const { data, error, isLoading } = useSWR(`${swrPath}`, getData);
   const [currentMonth, setCurrentMonth] = useState('april');
   const [currentDay, setCurrentDay] = useState(0);
 
   useEffect(()=>{
     // Set data theme
-    const theme = path.slice(1);
+    const theme = swrPath.slice(1);
     document.querySelector('body')?.setAttribute('data-theme', theme);
 
     // Make sure we start on a non-empty day
@@ -49,24 +51,25 @@ export default function CalendarPage() {
   }
 
   return (
-      <main className={styles['main']}>
-        <div className={styles['main-content']}>
-          {!isLoading && data !== undefined ?
-            <>
-              <section className={styles['calendar-container']}>
-                <Months setMonth={setMonth}/>
-                <Days setDay={setDay} data={data[currentMonth]}/>
-              </section>
-              <section className={styles['schedule-container']}>
-                <GameContext value={path.slice(1)}>
-                  <Schedule scheduleData={data[currentMonth][currentDay]}/>
-                </GameContext>
-              </section>
-            </>
-            :
-            <>err</>
-          }
-        </div>
-      </main>
+    <main className={styles['main']}>
+      <div className={styles['main-content']}>
+        {!isLoading && data !== undefined ?
+          <>
+            <section className={styles['calendar-container']}>
+              <Months months={personaMonths} setMonth={setMonth}/>
+              <Days days={personaDays} setDay={setDay}
+                maxRows={6} data={data[currentMonth]} />
+            </section>
+            <section className={styles['schedule-container']}>
+              <GameContext value={path.slice(6)}>
+                <Schedule scheduleData={data[currentMonth][currentDay]}/>
+              </GameContext>
+            </section>
+          </>
+          :
+          <>HELLLOOO</>
+        }
+      </div>
+    </main>
   )
 }

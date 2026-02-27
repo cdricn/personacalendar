@@ -2,11 +2,11 @@
   {
     "id": "persona5_royal",
     "title": "Persona 5 Royal",
-    "link": "/persona5_royal"
+    "link": "/game/persona5_royal"
   },
   {
     "id": "persona3_reload",
     "title": "Persona 3 Reload",
-    "link": "/persona3_reload"
+    "link": "/game/persona3_reload" 
   }
 ]

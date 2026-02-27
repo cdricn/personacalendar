@@ -3,8 +3,7 @@
 import styles from './schedule.module.css';
 import { CalendarData } from '@/app/lib/interface';
 import Weather from './components/weather';
-import Events from './components/events';
-import Confidants from './components/confidants';
+import InfoBlock from '../../components/infoBlock';
 
 export default function Schedule({scheduleData}:{scheduleData:CalendarData}) {
   const { 
@@ -49,17 +48,25 @@ export default function Schedule({scheduleData}:{scheduleData:CalendarData}) {
         </div>
       </div>
 
-      <div className={styles['schedule']}>
-        <div className={styles['schedule-info-block']}>
-          <Events invalidDay={day_activities===null} world={world} events={events} events_spoiler={events_spoiler}/>
-        </div>
-        <div className={styles['schedule-info-block']}>
-          <Confidants confidant_events={confidant_events}/>
-        </div>
-        <div className={styles['schedule-info-block']}>
-          <h3>Activities</h3>
-          <h3>Limited Activities</h3>
-        </div>
+      <div className={styles['schedule']}>                                                             
+        <InfoBlock 
+          header={'Schedule'}
+          content={events}
+          content_spoiler={events_spoiler}
+          noContentMessage={'Free.'}
+          isDayInvalid={day_activities===null}/>
+        <InfoBlock 
+          header={'Confidant Events'}
+          content={confidant_events}
+          content_spoiler={null}
+          noContentMessage={'None.'}
+          isDayInvalid={day_activities===null}/>
+        <InfoBlock 
+          header={'Activities'}
+          content={activities}
+          content_spoiler={null}
+          noContentMessage={'None.'}
+          isDayInvalid={day_activities===null}/>
       </div>
     </>
   )
