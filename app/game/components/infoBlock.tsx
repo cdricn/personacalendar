@@ -34,7 +34,7 @@ export default function InfoBlock({
           <summary>Spoilers:</summary>
           {content_spoiler.map((item, index)=>{
             return (
-              <li key={'contentSpoiler'+item} className={styles['events-spoiler']}>
+              <li key={'contentSpoiler'+item+index} className={styles['events-spoiler']}>
                 <p>{item}</p>
               </li>
             )
