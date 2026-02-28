@@ -1,189 +1,209 @@
-{
-  "fool": {
+[
+  {
     "name": "Igor",
     "short_name": "Igor",
     "arcana": "Fool",
     "type": "auto",
-    "schedule": {}
+    "condition": null,
+    "schedule": null
   },
-  "magician": {
+  {
     "name": "Morgana",
     "short_name": "Mona",
     "arcana": "Magician",
     "type": "auto",
-    "schedule": {}
+    "condition": null,
+    "schedule": null
   },
-  "priestess": {
+  {
     "name": "Makoto Nijima",
     "short_name": "Queen",
     "arcana": "Priestess",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": true,
       "time": "day",
       "availability": {"sunday":"", "tuesday":"", "thursday":"", "saturday":""}
     }
   },
-  "empress": {
+  {
     "name": "Haru Okumura",
     "short_name": "Noir",
     "arcana": "Empress",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": false,
       "time": "day",
       "availability": {"monday":"", "tuesday":"", "wednesday":"", "thursday":"", "friday":"", "saturday":""}
     }
   },
-  "emperor": {
+  {
     "name": "Yusuke Kitagawa",
     "short_name": "Fox",
     "arcana": "Emperor",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": true,
       "time": "day",
       "availability": {"sunday":"", "monday":"", "tuesday":"", "wednesday":"", "thursday":"", "friday":"", "saturday":""}
     }
   },
-  "hierophant": {
+  {
     "name": "Sojiro Sakura",
     "short_name": "Sojiro",
     "arcana": "Hierophant",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": true,
       "time": "night",
       "availability": {"sunday":"", "monday":"", "tuesday":"", "thursday":"", "friday":"", "saturday":""}
     }
   },
-  "lovers": {
+  {
     "name": "Ann Takamaki",
     "short_name": "Panther",
     "arcana": "Lovers",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": true,
       "time": "day",
       "availability": {"sunday":"", "monday":"", "tuesday":"", "wednesday":"", "friday":""}
     }
   },
-  "chariot": {
+  {
     "name": "Ryuji Sakamoto",
     "short_name": "Skull",
     "arcana": "Chariot",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": true,
       "time": "day",
       "availability": {"sunday":"", "monday":"", "tuesday":"", "wednesday":"", "thursday":"", "friday":"", "saturday":""}
     }
   },
-  "justice": {
+  {
     "name": "Goro Akechi",
     "short_name": "Akechi",
     "arcana": "Justice",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": true,
       "time": "night",
       "availability": {"monday":"", "tuesday":"", "wednesday":"", "thursday":"", "friday":"", "saturday":""}
     }
   },
-  "hermit": {
+  {
     "name": "Futaba Sakura",
     "short_name": "Oracle",
     "arcana": "Hermit",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": false,
       "time": "day",
       "availability": {"sunday":"", "wednesday":"", "thursday":"", "saturday":""}
     }
   },
-  "fortune": {
+  {
     "name": "Chihaya Mifune",
     "short_name": "Chihaya",
     "arcana": "Fortune",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": false,
       "time": "night",
       "availability": {"sunday":"", "tuesday":"", "thursday":"", "saturday":""}
     }
   },
-  "strength": {
+  {
     "name": "Caroline and Justine",
     "short_name": "Caroline and Justine",
-    "arcana": "Strength"
+    "arcana": "Strength",
+    "type": "conditional",
+    "condition": "Must fuse their required persona to rank up.",
+    "schedule": null
   },
-  "hanged_man": {
+  {
     "name": "Munehisa Iwai",
     "short_name": "Iwai",
     "arcana": "Hanged Man",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": true,
       "time": "night",
       "availability": {"sunday":"", "thursday":"", "saturday":""}
     }
   },
-  "death": {
+  {
     "name": "Tae Takemi",
     "short_name": "Takemi",
     "arcana": "Death",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": true,
       "time": "day",
       "availability": {"sunday":"", "monday":"", "tuesday":"", "wednesday":"", "thursday":"", "friday":"", "saturday":""}
     }
   },
-  "temperance": {
+  {
     "name": "Sadayo Kawakami",
     "short_name": "Kawakami",
     "arcana": "Temperance",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": true,
       "time": "night",
       "availability": {"friday":"", "saturday":""}
     }
   },
-  "devil": {
+  {
     "name": "Ichiko Ohya",
     "short_name": "Ohya",
     "arcana": "Devil",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": true,
       "time": "night",
       "availability": {"sunday":"", "monday":"", "tuesday":"", "wednesday":"", "thursday":"", "friday":"", "saturday":""}
     }
   },
-  "tower": {
+  {
     "name": "Shinya Oda",
     "short_name": "Shinya",
     "arcana": "Tower",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": true,
       "time": "day",
       "availability": {"monday":"", "tuesday":"", "thursday":"", "saturday":""}
     }
   },
-  "star": {
+  {
     "name": "Hifumi Togo",
     "short_name": "Hifumi",
     "arcana": "Star",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": true,
       "time": "night",
       "availability": {"sunday":"", "monday":"", "wednesday":"", "saturday":""}
     }
   },
-  "moon": {
+  {
     "name": "Yuuki Mishima",
     "short_name": "Mishima",
     "arcana": "Moon",
@@ -195,40 +215,44 @@
       "availability": {"sunday":"", "monday":"", "tuesday":"", "wednesday":"", "thursday":"", "friday":"", "saturday":""}
     }
   },
-  "sun": {
+  {
     "name": "Toranosuke Yoshida",
     "short_name": "Yoshida",
     "arcana": "Sun",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": false,
       "time": "night",
       "availability": {"sunday":"", "tuesday":"", "thursday":"", "saturday":""}
     }
   },
-  "judgement": {
+  {
     "name": "Sae Nijima",
     "short_name": "Sae",
     "arcana": "Judgement",
-    "type": "auto"
+    "type": "auto",
+    "condition": null,
+    "schedule": null
   },
-  "faith": {
+  {
     "name": "Yoshizawa",
     "short_name": "Yoshizawa",
     "arcana": "Faith",
     "type": "conditional",
     "condition": "Protagonist must accept hangout requests via text.",
-    "schedule": {}
+    "schedule": null
   },
-  "councillor": {
+  {
     "name": "Takuto Maruki",
     "short_name": "Maruki",
     "arcana": "Councillor",
     "type": "manual",
+    "condition": null,
     "schedule": {
       "rainy": true,
       "time": "day",
       "availability": {"monday":"", "tuesday":"", "wednesday":"", "friday":""}
     }
   }
-}
+]
