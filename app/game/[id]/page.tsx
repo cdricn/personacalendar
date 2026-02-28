@@ -59,7 +59,7 @@ export default function CalendarPage() {
               <Days days={personaDays} setDay={setDay} maxRows={6}/>
             </section>
             <section className={styles['schedule-container']}>
-              <GameContext value={path.slice(6)}>
+              <GameContext value={path.slice(5)}>
                 <Schedule currentDay={currentDay}/>
               </GameContext>
             </section>

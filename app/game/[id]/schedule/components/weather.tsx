@@ -13,7 +13,8 @@ export default function Weather({
   iconName: string | null, 
   special_iconName: string | null
 }) {
-  const game = use(GameContext);
+  const gameContext = use(GameContext);
+  const game = gameContext.slice(1);
   
   return (
     <div className={styles['icon-container']}>
