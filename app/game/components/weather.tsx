@@ -3,7 +3,7 @@
 import styles from './weather.module.css';
 import { GameContext } from '@/app/utils/context';
 import { use } from 'react';
-import { iconMapping } from '@/app/lib/iconMapping';
+import { GameMapping } from '@/app/utils/gameMapping';
 import { FaSun, FaMoon } from "react-icons/fa6";
 
 export default function Weather({
@@ -24,13 +24,13 @@ export default function Weather({
       <div className={styles['icon-weather']}>
         {iconName === null ? null :
           <img className={styles['normal-icon']} 
-            src={iconMapping[game].normal[iconName].src} 
-            alt={iconMapping[game].normal[iconName].alt} 
+            src={GameMapping[game].normal[iconName].src} 
+            alt={GameMapping[game].normal[iconName].alt} 
           />
         }
         {special_iconName === null ? null :
           <div className={styles['special-icon']}>
-            {iconMapping[game].special[special_iconName]}
+            {GameMapping[game].special[special_iconName]}
           </div>
         }
       </div>
