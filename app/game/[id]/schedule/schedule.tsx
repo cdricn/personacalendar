@@ -4,7 +4,7 @@ import styles from './schedule.module.css';
 import { DataContext } from '@/app/utils/context';
 import { use } from 'react';
 import Weather from './components/weather';
-import InfoBlock from '../../components/infoBlock';
+import InfoBlob from '../../components/infoBlob';
 import Confidants from './components/confidants';
 
 export default function Schedule({currentDay}:{currentDay:number}) {
@@ -13,7 +13,7 @@ export default function Schedule({currentDay}:{currentDay:number}) {
   
   const scheduleData = data[currentDay];
   const { 
-    month, day, day_code, day_weather, night_weather, special_day_weather, special_night_weather,
+    month, day, day_weather, night_weather, special_day_weather, special_night_weather,
     world, activities, confidant_events, events, events_spoiler, day_activities, night_activities    
   } = scheduleData;
 
@@ -34,7 +34,7 @@ export default function Schedule({currentDay}:{currentDay:number}) {
 
   return (
     <>
-      <div className={styles['schedule-header']}>
+      <div className={styles['section-header']}>
         <h2>WORLD</h2>
         <div className={styles['date']}>
           <span>{monthMapping[month]}</span>
@@ -54,26 +54,36 @@ export default function Schedule({currentDay}:{currentDay:number}) {
         </div>
       </div>
 
-      <div className={styles['schedule']}>                                                             
-        <InfoBlock 
-          header={'Schedule'}
-          content={events}
-          content_spoiler={events_spoiler}
-          noContentMessage={'Free.'}
-          isDayInvalid={day_activities===null}/>
-        <InfoBlock 
-          header={'Confidant Events'}
-          content={confidant_events}
-          content_spoiler={null}
-          noContentMessage={'None.'}
-          isDayInvalid={day_activities===null}/>
-        <Confidants currentDay={currentDay}/>
-        <InfoBlock 
-          header={'Activities'}
-          content={activities}
-          content_spoiler={null}
-          noContentMessage={'None.'}
-          isDayInvalid={day_activities===null}/>
+      <div className={styles['schedule']}>
+        <div className={styles['info-block']}>
+          <h3>Schedule</h3>
+          <InfoBlob 
+            content={events}
+            content_spoiler={events_spoiler}
+            noContentMessage={'Free.'}
+            isDayInvalid={day_activities===null}/>
+        </div>
+        <div className={styles['info-block']}>
+          <h3>Confidant Events</h3>
+          <InfoBlob 
+            content={confidant_events}
+            content_spoiler={null}
+            noContentMessage={'None.'}
+            isDayInvalid={day_activities===null}/>
+        </div>
+        <div className={styles['info-block']}>
+          <h3>Confidants</h3>
+          <Confidants currentDay={currentDay}/>
+        </div>
+        <div className={styles['info-block']}>
+          <h3>Activities</h3>
+          <InfoBlob 
+            content={activities}
+            content_spoiler={null}
+            noContentMessage={'None.'}
+            isDayInvalid={day_activities===null}/>
+        </div>
+        <p>{world}</p>
       </div>
     </>
   )
