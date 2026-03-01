@@ -6,7 +6,6 @@ import getData from "../../utils/getData";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { GameContext, DataContext } from "../../utils/context";
-import { personaDays, personaMonths } from "@/app/lib/calendarDetails";
 import Months from "../components/months";
 import Days from "../components/days";
 import Schedule from "./schedule/schedule";
@@ -54,15 +53,15 @@ export default function CalendarPage() {
       <div className={styles['main-content']}>
         {!isLoading && data !== undefined ?
           <DataContext value={data[currentMonth]}>
-            <section className={styles['calendar-container']}>
-              <Months months={personaMonths} setMonth={setMonth}/>
-              <Days days={personaDays} setDay={setDay} maxRows={6}/>
-            </section>
-            <section className={styles['schedule-container']}>
-              <GameContext value={path.slice(5)}>
-                <Schedule currentDay={currentDay}/>
-              </GameContext>
-            </section>
+            <GameContext value={path.slice(5)}>
+              <section className={styles['calendar-container']}>
+                <Months setMonth={setMonth}/>
+                <Days setDay={setDay} maxRows={6}/>
+              </section>
+              <section className={styles['schedule-container']}>
+                  <Schedule currentDay={currentDay}/>
+              </section>
+            </GameContext>
           </DataContext>
           :
           <>HELLLOOO</>
