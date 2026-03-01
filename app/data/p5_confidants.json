@@ -22,9 +22,9 @@
     "unlock": {"type": "manual", "month":"june", "day":24},
     "condition": "Must have completed Kaneshiro's Palace and have Rank 3 Knowledge to initiate.",
     "schedule": {
-      "rainy": true,
+      "ignoresRain": true,
       "time": "day",
-      "availability": {"sunday":"Sunday", "tuesday":"Tuesday", "thursday":"Thursday", "saturday":"Saturday"}
+      "availability": {"sunday":"sunday", "tuesday":"tuesday", "thursday":"thursday", "saturday":"saturday"}
     }
   },
   {
@@ -34,9 +34,9 @@
     "unlock": {"type": "manual", "month":"october", "day":30},
     "condition": null,
     "schedule": {
-      "rainy": false,
+      "ignoresRain": false,
       "time": "day",
-      "availability": {"monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
+      "availability": {"monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
     }
   },
   {
@@ -46,9 +46,9 @@
     "unlock": {"type": "manual", "month":"june", "day":18},
     "condition": null,
     "schedule": {
-      "rainy": true,
+      "ignoresRain": true,
       "time": "day",
-      "availability": {"sunday":"Sunday", "monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
+      "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
     }
   },
   {
@@ -58,9 +58,9 @@
     "unlock": {"type": "manual", "month":"april", "day":20},
     "condition": null,
     "schedule": {
-      "rainy": true,
+      "ignoresRain": true,
       "time": "night",
-      "availability": {"sunday":"Sunday", "monday":"Monday", "tuesday":"Tuesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
+      "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
     }
   },
   {
@@ -70,9 +70,9 @@
     "unlock": {"type": "auto", "month":"april", "day":15},
     "condition": null,
     "schedule": {
-      "rainy": true,
+      "ignoresRain": true,
       "time": "day",
-      "availability": {"sunday":"Sunday", "monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "friday":"Friday"}
+      "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "friday":"friday"}
     }
   },
   {
@@ -82,9 +82,9 @@
     "unlock": {"type": "auto", "month":"april", "day":12},
     "condition": null,
     "schedule": {
-      "rainy": true,
+      "ignoresRain": true,
       "time": "day",
-      "availability": {"sunday":"Sunday", "monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
+      "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
     }
   },
   {
@@ -94,9 +94,9 @@
     "unlock": {"type": "auto", "month":"june", "day":10},
     "condition": null,
     "schedule": {
-      "rainy": true,
+      "ignoresRain": true,
       "time": "night",
-      "availability": {"monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
+      "availability": {"monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
     }
   },
   {
@@ -106,9 +106,9 @@
     "unlock": {"type": "auto", "month":"august", "day":31},
     "condition": null,
     "schedule": {
-      "rainy": false,
+      "ignoresRain": false,
       "time": "day",
-      "availability": {"sunday":"Sunday", "wednesday":"Wednesday", "thursday":"Thursday", "saturday":"Saturday"}
+      "availability": {"sunday":"sunday", "wednesday":"wednesday", "thursday":"thursday", "saturday":"saturday"}
     }
   },
   {
@@ -118,9 +118,9 @@
     "unlock": {"type": "manual", "month":"june", "day":26},
     "condition": "Must be visited thrice to initiate. First visit can be as early as June 22. Second visit requires the Protagonist to have 100,000 yen. Third visit will give a Memento Request, which will unlock the confidant once finished.",
     "schedule": {
-      "rainy": false,
+      "ignoresRain": false,
       "time": "night",
-      "availability": {"sunday":"Sunday", "tuesday":"Tuesday", "thursday":"Thursday", "saturday":"Saturday"}
+      "availability": {"sunday":"sunday", "tuesday":"tuesday", "thursday":"thursday", "saturday":"saturday"}
     }
   },
   {
@@ -138,9 +138,9 @@
     "unlock": {"type": "manual", "month":"may", "day":6},
     "condition": "Must have Rank 4 in Guts to initiate.",
     "schedule": {
-      "rainy": true,
+      "ignoresRain": true,
       "time": "night",
-      "availability": {"sunday":"Sunday", "thursday":"Thursday", "saturday":"Saturday"}
+      "availability": {"sunday":"sunday", "thursday":"thursday", "saturday":"saturday"}
     }
   },
   {
@@ -150,9 +150,9 @@
     "unlock": {"type": "manual", "month":"april", "day":18},
     "condition": "Visit Takemi Medical Clinic and ask about her special medicine to initiate.",
     "schedule": {
-      "rainy": true,
+      "ignoresRain": true,
       "time": "day",
-      "availability": {"sunday":"Sunday", "monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
+      "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
     }
   },
   {
@@ -162,9 +162,9 @@
     "unlock": {"type": "manual", "month":"may", "day":25},
     "condition": "Must first participate with Mishima's Plan as early as May 24th to initiate. You must then get her number in the Shujin Academy 2F hallway. Calling her for the first time to establish the confidant requires 3 Guts.",
     "schedule": {
-      "rainy": true,
+      "ignoresRain": true,
       "time": "night",
-      "availability": {"friday":"Friday", "saturday":"Saturday"}
+      "availability": {"friday":"friday", "saturday":"saturday"}
     }
   },
   {
@@ -174,9 +174,9 @@
     "unlock": {"type": "auto", "month":"june", "day":23},
     "condition": null,
     "schedule": {
-      "rainy": true,
+      "ignoresRain": true,
       "time": "night",
-      "availability": {"sunday":"Sunday", "monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
+      "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
     }
   },
   {
@@ -186,9 +186,9 @@
     "unlock": {"type": "manual", "month":"september", "day":5},
     "condition": "Unlocked as part of the 'Winners Don't Use Cheats' Mementos Request, which can be done as early as September 4.",
     "schedule": {
-      "rainy": true,
+      "ignoresRain": true,
       "time": "day",
-      "availability": {"monday":"Monday", "tuesday":"Tuesday", "thursday":"Thursday", "saturday":"Saturday"}
+      "availability": {"monday":"monday", "tuesday":"tuesday", "thursday":"thursday", "saturday":"saturday"}
     }
   },
   {
@@ -198,9 +198,9 @@
     "unlock": {"type": "manual", "month":"june", "day":25},
     "condition": "Must have completed Kaneshiro's Palace. Requires Rank 3 Charm to initiate.",
     "schedule": {
-      "rainy": true,
+      "ignoresRain": true,
       "time": "night",
-      "availability": {"sunday":"Sunday", "monday":"Monday", "wednesday":"Wednesday", "saturday":"Saturday"}
+      "availability": {"sunday":"sunday", "monday":"monday", "wednesday":"wednesday", "saturday":"saturday"}
     }
   },
   {
@@ -210,9 +210,9 @@
     "unlock": {"type": "auto", "month":"may", "day":6},
     "condition": "Available every day after completing his Mementos requests.",
     "schedule": {
-      "rainy": true,
+      "ignoresRain": true,
       "time": "night",
-      "availability": {"sunday":"Sunday", "monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
+      "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
     }
   },
   {
@@ -222,9 +222,9 @@
     "unlock": {"type": "manual", "month":"may", "day":10},
     "condition": "The Protagonist must first listen to their speech in Shibuya Station Square, then work at the Beef Bowl Shop twice to unlock.",
     "schedule": {
-      "rainy": false,
+      "ignoresRain": false,
       "time": "night",
-      "availability": {"sunday":"Sunday", "tuesday":"Tuesday", "thursday":"Thursday", "saturday":"Saturday"}
+      "availability": {"sunday":"sunday", "tuesday":"tuesday", "thursday":"thursday", "saturday":"saturday"}
     }
   },
   {
@@ -250,9 +250,9 @@
     "unlock": {"type": "auto", "month":"may", "day":13},
     "condition": null,
     "schedule": {
-      "rainy": true,
+      "ignoresRain": true,
       "time": "day",
-      "availability": {"monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "friday":"Friday"}
+      "availability": {"monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "friday":"friday"}
     }
   }
 ]
