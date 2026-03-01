@@ -3,7 +3,7 @@
 import styles from './months.module.css';
 import { useEffect, useState, use } from 'react';
 import { GameContext } from '@/app/utils/context';
-import { GameMapping } from '@/app/utils/gameMapping';
+import { GameMapping } from '@/app/lib/gameMapping';
 
 export default function Months({setMonth}:{setMonth:(item:string)=>void,}) {
   const [monthIndex, setMonthIndex] = useState(0);

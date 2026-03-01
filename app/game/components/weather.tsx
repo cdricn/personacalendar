@@ -3,7 +3,7 @@
 import styles from './weather.module.css';
 import { GameContext } from '@/app/utils/context';
 import { use } from 'react';
-import { GameMapping } from '@/app/utils/gameMapping';
+import { GameMapping } from '@/app/lib/gameMapping';
 import { FaSun, FaMoon } from "react-icons/fa6";
 
 export default function Weather({

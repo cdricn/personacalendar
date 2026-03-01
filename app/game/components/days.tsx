@@ -3,7 +3,7 @@ import styles from './days.module.css';
 import { GameContext, DataContext } from '@/app/utils/context';
 import { use } from 'react';
 import CalendarHints from '../[id]/calendar/calendarHints';
-import { GameMapping } from '@/app/utils/gameMapping';
+import { GameMapping } from '@/app/lib/gameMapping';
 
 export default function Days({setDay, maxRows}:{setDay:(item:number)=>void, maxRows:number}) {
   const data = use(DataContext);
