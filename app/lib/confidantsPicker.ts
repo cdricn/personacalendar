@@ -1,4 +1,4 @@
-import p5confidants from './p5_confidants.json'
+import p5confidants from '../data/p5_confidants.json'
 
 export function GetConfidants(game:string) {
 

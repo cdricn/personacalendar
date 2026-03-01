@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { GameContext, DataContext } from "../../utils/context";
 import { personaDays, personaMonths } from "@/app/lib/calendarDetails";
 import Months from "../components/months";
-import Days from "./calendar/days";
+import Days from "../components/days";
 import Schedule from "./schedule/schedule";
 
 export default function CalendarPage() {
