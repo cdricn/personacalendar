@@ -2,7 +2,7 @@
 import styles from './days.module.css';
 import { DataContext } from '@/app/utils/context';
 import { use } from 'react';
-import CalendarBlock from './calendarBlock';
+import CalendarHints from '../[id]/calendar/calendarHints';
 
 export default function Days({
   days, setDay, maxRows
@@ -11,8 +11,8 @@ export default function Days({
 }) {
 
   const data = use(DataContext);
-
   if (!data) return <></>;
+  
   const monthStart = data[0].day_code;
 
   function handleClick(currentDay:number) {
@@ -20,26 +20,22 @@ export default function Days({
   }
 
   function populateDays() {
-    let daysArray = [];
-    
     if (!data) return;
 
-    for(let i=0; i<data.length; i++) {
-      const dayKey = 'day' + (i+1);
-
-      daysArray.push(
+    return data.map((item, index)=>{
+      const dayKey = 'day' + (item.day);
+      return (
         <div key={dayKey} className={styles['number']} 
-          onClick={data[i].invalidDay ? undefined : ()=>{handleClick(i)}}
-          style={i==0 ? {gridColumnStart: `${monthStart}`} : undefined}
+          onClick={item.invalidDay ? undefined : ()=>{handleClick(index)}}
+          style={index===0 ? {gridColumnStart: `${monthStart}`} : undefined}
           >
-            <span className={data[i].invalidDay ? styles['inactive'] : undefined}>
-              {i+1}
+            <span className={item.invalidDay ? styles['inactive'] : undefined}>
+              {item.day}
             </span>
-            <CalendarBlock day={i}/>
+            <CalendarHints day={index}/>
         </div>
-      );
-    }
-    return daysArray;
+      )
+    })
   }
 
   return (
