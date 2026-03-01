@@ -4,7 +4,7 @@ import { IoThunderstorm } from "react-icons/io5";
 import { LuWaves } from "react-icons/lu";
 import { GameIcons } from "./interface";
 
-export const iconMap : GameIcons = {
+export const iconMapping : GameIcons = {
     persona5_royal: {
       normal: {
         clear: {src: '/P5_Weather_Clear.webp', alt:'Clear weather icon'},
