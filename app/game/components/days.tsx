@@ -1,31 +1,29 @@
 
 import styles from './days.module.css';
-import { DataContext } from '@/app/utils/context';
+import { GameContext, DataContext } from '@/app/utils/context';
 import { use } from 'react';
 import CalendarHints from '../[id]/calendar/calendarHints';
+import { GameMapping } from '@/app/utils/gameMapping';
 
-export default function Days({
-  days, setDay, maxRows
-}:{
-  days: string[], setDay:(item:number)=>void, maxRows:number
-}) {
-
+export default function Days({setDay, maxRows}:{setDay:(item:number)=>void, maxRows:number}) {
   const data = use(DataContext);
-  if (!data) return <></>;
+  const game = use(GameContext); 
+  const {dayHeaders} = GameMapping[game.slice(1)]; //remove front slash
   
-  const monthStart = data[0].day_code;
-
   function handleClick(currentDay:number) {
     setDay(currentDay);
   }
 
   function populateDays() {
-    if (!data) return;
+    if (!data) return <>Failed to retrieve data!</>;
 
     return data.map((item, index)=>{
       const dayKey = 'day' + (item.day);
+      const monthStart = data[0].day_code;
+
       return (
-        <div key={dayKey} className={styles['number']} 
+        <div key={dayKey} 
+          className={styles['number']} 
           onClick={item.invalidDay ? undefined : ()=>{handleClick(index)}}
           style={index===0 ? {gridColumnStart: `${monthStart}`} : undefined}
           >
@@ -41,7 +39,7 @@ export default function Days({
   return (
     <div className={styles['days-container']}>
       <div className={styles['days']}>
-        {days.map((i, index)=>{
+        {dayHeaders.map((i, index)=>{
           return(
             <span key={i+index}>{i}</span>
           )})
@@ -49,7 +47,7 @@ export default function Days({
       </div>
       <div className={styles['numbers-grid']}
         style={{
-          gridTemplateColumns: `repeat(${days.length}, 1fr)`,
+          gridTemplateColumns: `repeat(${dayHeaders.length}, 1fr)`,
           gridTemplateRows: `repeat(${maxRows}, 1fr)`
         }}>
         {populateDays()}
