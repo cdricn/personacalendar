@@ -45,7 +45,7 @@ export interface ConfidantData {
   unlock: {type: string, month: string, day: number},
   condition: string | null
   schedule: {
-    rainy: boolean,
+    ignoresRain: boolean,
     time: string,
     availability: {[day:string]:string | undefined}
   } | null
