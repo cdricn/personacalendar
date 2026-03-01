@@ -3,7 +3,7 @@
     "name": "Igor",
     "short_name": "Igor",
     "arcana": "Fool",
-    "type": "auto",
+    "unlock": {"type": "auto", "month":"april", "day":12},
     "condition": null,
     "schedule": null
   },
@@ -11,7 +11,7 @@
     "name": "Morgana",
     "short_name": "Mona",
     "arcana": "Magician",
-    "type": "auto",
+    "unlock": {"type": "auto", "month":"april", "day":15},
     "condition": null,
     "schedule": null
   },
@@ -19,219 +19,219 @@
     "name": "Makoto Nijima",
     "short_name": "Queen",
     "arcana": "Priestess",
-    "type": "manual",
-    "condition": null,
+    "unlock": {"type": "manual", "month":"june", "day":24},
+    "condition": "Must have completed Kaneshiro's Palace and have Rank 3 Knowledge to initiate.",
     "schedule": {
       "rainy": true,
       "time": "day",
-      "availability": {"sunday":"", "tuesday":"", "thursday":"", "saturday":""}
+      "availability": {"sunday":"Sunday", "tuesday":"Tuesday", "thursday":"Thursday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Haru Okumura",
     "short_name": "Noir",
     "arcana": "Empress",
-    "type": "manual",
+    "unlock": {"type": "manual", "month":"october", "day":30},
     "condition": null,
     "schedule": {
       "rainy": false,
       "time": "day",
-      "availability": {"monday":"", "tuesday":"", "wednesday":"", "thursday":"", "friday":"", "saturday":""}
+      "availability": {"monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Yusuke Kitagawa",
     "short_name": "Fox",
     "arcana": "Emperor",
-    "type": "manual",
+    "unlock": {"type": "manual", "month":"june", "day":18},
     "condition": null,
     "schedule": {
       "rainy": true,
       "time": "day",
-      "availability": {"sunday":"", "monday":"", "tuesday":"", "wednesday":"", "thursday":"", "friday":"", "saturday":""}
+      "availability": {"sunday":"Sunday", "monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Sojiro Sakura",
     "short_name": "Sojiro",
     "arcana": "Hierophant",
-    "type": "manual",
+    "unlock": {"type": "manual", "month":"april", "day":20},
     "condition": null,
     "schedule": {
       "rainy": true,
       "time": "night",
-      "availability": {"sunday":"", "monday":"", "tuesday":"", "thursday":"", "friday":"", "saturday":""}
+      "availability": {"sunday":"Sunday", "monday":"Monday", "tuesday":"Tuesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Ann Takamaki",
     "short_name": "Panther",
     "arcana": "Lovers",
-    "type": "manual",
+    "unlock": {"type": "auto", "month":"april", "day":15},
     "condition": null,
     "schedule": {
       "rainy": true,
       "time": "day",
-      "availability": {"sunday":"", "monday":"", "tuesday":"", "wednesday":"", "friday":""}
+      "availability": {"sunday":"Sunday", "monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "friday":"Friday"}
     }
   },
   {
     "name": "Ryuji Sakamoto",
     "short_name": "Skull",
     "arcana": "Chariot",
-    "type": "manual",
+    "unlock": {"type": "auto", "month":"april", "day":12},
     "condition": null,
     "schedule": {
       "rainy": true,
       "time": "day",
-      "availability": {"sunday":"", "monday":"", "tuesday":"", "wednesday":"", "thursday":"", "friday":"", "saturday":""}
+      "availability": {"sunday":"Sunday", "monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Goro Akechi",
     "short_name": "Akechi",
     "arcana": "Justice",
-    "type": "manual",
+    "unlock": {"type": "auto", "month":"june", "day":10},
     "condition": null,
     "schedule": {
       "rainy": true,
       "time": "night",
-      "availability": {"monday":"", "tuesday":"", "wednesday":"", "thursday":"", "friday":"", "saturday":""}
+      "availability": {"monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Futaba Sakura",
     "short_name": "Oracle",
     "arcana": "Hermit",
-    "type": "manual",
+    "unlock": {"type": "auto", "month":"august", "day":31},
     "condition": null,
     "schedule": {
       "rainy": false,
       "time": "day",
-      "availability": {"sunday":"", "wednesday":"", "thursday":"", "saturday":""}
+      "availability": {"sunday":"Sunday", "wednesday":"Wednesday", "thursday":"Thursday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Chihaya Mifune",
     "short_name": "Chihaya",
     "arcana": "Fortune",
-    "type": "manual",
-    "condition": null,
+    "unlock": {"type": "manual", "month":"june", "day":26},
+    "condition": "Must be visited thrice to initiate. First visit can be as early as June 22. Second visit requires the Protagonist to have 100,000 yen. Third visit will give a Memento Request, which will unlock the confidant once finished.",
     "schedule": {
       "rainy": false,
       "time": "night",
-      "availability": {"sunday":"", "tuesday":"", "thursday":"", "saturday":""}
+      "availability": {"sunday":"Sunday", "tuesday":"Tuesday", "thursday":"Thursday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Caroline and Justine",
     "short_name": "Caroline and Justine",
     "arcana": "Strength",
-    "type": "conditional",
-    "condition": "Must fuse their required persona to rank up.",
+    "unlock": {"type": "manual", "month":"may", "day":18},
+    "condition": "Must have Jack Frost with Mabufu to initiate. Further ranks requires you to bring personas with specific skills.",
     "schedule": null
   },
   {
     "name": "Munehisa Iwai",
     "short_name": "Iwai",
     "arcana": "Hanged Man",
-    "type": "manual",
-    "condition": null,
+    "unlock": {"type": "manual", "month":"may", "day":6},
+    "condition": "Must have Rank 4 in Guts to initiate.",
     "schedule": {
       "rainy": true,
       "time": "night",
-      "availability": {"sunday":"", "thursday":"", "saturday":""}
+      "availability": {"sunday":"Sunday", "thursday":"Thursday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Tae Takemi",
     "short_name": "Takemi",
     "arcana": "Death",
-    "type": "manual",
-    "condition": null,
+    "unlock": {"type": "manual", "month":"april", "day":18},
+    "condition": "Visit Takemi Medical Clinic and ask about her special medicine to initiate.",
     "schedule": {
       "rainy": true,
       "time": "day",
-      "availability": {"sunday":"", "monday":"", "tuesday":"", "wednesday":"", "thursday":"", "friday":"", "saturday":""}
+      "availability": {"sunday":"Sunday", "monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Sadayo Kawakami",
     "short_name": "Kawakami",
     "arcana": "Temperance",
-    "type": "manual",
-    "condition": null,
+    "unlock": {"type": "manual", "month":"may", "day":25},
+    "condition": "Must first participate with Mishima's Plan as early as May 24th to initiate. You must then get her number in the Shujin Academy 2F hallway. Calling her for the first time to establish the confidant requires 3 Guts.",
     "schedule": {
       "rainy": true,
       "time": "night",
-      "availability": {"friday":"", "saturday":""}
+      "availability": {"friday":"Friday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Ichiko Ohya",
     "short_name": "Ohya",
     "arcana": "Devil",
-    "type": "manual",
+    "unlock": {"type": "auto", "month":"june", "day":23},
     "condition": null,
     "schedule": {
       "rainy": true,
       "time": "night",
-      "availability": {"sunday":"", "monday":"", "tuesday":"", "wednesday":"", "thursday":"", "friday":"", "saturday":""}
+      "availability": {"sunday":"Sunday", "monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Shinya Oda",
     "short_name": "Shinya",
     "arcana": "Tower",
-    "type": "manual",
-    "condition": null,
+    "unlock": {"type": "manual", "month":"september", "day":5},
+    "condition": "Unlocked as part of the 'Winners Don't Use Cheats' Mementos Request, which can be done as early as September 4.",
     "schedule": {
       "rainy": true,
       "time": "day",
-      "availability": {"monday":"", "tuesday":"", "thursday":"", "saturday":""}
+      "availability": {"monday":"Monday", "tuesday":"Tuesday", "thursday":"Thursday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Hifumi Togo",
     "short_name": "Hifumi",
     "arcana": "Star",
-    "type": "manual",
-    "condition": null,
+    "unlock": {"type": "manual", "month":"june", "day":25},
+    "condition": "Must have completed Kaneshiro's Palace. Requires Rank 3 Charm to initiate.",
     "schedule": {
       "rainy": true,
       "time": "night",
-      "availability": {"sunday":"", "monday":"", "wednesday":"", "saturday":""}
+      "availability": {"sunday":"Sunday", "monday":"Monday", "wednesday":"Wednesday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Yuuki Mishima",
     "short_name": "Mishima",
     "arcana": "Moon",
-    "type": "conditional",
+    "unlock": {"type": "auto", "month":"may", "day":6},
     "condition": "Available every day after completing his Mementos requests.",
     "schedule": {
       "rainy": true,
       "time": "night",
-      "availability": {"sunday":"", "monday":"", "tuesday":"", "wednesday":"", "thursday":"", "friday":"", "saturday":""}
+      "availability": {"sunday":"Sunday", "monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "thursday":"Thursday", "friday":"Friday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Toranosuke Yoshida",
     "short_name": "Yoshida",
     "arcana": "Sun",
-    "type": "manual",
-    "condition": null,
+    "unlock": {"type": "manual", "month":"may", "day":10},
+    "condition": "The Protagonist must first listen to their speech in Shibuya Station Square, then work at the Beef Bowl Shop twice to unlock.",
     "schedule": {
       "rainy": false,
       "time": "night",
-      "availability": {"sunday":"", "tuesday":"", "thursday":"", "saturday":""}
+      "availability": {"sunday":"Sunday", "tuesday":"Tuesday", "thursday":"Thursday", "saturday":"Saturday"}
     }
   },
   {
     "name": "Sae Nijima",
     "short_name": "Sae",
     "arcana": "Judgement",
-    "type": "auto",
+    "unlock": {"type": "auto", "month":"july", "day":9},
     "condition": null,
     "schedule": null
   },
@@ -239,20 +239,20 @@
     "name": "Yoshizawa",
     "short_name": "Yoshizawa",
     "arcana": "Faith",
-    "type": "conditional",
-    "condition": "Protagonist must accept hangout requests via text.",
+    "unlock": {"type": "auto", "month":"may", "day":30},
+    "condition": "Can only be ranked up by responding to her IM texts.",
     "schedule": null
   },
   {
     "name": "Takuto Maruki",
     "short_name": "Maruki",
     "arcana": "Councillor",
-    "type": "manual",
+    "unlock": {"type": "auto", "month":"may", "day":13},
     "condition": null,
     "schedule": {
       "rainy": true,
       "time": "day",
-      "availability": {"monday":"", "tuesday":"", "wednesday":"", "friday":""}
+      "availability": {"monday":"Monday", "tuesday":"Tuesday", "wednesday":"Wednesday", "friday":"Friday"}
     }
   }
 ]

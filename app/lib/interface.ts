@@ -29,21 +29,25 @@ interface IconMap {
   },
   special: {
     [modifier:string]: React.ReactElement
-  }
+  },
+  monthHeaders: string[],
+  dayHeaders: string[],
+  confidants: ConfidantData[]
 }
 export interface GameIcons {
   [game:string]: IconMap
 }
 
 export interface ConfidantData {
-  name: "Igor",
-  short_name: "Igor",
-  arcana: "Fool",
-  type: "auto",
+  name: string,
+  short_name: string,
+  arcana: string,
+  unlock: {type: string, month: string, day: number},
+  condition: string | null
   schedule: {
-    rainy: true,
-    time: "day",
-    availability: {[day:string]:string}
-  }
+    rainy: boolean,
+    time: string,
+    availability: {[day:string]:string | undefined}
+  } | null
 }
 
