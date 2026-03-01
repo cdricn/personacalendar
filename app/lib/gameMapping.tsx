@@ -2,7 +2,7 @@ import { FaVirus } from "react-icons/fa6";
 import { IoMdFlower, IoMdSnow } from "react-icons/io";
 import { IoThunderstorm } from "react-icons/io5";
 import { LuWaves } from "react-icons/lu";
-import { GameIcons } from "../lib/interface";
+import { GameIcons } from "./interface";
 import p5confidants from '../data/p5_confidants.json'
 
 export const GameMapping : GameIcons = {
