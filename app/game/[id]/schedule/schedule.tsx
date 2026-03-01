@@ -3,9 +3,9 @@
 import styles from './schedule.module.css';
 import { DataContext } from '@/app/utils/context';
 import { use } from 'react';
-import Weather from './components/weather';
+import Weather from '../../components/weather';
 import InfoBlob from '../../components/infoBlob';
-import Confidants from './components/confidants';
+import Confidants from '../../components/confidants';
 
 export default function Schedule({currentDay}:{currentDay:number}) {
   const data = use(DataContext);
@@ -17,7 +17,7 @@ export default function Schedule({currentDay}:{currentDay:number}) {
     world, activities, confidant_events, events, events_spoiler, day_activities, night_activities    
   } = scheduleData;
 
-  const monthMapping : {[month:string]: string} = {
+  const monthToDigit : {[month:string]: string} = {
     january: '1',
     february: '2',
     march: '3',
@@ -37,7 +37,7 @@ export default function Schedule({currentDay}:{currentDay:number}) {
       <div className={styles['section-header']}>
         <h2>WORLD</h2>
         <div className={styles['date']}>
-          <span>{monthMapping[month]}</span>
+          <span>{monthToDigit[month]}</span>
           <span>/</span>
           <span>{day}</span>
         </div>
