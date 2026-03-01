@@ -1,11 +1,11 @@
 'use client';
 
-import styles from './calendarBlock.module.css';
+import styles from './calendarHints.module.css';
 import { DataContext } from '@/app/utils/context';
 import { use } from 'react';
 // icons used: FaExclamation, FaGlobeAsia, GiCardAceHearts ri/fa, ri/gi
 
-export default function CalendarBlock({day}:{day:number}) {
+export default function CalendarHints({day}:{day:number}) {
   const data = use(DataContext);
 
   if (!data) return <></>;
