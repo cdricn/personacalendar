@@ -35,7 +35,7 @@ export interface GameIcons {
   [game:string]: IconMap
 }
 
-interface ConfidantData {
+export interface ConfidantData {
   name: "Igor",
   short_name: "Igor",
   arcana: "Fool",
@@ -47,6 +47,3 @@ interface ConfidantData {
   }
 }
 
-export interface Confidant {
-  [arcana:string]: ConfidantData;
-}
