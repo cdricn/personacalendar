@@ -1,21 +1,22 @@
 'use client';
 
 import styles from "./page.module.css";
-import useSWR from 'swr';
-import getData from "../../utils/getData";
+import json_data from '../../data/p5royal_data.json'; 
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { GameContext, DataContext } from "../../utils/context";
-import Months from "../components/months";
-import Days from "../components/days";
+import Months from "../../components/months";
+import Days from "../../components/days";
 import Schedule from "./schedule/schedule";
+import { Calendar, CalendarData } from "@/app/lib/interface";
+
 
 export default function CalendarPage() {
   const path = usePathname();
   const swrPath = path.slice(5);
-  const { data, error, isLoading } = useSWR(`${swrPath}`, getData);
   const [currentMonth, setCurrentMonth] = useState('april');
   const [currentDay, setCurrentDay] = useState(0);
+  const data : Calendar = json_data;
 
   useEffect(()=>{
     // Set data theme
@@ -37,9 +38,6 @@ export default function CalendarPage() {
     }
   }, [data])
 
-  if (isLoading) return <>Loading</>;
-  if (error) return <>Error</>;
-
   function setMonth(clickedMonth:string) {
     setCurrentMonth(clickedMonth);
   }
@@ -51,7 +49,7 @@ export default function CalendarPage() {
   return (
     <main className={styles['main']}>
       <div className={styles['main-content']}>
-        {!isLoading && data !== undefined ?
+        {data !== undefined ?
           <DataContext value={data[currentMonth]}>
             <GameContext value={path.slice(5)}>
               <section className={styles['calendar-container']}>

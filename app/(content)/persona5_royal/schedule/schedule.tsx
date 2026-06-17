@@ -3,9 +3,9 @@
 import styles from './schedule.module.css';
 import { DataContext } from '@/app/utils/context';
 import { use } from 'react';
-import Weather from '../../components/weather';
-import InfoBlob from '../../components/infoBlob';
-import Confidants from '../../components/confidants';
+import Weather from '../../../components/weather';
+import InfoBlob from '../../../components/infoBlob';
+import Confidants from '../../../components/confidants';
 
 export default function Schedule({currentDay}:{currentDay:number}) {
   const data = use(DataContext);
@@ -13,8 +13,8 @@ export default function Schedule({currentDay}:{currentDay:number}) {
   
   const scheduleData = data[currentDay];
   const { 
-    month, day, day_weather, night_weather, special_day_weather, special_night_weather,
-    world, activities, confidant_events, events, events_spoiler, day_activities, night_activities    
+    day, day_weather, night_weather, special_day_weather, special_night_weather,
+    world, activities, social_events, events, events_spoiler, day_activities, night_activities    
   } = scheduleData;
 
   const monthToDigit : {[month:string]: string} = {
@@ -66,7 +66,7 @@ export default function Schedule({currentDay}:{currentDay:number}) {
         <div className={styles['info-block']}>
           <h3>Confidant Events</h3>
           <InfoBlob 
-            content={confidant_events}
+            content={social_events}
             content_spoiler={null}
             noContentMessage={'None.'}
             isDayInvalid={day_activities===null}/>
