@@ -1,23 +1,22 @@
 export interface CalendarData {
-  month: string,
-  day: number,
-  day_code: number,
-  day_weather: string | null,
-  night_weather: string | null,
-  special_day_weather: string | null,
-  special_night_weather: string | null,
-  world: Array<string> | null,
-  activities: Array<string> | null,
-  confidant_events: Array<string> | null,
-  events: Array<string> | null,
-  events_spoiler: Array<string> | null,
-  day_activities: string | null,
-  night_activities: string | null,
-  invalidDay: boolean
+  day:                    number,
+  day_code:               number,
+  day_weather:            string | null,
+  night_weather:          string | null,
+  special_day_weather:    string | null,
+  special_night_weather:  string | null,
+  world:                  string | string[] | null,
+  activities:             string | string[] | null,
+  social_events:          string | string[] | null,
+  events:                 string | string[] | null,
+  events_spoiler:         string | string[] | null,
+  day_activities:         string | null,
+  night_activities:       string | null,
+  is_day_playable:        boolean
 }
 
 export interface Calendar {
-  [month: string] : Array<CalendarData>;
+  [month: string] : CalendarData[];
 }
 
 interface IconMap {
