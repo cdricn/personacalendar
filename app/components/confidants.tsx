@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './confidants.module.css';
-import { GameMapping } from '@/app/lib/gameMapping';
+import { ResourceMapping } from '@/app/lib/resourceMapping';
 import { ConfidantData } from '@/app/lib/interface';
 import { GameContext, DataContext } from '@/app/utils/context';
 import { use } from 'react';
@@ -9,7 +9,7 @@ import { use } from 'react';
 export default function Confidants({currentDay}:{currentDay:number}) {
   const data = use(DataContext);
   const game = use(GameContext);
-  const {confidants} = GameMapping[game.slice(1)]; 
+  const {confidants} = ResourceMapping[game.slice(1)]; 
 
   const monthToDigit : {[month:string]: string} = {
     april: '1',
