@@ -3,40 +3,18 @@
 import styles from "./page.module.css";
 import json_data from '../../data/p5royal_data.json'; 
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { GameContext, DataContext } from "../../utils/context";
-import Months from "../../components/months";
-import Days from "../../components/days";
 import Schedule from "./schedule/schedule";
-import { Calendar, CalendarData } from "@/app/lib/interface";
+import { CalendarDays, CalendarMonths } from "@/app/lib/interface";
+import Calendar from "@/app/components/calendar";
 
 
 export default function CalendarPage() {
   const path = usePathname();
-  const swrPath = path.slice(5);
   const [currentMonth, setCurrentMonth] = useState('april');
   const [currentDay, setCurrentDay] = useState(0);
-  const data : Calendar = json_data;
-
-  useEffect(()=>{
-    // Set data theme
-    const theme = swrPath.slice(1);
-    document.querySelector('body')?.setAttribute('data-theme', theme);
-
-    // Make sure we start on a non-empty day
-    if (data) {
-      for(let i=0; i<data[currentMonth].length; i++){
-        if(data[currentMonth][i].day_activities !== null) {
-          setCurrentDay(data[currentMonth][i-1].day);
-          break;
-        }
-      }
-    }
-
-    return () => {
-      document.body.removeAttribute('data-theme');
-    }
-  }, [data])
+  const data : CalendarMonths = json_data;
 
   function setMonth(clickedMonth:string) {
     setCurrentMonth(clickedMonth);
@@ -51,18 +29,17 @@ export default function CalendarPage() {
       <div className={styles['main-content']}>
         {data !== undefined ?
           <DataContext value={data[currentMonth]}>
-            <GameContext value={path.slice(5)}>
+            <GameContext value={path}>
               <section className={styles['calendar-container']}>
-                <Months setMonth={setMonth}/>
-                <Days setDay={setDay} maxRows={6}/>
+                <Calendar setMonth={setMonth} setDay={setDay} maxRows={6} />
               </section>
               <section className={styles['schedule-container']}>
-                  <Schedule currentDay={currentDay}/>
+                <Schedule currentDay={currentDay}/>
               </section>
             </GameContext>
           </DataContext>
           :
-          <>HELLLOOO</>
+          <>Could not load calendar...</>
         }
       </div>
     </main>

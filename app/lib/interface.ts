@@ -1,4 +1,4 @@
-export interface CalendarData {
+export interface CalendarDays {
   day:                    number,
   day_code:               number,
   day_weather:            string | null,
@@ -15,18 +15,18 @@ export interface CalendarData {
   is_day_playable:        boolean
 }
 
-export interface Calendar {
-  [month: string] : CalendarData[];
+export interface CalendarMonths {
+  [month: string] : CalendarDays[];
 }
 
 interface IconMap {
-  normal: {
+  day_modifier: {
     [modifier:string]: {
       src: string,
       alt: string,
     }
   },
-  special: {
+  special_day_modifier: {
     [modifier:string]: React.ReactElement
   },
   monthHeaders: string[],
