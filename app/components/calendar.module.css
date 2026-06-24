@@ -17,52 +17,72 @@
   user-select: none;
 }
 
-.days-container {
+.calendar-body-container {
   position: relative;
-  font-size: var(--fs-calendar-number);
 }
 
-.days, .numbers-grid {
+.days-header {
+  position: relative;
   display: grid;
-  position: relative;
-}
-
-.days {
   grid-template-columns: repeat(7, 1fr);
   font-family: var(--font-days-number);
   font-size: var(--fs-calendar-day);
   text-align: center;
+  font-weight: 600;
+}
+.days-header > span {
+  min-width: 50px;
+  max-width: 70px;
 }
 
-.numbers-grid {
-  padding-top: 10px;
+.day-grid {
+  margin-top: 10px;
+  position: relative;
+  display: grid;
   font-family: var(--font-days);
-  line-height: 100%;
-  text-align: right;
 }
 
-/*Set -1 for the margins to prevent border overlap which makes inside of the calendar thicker*/
-.number {
-  margin-right: -1px;
-  margin-bottom: -1px;
-  border: 1px solid var(--color-border);
+.day {
   padding: 5px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  min-width: 50px;
+  max-width: 70px;
+  height: 70px;
   user-select: none;
-  font-weight: 700;
-  height: 130px;
+  font-weight: 300;
+  font-size: var(--fs-calendar-number);
   overflow: hidden;
 }
-.number > span {
-  z-index: 5;
+.day > span {
+  z-index: 2;
 }
-.inactive {
-  color: var(--color-inactive-day);
+.day:hover > .day-hover {
+  opacity: .3;
+  transition: .1s;
 }
 
-@media (width < 800px) {
-  .number {
-    padding: 1px;
-    height: clamp(60px, calc(3.75rem + ((1vw - 3px) * 8)), 100px);
-  }
+.day-hover {
+  border-radius: 20%;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background-color: var(--color-gray);
+  opacity: 0;
+  transition: .1s;
+}
+
+.hint-icons-container {
+  display: flex;
+  gap: 5px;
+  height: 15px;
+  z-index: 2;
+}
+
+.inactive {
+  color: var(--color-inactive-day);
 }

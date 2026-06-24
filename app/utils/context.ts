@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { CalendarData} from "../lib/interface";
+import { CalendarDays } from "../lib/interface";
 
 export const GameContext = createContext("");
-export const DataContext = createContext<CalendarData[] | undefined>(undefined);
+export const DataContext = createContext<CalendarDays[] | undefined>(undefined);

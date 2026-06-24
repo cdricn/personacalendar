@@ -29,9 +29,9 @@ interface IconMap {
   special_day_modifier: {
     [modifier:string]: React.ReactElement
   },
-  monthHeaders: string[],
-  dayHeaders: string[],
-  confidants: ConfidantData[]
+  monthHeaders: readonly string[],
+  dayHeaders: readonly string[],
+  confidants: readonly ConfidantData[]
 }
 export interface GameIcons {
   [game:string]: IconMap

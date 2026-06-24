@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { GameContext, DataContext } from "../../utils/context";
 import Schedule from "./schedule/schedule";
-import { CalendarDays, CalendarMonths } from "@/app/lib/interface";
+import { CalendarMonths } from "@/app/lib/interface";
 import Calendar from "@/app/components/calendar";
 
 

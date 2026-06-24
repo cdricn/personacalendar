@@ -9,7 +9,7 @@ import { use } from 'react';
 export default function Confidants({currentDay}:{currentDay:number}) {
   const data = use(DataContext);
   const game = use(GameContext);
-  const {confidants} = ResourceMapping[game.slice(1)]; 
+  const {confidants} = ResourceMapping[game]; 
 
   const monthToDigit : {[month:string]: string} = {
     april: '1',

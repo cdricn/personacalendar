@@ -1,8 +1,14 @@
 import { GameIcons } from "./interface";
 import p5confidants from '../data/p5_confidants.json'
 
+const gregorianMonths = [
+  'april', 'may', 'june', 'july', 'august', 'september',
+  'october', 'november', 'december', 'january', 'february', 'march'
+] as const;
+const normalDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'] as const;
+
 export const ResourceMapping : GameIcons = {
-  persona5_royal: {
+  ['/persona5_royal']: {
     day_modifier: {
       clear: {src: '/P5_Weather_Clear.webp', alt:'Clear weather icon'},
       cloudy: {src: '/P5_Weather_Cloudy.webp', alt:'Cloudy weather icon'},
@@ -10,11 +16,8 @@ export const ResourceMapping : GameIcons = {
       snowy: {src: '/P5_Weather_Snowy.webp', alt:'Snowy weather icon'},
     },
     special_day_modifier: {},
-    monthHeaders: [
-      'april', 'may', 'june', 'july', 'august', 'september',
-      'october', 'november', 'december', 'january', 'february', 'march'
-    ],
-    dayHeaders: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    monthHeaders: gregorianMonths,
+    dayHeaders: normalDays,
     confidants: p5confidants
   }
 }
