@@ -14,7 +14,7 @@
       "events_spoiler": "",
       "day_activities": "",
       "night_activities": "",
-      "is_day_playable": true
+      "is_day_playable": false
     },
     {
       "day": 2,
@@ -30,7 +30,7 @@
       "events_spoiler": "",
       "day_activities": "",
       "night_activities": "",
-      "is_day_playable": true
+      "is_day_playable": false
     },
     {
       "day": 3,
@@ -46,7 +46,7 @@
       "events_spoiler": "",
       "day_activities": "",
       "night_activities": "",
-      "is_day_playable": true
+      "is_day_playable": false
     },
     {
       "day": 4,
@@ -62,7 +62,7 @@
       "events_spoiler": "",
       "day_activities": "",
       "night_activities": "",
-      "is_day_playable": true
+      "is_day_playable": false
     },
     {
       "day": 5,
@@ -78,7 +78,7 @@
       "events_spoiler": "",
       "day_activities": "",
       "night_activities": "",
-      "is_day_playable": true
+      "is_day_playable": false
     },
     {
       "day": 6,
@@ -94,7 +94,7 @@
       "events_spoiler": "",
       "day_activities": "",
       "night_activities": "",
-      "is_day_playable": true
+      "is_day_playable": false
     },
     {
       "day": 7,
@@ -110,7 +110,7 @@
       "events_spoiler": "",
       "day_activities": "",
       "night_activities": "",
-      "is_day_playable": true
+      "is_day_playable": false
     },
     {
       "day": 8,
@@ -126,7 +126,7 @@
       "events_spoiler": "",
       "day_activities": "",
       "night_activities": "",
-      "is_day_playable": true
+      "is_day_playable": false
     },
     {
       "day": 9,
@@ -142,7 +142,7 @@
       "events_spoiler": "[\"Protagonist moves in Cafe Leblanc.\"]",
       "day_activities": "Unavailable",
       "night_activities": "Unavailable",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 10,
@@ -158,7 +158,7 @@
       "events_spoiler": "[\"Visiting Shujin Academy.\", \"Mental shutdown incident.\"]",
       "day_activities": "Unavailable",
       "night_activities": "Unavailable",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 11,
@@ -174,7 +174,7 @@
       "events_spoiler": "[\"The Protagonist's first day in school.\", \"First visit to Kamoshida's Palace where the Protagonist awakens.\", \"First meeting with Morgana.\", \"Unlocks the Magician confidant.\"]",
       "day_activities": "Unavailable",
       "night_activities": "Unavailable",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 12,
@@ -190,7 +190,7 @@
       "events_spoiler": "[\"Second visit to Kamoshida's Palace where Ryuji awakens.\", \"Unlocks the Chariot confidant.\"]",
       "day_activities": "Unavailable",
       "night_activities": "Unavailable",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 13,
@@ -206,7 +206,7 @@
       "events_spoiler": "[\"Protagonist and Ryuji investigate Suguru Kamoshida.\"]",
       "day_activities": "Unavailable",
       "night_activities": "Unavailable",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 14,
@@ -222,7 +222,7 @@
       "events_spoiler": "[\"The Protagonist, Ryuji, and Morgana discuss how to deal with Kamoshida.\", \"The Protagonist meets Ann Takamaki.\"]",
       "day_activities": "Unavailable",
       "night_activities": "Unavailable",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 15,
@@ -238,7 +238,7 @@
       "events_spoiler": "[\"The Protagonist and Ryuji confronts Kamoshida after Shiho is hospitalized.\", \"Ann follows Ryuji and the Protagonist on their third visit to Kamoshida's Palace and awakens.\", \"Unlocks the Lovers confidant.\"]",
       "day_activities": "Unavailable",
       "night_activities": "Unavailable",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 16,
@@ -254,7 +254,7 @@
       "events_spoiler": "[\"The Protagonist visits Takemi Medical Clinic to prepare for the palace infiltration.\"]",
       "day_activities": "Unavailable",
       "night_activities": "Unavailable",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 17,
@@ -270,7 +270,7 @@
       "events_spoiler": "[\"The Protagonist visits the Airsoft Shop in Shibuya to prepare for the palace infiltration.\"]",
       "day_activities": "Unavailable",
       "night_activities": "Unavailable",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 18,
@@ -286,7 +286,7 @@
       "events_spoiler": "[\"Start of Kamoshida's Palace infiltration mission.\"]",
       "day_activities": "Free",
       "night_activities": "Free",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 19,
@@ -302,7 +302,7 @@
       "events_spoiler": "",
       "day_activities": "Free",
       "night_activities": "Free",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 20,
@@ -318,7 +318,7 @@
       "events_spoiler": "",
       "day_activities": "Free",
       "night_activities": "Limited",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 21,
@@ -334,7 +334,7 @@
       "events_spoiler": "",
       "day_activities": "Free",
       "night_activities": "Free",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 22,
@@ -350,7 +350,7 @@
       "events_spoiler": "",
       "day_activities": "Free",
       "night_activities": "Free",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 23,
@@ -366,7 +366,7 @@
       "events_spoiler": "",
       "day_activities": "Free",
       "night_activities": "Free",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 24,
@@ -382,7 +382,7 @@
       "events_spoiler": "",
       "day_activities": "Free",
       "night_activities": "Free",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 25,
@@ -398,7 +398,7 @@
       "events_spoiler": "",
       "day_activities": "Free",
       "night_activities": "Free",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 26,
@@ -414,7 +414,7 @@
       "events_spoiler": "",
       "day_activities": "Free",
       "night_activities": "Free",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 27,
@@ -430,7 +430,7 @@
       "events_spoiler": "",
       "day_activities": "Free",
       "night_activities": "Free",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 28,
@@ -446,7 +446,7 @@
       "events_spoiler": "",
       "day_activities": "Free",
       "night_activities": "Free",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 29,
@@ -462,7 +462,7 @@
       "events_spoiler": "",
       "day_activities": "Free",
       "night_activities": "Free",
-      "is_day_playable": false
+      "is_day_playable": true
     },
     {
       "day": 30,
@@ -478,7 +478,7 @@
       "events_spoiler": "",
       "day_activities": "Free",
       "night_activities": "Free",
-      "is_day_playable": false
+      "is_day_playable": true
     }
   ],
   "may": [
