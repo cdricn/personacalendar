@@ -94,11 +94,11 @@ export default function Calendar({
               };
             const weatherDayStyle = { 
               alignSelf: item.night_weather ? 'flex-start' : 'center',
-              transform: item.night_weather ? 'translateY(3px)' : undefined
+              transform: item.night_weather ? 'translate(1px, 5px)' : undefined
             };
             const weatherNightStyle = { 
               alignSelf: item.day_weather ? 'flex-end' : 'center',
-              transform: item.day_weather ? 'translateY(-3px)' : undefined
+              transform: item.day_weather ? 'translate(-1px, -3px)' : undefined
             };
 
             return (

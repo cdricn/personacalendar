@@ -1,15 +1,15 @@
 :root {
-  font-family: 'Inter';
-  --background: #ffffff;
-  --foreground: #171717;
-  
+  font-family: 'Inter', 'arial';
   --ff-inter: 'Inter';
   --ff-arsenal: 'arsenal';
+
+  --background: #131313;
   --color-inactive-day: #363636;
   --color-lightgray: #9696964b;
   --color-gray: #5251514b;
   --color-gray-hover: #a3a2a24b;
   --color-gray-inactive: #2e2e2e4b;
+  --color-darkgray: #2e2e2e33;
   --color-persona5r: #f10c0c;
   --color-persona3r: #0650da;
   --color-persona4g: #eedf0f;
@@ -71,6 +71,7 @@
 body {
   min-height: 100vh;
   overflow: auto;
+  background-color: var(--background);
 }
 
 img, picture, svg, video {
@@ -81,13 +82,6 @@ img, picture, svg, video {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 @media (prefers-color-scheme: dark) {

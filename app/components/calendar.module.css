@@ -93,22 +93,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
-  min-width: 35px;
-  height: 100%;
+  width: 40px;
+  height: 40px;
 }
 .weather-icon-container > img {
+  align-self: center;
   max-width: 20px;
   max-height: 20px;
 }
-.weather-icon-container > img:nth-child(1) {
-  align-self: flex-start;
-  transform: translateY(3px);
-}
-.weather-icon-container > img:nth-child(2) {
-  align-self: flex-end;
-  transform: translateY(-3px);
-}
+
 @media (width < 500px) {
   .weather-icon-container > img {
     max-width: 18px;
