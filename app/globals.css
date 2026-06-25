@@ -6,41 +6,41 @@
   --ff-inter: 'Inter';
   --ff-arsenal: 'arsenal';
   --color-inactive-day: #363636;
-  --color-gray: #535353;
+  --color-lightgray: #9696964b;
+  --color-gray: #5251514b;
+  --color-gray-hover: #a3a2a24b;
+  --color-gray-inactive: #2e2e2e4b;
   --color-persona5r: #f10c0c;
   --color-persona3r: #0650da;
   --color-persona4g: #eedf0f;
 
-  --fs-large-2: 96px;
-  --fs-large: 64px;
-  --fs-huge-2: 48px;
-  --fs-huge: 40px;
-  --fs-big-2: 36px;
-  --fs-big: 32px;
-  --fs-medium-2: 24px;
-  --fs-medium: 20px;
-  --fs-normal: 18px;
-  --fs-small: 16px;
-  --fs-tiny: 14px;
+  --size-96: 96px;
+  --size-64: 64px;
+  --size-48: 48px;
+  --size-32: 32px;
+  --size-24: 24px;
+  --size-20: 20px;
+  --size-18: 18px;
+  --size-16: 16px;
+  --size-14: 14px;
+  --size-8: 8px;
 
-  --fs-months: var(--fs-medium-2);
-  --fs-calendar-day: var(--fs-normal);
-  --fs-calendar-number: var(--fs-normal);
-  --fs-schedule-header: var(--fs-large-2);
-  --fs-modifier: var(--fs-medium);
-  --fs-body-header: var(--fs-normal);
-  --fs-body: var(--fs-normal);
+  --fs-calendar-header: var(--size-20);
+  --fs-calendar-month: var(--size-20);
+  --fs-calendar-day: var(--size-16);
+  --fs-calendar-number: var(--size-16);
+  --fs-schedule-header: var(--size-48);
+  --fs-body: var(--size-16);
 }
 
-@media (width < 800px) {
+@media (width < 500px) {
   :root {
-    --fs-months: var(--fs-normal);
-    --fs-calendar-day: var(--fs-small);
-    --fs-calendar-number: var(--fs-normal);
-    --fs-schedule-header: var(--fs-huge-2);
-    --fs-modifier: var(--fs-normal);
-    --fs-body-header: var(--fs-small);
-    --fs-body: var(--fs-small);
+    --fs-calendar-header: var(--size-18);
+    --fs-calendar-month: var(--size-18);
+    --fs-calendar-day: var(--size-14);
+    --fs-calendar-number: var(--size-14);
+    --fs-schedule-header: var(--size-48);
+    --fs-body: var(--size-14);
   }
 }
 

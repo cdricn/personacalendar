@@ -1,18 +1,29 @@
-.months-container {
+.calendar-header-container {
   margin-bottom: 15px;
-  border-bottom: 1px solid var(--color-border);
-  padding: 15px;
+  border-bottom: 2px solid var(--color-gray);
+  padding-block: 15px;
   position: relative;
   display: flex;
   justify-content: space-between;
 }
+.calendar-header-container > h1 {
+  font-size: var(--fs-calendar-header);
+}
+
+.month-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 160px;
+}
 
 .month {
   position: relative;
-  font-size: var(--fs-months);
+  font-size: var(--fs-calendar-month);
   font-family: var(--font-months);
 }
-.month-nav {
+.nav-button {
   cursor: pointer;
   user-select: none;
 }
@@ -25,21 +36,36 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  text-align: center;
   font-family: var(--font-days-number);
   font-size: var(--fs-calendar-day);
-  text-align: center;
-  font-weight: 600;
+  font-weight: 500;
 }
 .days-header > span {
+  border-radius: 10px;
+  padding-block: 4px;
   min-width: 50px;
   max-width: 70px;
+  background-color: var(--color-lightgray);
 }
 
 .day-grid {
-  margin-top: 10px;
+  margin-top: 4px;
   position: relative;
   display: grid;
   font-family: var(--font-days);
+  gap: 2px;
+}
+
+.day-container {
+  border-radius: 20%;
+  position: relative;
+  min-width: 50px;
+  max-width: 70px;
+  height: 70px;
+  overflow: hidden;
+  user-select: none;
 }
 
 .day {
@@ -47,42 +73,53 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  gap: 5px;
-  min-width: 50px;
-  max-width: 70px;
+  gap: 2px;
   height: 70px;
-  user-select: none;
+  background-color: var(--color-gray);
   font-weight: 300;
   font-size: var(--fs-calendar-number);
-  overflow: hidden;
-}
-.day > span {
-  z-index: 2;
-}
-.day:hover > .day-hover {
-  opacity: .3;
   transition: .1s;
+  cursor: pointer;
+}
+.day:hover {
+  background-color: var(--color-gray-hover);
 }
 
-.day-hover {
-  border-radius: 20%;
-  position: absolute;
-  width: 90%;
-  height: 90%;
-  background-color: var(--color-gray);
-  opacity: 0;
-  transition: .1s;
+.weather-icon-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  min-width: 35px;
+  height: 100%;
+}
+.weather-icon-container > img {
+  max-width: 20px;
+  max-height: 20px;
+}
+.weather-icon-container > img:nth-child(1) {
+  align-self: flex-start;
+  transform: translateY(3px);
+}
+.weather-icon-container > img:nth-child(2) {
+  align-self: flex-end;
+  transform: translateY(-3px);
+}
+@media (width < 500px) {
+  .weather-icon-container > img {
+    max-width: 18px;
+    max-height: 18px;
+  }
 }
 
 .hint-icons-container {
-  display: flex;
-  gap: 5px;
+  position: absolute;
   height: 15px;
+  top: 5px;
+  right: 5px;
   z-index: 2;
-}
-
-.inactive {
-  color: var(--color-inactive-day);
 }

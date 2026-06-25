@@ -19,8 +19,7 @@ export default function Calendar({
   const [monthIndex, setMonthIndex] = useState(0);
   const game = use(GameContext);
   const data = use(DataContext);
-  const {dayHeaders} = ResourceMapping[game]; //remove front slash
-  const {monthHeaders} = ResourceMapping[game]; //remove front slash
+  const {day_modifier, dayHeaders, monthHeaders} = ResourceMapping[game]; //remove front slash
 
   useEffect(()=>{
     setMonth(monthHeaders[monthIndex]);
@@ -37,6 +36,7 @@ export default function Calendar({
   
   function handleClickDay(currentDay:number) {
     setDay(currentDay);
+    console.log('fff')
   }
 
   function addSymbols(item:CalendarDays) {
@@ -54,15 +54,18 @@ export default function Calendar({
 
   return (
     <>
-      <div className={styles['months-container']}>
-        <div className={styles['month-nav']} onClick={()=>handleClickMonth('prev')}>
-          <span>{'<'}</span>
-        </div>
-        <span className={styles['month']}>
-          {monthHeaders[monthIndex].slice(0, 1).toUpperCase() + monthHeaders[monthIndex].slice(1)}
-        </span>
-        <div className={styles['month-nav']}onClick={()=>handleClickMonth('next')}>
-          <span>{'>'}</span>
+      <div className={styles['calendar-header-container']}>
+        <h1>Calendar</h1>
+        <div className={styles['month-nav']}>
+          <div className={styles['nav-button']} onClick={()=>handleClickMonth('prev')}>
+            <span>{'<'}</span>
+          </div>
+          <span className={styles['month']}>
+            {monthHeaders[monthIndex].slice(0, 1).toUpperCase() + monthHeaders[monthIndex].slice(1)}
+          </span>
+          <div className={styles['nav-button']}onClick={()=>handleClickMonth('next')}>
+            <span>{'>'}</span>
+          </div>
         </div>
       </div>
       
@@ -82,21 +85,38 @@ export default function Calendar({
           }}>
           {data && data.map((item, index)=>{
             const dayKey = 'day' + (item.day);
-            const dayStart = data[0].day_code;
+            const dayStart = index===0 ? {gridColumnStart: `${data[0].day_code}`} : undefined;
+            const dayIsClickable = item.is_day_playable ? ()=>{handleClickDay(index)} : undefined;
+            const dayStyle = item.is_day_playable ? undefined : {
+                backgroundColor: 'var(--color-gray-inactive)', 
+                cursor: 'auto', 
+                color: 'var(--color-inactive-day)'
+              };
+            const weatherDayStyle = { 
+              alignSelf: item.night_weather ? 'flex-start' : 'center',
+              transform: item.night_weather ? 'translateY(3px)' : undefined
+            };
+            const weatherNightStyle = { 
+              alignSelf: item.day_weather ? 'flex-end' : 'center',
+              transform: item.day_weather ? 'translateY(-3px)' : undefined
+            };
 
             return (
               <div key={dayKey} 
-                className={styles['day']} 
-                onClick={item.is_day_playable ? undefined : ()=>{handleClickDay(index)}}
-                style={index===0 ? {gridColumnStart: `${dayStart}`} : undefined}
-                >
-                  <span className={item.is_day_playable ? undefined : styles['inactive']}>
-                    {item.day}
-                  </span>
+                className={styles['day-container']} 
+                onClick={dayIsClickable}
+                style={dayStart}
+              >
+                <div className={styles['day']} style={dayStyle}>
+                  <div className={styles['weather-icon-container']}>
+                    {item.day_weather ? <img style={weatherDayStyle} src={day_modifier[item.day_weather].src} alt={day_modifier[item.day_weather].alt} /> : null}
+                    {item.night_weather ? <img style={weatherNightStyle} src={day_modifier[item.night_weather].src} alt={day_modifier[item.night_weather].alt} /> : null}
+                  </div>
+                  <span>{item.day}</span>
                   <div className={styles['hint-icons-container']}>
                     {addSymbols(item)}
                   </div>
-                  {item.is_day_playable ? <div className={styles['day-hover']}></div>: undefined}
+                </div>
               </div>
             )})
           }

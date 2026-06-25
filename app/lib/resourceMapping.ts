@@ -5,7 +5,7 @@ const gregorianMonths = [
   'april', 'may', 'june', 'july', 'august', 'september',
   'october', 'november', 'december', 'january', 'february', 'march'
 ] as const;
-const normalDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'] as const;
+const normalDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] as const;
 
 export const ResourceMapping : GameIcons = {
   ['/persona5_royal']: {
