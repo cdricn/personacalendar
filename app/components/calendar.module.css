@@ -1,7 +1,7 @@
 .calendar-header-container {
-  margin-bottom: 15px;
+  margin-bottom: var(--size-16);
   border-bottom: 2px solid var(--color-gray);
-  padding-block: 15px;
+  padding-block: var(--size-16);
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -85,7 +85,7 @@
 }
 
 .day-grid {
-  margin-top: 4px;
+  margin-top: var(--size-4);
   position: relative;
   display: grid;
   font-family: var(--font-days);
@@ -103,7 +103,7 @@
 }
 
 .day {
-  padding: 5px;
+  padding: var(--size-4);
   position: relative;
   display: flex;
   flex-direction: column;

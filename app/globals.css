@@ -6,8 +6,8 @@
   --background: #131313;
   --color-inactive-day: #363636;
   --color-lightgray: #9696964b;
-  --color-gray: #333333;
-  --color-gray-hover: #525252;
+  --color-gray: #252525;
+  --color-gray-hover: #3b3b3b;
   --color-gray-inactive: #1f1f1f;
   --color-darkgray: #1f1f1f;
   --color-persona5r: #f10c0c;
@@ -24,12 +24,13 @@
   --size-16: 16px;
   --size-14: 14px;
   --size-8: 8px;
+  --size-4: 4px;
 
   --fs-calendar-header: var(--size-20);
   --fs-calendar-month: var(--size-20);
   --fs-calendar-day: var(--size-16);
   --fs-calendar-number: var(--size-16);
-  --fs-schedule-header: var(--size-48);
+  --fs-schedule-header: var(--size-16);
   --fs-body: var(--size-16);
 }
 
@@ -52,8 +53,7 @@
   --font-months: var(--ff-inter);
   --font-days: var(--ff-inter);
   --font-days-number: var(--ff-inter);
-  --font-schedule-header: var(--ff-arsenal);
-  --font-schedule-body: var(--ff-arsenal);
+  --font-schedule: var(--ff-arsenal);
   --main-color: var(--color-persona5r);
   --complement-color: var(--color-persona5r);
 }
