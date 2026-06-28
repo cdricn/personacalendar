@@ -1,10 +1,11 @@
 'use client';
 
 import styles from './calendar.module.css';
-import { useEffect, useState, use } from 'react';
+import { useEffect, useState, use, useRef } from 'react';
 import { GameContext, DataContext } from '../utils/context';
 import { ResourceMapping } from '../lib/resourceMapping';
 import { CalendarDays } from '../lib/interface';
+import { UpButton, DownButton } from './buttonIcons';
 
 export default function Calendar({
   setMonth,
@@ -16,27 +17,34 @@ export default function Calendar({
   maxRows:number
 }) {
   
-  const [monthIndex, setMonthIndex] = useState(0);
+  const [selectedMonth, setSelectedMonth] = useState(0);
+  const [monthsTab, setMonthsTab] = useState(false);
+  const monthsTabRef = useRef<HTMLDivElement>(null);
   const game = use(GameContext);
   const data = use(DataContext);
   const {day_modifier, dayHeaders, monthHeaders} = ResourceMapping[game]; //remove front slash
 
   useEffect(()=>{
-    setMonth(monthHeaders[monthIndex]);
-  }, [monthIndex])
+    setMonth(monthHeaders[selectedMonth]);
 
-  function handleClickMonth(action:string) {
-    if(action == 'prev' && monthIndex > 0) {
-      setMonthIndex(monthIndex-1);
+    function handleMonthsTabClickOutside(event:MouseEvent) {
+      if (monthsTabRef.current && !monthsTabRef.current.contains(event.target as Node)) {
+        setMonthsTab(false);
+      }
     }
-    if(action == 'next' && monthIndex < 11) {
-      setMonthIndex(monthIndex+1);
+    function handleMonthsTabClickInside(event:MouseEvent) {
+      if (monthsTab && monthsTabRef.current && !monthsTabRef.current.contains(event.target as Node)) {
+        setMonthsTab(false);
+      }
     }
-  }
+    document.addEventListener("mousedown", handleMonthsTabClickOutside);
+    document.addEventListener("mousedown", handleMonthsTabClickInside);
+
+    return () => document.removeEventListener("mousedown", handleMonthsTabClickOutside)
+  }, [selectedMonth])
   
   function handleClickDay(currentDay:number) {
     setDay(currentDay);
-    console.log('fff')
   }
 
   function addSymbols(item:CalendarDays) {
@@ -55,16 +63,28 @@ export default function Calendar({
   return (
     <>
       <div className={styles['calendar-header-container']}>
-        <h1>Calendar</h1>
-        <div className={styles['month-nav']}>
-          <div className={styles['nav-button']} onClick={()=>handleClickMonth('prev')}>
-            <span>{'<'}</span>
-          </div>
+        <div className={styles['month-nav']} ref={monthsTabRef} onClick={()=>setMonthsTab(!monthsTab)}>
           <span className={styles['month']}>
-            {monthHeaders[monthIndex].slice(0, 1).toUpperCase() + monthHeaders[monthIndex].slice(1)}
+            {monthHeaders[selectedMonth].slice(0, 1).toUpperCase() + monthHeaders[selectedMonth].slice(1)}
           </span>
-          <div className={styles['nav-button']}onClick={()=>handleClickMonth('next')}>
-            <span>{'>'}</span>
+          <div className={styles['nav-button']}>
+            <span>{monthsTab?<UpButton/>:<DownButton/>}</span>
+          </div>
+          <div className={styles['selection-tab']} style={monthsTab?{visibility:'visible'}:{visibility:'hidden'}}>
+            <ul className={styles['selection']}>
+              <li onClick={()=>setSelectedMonth(0)}>Apr</li>
+              <li onClick={()=>setSelectedMonth(1)}>May</li>
+              <li onClick={()=>setSelectedMonth(2)}>Jun</li>
+              <li onClick={()=>setSelectedMonth(3)}>Jul</li>
+              <li onClick={()=>setSelectedMonth(4)}>Aug</li>
+              <li onClick={()=>setSelectedMonth(5)}>Sep</li>
+              <li onClick={()=>setSelectedMonth(6)}>Oct</li>
+              <li onClick={()=>setSelectedMonth(7)}>Nov</li>
+              <li onClick={()=>setSelectedMonth(8)}>Dec</li>
+              <li onClick={()=>setSelectedMonth(9)}>Jan</li>
+              <li onClick={()=>setSelectedMonth(10)}>Feb</li>
+              <li onClick={()=>setSelectedMonth(11)}>Mar</li>
+            </ul>
           </div>
         </div>
       </div>
