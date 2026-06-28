@@ -56,25 +56,3 @@
   font-weight: bold;
 }
 
-
-
-@media (width > 1000px) {
-  .schedule-header {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .day-modifiers {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .schedule {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media (width < 800px) {
-  .date {
-    width: 140px;
-  }
-}

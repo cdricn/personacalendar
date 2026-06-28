@@ -35,9 +35,9 @@ export default function Schedule({currentDay}:{currentDay:number}) {
   return (
     <>
       <div className={styles['section-header']}>
-        <h2>WORLD</h2>
+        <h2></h2>
         <div className={styles['date']}>
-          <span>{monthToDigit[month]}</span>
+          <span>month</span>
           <span>/</span>
           <span>{day}</span>
         </div>
@@ -45,11 +45,9 @@ export default function Schedule({currentDay}:{currentDay:number}) {
 
       <div className={styles['day-modifiers']}>
         <div className={styles['modifier']}>
-          <Weather time='day' iconName={day_weather} special_iconName={special_day_weather}/>
           <span>{day_activities ? day_activities : 'N/A'}</span>
         </div>
         <div className={styles['modifier']}>
-          <Weather time='night' iconName={night_weather} special_iconName={special_night_weather}/>
           <span>{night_activities ? night_activities : 'N/A'}</span>
         </div>
       </div>
@@ -57,19 +55,9 @@ export default function Schedule({currentDay}:{currentDay:number}) {
       <div className={styles['schedule']}>
         <div className={styles['info-block']}>
           <h3>Schedule</h3>
-          <InfoBlob 
-            content={events}
-            content_spoiler={events_spoiler}
-            noContentMessage={'Free.'}
-            isDayInvalid={day_activities===null}/>
         </div>
         <div className={styles['info-block']}>
           <h3>Confidant Events</h3>
-          <InfoBlob 
-            content={social_events}
-            content_spoiler={null}
-            noContentMessage={'None.'}
-            isDayInvalid={day_activities===null}/>
         </div>
         <div className={styles['info-block']}>
           <h3>Confidants</h3>
@@ -77,11 +65,6 @@ export default function Schedule({currentDay}:{currentDay:number}) {
         </div>
         <div className={styles['info-block']}>
           <h3>Activities</h3>
-          <InfoBlob 
-            content={activities}
-            content_spoiler={null}
-            noContentMessage={'None.'}
-            isDayInvalid={day_activities===null}/>
         </div>
         <p>{world}</p>
       </div>
