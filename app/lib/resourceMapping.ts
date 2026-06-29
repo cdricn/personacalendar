@@ -2,8 +2,8 @@ import { GameIcons } from "./interface";
 import p5confidants from '../data/p5_confidants.json'
 
 const gregorianMonths = [
-  'april', 'may', 'june', 'july', 'august', 'september',
-  'october', 'november', 'december', 'january', 'february', 'march'
+  'April', 'May', 'June', 'July', 'August', 'September',
+  'October', 'November', 'December', 'January', 'February', 'March'
 ] as const;
 const normalDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] as const;
 

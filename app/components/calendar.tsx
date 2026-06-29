@@ -60,6 +60,13 @@ export default function Calendar({
     }
   }
 
+  function fillMonths() {
+    const months = [...monthHeaders];
+    return months.map((item, index)=>{
+      return <li key={item} onClick={()=>setSelectedMonth(index)}>{item.slice(0,3)}</li>
+    })
+  }
+
   return (
     <>
       <div className={styles['calendar-header-container']}>
@@ -72,18 +79,7 @@ export default function Calendar({
           </div>
           <div className={styles['selection-tab']} style={monthsTab?{visibility:'visible'}:{visibility:'hidden'}}>
             <ul className={styles['selection']}>
-              <li onClick={()=>setSelectedMonth(0)}>Apr</li>
-              <li onClick={()=>setSelectedMonth(1)}>May</li>
-              <li onClick={()=>setSelectedMonth(2)}>Jun</li>
-              <li onClick={()=>setSelectedMonth(3)}>Jul</li>
-              <li onClick={()=>setSelectedMonth(4)}>Aug</li>
-              <li onClick={()=>setSelectedMonth(5)}>Sep</li>
-              <li onClick={()=>setSelectedMonth(6)}>Oct</li>
-              <li onClick={()=>setSelectedMonth(7)}>Nov</li>
-              <li onClick={()=>setSelectedMonth(8)}>Dec</li>
-              <li onClick={()=>setSelectedMonth(9)}>Jan</li>
-              <li onClick={()=>setSelectedMonth(10)}>Feb</li>
-              <li onClick={()=>setSelectedMonth(11)}>Mar</li>
+              {fillMonths()}
             </ul>
           </div>
         </div>

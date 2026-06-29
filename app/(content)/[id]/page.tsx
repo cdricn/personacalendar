@@ -17,7 +17,7 @@ export default function CalendarPage() {
   const data : CalendarMonths = json_data;
 
   function setMonth(clickedMonth:string) {
-    setCurrentMonth(clickedMonth);
+    setCurrentMonth(clickedMonth.toLowerCase());
   }
 
   function setDay(clickedDay:number) {
