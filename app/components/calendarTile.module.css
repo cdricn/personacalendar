@@ -1,0 +1,65 @@
+.day-container {
+  border-radius: 20%;
+  position: relative;
+  min-width: 50px;
+  max-width: 70px;
+  height: 70px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.day {
+  padding: var(--size-4);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2px;
+  height: 70px;
+  background-color: var(--color-gray);
+  font-weight: 300;
+  font-size: var(--fs-calendar-number);
+  transition: .1s;
+  cursor: pointer;
+}
+.day:hover {
+  background-color: var(--color-gray-hover);
+}
+.day:hover > .weather-icon-container {
+  opacity: 1;
+  transition: .1s;
+}
+
+.weather-icon-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  opacity: .5;
+  transition: .1s;
+
+  img {
+    align-self: center;
+    max-width: 20px;
+    max-height: 20px;
+  }
+}
+
+@media (width < 500px) {
+  .weather-icon-container > img {
+    max-width: 18px;
+    max-height: 18px;
+  }
+}
+
+.hint-icons-container {
+  position: absolute;
+  height: 15px;
+  top: 5px;
+  right: 5px;
+  z-index: 2;
+}
