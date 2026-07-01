@@ -47,7 +47,7 @@ export default function Calendar({
   
   function handleClickDay(currentDay:number) {
     setDay(currentDay);
-    setSelectedDay(currentDay);
+    setSelectedDay(currentDay+1);
   }
 
   function fillMonths() {
@@ -87,15 +87,15 @@ export default function Calendar({
           }}>
           {data && data.map((item, index)=>{
             const dayKey = 'day' + (item.day);
-            const dayStart = index===0 ? {gridColumnStart: `${data[0].day_code}`} : undefined;
-            const dayIsClickable = item.is_day_playable ? ()=>{handleClickDay(item.day)} : undefined;
-
+            const dayStart = index === 0 ? {gridColumnStart: `${data[0].day_code}`} : undefined;
+            const dayIsClickable = item.is_day_playable ? ()=>{handleClickDay(index)} : undefined;
             return (
               <div key={dayKey} onClick={dayIsClickable}>
                 <CalendarTile 
                   item={item} 
                   dayStart={dayStart} 
                   day_modifier={day_modifier}
+                  isSelected={selectedDay}
                 />
               </div>
             )})
