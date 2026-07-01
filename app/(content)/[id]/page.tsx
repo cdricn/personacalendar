@@ -27,20 +27,16 @@ export default function CalendarPage() {
   return (
     <main className={styles['main']}>
       <div className={styles['main-content']}>
-        {data !== undefined ?
-          <DataContext value={data[currentMonth]}>
-            <GameContext value={path}>
-              <section className={styles['calendar-container']}>
-                <Calendar setMonth={setMonth} setDay={setDay} maxRows={6} />
-              </section>
-              <section className={styles['schedule-container']}>
-                <Schedule currentDay={currentDay}/>
-              </section>
-            </GameContext>
-          </DataContext>
-          :
-          <>Could not load calendar...</>
-        }
+        <DataContext value={data[currentMonth]}>
+          <GameContext value={path}>
+            <section className={styles['calendar-container']}>
+              <Calendar setMonth={setMonth} setDay={setDay} maxRows={6} />
+            </section>
+            <section className={styles['schedule-container']}>
+              <Schedule currentDay={currentDay}/>
+            </section>
+          </GameContext>
+        </DataContext>
       </div>
     </main>
   )
