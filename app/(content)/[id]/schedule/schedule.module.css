@@ -1,16 +1,12 @@
 .section-header {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
   font-size: var(--fs-schedule-header);
-  font-family: var(--font-schedule-header);
-  font-weight: bold;
-  font-style: italic;
-}
-.section-header > h2{
-  display: inline-block;
-  line-height: 100%;
+  font-family: var(--font-schedule);
+  
+  h2 {
+    display: inline-block;
+    line-height: 100%;
+  }
 }
 
 .date {
