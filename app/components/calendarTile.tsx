@@ -20,11 +20,6 @@ export default function calendarTile({
   isSelected: number | null
 }) {
 
-  const dayStyle = item.is_day_playable ? undefined : {
-      backgroundColor: 'var(--color-gray-inactive)', 
-      cursor: 'auto', 
-      color: 'var(--color-inactive-day)',
-    };
   const weatherDayStyle = { 
     alignSelf: item.night_weather ? 'flex-start' : 'center',
     transform: item.night_weather ? 'translate(1px, 5px)' : undefined,
@@ -34,6 +29,19 @@ export default function calendarTile({
     transform: item.day_weather ? 'translate(-1px, -3px)' : undefined,
   };
   const weatherContainerOpacity = {opacity: '1'}
+
+  function selectedStyle() {
+    if (!item.is_day_playable) {
+      return {
+        backgroundColor: 'var(--color-gray-inactive)', 
+        cursor: 'auto', 
+        color: 'var(--color-inactive-day)'
+      }
+    }
+    else if (item.is_day_playable && isSelected === item.day) {
+      return { backgroundColor: 'var(--color-gray-hover)' }
+    };
+  }
 
   function addSymbols(item:CalendarDays) {
     if (!item.is_day_playable) return;
@@ -53,7 +61,7 @@ export default function calendarTile({
       className={styles['day-container']} 
       style={dayStart}
     >
-      <div className={styles['day']} style={dayStyle}>
+      <div className={styles['day']} style={selectedStyle()}>
         <div className={styles['weather-icon-container']} style={isSelected === item.day ? weatherContainerOpacity : undefined} >
           {item.day_weather ? <img style={weatherDayStyle} src={day_modifier[item.day_weather].src} alt={day_modifier[item.day_weather].alt} /> : null}
           {item.night_weather ? <img style={weatherNightStyle} src={day_modifier[item.night_weather].src} alt={day_modifier[item.night_weather].alt} /> : null}
