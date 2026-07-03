@@ -40,8 +40,14 @@ export default function calendarTile({
     }
     else if (item.is_day_playable && isSelected === item.day) {
       return { backgroundColor: 'var(--color-gray-hover)' }
+      // remove symbols in calendar, instead color the tile 
+      // with its respective symbol color.
+      // insert check logic here, and remove addSymbol function
+      // to add hover, just add filter: brightness in the inserted style/module
+      // and increase value when selected/hovered.
     };
   }
+
 
   function addSymbols(item:CalendarDays) {
     if (!item.is_day_playable) return;
