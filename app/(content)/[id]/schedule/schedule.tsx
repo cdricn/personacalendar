@@ -5,13 +5,12 @@ import { GameContext, DataContext } from '@/app/utils/context';
 import { use } from 'react';
 import { ResourceMapping } from '@/app/lib/resourceMapping';
 
-export default function Schedule({currentDay}:{currentDay:number}) {
+export default function Schedule({currentDay, currentMonth}:{currentDay:number, currentMonth:string}) {
   const game = use(GameContext);
   const data = use(DataContext);
-  if (!data) return <></>;
   
   const {dayHeaders} = ResourceMapping[game];
-  const scheduleData = data[currentDay];
+  const scheduleData = data![currentDay];
   const { 
     day, day_code, day_weather, night_weather, special_day_weather, special_night_weather,
     world, activities, social_events, events, events_spoiler, day_activities, night_activities    
@@ -31,24 +30,15 @@ export default function Schedule({currentDay}:{currentDay:number}) {
     november: '11',
     december: '12',
   };
-
-  console.log(scheduleData)
-
+  
   return (
     <>
-      <div className={styles['section-header']}>
-        <h2>{day}/{'9'} {dayHeaders[day_code]}</h2>
-      </div>
-
-      <div className={styles['day-modifiers']}>
-        <div className={styles['modifier']}>
-          <span>{day_activities}</span>
-        </div>
-        <div className={styles['modifier']}>
-          <span>{night_activities}</span>
+      <div className={styles['section-header-container']}>
+        <div className={styles['section-header']}>
+          <h2>{day}/{monthToDigit[currentMonth]} {dayHeaders[day_code-1]}</h2>
         </div>
       </div>
-
+      
       <div className={styles['schedule']}>
         <h3>Day</h3>
         <h3>Night</h3>
