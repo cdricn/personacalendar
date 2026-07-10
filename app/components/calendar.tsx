@@ -4,7 +4,6 @@ import styles from './calendar.module.css';
 import { useEffect, useState, use, useRef } from 'react';
 import { GameContext, DataContext } from '../utils/context';
 import { ResourceMapping } from '../lib/resourceMapping';
-import { CalendarDays } from '../lib/interface';
 import { UpButton, DownButton } from './buttonIcons';
 import CalendarTile from './calendarTile';
 
@@ -90,10 +89,9 @@ export default function Calendar({
             const dayStart = index === 0 ? {gridColumnStart: `${data[0].day_code}`} : undefined;
             const dayIsClickable = item.is_day_playable ? ()=>{handleClickDay(index)} : undefined;
             return (
-              <div key={dayKey} onClick={dayIsClickable}>
+              <div key={dayKey} onClick={dayIsClickable} style={dayStart}>
                 <CalendarTile 
                   item={item} 
-                  dayStart={dayStart} 
                   day_modifier={day_modifier}
                   isSelected={selectedDay}
                 />
