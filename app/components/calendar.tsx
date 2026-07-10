@@ -4,7 +4,7 @@ import styles from './calendar.module.css';
 import { useEffect, useState, use, useRef } from 'react';
 import { GameContext, DataContext } from '../utils/context';
 import { ResourceMapping } from '../lib/resourceMapping';
-import { UpButton, DownButton } from './buttonIcons';
+import { UpButton, DownButton } from './svgItems';
 import CalendarTile from './calendarTile';
 
 export default function Calendar({
@@ -56,6 +56,9 @@ export default function Calendar({
     })
   }
 
+  const frontTilesFiller = new Array(data![0].day_code-1).fill('top');
+  const bottomTilesFiller = new Array(7 - data![data!.length-1].day_code).fill('bottom');
+
   return (
     <>
       <div className={styles['calendar-header-container']}>
@@ -91,6 +94,7 @@ export default function Calendar({
             gridTemplateRows: `repeat(${maxRows}, 1fr)`
           }}
         >
+          {frontTilesFiller.map((item, index) => <div key={'filler'+item+index} className={styles['filler-tile']}/> )}
           {data && data.map((item, index)=>{
             const dayKey = 'day' + (item.day);
             const dayStart = index === 0 ? {gridColumnStart: `${data[0].day_code}`} : undefined;
@@ -105,6 +109,7 @@ export default function Calendar({
               </div>
             )})
           }
+          {bottomTilesFiller.map((item, index) => <div key={'filler'+item+index} className={styles['filler-tile']}/> )}
         </div>
       </div>
     </>

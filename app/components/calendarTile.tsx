@@ -1,5 +1,6 @@
 import styles from './calendarTile.module.css';
 import { CalendarDays } from "../lib/interface";
+import { Stripes } from './svgItems';
 
 interface day_modifier {
   [modifier: string]: {
@@ -30,9 +31,10 @@ export default function calendarTile({
     <div id={item.day.toString()} className={styles['day-tile-container']}>
       <div className={styles['tile']} 
         data-clickable={item.is_day_playable}
-        data-background-color={tileColor}
+        data-background={tileColor}
         data-selected={isTileSelected}
       >
+        <div className={styles['stripes']} data-background={item.is_day_playable}><Stripes/></div>
         <div className={styles['weather-icon-container']} data-icon-alignment={weatherAlign}>
           {item.day_weather ? <img src={day_modifier[item.day_weather].src} alt={day_modifier[item.day_weather].alt} /> : null}
           {item.night_weather ? <img src={day_modifier[item.night_weather].src} alt={day_modifier[item.night_weather].alt} /> : null}

@@ -32,7 +32,7 @@
   }
   .month-hover-bg[data-active="false"] {
     border-radius: 0px 0px 0px 0px;
-    transform: scaleX(.05);
+    transform: scaleX(.03);
     transition: .1s;
   }
 }
@@ -156,3 +156,14 @@
   gap: 2px;
 }
 
+.filler-tile {
+  border-radius: 20%;
+  position: relative;
+  min-width: 50px;
+  max-width: 70px;
+  height: 70px;
+  overflow: hidden;
+  user-select: none;
+  opacity: .3;
+  background-color: var(--color-darkgray);
+}

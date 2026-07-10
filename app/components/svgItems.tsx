@@ -29,3 +29,16 @@ export function UpButton() {
     </svg>
   )
 }
+
+export function Stripes() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <defs>
+        <pattern id="pattern_KOAtP" patternUnits="userSpaceOnUse" width="9" height="8" patternTransform="rotate(45)">
+          <line x1="0" y="0" x2="0" y2="8" strokeWidth="6" />
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#pattern_KOAtP)" opacity="1" />
+    </svg>
+  )
+}

@@ -30,25 +30,25 @@
 }
 
 .tile[data-clickable="false"] {
-  background-color: var(--color-gray-inactive);
+  background-color: var(--color-darkgray);
   cursor: auto;
-  color: var(--color-inactive-day)
+  color: var(--color-inactive-day);
 }
 
-.tile[data-background-color='normal']   { background-color: var(--color-lightgray); }
-.tile[data-background-color='alert']    { background-color: var(--color-alert); }
-.tile[data-background-color='warning']  { background-color: var(--color-warning); }
-.tile[data-background-color='event']    { background-color: var(--color-event); }
+.tile[data-background='normal']   { background-color: var(--color-lightgray); }
+.tile[data-background='alert']    { background-color: var(--color-alert); }
+.tile[data-background='warning']  { background-color: var(--color-warning); }
+.tile[data-background='event']    { background-color: var(--color-event); }
 
-.tile[data-selected='true'][data-background-color='normal']   { background-color: var(--color-lightgray-active); }
-.tile[data-selected='true'][data-background-color='alert']    { background-color: var(--color-alert-active); }
-.tile[data-selected='true'][data-background-color='warning']  { background-color: var(--color-warning-active); }
-.tile[data-selected='true'][data-background-color='event']    { background-color: var(--color-event-active); }
+.tile[data-selected='true'][data-background='normal']   { background-color: var(--color-lightgray-active); }
+.tile[data-selected='true'][data-background='alert']    { background-color: var(--color-alert-active); }
+.tile[data-selected='true'][data-background='warning']  { background-color: var(--color-warning-active); }
+.tile[data-selected='true'][data-background='event']    { background-color: var(--color-event-active); }
 
-.tile:hover[data-background-color='normal']   { background-color: var(--color-lightgray-active); }
-.tile:hover[data-background-color='alert']    { background-color: var(--color-alert-active); }
-.tile:hover[data-background-color='warning']  { background-color: var(--color-warning-active); }
-.tile:hover[data-background-color='event']    { background-color: var(--color-event-active); }
+.tile:hover[data-background='normal']   { background-color: var(--color-lightgray-active); }
+.tile:hover[data-background='alert']    { background-color: var(--color-alert-active); }
+.tile:hover[data-background='warning']  { background-color: var(--color-warning-active); }
+.tile:hover[data-background='event']    { background-color: var(--color-event-active); }
 
 .tile[data-selected='true'] > .weather-icon-container { opacity: 1 }
 
@@ -96,3 +96,11 @@
   right: 5px;
   z-index: 2;
 }
+
+.stripes[data-background='false'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  stroke: #131313;
+}
+.stripes[data-background='true'] {display: none; }
