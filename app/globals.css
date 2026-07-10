@@ -3,20 +3,21 @@
   --ff-inter: 'Inter';
   --ff-arsenal: 'arsenal';
 
+  --color-white: #ffffff;
   --background: #131313;
   --color-inactive-day: #444444;
   --color-lightgray: #5353534b;
   --color-lightgray-active: #bdbbbb4b;
   --color-gray: #252525;
-  --color-gray-hover: #3b3b3b;
+  --color-gray-hover: #333333;
   --color-gray-inactive: #1f1f1f;
   --color-darkgray: #1f1f1f;
   --color-alert: #8d4242;
-  --color-alert-active: #c20707;
+  --color-alert-active: #a80909;
   --color-warning: #837e41;
-  --color-warning-active: #a79c08;
+  --color-warning-active: #a89d04;
   --color-event: #3b757c;
-  --color-event-active: #0a9db1;
+  --color-event-active: #0aa0b4;
   --color-persona5r: #f10c0c;
   --color-persona3r: #0650da;
   --color-persona4g: #eedf0f;

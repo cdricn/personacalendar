@@ -59,14 +59,20 @@ export default function Calendar({
   return (
     <>
       <div className={styles['calendar-header-container']}>
-        <div className={styles['month-nav']} ref={monthsTabRef} onClick={()=>setMonthsTab(!monthsTab)}>
-          <span className={styles['month']}>
-            {monthHeaders[selectedMonth].slice(0, 1).toUpperCase() + monthHeaders[selectedMonth].slice(1)}
-          </span>
-          <div className={styles['nav-button']}>
+        <div className={styles['month-nav']} 
+          ref={monthsTabRef} 
+          onClick={()=>setMonthsTab(!monthsTab)}
+        >
+          <div className={styles['month']}>
+            <span className={styles['month-hover-bg']} data-active={monthsTab}></span>
+            <span className={styles['month-text']}>
+              {monthHeaders[selectedMonth].slice(0, 1).toUpperCase() + monthHeaders[selectedMonth].slice(1)}
+            </span>
+          </div>
+          <div className={styles['nav-button']} data-active={monthsTab}>
             <span>{monthsTab?<UpButton/>:<DownButton/>}</span>
           </div>
-          <div className={styles['selection-tab']} style={monthsTab?{visibility:'visible'}:{visibility:'hidden'}}>
+          <div className={styles['selection-tab']} data-active={monthsTab}>
             <ul className={styles['selection']}>
               {fillMonths()}
             </ul>
@@ -83,7 +89,8 @@ export default function Calendar({
           style={{
             gridTemplateColumns: `repeat(${dayHeaders.length}, 1fr)`,
             gridTemplateRows: `repeat(${maxRows}, 1fr)`
-          }}>
+          }}
+        >
           {data && data.map((item, index)=>{
             const dayKey = 'day' + (item.day);
             const dayStart = index === 0 ? {gridColumnStart: `${data[0].day_code}`} : undefined;
