@@ -26,11 +26,14 @@
     transition: .1s;
   }
 
-  .month {
-    .month-hover-bg {
-      transform: scaleX(1);
-      transition: .2s ease-out;
-    }
+  .month-hover-bg[data-active="true"] {
+    transform: scaleX(1);
+    transition: .2s ease-out;
+  }
+  .month-hover-bg[data-active="false"] {
+    border-radius: 0px 0px 0px 0px;
+    transform: scaleX(.05);
+    transition: .1s;
   }
 }
 
@@ -49,20 +52,22 @@
   }
   
   .month-hover-bg {
-    border-radius: 10 0px 0px 10px;
+    border-radius: 10px 0px 0px 10px;
     position: absolute;
     display: block;
     bottom: 0;
     height: 100%;
     width: 100%;
     background-color: var(--color-white);
-    transform-origin: right;
+    transform-origin: center right;
     transform: scaleX(0);
-    transition: .2s ease-out;
+    transition: .1s;
   }
-  .month-hover-bg[data-active="true"] { transform: scaleX(1); }
+  .month-hover-bg[data-active="true"] { 
+    transform: scaleX(1); 
+    transition: .3s;
+  }
 }
-  
 
 .nav-button {
   border-radius: 50%;
@@ -93,6 +98,7 @@
   box-shadow: 0px 3px 3px rgb(17, 17, 17);
   z-index: 5;
   visibility: hidden;
+  opacity: 0;
   transition: .1s;
 
   .selection {
@@ -117,7 +123,7 @@
     }
   }
 }
-.selection-tab[data-active="true"] { visibility: visible; }
+.selection-tab[data-active="true"] { visibility: visible; opacity: 1; }
 
 .calendar-body-container {
   position: relative;
