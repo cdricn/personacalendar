@@ -27,6 +27,8 @@ export default function calendarTile({
     item.activities || item.social_events ? 'event' : 
     'normal';
 
+  console.log(item.day, item.is_day_playable)
+
   return (
     <div id={item.day.toString()} className={styles['day-tile-container']}>
       <div className={styles['tile']} 
@@ -34,7 +36,7 @@ export default function calendarTile({
         data-background={tileColor}
         data-selected={isTileSelected}
       >
-        <div className={styles['stripes']} data-background={item.is_day_playable}><Stripes/></div>
+        {!item.is_day_playable ? <div className={styles['stripes']}><Stripes/></div> : null}
         <div className={styles['weather-icon-container']} data-icon-alignment={weatherAlign}>
           {item.day_weather ? <img src={day_modifier[item.day_weather].src} alt={day_modifier[item.day_weather].alt} /> : null}
           {item.night_weather ? <img src={day_modifier[item.night_weather].src} alt={day_modifier[item.night_weather].alt} /> : null}

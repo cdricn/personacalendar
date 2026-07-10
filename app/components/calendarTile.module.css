@@ -29,6 +29,13 @@
   opacity: 1;
 }
 
+.stripes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  stroke: #131313;
+}
+
 .tile[data-clickable="false"] {
   background-color: var(--color-darkgray);
   cursor: auto;
@@ -96,11 +103,3 @@
   right: 5px;
   z-index: 2;
 }
-
-.stripes[data-background='false'] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  stroke: #131313;
-}
-.stripes[data-background='true'] {display: none; }
