@@ -9,12 +9,10 @@ import CalendarTile from './calendarTile';
 
 export default function Calendar({
   setMonth,
-  setDay, 
-  maxRows
+  setDay
 }:{
   setMonth:(item:string)=>void,
-  setDay:(item:number)=>void, 
-  maxRows:number
+  setDay:(item:number)=>void
 }) {
   
   const [selectedMonth, setSelectedMonth] = useState(0);
@@ -24,6 +22,8 @@ export default function Calendar({
   const game = use(GameContext);
   const data = use(DataContext);
   const {day_modifier, dayHeaders, monthHeaders} = ResourceMapping[game];
+
+  if (!data) return;
 
   useEffect(()=>{
     setMonth(monthHeaders[selectedMonth]);
@@ -56,8 +56,9 @@ export default function Calendar({
     })
   }
 
-  const frontTilesFiller = new Array(data![0].day_code-1).fill('top');
-  const bottomTilesFiller = new Array(7 - data![data!.length-1].day_code).fill('bottom');
+  const leftOverDays = 7 - data[data.length-1].day_code;
+  const frontTilesFiller = new Array(data[0].day_code-1).fill('top');
+  const bottomTilesFiller = new Array(leftOverDays).fill('bottom');
 
   return (
     <>
@@ -88,13 +89,10 @@ export default function Calendar({
           {dayHeaders.map((i, index)=>{ return <span key={i+index}>{i.slice(0,3)}</span> })}
         </div>
 
-        <div className={styles['day-grid']}
-          style={{
-            gridTemplateColumns: `repeat(${dayHeaders.length}, 1fr)`,
-            gridTemplateRows: `repeat(${maxRows}, 1fr)`
-          }}
-        >
+        <div className={styles['day-grid']} style={{gridTemplateColumns: `repeat(${dayHeaders.length}, 1fr)`}}>
+          
           {frontTilesFiller.map((item, index) => <div key={'filler'+item+index} className={styles['filler-tile']}/> )}
+          
           {data && data.map((item, index)=>{
             const dayKey = 'day' + (item.day);
             const dayStart = index === 0 ? {gridColumnStart: `${data[0].day_code}`} : undefined;
@@ -109,7 +107,9 @@ export default function Calendar({
               </div>
             )})
           }
+
           {bottomTilesFiller.map((item, index) => <div key={'filler'+item+index} className={styles['filler-tile']}/> )}
+        
         </div>
       </div>
     </>

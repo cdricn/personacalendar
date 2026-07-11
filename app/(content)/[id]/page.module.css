@@ -28,7 +28,7 @@
 
 @media (width < 800px) {
   .main-content {
-    gap: var(--size-32);
+    gap: var(--size-16);
     justify-content: flex-start;
   }
 }

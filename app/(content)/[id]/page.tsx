@@ -30,7 +30,7 @@ export default function CalendarPage() {
         <DataContext value={data[currentMonth]}>
           <GameContext value={path}>
             <section className={styles['calendar-container']}>
-              <Calendar setMonth={setMonth} setDay={setDay} maxRows={6} />
+              <Calendar setMonth={setMonth} setDay={setDay} />
             </section>
             <section className={styles['schedule-container']}>
               <Schedule currentDay={currentDay} currentMonth={currentMonth}/>

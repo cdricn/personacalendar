@@ -27,8 +27,6 @@ export default function calendarTile({
     item.activities || item.social_events ? 'event' : 
     'normal';
 
-  console.log(item.day, item.is_day_playable)
-
   return (
     <div id={item.day.toString()} className={styles['day-tile-container']}>
       <div className={styles['tile']} 
