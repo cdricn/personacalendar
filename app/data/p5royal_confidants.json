@@ -1,0 +1,296 @@
+{
+  "normal_arcanas": [
+    {
+      "name": "Makoto Nijima",
+      "short_name": "Queen",
+      "arcana": "Priestess",
+      "unlock_date": "june 24 2000",
+      "rank_up": {
+        "initiate": "Talk to Makoto. Must have completed Kaneshiro's Palace and have Rank 3 Knowledge to initiate.",
+        "conditions": ["Rank 6: Must have max rank Charm."]
+      },
+      "schedule": {
+        "ignoresRain": true,
+        "time": "day",
+        "availability": {"sunday":"sunday", "tuesday":"tuesday", "thursday":"thursday", "saturday":"saturday"}
+      },
+      "location": ["Shujin Academy 3rd floor", "Shujin Academy gate (No classes)"]
+    },
+    {
+      "name": "Haru Okumura",
+      "short_name": "Noir",
+      "arcana": "Empress",
+      "unlock_date": "october 30 2000",
+      "rank_up": {
+        "initiate": "Talk to Haru.",
+        "conditions": ["Rank 4: Must have max rank Proficiency."]
+      },
+      "schedule": {
+        "ignoresRain": false,
+        "time": "day",
+        "availability": {"monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+      },
+      "location": ["Shujin Academy rooftop"]
+    },
+    {
+      "name": "Yusuke Kitagawa",
+      "short_name": "Fox",
+      "arcana": "Emperor",
+      "unlock_date": "june 18 2000",
+      "rank_up": {
+        "initiate": "Talk to Yusuke.",
+        "conditions": ["Rank 6: Must have rank 4 Proficiency."]
+      },
+      "schedule": {
+        "ignoresRain": true,
+        "time": "day",
+        "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+      },
+      "location": ["Shibuya Underground Station"]
+    },
+    {
+      "name": "Sojiro Sakura",
+      "short_name": "Sojiro",
+      "arcana": "Hierophant",
+      "unlock_date": "april 20 2000", 
+      "rank_up": {
+        "initiate": "Talk to Sojiro. Will automatically start by May 6.",
+        "conditions": ["Rank 3: Must have brewed coffee once.", "Rank 5: Unavailable until August 22.", "Rank 7: Must have max rank Kindness.", "Rank 9: Must have completed the Mementos Request: \"The Money-Grubbing Uncle.\" "]
+      },
+      "schedule": {
+        "ignoresRain": true,
+        "time": "night",
+        "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+      },
+      "location": ["Cafe Leblanc"]
+    },
+    {
+      "name": "Ann Takamaki",
+      "short_name": "Panther",
+      "arcana": "Lovers",
+      "unlock_date": "april 15 2000", 
+      "rank_up": {
+        "initiate": "Automatically starts on April 15.",
+        "conditions": ["Rank 2: Unavailable until May 6. Must have rank 2 Kindness. During this time, Ann can be found in Class 2-D."]
+      },
+      "schedule": {
+        "ignoresRain": true,
+        "time": "day",
+        "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "friday":"friday"}
+      },
+      "location": ["Shibuya Underground Mall"]
+    },
+    {
+      "name": "Ryuji Sakamoto",
+      "short_name": "Skull",
+      "arcana": "Chariot",
+      "unlock_date": "april 12 2000",
+      "rank_up": {
+        "initiate": "Automatically starts on April 12.",
+        "conditions": ["Rank 5: Unavailable until May 6", "Rank 7: Can only be initiated by responding to Ryuji's text at certain dates."]
+      },
+      "schedule": {
+        "ignoresRain": true,
+        "time": "day",
+        "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+      },
+      "location": ["Shujin Academy 2nd floor hallway", "Central Street, Shibuya (No classes)"]
+    },
+    {
+      "name": "Goro Akechi",
+      "short_name": "Akechi",
+      "arcana": "Justice",
+      "unlock_date":"june 10 2000",
+      "rank_up": {
+        "initiate": "Automatically starts on June 10.",
+        "conditions": ["Rank 3: Must have rank 3 Knowledge and Charm", "Rank 6: Unavailable until September 3. During this time, Akechi can be found in Leblanc.", "Rank 7: Unavailable until November 2. Must have rank 4 Knowledge.", "Rank 8: Must win against Akechi in billiards to progress."]
+      },
+      "schedule": {
+        "ignoresRain": true,
+        "time": "night",
+        "availability": {"monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+      },
+      "location": ["Outside Penguin Sniper, Kichijoji"]
+    },
+    {
+      "name": "Futaba Sakura",
+      "short_name": "Oracle",
+      "arcana": "Hermit",
+      "unlock_date": "august 31 2000",
+      "rank_up": {
+        "initiate": "Automatically starts on August 31.",
+        "conditions": ["Rank 2: Must have rank 4 Kindness", "Rank 4: Only available if there are classes.", "Rank 8: Must have completed the Mementos Request: \"Daughter's Just a Meal Ticket\". "]
+      },
+      "schedule": {
+        "ignoresRain": false,
+        "time": "day",
+        "availability": {"sunday":"sunday", "wednesday":"wednesday", "thursday":"thursday", "saturday":"saturday"}
+      },
+      "location": ["Outside Cafe Leblanc"]
+    },
+    {
+      "name": "Chihaya Mifune",
+      "short_name": "Chihaya",
+      "arcana": "Fortune",
+      "unlock_date": "june 26 2000",
+      "rank_up": {
+        "initiate": "Talk to Chihaya and purchase her Holy Stone for 100,000 yen. Return a second time and eavesdrop, then complete the Mementos Request: \"Ending the Boyfriend's Abuse\". ",
+        "conditions": ["Rank 8: The player will receive a Mementos Request (\"Debunking the Psychic\"), which they must finish in order to proceed."]
+      },
+      "schedule": {
+        "ignoresRain": false,
+        "time": "night",
+        "availability": {"sunday":"sunday", "tuesday":"tuesday", "thursday":"thursday", "saturday":"saturday"}
+      },
+      "location": ["Shinjuku"]
+    },
+    {
+      "name": "Munehisa Iwai",
+      "short_name": "Iwai",
+      "arcana": "Hanged Man",
+      "condition": {"month":"may", "day":6},
+      "condition": "Must have Rank 4 in Guts to initiate.",
+      "schedule": {
+        "ignoresRain": true,
+        "time": "night",
+        "availability": {"sunday":"sunday", "thursday":"thursday", "saturday":"saturday"}
+      }
+    },
+    {
+      "name": "Tae Takemi",
+      "short_name": "Takemi",
+      "arcana": "Death",
+      "condition": {"month":"april", "day":18},
+      "condition": "Visit Takemi Medical Clinic and ask about her special medicine to initiate.",
+      "schedule": {
+        "ignoresRain": true,
+        "time": "day",
+        "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+      }
+    },
+    {
+      "name": "Sadayo Kawakami",
+      "short_name": "Kawakami",
+      "arcana": "Temperance",
+      "condition": {"month":"may", "day":25},
+      "condition": "Must first participate with Mishima's Plan as early as May 24th to initiate. You must then get her number in the Shujin Academy 2F hallway. Calling her for the first time to establish the confidant requires 3 Guts.",
+      "schedule": {
+        "ignoresRain": true,
+        "time": "night",
+        "availability": {"friday":"friday", "saturday":"saturday"}
+      }
+    },
+    {
+      "name": "Ichiko Ohya",
+      "short_name": "Ohya",
+      "arcana": "Devil",
+      "condition": { "month":"june", "day":23},
+      "condition": null,
+      "schedule": {
+        "ignoresRain": true,
+        "time": "night",
+        "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+      }
+    },
+    {
+      "name": "Shinya Oda",
+      "short_name": "Shinya",
+      "arcana": "Tower",
+      "condition": {"month":"september", "day":5},
+      "condition": "Unlocked as part of the 'Winners Don't Use Cheats' Mementos Request, which can be done as early as September 4.",
+      "schedule": {
+        "ignoresRain": true,
+        "time": "day",
+        "availability": {"monday":"monday", "tuesday":"tuesday", "thursday":"thursday", "saturday":"saturday"}
+      }
+    },
+    {
+      "name": "Hifumi Togo",
+      "short_name": "Hifumi",
+      "arcana": "Star",
+      "condition": {"month":"june", "day":25},
+      "condition": "Must have completed Kaneshiro's Palace. Requires Rank 3 Charm to initiate.",
+      "schedule": {
+        "ignoresRain": true,
+        "time": "night",
+        "availability": {"sunday":"sunday", "monday":"monday", "wednesday":"wednesday", "saturday":"saturday"}
+      }
+    },
+    {
+      "name": "Yuuki Mishima",
+      "short_name": "Mishima",
+      "arcana": "Moon",
+      "condition": { "month":"may", "day":6},
+      "condition": "Available every day after completing his Mementos requests.",
+      "schedule": {
+        "ignoresRain": true,
+        "time": "night",
+        "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+      }
+    },
+    {
+      "name": "Toranosuke Yoshida",
+      "short_name": "Yoshida",
+      "arcana": "Sun",
+      "condition": {"month":"may", "day":10},
+      "condition": "The Protagonist must first listen to their speech in Shibuya Station Square, then work at the Beef Bowl Shop twice to condition.",
+      "schedule": {
+        "ignoresRain": false,
+        "time": "night",
+        "availability": {"sunday":"sunday", "tuesday":"tuesday", "thursday":"thursday", "saturday":"saturday"}
+      }
+    },
+    {
+      "name": "Yoshizawa",
+      "short_name": "Yoshizawa",
+      "arcana": "Faith",
+      "condition": { "month":"may", "day":30},
+      "condition": "Can only be ranked up by responding to her IM texts.",
+      "schedule": null
+    },
+    {
+      "name": "Takuto Maruki",
+      "short_name": "Maruki",
+      "arcana": "Councillor",
+      "condition": { "month":"may", "day":13},
+      "condition": null,
+      "schedule": {
+        "ignoresRain": true,
+        "time": "day",
+        "availability": {"monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "friday":"friday"}
+      }
+    }
+  ],
+  "special_arcanas": [
+    {
+      "name": "Igor",
+      "short_name": "Igor",
+      "arcana": "Fool",
+      "condition": {"month":"april", "day":12, "condition": "Automatically unlocks and ranks up during certain story events."},
+      "schedule": null
+    },
+    {
+      "name": "Morgana",
+      "short_name": "Mona",
+      "arcana": "Magician",
+      "condition": {"month":"april", "day":15, "condition": "Automatically unlocks and ranks up during certain story events."},
+      "schedule": null
+    },
+    {
+      "name": "Caroline and Justine",
+      "short_name": "Caroline and Justine",
+      "arcana": "Strength",
+      "condition": {"month":"may", "day":18},
+      "condition": "Must have Jack Frost with Mabufu to initiate. Further ranks requires you to bring personas with specific skills.",
+      "schedule": null
+    },
+    {
+      "name": "Sae Nijima",
+      "short_name": "Sae",
+      "arcana": "Judgement",
+      "condition": { "month":"july", "day":9},
+      "condition": null,
+      "schedule": null
+    }
+  ]
+}
