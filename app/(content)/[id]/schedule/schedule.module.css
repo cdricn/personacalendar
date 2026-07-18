@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 62px;
+  height: 66px;
 
   & .section-header {
     padding: var(--size-8);
@@ -16,9 +16,8 @@
   }
 }
 
-
 .schedule {
-  padding-top: 20px;
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;

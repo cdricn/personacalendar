@@ -3,15 +3,21 @@
   --ff-inter: 'Inter';
   --ff-arsenal: 'arsenal';
 
-  --color-white: #ffffff;
   --background: #131313;
-  --color-inactive-day: #525252;
+  --color-white: #ffffff;
   --color-lightgray: #5353534b;
-  --color-lightgray-active: #bdbbbb4b;
+  --color-lightgray-2: #bdbbbb4b;
+  --color-lightgray-3: #5e5e5e;
   --color-gray: #252525;
   --color-gray-hover: #333333;
   --color-darkgray: #1f1f1f;
+  --color-green: #5CD032;
+  --color-yellow: #D0CB32;
+  --color-red: #D03232;
 
+  --color-inactive-day: #525252;
+  --color-lightgray-active: var(--color-lightgray-2);
+  --color-muted: var(--color-lightgray-3);
   --color-alert: #8d4242;
   --color-alert-active: #a80909;
   --color-warning: #837e41;
@@ -39,6 +45,7 @@
   --fs-calendar-day: var(--size-16);
   --fs-calendar-number: var(--size-16);
   --fs-schedule-header: var(--size-16);
+  --fs-schedule-body: var(--size-16);
   --fs-body: var(--size-16);
 }
 
@@ -48,7 +55,7 @@
     --fs-calendar-month: var(--size-18);
     --fs-calendar-day: var(--size-14);
     --fs-calendar-number: var(--size-14);
-    --fs-schedule-header: var(--size-48);
+    --fs-schedule-header: var(--size-16);
     --fs-body: var(--size-14);
   }
 }
