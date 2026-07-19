@@ -38,8 +38,8 @@ export interface GameIcons {
 }
 
 export interface ConfidantData {
-  normal_arcanas: NormalArcanas[],
-  special_arcanas: SpecialArcanas[]
+  normal_arcanas: readonly NormalArcanas[],
+  special_arcanas: readonly SpecialArcanas[]
 }
 
 export interface NormalArcanas {
