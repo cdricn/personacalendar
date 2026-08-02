@@ -16,11 +16,35 @@
   }
 }
 
-.schedule {
+.options {
+  display: flex;
+  gap: var(--size-4);
+
+  & div {
+    border-radius: 10px 10px 0px 0px;
+    padding: var(--size-4);
+    display: inline-block;
+    width: 96px;
+    background-color: var(--color-lightgray);
+    text-align: center;
+    cursor: pointer;
+    transition: .2s;
+  }
+  div:hover {
+    transition: .2s;
+    filter: brightness(1.1);
+  }
+  div[data-selected='false'] {background-color: var(--color-darkgray); color: var(--color-lightgray-5);}
+}
+
+.schedule-container {
+  border-radius: 0px 10px 10px 10px;
+  padding: var(--size-16);
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: var(--color-lightgray);
   font-family: var(--font-schedule-body);
   font-size: var(--fs-body);
 }

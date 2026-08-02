@@ -3,21 +3,19 @@
 import styles from './schedule.module.css';
 import { GameContext, DataContext } from '@/app/utils/context';
 import { use } from 'react';
+import { useState } from 'react';
 import { ResourceMapping } from '@/app/lib/resourceMapping';
-import ActivitiesBlock from './activitiesBlock';
+import GeneralTab from './generalTab';
 
 export default function Schedule({currentDay, currentMonth}:{currentDay:number, currentMonth:string}) {
+  const [selectedTab, setSelectedTab] = useState('general');
   const game = use(GameContext);
   const data = use(DataContext);
   if (!data) return;
 
   const {dayHeaders} = ResourceMapping[game];
   const scheduleData = data[currentDay] ? data[currentDay] : data[data.length-1];
-  const { 
-    day, day_code, day_weather, night_weather, special_day_weather, special_night_weather,
-    world, activities, social_events, events, events_spoiler, day_activities, night_activities,
-    is_day_playable  
-  } = scheduleData;
+  const {day, day_code} = scheduleData;
 
   const monthToDigit : {[month:string]: string} = {
     january: '1',
@@ -42,39 +40,25 @@ export default function Schedule({currentDay, currentMonth}:{currentDay:number, 
         </div>
       </div>
 
+      <div className={styles['options']}>
+        <div onClick={()=>setSelectedTab('general')} data-selected={selectedTab === 'general'}><span>General</span></div>
+        <div onClick={()=>setSelectedTab('social')} data-selected={selectedTab === 'social'}><span>Social</span></div>
+      </div>
       
-      <div className={styles['schedule']}>
-        <ActivitiesBlock 
-          blockTitle='Day'
-          weather={day_weather}
-          specialDayWeather={special_day_weather}
-          world={world}
-          activities={activities}
-          socialEvents={social_events}
-          events={events}
-          eventsSpoiler={events_spoiler}
-          dayAvailability={day_activities}
-          isDayPlayable={is_day_playable}
-        />
-        <ActivitiesBlock 
-          blockTitle='Night'
-          weather={night_weather}
-          specialDayWeather={special_night_weather}
-          world={world}
-          activities={activities}
-          socialEvents={social_events}
-          events={events}
-          eventsSpoiler={events_spoiler}
-          dayAvailability={night_activities}
-          isDayPlayable={is_day_playable}
-        />
-        <div>
-          <h3>Events</h3>
-        </div>
-        <div>
-          <h3>Story</h3>
-        </div>
+      <div className={styles['schedule-container']}>
+        { selectedTab === 'general' ? <GeneralTab currentDay={currentDay} /> :
+          selectedTab === 'social' ? <>Social</> :
+          <></>
+        }
       </div>
     </>
   )
 }
+
+
+/*
+schedule window
+| general tab
+| social tab
+| activities tab
+*/

@@ -1,6 +1,9 @@
-.activities-block {
+
+
+.block {
   position: relative;
 }
+.block[data-display='false']  { display:none }
 
 .block-header {
   margin-bottom: var(--size-8);
