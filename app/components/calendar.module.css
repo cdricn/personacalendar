@@ -164,6 +164,5 @@
   height: 70px;
   overflow: hidden;
   user-select: none;
-  opacity: .3;
-  background-color: var(--color-darkgray);
+  background-color: var(--color-inactive-tile);
 }

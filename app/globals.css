@@ -7,10 +7,14 @@
   --color-white: #ffffff;
   --color-lightgray: #5353534b;
   --color-lightgray-2: #bdbbbb4b;
-  --color-lightgray-3: #5e5e5e;
+  --color-lightgray-3: #807d7d;
+  --color-lightgray-4: #9b9b9b;
+  --color-lightgray-5: #b6b5b5;
   --color-gray: #252525;
   --color-gray-hover: #333333;
   --color-darkgray: #1f1f1f;
+  --color-darkgray-2: #242424;
+  --color-darkgray-3: #161616;
   --color-green: #5CD032;
   --color-yellow: #D0CB32;
   --color-red: #D03232;
@@ -18,6 +22,7 @@
   --color-inactive-day: #525252;
   --color-lightgray-active: var(--color-lightgray-2);
   --color-muted: var(--color-lightgray-3);
+  --color-inactive-tile: var(--color-darkgray-3);
   --color-alert: #8d4242;
   --color-alert-active: #a80909;
   --color-warning: #837e41;
