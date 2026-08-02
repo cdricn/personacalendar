@@ -1,11 +1,26 @@
 import { GameIcons } from "./interface";
-import p5confidants from '../data/p5_confidants.json'
+import p5royal_confidants from '../data/p5royal_confidants.json'
 
 const gregorianMonths = [
   'April', 'May', 'June', 'July', 'August', 'September',
   'October', 'November', 'December', 'January', 'February', 'March'
 ] as const;
 const normalDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'] as const;
+
+export const gregorianMonthsToDigit : {[month:string]: string} = {
+  january: '1',
+  february: '2',
+  march: '3',
+  april: '4',
+  may: '5',
+  june: '6',
+  july: '7',
+  august: '8',
+  september: '9',
+  october: '10',
+  november: '11',
+  december: '12',
+};
 
 export const ResourceMapping : GameIcons = {
   ['/persona5_royal']: {
@@ -18,6 +33,6 @@ export const ResourceMapping : GameIcons = {
     special_day_modifier: {},
     monthHeaders: gregorianMonths,
     dayHeaders: normalDays,
-    confidants: p5confidants
+    confidants: p5royal_confidants
   }
 }
