@@ -97,11 +97,11 @@ export default function Calendar({
           {frontTilesFiller.map((item, index) => <div key={'filler'+item+index} className={styles['filler-tile']}/> )}
           
           {data && data.map((item, index)=>{
-            const dayKey = 'day' + (item.day);
+            const tileKey = 'day' + (item.day);
             const dayStart = index === 0 ? {gridColumnStart: `${data[0].day_code}`} : undefined;
             const dayIsClickable = item.is_day_playable ? ()=>{handleClickDay(index)} : undefined;
             return (
-              <div key={dayKey} onClick={dayIsClickable} style={dayStart}>
+              <div key={tileKey} onClick={dayIsClickable} style={dayStart}>
                 <CalendarTile 
                   item={item} 
                   day_modifier={day_modifier}
