@@ -25,9 +25,8 @@ export default function Calendar({
 
   if (!data) return;
 
+  // mouse handle, convert to hook
   useEffect(()=>{
-    setMonth(monthHeaders[selectedMonth]);
-
     function handleMonthsTabClickOutside(event:MouseEvent) {
       if (monthsTabRef.current && !monthsTabRef.current.contains(event.target as Node)) {
         setMonthsTab(false);
@@ -42,7 +41,7 @@ export default function Calendar({
     document.addEventListener("mousedown", handleMonthsTabClickInside);
 
     return () => document.removeEventListener("mousedown", handleMonthsTabClickOutside)
-  }, [selectedMonth])
+  }, [])
   
   function handleClickDay(currentDay:number) {
     setDay(currentDay);
@@ -52,7 +51,7 @@ export default function Calendar({
   function fillMonths() {
     const months = [...monthHeaders];
     return months.map((item, index)=>{
-      return <li key={item} onClick={()=>setSelectedMonth(index)}>{item.slice(0,3)}</li>
+      return <li key={item} onClick={()=>setMonth(monthHeaders[index])}>{item.slice(0,3)}</li>
     })
   }
 
