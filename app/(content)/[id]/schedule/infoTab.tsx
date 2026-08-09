@@ -8,7 +8,7 @@ export default function InfoTab({currentDay}:{currentDay:number}) {
 
   const scheduleData = data[currentDay] ? data[currentDay] : data[data.length-1];
   const { 
-    day, day_code, day_weather, night_weather, special_day_weather, special_night_weather,
+    day_weather, night_weather, special_day_weather, special_night_weather,
     world, activities, social_events, events, events_spoiler, day_activities, night_activities,
     is_day_playable  
   } = scheduleData;
