@@ -1,8 +1,8 @@
-import styles from './generalTab.module.css';
+import styles from './infoTab.module.css';
 import { DataContext } from '@/app/utils/context';
 import { use } from 'react';
 
-export default function GeneralTab({currentDay}:{currentDay:number}) {
+export default function InfoTab({currentDay}:{currentDay:number}) {
   const data = use(DataContext);
   if (!data) return;
 
@@ -13,27 +13,27 @@ export default function GeneralTab({currentDay}:{currentDay:number}) {
     is_day_playable  
   } = scheduleData;
   
-  const statusColor = !day_activities ? undefined :
+  const dayStatus = !day_activities ? undefined :
     day_activities === 'Unavailable' ? 'unavailable' : 
     day_activities === 'Limited' ? 'limited' :
     'free';
-  const blockDisplay = !is_day_playable ||  day_activities === 'Unavailable';
+  const blockDisplay = is_day_playable;
   const worldDisplay = Boolean(world);
-  const activityDisplay = Boolean(activities);
+  const activityDisplay = Boolean(activities); 
 
   return (
-    <div className={styles['schedule-container']}>
+    <>
 
-      <div className={styles['block']} data-display={statusColor==='unavailable'}>
+      <div className={styles['block']} data-display={blockDisplay}>
         <div className={styles['block-header']}>
           <div className={styles['header-status']}>
-            <span data-display={is_day_playable} data-status-color={statusColor}/>
+            <span data-display={is_day_playable} data-status-color={dayStatus}/>
             <h3>Day</h3>
           </div>
           <span>{day_activities}</span>
         </div>
         <div className={styles['block-info-container']}>
-          <div className={styles['block-info']} data-display={blockDisplay}>
+          <div className={styles['block-info']} data-display={dayStatus==='free'}>
             <span data-display={special_day_weather ? true : false}>
               Modifier: <span> {special_day_weather}</span>
             </span>
@@ -47,21 +47,21 @@ export default function GeneralTab({currentDay}:{currentDay:number}) {
               <h4>Activities</h4>
             </div>
           </div>
-          <div className={styles['block-info-filler']} data-display={blockDisplay}>
+          <div className={styles['block-info-filler']} data-display={dayStatus==='free'}>
           </div>
         </div>
       </div>
 
-      <div className={styles['block']} data-display={statusColor==='unavailable'}>
+      <div className={styles['block']} data-display={blockDisplay}>
         <div className={styles['block-header']}>
           <div className={styles['header-status']}>
-            <span data-display={is_day_playable} data-status-color={statusColor}/>
+            <span data-display={is_day_playable} data-status-color={dayStatus}/>
             <h3>Night</h3>
           </div>
           <span>{day_activities}</span>
         </div>
         <div className={styles['block-info-container']}>
-          <div className={styles['block-info']} data-display={blockDisplay}>
+          <div className={styles['block-info']} data-display={dayStatus==='free'}>
             <span data-display={special_day_weather ? true : false}>
               Modifier: <span> {special_day_weather}</span>
             </span>
@@ -75,18 +75,27 @@ export default function GeneralTab({currentDay}:{currentDay:number}) {
               <h4>Activities</h4>
             </div>
           </div>
-          <div className={styles['block-info-filler']} data-display={blockDisplay}>
+          <div className={styles['block-info-filler']} data-display={dayStatus==='free'}>
           </div>
         </div>
       </div>
 
-      <div className={styles['block']} data-display={statusColor==='unavailable'}>
-        <h3>Events</h3>
-      </div>
-      <div className={styles['block']} data-display={statusColor==='unavailable'}>
+      <div className={styles['block']} data-display={blockDisplay && events}>
         <h3>Story</h3>
+        <div>
+          {events && events[0] === 'Story event.' ? 
+            <details>
+              <summary>Spoilers:</summary>
+              <ul className={styles['story-spoiler']}>
+                {events_spoiler && events_spoiler.map((item)=><li><p>- {item}</p></li>)}
+              </ul>
+            </details>
+            :
+            <p className={styles['story-normal']}>{events}</p>
+          }
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

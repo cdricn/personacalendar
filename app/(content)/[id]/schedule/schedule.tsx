@@ -5,10 +5,10 @@ import { GameContext, DataContext } from '@/app/utils/context';
 import { use } from 'react';
 import { useState } from 'react';
 import { ResourceMapping } from '@/app/lib/resourceMapping';
-import GeneralTab from './generalTab';
+import InfoTab from './infoTab';
 
 export default function Schedule({currentDay, currentMonth}:{currentDay:number, currentMonth:string}) {
-  const [selectedTab, setSelectedTab] = useState('general');
+  const [selectedTab, setSelectedTab] = useState('info');
   const game = use(GameContext);
   const data = use(DataContext);
   if (!data) return;
@@ -31,7 +31,7 @@ export default function Schedule({currentDay, currentMonth}:{currentDay:number, 
     november: '11',
     december: '12',
   };
-  
+
   return (
     <>
       <div className={styles['section-header-container']}>
@@ -41,12 +41,16 @@ export default function Schedule({currentDay, currentMonth}:{currentDay:number, 
       </div>
 
       <div className={styles['options']}>
-        <div onClick={()=>setSelectedTab('general')} data-selected={selectedTab === 'general'}><span>General</span></div>
-        <div onClick={()=>setSelectedTab('social')} data-selected={selectedTab === 'social'}><span>Social</span></div>
+        <div onClick={()=>setSelectedTab('info')} data-selected={selectedTab === 'info'}>
+          <span>Info</span>
+        </div>
+        <div onClick={()=>setSelectedTab('social')} data-selected={selectedTab === 'social'}>
+          <span>Social</span>
+        </div>
       </div>
       
       <div className={styles['schedule-container']}>
-        { selectedTab === 'general' ? <GeneralTab currentDay={currentDay} /> :
+        { selectedTab === 'info' ? <InfoTab currentDay={currentDay} /> :
           selectedTab === 'social' ? <>Social</> :
           <></>
         }

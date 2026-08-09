@@ -1,6 +1,9 @@
-.activities-block {
+
+
+.block {
   position: relative;
 }
+.block[data-display='false']  { display:none }
 
 .block-header {
   margin-bottom: var(--size-8);
@@ -66,3 +69,12 @@
   width: 100%;
 }
 .block-info-filler[data-display='false']  { display: none }
+
+.story-spoiler {
+  padding-left: var(--size-16);
+  list-style-type: none;
+
+  li {
+    padding-bottom: var(--size-8);
+  }
+}
