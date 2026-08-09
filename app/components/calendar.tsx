@@ -25,6 +25,10 @@ export default function Calendar({
 
   if (!data) return;
 
+  const leftOverDays = 7 - data[data.length-1].day_code;
+  const frontTilesFiller = new Array(data[0].day_code-1).fill('top');
+  const bottomTilesFiller = new Array(leftOverDays).fill('bottom');
+
   // mouse handle, convert to hook
   useEffect(()=>{
     function handleMonthsTabClickOutside(event:MouseEvent) {
@@ -51,13 +55,13 @@ export default function Calendar({
   function fillMonths() {
     const months = [...monthHeaders];
     return months.map((item, index)=>{
-      return <li key={item} onClick={()=>setMonth(monthHeaders[index])}>{item.slice(0,3)}</li>
-    })
+      return (
+        <li key={item} 
+          onClick={()=>{setMonth(monthHeaders[index]); setSelectedMonth(index)}}>
+            {item.slice(0,3)}
+        </li>
+    )})
   }
-
-  const leftOverDays = 7 - data[data.length-1].day_code;
-  const frontTilesFiller = new Array(data[0].day_code-1).fill('top');
-  const bottomTilesFiller = new Array(leftOverDays).fill('bottom');
 
   return (
     <>
