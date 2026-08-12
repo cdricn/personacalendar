@@ -7,7 +7,9 @@ import { useState } from "react";
 import { GameContext, DataContext } from "../../utils/context";
 import Schedule from "./schedule/schedule";
 import { CalendarMonths } from "@/app/lib/interface";
-import Calendar from "@/app/components/calendar";
+import CalendarBody from "@/app/(content)/[id]/calendar/body/calendarBody";
+import MonthSelection from "./calendar/head/monthSelection";
+import DateDisplay from "./calendar/head/dateDisplay";
 
 
 export default function CalendarPage() {
@@ -19,18 +21,21 @@ export default function CalendarPage() {
   function setMonth(clickedMonth:string) {
     setCurrentMonth(clickedMonth.toLowerCase());
   }
-
   function setDay(clickedDay:number) {
     setCurrentDay(clickedDay);
   }
-
+    
   return (
     <main className={styles['main']}>
       <div className={styles['main-content']}>
         <DataContext value={data[currentMonth]}>
           <GameContext value={path}>
             <section className={styles['calendar-container']}>
-              <Calendar setMonth={setMonth} setDay={setDay} />
+              <div className={styles['calendar-header-container']}>
+                <MonthSelection setMonth={setMonth} />
+                <DateDisplay currentDay={currentDay} currentMonth={currentMonth}/>
+              </div>
+              <CalendarBody setDay={setDay} />
             </section>
             <section className={styles['schedule-container']}>
               <Schedule currentDay={currentDay} currentMonth={currentMonth}/>

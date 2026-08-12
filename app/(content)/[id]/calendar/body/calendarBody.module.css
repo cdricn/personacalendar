@@ -1,0 +1,41 @@
+.calendar-body-container {
+  position: relative;
+}
+
+.days-header {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  text-align: center;
+  font-family: var(--font-days-number);
+  font-size: var(--fs-calendar-day);
+  font-weight: 500;
+
+  span {
+    border-radius: 10px;
+    padding-block: 4px;
+    min-width: 50px;
+    max-width: 70px;
+    background-color: var(--color-lightgray);
+  }
+}
+
+.day-grid {
+  margin-top: var(--size-4);
+  position: relative;
+  display: grid;
+  font-family: var(--font-days);
+  gap: 2px;
+}
+
+.filler-tile {
+  border-radius: 20%;
+  position: relative;
+  min-width: 50px;
+  max-width: 70px;
+  height: 70px;
+  overflow: hidden;
+  user-select: none;
+  background-color: var(--color-inactive-tile);
+}
