@@ -39,10 +39,7 @@ export default function Schedule({currentDay, currentMonth}:{currentDay:number, 
 
   return (
     <>
-      <div className={styles['section-header-container']}>
-        <div className={styles['section-header']}>
-          <h2>{monthToDigit[currentMonth]}/{day} {dayHeaders[day_code-1]}</h2>
-        </div>
+      <div className={styles['section-container']}>
       </div>
 
       <div className={styles['options']}>
@@ -54,7 +51,7 @@ export default function Schedule({currentDay, currentMonth}:{currentDay:number, 
         </div>
       </div>
       
-      <div className={styles['schedule-container']}>
+      <div className={styles['info-container']}>
         { selectedTab === 'info' ? <InfoTab currentDay={currentDay} /> :
           selectedTab === 'story' ? <StoryTab currentDay={currentDay} /> :
           <></>

@@ -9,7 +9,7 @@ export default function MonthSelection({setMonth}:{setMonth:(item:string)=>void}
   const [monthsTab, setMonthsTab] = useState(false);
   const monthsTabRef = useRef<HTMLDivElement>(null);
   const game = use(GameContext);
-  const {day_modifier, dayHeaders, monthHeaders} = ResourceMapping[game];
+  const {monthHeaders} = ResourceMapping[game];
   
   useEffect(()=>{
     function handleMonthsTabClickOutside(event:MouseEvent) {
@@ -44,8 +44,8 @@ export default function MonthSelection({setMonth}:{setMonth:(item:string)=>void}
       ref={monthsTabRef} 
       onClick={()=>setMonthsTab(!monthsTab)}
     >
+      <span className={styles['month-hover-bg']} data-active={monthsTab}></span>
       <div className={styles['month']}>
-        <span className={styles['month-hover-bg']} data-active={monthsTab}></span>
         <span className={styles['month-text']}>
           {monthHeaders[selectedMonth].slice(0, 1).toUpperCase() + monthHeaders[selectedMonth].slice(1)}
         </span>

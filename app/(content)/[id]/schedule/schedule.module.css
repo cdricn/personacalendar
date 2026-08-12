@@ -1,19 +1,8 @@
-.section-header-container {
-  margin-bottom: var(--size-16);
+.section-container {
+  padding-top: var(--size-32);
   position: relative;
   display: flex;
   align-items: center;
-  height: 66px;
-
-  & .section-header {
-    padding: var(--size-8);
-    background-color: white;
-
-    & h2 {
-      mix-blend-mode: difference;
-      font-family: var(--font-schedule);
-    }
-  }
 }
 
 .options {
@@ -37,7 +26,7 @@
   div[data-selected='false'] {background-color: var(--color-darkgray); color: var(--color-lightgray-5);}
 }
 
-.schedule-container {
+.info-container {
   border-radius: 0px 10px 10px 10px;
   padding: var(--size-16);
   position: relative;
