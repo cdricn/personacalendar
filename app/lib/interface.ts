@@ -54,7 +54,7 @@ export interface NormalArcanas {
   schedule: {
     ignoresRain: boolean,
     time: string,
-    availability: {[day:string]:string | undefined}
+    availability: {[month:string]:string[] | null}
   } | null,
   location: string[]
 }
