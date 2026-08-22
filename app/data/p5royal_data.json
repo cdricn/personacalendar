@@ -1657,7 +1657,7 @@
     {
       "day": 13,
       "day_code": 4,
-      "day_weather": null,
+      "day_weather": "clear",
       "night_weather": null,
       "special_day_weather": null,
       "special_night_weather": null,
@@ -1673,7 +1673,7 @@
     {
       "day": 14,
       "day_code": 5,
-      "day_weather": null,
+      "day_weather": "clear",
       "night_weather": null,
       "special_day_weather": null,
       "special_night_weather": null,
@@ -1689,7 +1689,7 @@
     {
       "day": 15,
       "day_code": 6,
-      "day_weather": null,
+      "day_weather": "cloudy",
       "night_weather": null,
       "special_day_weather": null,
       "special_night_weather": null,
@@ -1705,7 +1705,7 @@
     {
       "day": 16,
       "day_code": 7,
-      "day_weather": null,
+      "day_weather": "clear",
       "night_weather": "rainy",
       "special_day_weather": null,
       "special_night_weather": null,

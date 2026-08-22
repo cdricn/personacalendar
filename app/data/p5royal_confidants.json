@@ -4,7 +4,7 @@
       "name": "Makoto Nijima",
       "short_name": "Queen",
       "arcana": "Priestess",
-      "unlock_date": "june 24 2000",
+      "unlock_date": "june 24",
       "rank_up": {
         "initiate": "Talk to Makoto. Must have completed Kaneshiro's Palace and have Rank 3 Knowledge to initiate.",
         "conditions": ["Rank 6: Must have max rank Charm."]
@@ -12,7 +12,20 @@
       "schedule": {
         "ignoresRain": true,
         "time": "day",
-        "availability": {"sunday":"sunday", "tuesday":"tuesday", "thursday":"thursday", "saturday":"saturday"}
+        "availability": {
+          "april": null,
+          "may": null,
+          "june": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "july": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "august": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "september": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "october": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "november": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "december": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "january": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "february": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "march": null
+        }
       },
       "location": ["3rd floor, student council room, Shujin Academy", "School gate, Shujin Academy (No classes)"]
     },
@@ -20,7 +33,7 @@
       "name": "Haru Okumura",
       "short_name": "Noir",
       "arcana": "Empress",
-      "unlock_date": "october 30 2000",
+      "unlock_date": "october 30",
       "rank_up": {
         "initiate": "Talk to Haru.",
         "conditions": ["Rank 4: Must have max rank Proficiency."]
@@ -28,7 +41,20 @@
       "schedule": {
         "ignoresRain": false,
         "time": "day",
-        "availability": {"monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+        "availability": {
+          "april": null,
+          "may": null,
+          "june": null,
+          "july": null,
+          "august": null,
+          "september": null,
+          "october": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "november": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "december": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "january": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "february": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "march": null
+        }
       },
       "location": ["School rooftop, Shujin Academy"]
     },
@@ -36,7 +62,7 @@
       "name": "Yusuke Kitagawa",
       "short_name": "Fox",
       "arcana": "Emperor",
-      "unlock_date": "june 18 2000",
+      "unlock_date": "june 18",
       "rank_up": {
         "initiate": "Talk to Yusuke.",
         "conditions": ["Rank 6: Must have rank 4 Proficiency."]
@@ -44,7 +70,20 @@
       "schedule": {
         "ignoresRain": true,
         "time": "day",
-        "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+        "availability": {
+          "april": null,
+          "may": null,
+          "june": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "july": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "august": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "september": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "october": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "november": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "december": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "january": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "february": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "march": null
+        }
       },
       "location": ["Underground Station, Shibuya"]
     },
@@ -52,7 +91,7 @@
       "name": "Sojiro Sakura",
       "short_name": "Sojiro",
       "arcana": "Hierophant",
-      "unlock_date": "april 20 2000", 
+      "unlock_date": "april 20", 
       "rank_up": {
         "initiate": "Talk to Sojiro. Will automatically start by May 6.",
         "conditions": ["Rank 3: Must have brewed coffee once.", "Rank 5: Unavailable until August 22.", "Rank 7: Must have max rank Kindness.", "Rank 9: Must have completed the Mementos Request: \"The Money-Grubbing Uncle.\" "]
@@ -60,7 +99,20 @@
       "schedule": {
         "ignoresRain": true,
         "time": "night",
-        "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+        "availability": {
+          "april": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+          "may": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+          "june": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+          "july": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+          "august": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+          "september": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+          "october": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+          "november": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+          "december": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+          "january": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+          "february": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+          "march": null
+        }
       },
       "location": ["Cafe Leblanc"]
     },
@@ -68,7 +120,7 @@
       "name": "Ann Takamaki",
       "short_name": "Panther",
       "arcana": "Lovers",
-      "unlock_date": "april 15 2000", 
+      "unlock_date": "april 15", 
       "rank_up": {
         "initiate": "Automatically starts on April 15.",
         "conditions": ["Rank 2: Unavailable until May 6. Must have rank 2 Kindness. During this time, Ann can be found in Class 2-D."]
@@ -76,7 +128,20 @@
       "schedule": {
         "ignoresRain": true,
         "time": "day",
-        "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "friday":"friday"}
+        "availability": {
+          "april": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
+          "may": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
+          "june": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
+          "july": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
+          "august": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
+          "september": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
+          "october": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
+          "november": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
+          "december": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
+          "january": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
+          "february": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
+          "march": null
+        }
       },
       "location": ["Underground Mall, Shibuya"]
     },
@@ -84,7 +149,7 @@
       "name": "Ryuji Sakamoto",
       "short_name": "Skull",
       "arcana": "Chariot",
-      "unlock_date": "april 12 2000",
+      "unlock_date": "april 12",
       "rank_up": {
         "initiate": "Automatically starts on April 12.",
         "conditions": ["Rank 5: Unavailable until May 6", "Rank 7: Can only be initiated by responding to Ryuji's text at certain dates."]
@@ -92,7 +157,20 @@
       "schedule": {
         "ignoresRain": true,
         "time": "day",
-        "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+        "availability": {
+          "april": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "may": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "june": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "july": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "august": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "september": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "october": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "november": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "december": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "january": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "february": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "march": null
+        }
       },
       "location": ["2nd floor hallway, Shujin Academy", "Central Street, Shibuya (No classes)"]
     },
@@ -100,15 +178,28 @@
       "name": "Goro Akechi",
       "short_name": "Akechi",
       "arcana": "Justice",
-      "unlock_date":"june 10 2000",
+      "unlock_date":"june 10",
       "rank_up": {
         "initiate": "Automatically starts on June 10.",
-        "conditions": ["Rank 3: Must have rank 3 Knowledge and Charm", "Rank 6: Unavailable until September 3. During this time, Akechi can be found in Leblanc.", "Rank 7: Unavailable until November 2. Must have rank 4 Knowledge.", "Rank 8: Must win against Akechi in billiards to progress."]
+        "conditions": ["Rank 3: Must have rank 3 Knowledge and Charm", "Rank 6: Unavailable until September 3. During this time, Akechi can be found in Leblanc.", "Rank 7: Unavailable until November 2. Must have rank 4 Knowledge.", "Rank 8: Must win against Akechi in billiards to progress.", "Rank 9 & 10: Automatically triggered if Rank 8 is complete."]
       },
       "schedule": {
         "ignoresRain": true,
         "time": "night",
-        "availability": {"monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+        "availability": {
+          "april": null,
+          "may": null,
+          "june": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "july": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "august": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "september": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "october": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "november": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "december": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "january": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "february": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "march": null
+        }
       },
       "location": ["Outside Darts & Billiards Penguin Sniper, Kichijoji"]
     },
@@ -116,7 +207,7 @@
       "name": "Futaba Sakura",
       "short_name": "Oracle",
       "arcana": "Hermit",
-      "unlock_date": "august 31 2000",
+      "unlock_date": "august 31",
       "rank_up": {
         "initiate": "Automatically starts on August 31.",
         "conditions": ["Rank 2: Must have rank 4 Kindness", "Rank 4: Only available if there are classes.", "Rank 8: Must have completed the Mementos Request: \"Daughter's Just a Meal Ticket\". "]
@@ -124,7 +215,20 @@
       "schedule": {
         "ignoresRain": false,
         "time": "day",
-        "availability": {"sunday":"sunday", "wednesday":"wednesday", "thursday":"thursday", "saturday":"saturday"}
+        "availability": {
+          "april": null,
+          "may": null,
+          "june": null,
+          "july": null,
+          "august": ["Sunday", "Wednesday", "Thursday", "Saturday"],
+          "september": ["Sunday", "Wednesday", "Thursday", "Saturday"],
+          "october": ["Sunday", "Wednesday", "Thursday", "Saturday"],
+          "november": ["Sunday", "Wednesday", "Thursday", "Saturday"],
+          "december": ["Sunday", "Wednesday", "Thursday", "Saturday"],
+          "january": ["Sunday", "Wednesday", "Thursday", "Saturday"],
+          "february": ["Sunday", "Wednesday", "Thursday", "Saturday"],
+          "march": null
+        }
       },
       "location": ["Outside Cafe Leblanc, Yongen-Jaya"]
     },
@@ -132,7 +236,7 @@
       "name": "Chihaya Mifune",
       "short_name": "Chihaya",
       "arcana": "Fortune",
-      "unlock_date": "june 26 2000",
+      "unlock_date": "june 26",
       "rank_up": {
         "initiate": "Talk to Chihaya and purchase her Holy Stone for 100,000 yen. Return a second time and eavesdrop, then complete the Mementos Request: \"Ending the Boyfriend's Abuse\". ",
         "conditions": ["Rank 8: The player will receive a Mementos Request (\"Debunking the Psychic\"), which they must finish in order to proceed."]
@@ -140,7 +244,20 @@
       "schedule": {
         "ignoresRain": false,
         "time": "night",
-        "availability": {"sunday":"sunday", "tuesday":"tuesday", "thursday":"thursday", "saturday":"saturday"}
+        "availability": {
+          "april": null,
+          "may": null,
+          "june": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "july": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "august": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "september": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "october": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "november": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "december": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "january": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "february": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "march": null
+        }
       },
       "location": ["Red Light District, Shinjuku"]
     },
@@ -148,7 +265,7 @@
       "name": "Munehisa Iwai",
       "short_name": "Iwai",
       "arcana": "Hanged Man",
-      "unlock_date": "may 6 2000", 
+      "unlock_date": "may 6", 
       "rank_up": {
         "initiate": "Talk to Iwai. Must have rank 4 Guts.",
         "conditions": ["Rank 8: Must have max rank Guts. The player will receive a Mementos Request (\"Shady Deal in the Shadows\"), which they must finish in order to proceed."]
@@ -156,7 +273,20 @@
       "schedule": {
         "ignoresRain": true,
         "time": "night",
-        "availability": {"sunday":"sunday", "thursday":"thursday", "saturday":"saturday"}
+        "availability": {
+          "april": null,
+          "may": ["Sunday", "Thursday", "Saturday"],
+          "june": ["Sunday", "Thursday", "Saturday"],
+          "july": ["Sunday", "Thursday", "Saturday"],
+          "august": ["Sunday", "Thursday", "Saturday"],
+          "september": ["Sunday", "Thursday", "Saturday"],
+          "october": ["Sunday", "Thursday", "Saturday"],
+          "november": ["Sunday", "Thursday", "Saturday"],
+          "december": ["Sunday", "Thursday", "Saturday"],
+          "january": ["Sunday", "Thursday", "Saturday"],
+          "february": ["Sunday", "Thursday", "Saturday"],
+          "march": null
+        }
       },
       "location": ["Airsoft Shop, Shibuya"]
     },
@@ -164,7 +294,7 @@
       "name": "Tae Takemi",
       "short_name": "Takemi",
       "arcana": "Death",
-      "unlock_date": "april 18 2000", 
+      "unlock_date": "april 18", 
       "rank_up": {
         "initiate": "Ask for the rumored medicine the second time you visit Takemi's Medical Clinic.",
         "conditions": ["Rank 2: Must have rank 2 Guts.", "Rank 8: Must have rank 4 Charm. The player will receive a Mementos Request (\"Bad Medicine\"), which they must finish in order to proceed."]
@@ -172,7 +302,20 @@
       "schedule": {
         "ignoresRain": true,
         "time": "day",
-        "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+        "availability": {
+          "april": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "may": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "june": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "july": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "august": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "september": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "october": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "november": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "december": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "january": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "february": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "march": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        }
       },
       "location": ["Takemi's Medical Clinic, Yongen-Jaya"]
     },
@@ -180,7 +323,7 @@
       "name": "Sadayo Kawakami",
       "short_name": "Kawakami",
       "arcana": "Temperance",
-      "unlock_date": "may 24 2000", 
+      "unlock_date": "may 24", 
       "rank_up": {
         "initiate": "Must have cleared Madarame's Palace and have rank 3 Guts. Must first participate in Mishima's operation. Afterwards, talk to Kawakami on the 2nd floor hallway of Shujin Academy and call her at night for 5,000 yen. Mishima can be found again in Central Street Shibuya if his invitation was declined.",
         "conditions": ["Rank 9: The player will receive a Mementos Request (\"A Teacher Maid to Suffer\"), which they must finish in order to proceed."]
@@ -188,7 +331,20 @@
       "schedule": {
         "ignoresRain": true,
         "time": "night",
-        "availability": {"friday":"friday", "saturday":"saturday"}
+        "availability": {
+          "april": ["Friday", "Saturday"],
+          "may": ["Friday", "Saturday"],
+          "june": ["Friday", "Saturday"],
+          "july": ["Friday", "Saturday"],
+          "august": ["Friday", "Saturday"],
+          "september": ["Friday", "Saturday"],
+          "october": ["Friday", "Saturday"],
+          "november": ["Friday", "Saturday"],
+          "december": ["Friday", "Saturday"],
+          "january": ["Friday", "Saturday"],
+          "february": ["Friday", "Saturday"],
+          "march": ["Friday", "Saturday"]
+        }
       },
       "location": ["Yellow phone, Leblanc"]
     },
@@ -196,7 +352,7 @@
       "name": "Ichiko Ohya",
       "short_name": "Ohya",
       "arcana": "Devil",
-      "unlock_date": "june 23 2000", 
+      "unlock_date": "june 23", 
       "rank_up": {
         "initiate": "Talk to Ohya.",
         "conditions": ["Rank 8: The player will receive a Mementos Request (\"Fighting for Truth in Journalism\"), which they must finish in order to proceed."]
@@ -204,7 +360,20 @@
       "schedule": {
         "ignoresRain": true,
         "time": "night",
-        "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+        "availability": {
+          "april": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "may": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "june": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "july": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "august": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "september": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "october": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "november": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "december": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "january": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "february": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "march": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        }
       },
       "location": ["Crossroads Bar, Shinjuku"]
     },
@@ -212,7 +381,7 @@
       "name": "Shinya Oda",
       "short_name": "Shinya",
       "arcana": "Tower",
-      "unlock_date": "september 5 2000", 
+      "unlock_date": "september 5", 
       "rank_up": {
         "initiate": "Must first do the Mementos Request (\"Winners Don't Use Cheats\"). Afterwards, talk to Shinkya in the arcade in Akihabara. Returning a second time will initiate the confidant.",
         "conditions": ["Rank 9: At rank 8, the player will receive a Mementos Request (\"A Mother's Aggression\"), which they must finish in order to proceed."]
@@ -220,7 +389,20 @@
       "schedule": {
         "ignoresRain": true,
         "time": "day",
-        "availability": {"monday":"monday", "tuesday":"tuesday", "thursday":"thursday", "saturday":"saturday"}
+        "availability": {
+          "april": ["Monday", "Tuesday", "Thursday", "Saturday"],
+          "may": ["Monday", "Tuesday", "Thursday", "Saturday"],
+          "june": ["Monday", "Tuesday", "Thursday", "Saturday"],
+          "july": ["Monday", "Tuesday", "Thursday", "Saturday"],
+          "august": ["Monday", "Tuesday", "Thursday", "Saturday"],
+          "september": ["Monday", "Tuesday", "Thursday", "Saturday"],
+          "october": ["Monday", "Tuesday", "Thursday", "Saturday"],
+          "november": ["Monday", "Tuesday", "Thursday", "Saturday"],
+          "december": ["Monday", "Tuesday", "Thursday", "Saturday"],
+          "january": ["Monday", "Tuesday", "Thursday", "Saturday"],
+          "february": ["Monday", "Tuesday", "Thursday", "Saturday"],
+          "march": ["Monday", "Tuesday", "Thursday", "Saturday"]
+        }
       },
       "location": ["Arcade, Akihabara"]
     },
@@ -228,7 +410,7 @@
       "name": "Hifumi Togo",
       "short_name": "Hifumi",
       "arcana": "Star",
-      "unlock_date": "june 25 2000", 
+      "unlock_date": "june 25", 
       "rank_up": {
         "initiate": "Must have cleared Kaneshiro's Palace and have rank 3 Charm.",
         "conditions": ["Rank 8: Must have max rank Knowledge. The player will receive a Mementos Request (\"Upstaging the Stage Mother\"), which they must finish in order to proceed."]
@@ -236,7 +418,21 @@
       "schedule": {
         "ignoresRain": true,
         "time": "night",
-        "availability": {"sunday":"sunday", "monday":"monday", "wednesday":"wednesday", "saturday":"saturday"}
+        "availability": {
+          
+          "april": ["Sunday", "Monday", "Wednesday", "Saturday"],
+          "may": ["Sunday", "Monday", "Wednesday", "Saturday"],
+          "june": ["Sunday", "Monday", "Wednesday", "Saturday"],
+          "july": ["Sunday", "Monday", "Wednesday", "Saturday"],
+          "august": ["Sunday", "Monday", "Wednesday", "Saturday"],
+          "september": ["Sunday", "Monday", "Wednesday", "Saturday"],
+          "october": ["Sunday", "Monday", "Wednesday", "Saturday"],
+          "november": ["Sunday", "Monday", "Wednesday", "Saturday"],
+          "december": ["Sunday", "Monday", "Wednesday", "Saturday"],
+          "january": ["Sunday", "Monday", "Wednesday", "Saturday"],
+          "february": ["Sunday", "Monday", "Wednesday", "Saturday"],
+          "march": ["Sunday", "Monday", "Wednesday", "Saturday"]
+        }
       },
       "location": ["Kanda Church"]
     },
@@ -244,7 +440,7 @@
       "name": "Yuuki Mishima",
       "short_name": "Mishima",
       "arcana": "Moon",
-      "unlock_date": "may 6 2000", 
+      "unlock_date": "may 6", 
       "rank_up": {
         "initiate": "Automatically starts on May 6.",
         "conditions": ["Complete his Mementos Requests to rank up."]
@@ -252,7 +448,20 @@
       "schedule": {
         "ignoresRain": true,
         "time": "night",
-        "availability": {"sunday":"sunday", "monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "thursday":"thursday", "friday":"friday", "saturday":"saturday"}
+        "availability": {
+          "april": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "may": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "june": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "july": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "august": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "september": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "october": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "november": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "december": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "january": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "february": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "march": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        }
       },
       "location": ["Central Street, Shibuya (Initial)", "Shinjuku (After unlocking)", "Akihabara (After unlocking)"]
     },
@@ -260,7 +469,7 @@
       "name": "Toranosuke Yoshida",
       "short_name": "Yoshida",
       "arcana": "Sun",
-      "unlock_date": "may 10 2000", 
+      "unlock_date": "may 10", 
       "rank_up": {
         "initiate": "The player must listen to Yoshida's speeches in Shibuya Station Square, which can be done as early as May 6. Afterwards, the player must work at the Beef Bowl Shop twice at night, then listen again to another of his speeches. The next interaction will unlock the confidant.",
         "conditions": ["Permanently unavailable after November 13."]
@@ -268,7 +477,20 @@
       "schedule": {
         "ignoresRain": false,
         "time": "night",
-        "availability": {"sunday":"sunday"}
+        "availability": {
+          "april": null,
+          "may": ["Sunday"],
+          "june": ["Sunday"],
+          "july": ["Sunday"],
+          "august": ["Sunday"],
+          "september": ["Sunday"],
+          "october": ["Sunday"],
+          "november": ["Sunday"],
+          "december": null,
+          "january": null,
+          "february": null,
+          "march": null
+        }
       },
       "location": ["Station Square, Shibuya"]
     },
@@ -276,7 +498,7 @@
       "name": "Yoshizawa",
       "short_name": "Yoshizawa",
       "arcana": "Faith",
-      "unlock_date": "may 30 2000", 
+      "unlock_date": "may 30", 
       "rank_up": {
         "initiate": "",
         "conditions": ["Can only be ranked up by responding to her IM texts or by visiting her in Kichijoji that day.", "Permanently locked if not maxed before December 23."]
@@ -288,7 +510,7 @@
       "name": "Takuto Maruki",
       "short_name": "Maruki",
       "arcana": "Councillor",
-      "unlock_date": "may 13 2000", 
+      "unlock_date": "may 13", 
       "rank_up": {
         "initiate": "Automatically starts on May 13.",
         "conditions": ["Rank 3: Unavailable during rainy days.", "Rank 6: Available after September 20.", "Permanently unavailable after November 17.", "Rank 10: Only obtainable if rank 9 is reached before November 18."]
@@ -296,7 +518,20 @@
       "schedule": {
         "ignoresRain": true,
         "time": "day",
-        "availability": {"monday":"monday", "tuesday":"tuesday", "wednesday":"wednesday", "friday":"friday"}
+        "availability": {
+          "april": null,
+          "may": ["Monday", "Tuesday", "Wednesday", "Friday"],
+          "june": ["Monday", "Tuesday", "Wednesday", "Friday"],
+          "july": ["Monday", "Tuesday", "Wednesday", "Friday"],
+          "august": ["Monday", "Tuesday", "Wednesday", "Friday"],
+          "september": ["Monday", "Tuesday", "Wednesday", "Friday"],
+          "october": ["Monday", "Tuesday", "Wednesday", "Friday"],
+          "november": ["Monday", "Tuesday", "Wednesday", "Friday"],
+          "december": null,
+          "january": null,
+          "february": null,
+          "march": null
+        }
       },
       "location": ["1st floor practice building, nurse's office, Shujin Academy"]
     }
@@ -306,28 +541,28 @@
       "name": "Igor",
       "short_name": "Igor",
       "arcana": "Fool",
-      "unlock_date": "april 12 2000", 
+      "unlock_date": "april 12", 
       "condition": "Automatically unlocks and ranks up during certain story events."
     },
     {
       "name": "Morgana",
       "short_name": "Mona",
       "arcana": "Magician",
-      "unlock_date": "april 15 2000", 
+      "unlock_date": "april 15", 
       "condition": "Automatically unlocks and ranks up during certain story events."
     },
     {
       "name": "Caroline and Justine",
       "short_name": "Caroline and Justine",
       "arcana": "Strength",
-      "unlock_date": "may 18 2000", 
+      "unlock_date": "may 18", 
       "condition": "Must have Jack Frost with Mabufu to initiate. Further ranks require bringing personas with specific skills."
     },
     {
       "name": "Sae Nijima",
       "short_name": "Sae",
       "arcana": "Judgement",
-      "unlock_date": "july 9 2000",
+      "unlock_date": "july 9",
       "condition": "Automatically unlocks and ranks up during certain story events."
     }
   ]

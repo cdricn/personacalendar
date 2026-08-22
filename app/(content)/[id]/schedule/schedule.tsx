@@ -6,6 +6,7 @@ import { use } from 'react';
 import { useState } from 'react';
 import { ResourceMapping } from '@/app/lib/resourceMapping';
 import InfoTab from './infoTab';
+import StoryTab from './storyTab';
 
 export default function Schedule({currentDay, currentMonth}:{currentDay:number, currentMonth:string}) {
   const [selectedTab, setSelectedTab] = useState('info');
@@ -32,26 +33,27 @@ export default function Schedule({currentDay, currentMonth}:{currentDay:number, 
     december: '12',
   };
 
+  function isTabClickable(tab:string) {
+    setSelectedTab(tab)
+  }
+
   return (
     <>
-      <div className={styles['section-header-container']}>
-        <div className={styles['section-header']}>
-          <h2>{monthToDigit[currentMonth]}/{day} {dayHeaders[day_code-1]}</h2>
-        </div>
+      <div className={styles['section-container']}>
       </div>
 
       <div className={styles['options']}>
         <div onClick={()=>setSelectedTab('info')} data-selected={selectedTab === 'info'}>
           <span>Info</span>
         </div>
-        <div onClick={()=>setSelectedTab('social')} data-selected={selectedTab === 'social'}>
-          <span>Social</span>
+        <div onClick={()=>isTabClickable('story')} data-selected={selectedTab === 'story'}>
+          <span>Story</span>
         </div>
       </div>
       
-      <div className={styles['schedule-container']}>
+      <div className={styles['info-container']}>
         { selectedTab === 'info' ? <InfoTab currentDay={currentDay} /> :
-          selectedTab === 'social' ? <>Social</> :
+          selectedTab === 'story' ? <StoryTab currentDay={currentDay} /> :
           <></>
         }
       </div>

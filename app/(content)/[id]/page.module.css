@@ -20,6 +20,23 @@
   max-width: 480px;
 }
 
+.calendar-header-container {
+  border-radius: 10px 10px 0 0;
+  margin-bottom: var(--size-16);
+  border-bottom: 2px solid var(--color-gray);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-darkgray);
+
+  h1 {
+    font-size: var(--fs-calendar-header);
+  }
+}
+.calendar-header-container > * {
+  padding-block: var(--size-16);
+}
+
 .schedule-container {
   flex-grow: 1;
   padding: var(--size-8);

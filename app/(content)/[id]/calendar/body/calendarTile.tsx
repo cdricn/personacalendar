@@ -1,6 +1,6 @@
 import styles from './calendarTile.module.css';
-import { CalendarDays } from "../lib/interface";
-import { Stripes } from './svgItems';
+import { CalendarDays } from "../../../../lib/interface";
+import { Stripes } from '../../../../components/svgItems';
 
 interface day_modifier {
   [modifier: string]: {

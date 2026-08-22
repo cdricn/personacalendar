@@ -1,25 +1,13 @@
-.calendar-header-container {
-  margin-bottom: var(--size-16);
-  border-bottom: 2px solid var(--color-gray);
-  padding-block: var(--size-16);
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-
-  h1 {
-    font-size: var(--fs-calendar-header);
-  }
-}
-
 .month-nav {
+  padding-left: var(--size-8);
+  padding-right: var(--size-8);
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 160px;
+  width: 180px;
   cursor: pointer;
 }
-
 .month-nav:hover {
   .nav-button {
     background-color: var(--color-gray-hover);
@@ -38,9 +26,9 @@
 }
 
 .month {
-  padding-block: var(--size-4);
+  flex-grow: 1;
   position: relative;
-  width: 120px;
+  max-width: 150px;
   text-align: center;
   font-size: var(--fs-calendar-month);
   font-family: var(--font-months);
@@ -52,7 +40,7 @@
   }
   
   .month-hover-bg {
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 0px 0px 0px;
     position: absolute;
     display: block;
     bottom: 0;
@@ -68,6 +56,7 @@
     transition: .3s;
   }
 }
+
 
 .nav-button {
   border-radius: 50%;
@@ -93,8 +82,9 @@
   border-radius: var(--size-8);
   padding: var(--size-8);
   position: absolute;
+  left: 0px;
   background-color: var(--color-darkgray);
-  transform: translateY(62%);
+  transform: translateY(65%);
   box-shadow: 0px 3px 3px rgb(17, 17, 17);
   z-index: 5;
   visibility: hidden;
@@ -125,44 +115,18 @@
 }
 .selection-tab[data-active="true"] { visibility: visible; opacity: 1; }
 
-.calendar-body-container {
-  position: relative;
-}
+.selected-date {
+  flex-grow: 2;
+  border-radius: 0 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white);
 
-.days-header {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 2px;
-  text-align: center;
-  font-family: var(--font-days-number);
-  font-size: var(--fs-calendar-day);
-  font-weight: 500;
-
-  span {
-    border-radius: 10px;
-    padding-block: 4px;
-    min-width: 50px;
-    max-width: 70px;
-    background-color: var(--color-lightgray);
+  & p {
+    font-size: var(--fs-calendar-month);
+    font-family: var(--font-months);
+    font-weight: 700;
+    color: var(--background);
   }
-}
-
-.day-grid {
-  margin-top: var(--size-4);
-  position: relative;
-  display: grid;
-  font-family: var(--font-days);
-  gap: 2px;
-}
-
-.filler-tile {
-  border-radius: 20%;
-  position: relative;
-  min-width: 50px;
-  max-width: 70px;
-  height: 70px;
-  overflow: hidden;
-  user-select: none;
-  background-color: var(--color-inactive-tile);
 }

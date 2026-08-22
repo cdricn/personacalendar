@@ -69,12 +69,3 @@
   width: 100%;
 }
 .block-info-filler[data-display='false']  { display: none }
-
-.story-spoiler {
-  padding-left: var(--size-16);
-  list-style-type: none;
-
-  li {
-    padding-bottom: var(--size-8);
-  }
-}

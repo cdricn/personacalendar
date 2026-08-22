@@ -1,0 +1,29 @@
+.story-container {
+  & div {
+    padding-top: var(--size-8);
+  }
+}
+
+.spoiler-container {
+  position: relative;
+}
+
+.spoiler-button {
+  border-radius: 10px;
+  padding: var(--size-4);
+
+  display: block;
+  width: fit-content;
+  background-color: white;
+  color: black;
+  list-style: none;
+}
+
+.spoiler-list {
+  padding-left: var(--size-16);
+  list-style-type: none;
+
+  li {
+    padding-bottom: var(--size-8);
+  }
+}
