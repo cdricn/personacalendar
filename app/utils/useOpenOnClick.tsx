@@ -16,14 +16,16 @@ export default function useOpenOnClick() {
         }
       }
     }
+
+    // Close if user clicks outside or selects something inside
     function handleMonthsTabClickOutside(event:MouseEvent) {
       if (node && !node.contains(event.target as Node)) {
-        setIsOpen((prev)=>!prev);
+        setIsOpen(false);
       }
     }
     function handleMonthsTabClickInside(event:MouseEvent) {
       if (isOpen && node && !node.contains(event.target as Node)) {
-        setIsOpen((prev)=>!prev);
+        setIsOpen(false);
       }
     }
     
