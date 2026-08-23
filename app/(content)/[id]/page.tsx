@@ -17,7 +17,8 @@ export default function CalendarPage() {
   const [currentMonth, setCurrentMonth] = useState('april');
   const [currentDay, setCurrentDay] = useState(0);
   const data : CalendarMonths = json_data;
-
+  
+  //Test update
   function setMonth(clickedMonth:string) {
     setCurrentMonth(clickedMonth.toLowerCase());
   }
