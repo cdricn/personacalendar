@@ -22,8 +22,8 @@ export default function calendarTile({
   const isTileSelected = isSelected === item.day;
   const weatherAlign = item.day_weather && item.night_weather ? 'double' : 'single';
   const tileColor = !item.is_day_playable ? undefined :
-    item.day_activities === 'Unavailable' && item.night_activities === 'Unavailable' ? 'alert' : 
-    item.day_activities === 'Limited' || item.night_activities === 'Limited' ? 'warning' :
+    item.day_restriction === 'Unavailable' && item.night_restriction === 'Unavailable' ? 'alert' : 
+    item.day_restriction === 'Limited' || item.night_restriction === 'Limited' ? 'warning' :
     item.activities || item.social_events ? 'event' : 
     'normal';
 
