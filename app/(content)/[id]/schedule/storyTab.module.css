@@ -21,7 +21,6 @@
 
 .spoiler-list {
   padding-left: var(--size-16);
-  list-style-type: none;
 
   li {
     padding-bottom: var(--size-8);

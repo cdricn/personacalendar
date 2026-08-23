@@ -70,7 +70,7 @@
 }
 
 [data-theme="persona5_royal"]{
-  --font-months: var(--ff-inter);
+  --font-months: var(--ff-arsenal);
   --font-days: var(--ff-inter);
   --font-days-number: var(--ff-inter);
   --font-schedule: var(--ff-arsenal);

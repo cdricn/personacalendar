@@ -19,7 +19,7 @@ export default function StoryTab({currentDay}:{currentDay:number}) {
           <details className={styles['spoiler-container']}>
             <summary className={styles['spoiler-button']}>Spoilers</summary>
             <ul className={styles['spoiler-list']}>
-              {events_spoiler && events_spoiler.map((item, index)=><li key={index}><p>- {item}</p></li>)}
+              {events_spoiler && events_spoiler.map((item, index)=><li key={index}><p>{item}</p></li>)}
             </ul>
           </details> : <></>
         }
