@@ -5,6 +5,11 @@
     "link": "/persona5_royal"
   },
   {
+    "id": "persona4_golden",
+    "title": "Persona 4 Golden",
+    "link": "/persona4_golden" 
+  },
+  {
     "id": "persona3_reload",
     "title": "Persona 3 Reload",
     "link": "/persona3_reload" 
