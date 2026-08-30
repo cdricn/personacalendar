@@ -37,12 +37,12 @@
 }
 
 .tile[data-clickable="false"] {
-  background-color: var(--color-darkgray);
+  background-color: var(--color-tile-inactive);
   cursor: auto;
-  color: var(--color-inactive-day);
+  color: var(--color-text-inactive);
 }
 
-.tile[data-background='normal']   { background-color: var(--color-lightgray); }
+.tile[data-background='normal']   { background-color: var(--color-tile); }
 .tile[data-background='alert']    { background-color: var(--color-alert); }
 .tile[data-background='warning']  { background-color: var(--color-warning); }
 .tile[data-background='event']    { background-color: var(--color-event); }
@@ -52,7 +52,7 @@
 .tile[data-selected='true'][data-background='warning']  { background-color: var(--color-warning-active); }
 .tile[data-selected='true'][data-background='event']    { background-color: var(--color-event-active); }
 
-.tile:hover[data-background='normal']   { background-color: var(--color-lightgray-active); }
+.tile:hover[data-background='normal']   { background-color: var(--color-tile-active); }
 .tile:hover[data-background='alert']    { background-color: var(--color-alert-active); }
 .tile:hover[data-background='warning']  { background-color: var(--color-warning-active); }
 .tile:hover[data-background='event']    { background-color: var(--color-event-active); }

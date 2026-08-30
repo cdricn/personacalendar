@@ -8,7 +8,7 @@ import useOpenOnClick from '@/app/utils/useOpenOnClick';
 export default function MonthSelection({setMonth}:{setMonth:(item:string)=>void}) {
   const [selectedMonth, setSelectedMonth] = useState(0);
   const game = use(GameContext);
-  const {monthHeaders} = ResourceMapping[game];
+  const {monthHeaders} = ResourceMapping[game] || {};
   const {ref, isOpen} = useOpenOnClick();
 
   function fillMonths() {
@@ -26,7 +26,7 @@ export default function MonthSelection({setMonth}:{setMonth:(item:string)=>void}
       <span className={styles['month-hover-bg']} data-active={isOpen}></span>
       <div className={styles['month']}>
         <span className={styles['month-text']}>
-          {monthHeaders[selectedMonth].slice(0, 1).toUpperCase() + monthHeaders[selectedMonth].slice(1)}
+          {monthHeaders[selectedMonth]}
         </span>
       </div>
       <div className={styles['nav-button']} data-active={isOpen}>

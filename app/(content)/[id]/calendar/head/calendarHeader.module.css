@@ -1,4 +1,5 @@
 .month-nav {
+  border-radius: 10px 0 0 0;
   padding-left: var(--size-8);
   padding-right: var(--size-8);
   position: relative;
@@ -6,11 +7,12 @@
   justify-content: space-between;
   align-items: center;
   width: 180px;
+  background-color: var(--color-plain-900);
   cursor: pointer;
 }
 .month-nav:hover {
   .nav-button {
-    background-color: var(--color-gray-hover);
+    background-color: var(--color-plain-800);
     transition: .1s;
   }
 
@@ -74,7 +76,7 @@
   }
 }
 .nav-button[data-active="true"] { 
-  background-color: var(--color-gray-hover);
+  background-color: var(--color-plain-800);
   transition: .1s;
 }
 
@@ -83,7 +85,7 @@
   padding: var(--size-8);
   position: absolute;
   left: 0px;
-  background-color: var(--color-darkgray);
+  background-color: var(--color-plain-900);
   transform: translateY(65%);
   box-shadow: 0px 3px 3px rgb(17, 17, 17);
   z-index: 5;
@@ -108,7 +110,7 @@
       transition: .1s;
     }
     li:hover {
-      background-color: var(--color-gray-hover);
+      background-color: var(--color-plain-800);
       transition: .1s;
     }
   }
@@ -127,6 +129,6 @@
     font-size: var(--fs-calendar-month);
     font-family: var(--font-months);
     font-weight: 700;
-    color: var(--background);
+    color: var(--color-dark);
   }
 }

@@ -17,7 +17,7 @@
     padding-block: 4px;
     min-width: 50px;
     max-width: 70px;
-    background-color: var(--color-lightgray);
+    background-color: var(--color-plain-800);
   }
 }
 
@@ -37,5 +37,5 @@
   height: 70px;
   overflow: hidden;
   user-select: none;
-  background-color: var(--color-inactive-tile);
+  background-color: var(--color-tile-inactive);
 }
