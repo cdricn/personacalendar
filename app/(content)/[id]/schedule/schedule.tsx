@@ -5,8 +5,8 @@ import { GameContext, DataContext } from '@/app/utils/context';
 import { use } from 'react';
 import { useState } from 'react';
 import { ResourceMapping } from '@/app/lib/resourceMapping';
-import InfoTab from './infoTab';
-import StoryTab from './storyTab';
+import TabInfo from './tabInfo';
+import TabStory from './tabStory';
 
 export default function Schedule({currentDay, currentMonth}:{currentDay:number, currentMonth:string}) {
   const [selectedTab, setSelectedTab] = useState('info');
@@ -52,8 +52,8 @@ export default function Schedule({currentDay, currentMonth}:{currentDay:number, 
       </div>
       
       <div className={styles['info-container']}>
-        { selectedTab === 'info' ? <InfoTab currentDay={currentDay} /> :
-          selectedTab === 'story' ? <StoryTab currentDay={currentDay} /> :
+        { selectedTab === 'info' ? <TabInfo currentDay={currentDay} /> :
+          selectedTab === 'story' ? <TabStory currentDay={currentDay} /> :
           <></>
         }
       </div>

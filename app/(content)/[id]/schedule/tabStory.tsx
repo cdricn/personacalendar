@@ -1,8 +1,8 @@
-import styles from './storyTab.module.css';
+import styles from './tabStory.module.css';
 import { DataContext } from '@/app/utils/context';
 import { use } from 'react';
 
-export default function StoryTab({currentDay}:{currentDay:number}) {
+export default function TabStory({currentDay}:{currentDay:number}) {
   const data = use(DataContext);
   if (!data) return;
 

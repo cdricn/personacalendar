@@ -1,4 +1,4 @@
-import styles from './infoTab.module.css';
+import styles from './tabInfo.module.css';
 import { DataContext } from '@/app/utils/context';
 import { use } from 'react';
 
@@ -10,7 +10,7 @@ interface InfoBlock {
   blockActivity: string[] | null
 }
 
-export default function InfoTab({currentDay}:{currentDay:number}) {
+export default function TabInfo({currentDay}:{currentDay:number}) {
   const data = use(DataContext);
   if (!data) return;
 
