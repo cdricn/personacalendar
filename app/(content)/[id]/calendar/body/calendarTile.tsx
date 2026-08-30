@@ -28,8 +28,8 @@ export default function calendarTile({
     'normal';
 
   return (
-    <div id={item.day.toString()} className={styles['day-tile-container']}>
-      <div className={styles['tile']} 
+    <div id={item.day.toString()} className={styles['tile']}>
+      <div className={styles['tile-content']} 
         data-clickable={item.is_day_playable}
         data-background={tileColor}
         data-selected={isTileSelected}
