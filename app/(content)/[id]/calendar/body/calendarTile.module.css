@@ -1,7 +1,7 @@
 .tile {
   border-radius: 20%;
   position: relative;
-  min-width: 50px;
+  min-width: 60px;
   max-width: 70px;
   height: 70px;
   overflow: hidden;
@@ -87,13 +87,6 @@
 .weather-icon-container[data-icon-alignment='double'] > img:nth-child(2) {
   align-self: flex-end;
   transform: translate(-1px, -3px);
-}
-
-@media (width < 500px) {
-  .weather-icon-container > img {
-    max-width: 18px;
-    max-height: 18px;
-  }
 }
 
 .hint-icons-container {
