@@ -1,11 +1,11 @@
 import { GameIcons } from "./interface";
 import p5royal_confidants from '../data/p5royal_confidants.json'
 
-const gregorianMonths = [
+const months = [
   'April', 'May', 'June', 'July', 'August', 'September',
   'October', 'November', 'December', 'January', 'February', 'March'
 ] as const;
-export const gregorianMonthsToDigit : {[month:string]: string} = {
+export const monthsToDigits : {[month:string]: string} = {
   january: '1',
   february: '2',
   march: '3',
@@ -19,7 +19,7 @@ export const gregorianMonthsToDigit : {[month:string]: string} = {
   november: '11',
   december: '12',
 };
-const normalDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'] as const;
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'] as const;
 
 export const ResourceMapping : GameIcons = {
   ['/persona5_royal']: {
@@ -30,8 +30,8 @@ export const ResourceMapping : GameIcons = {
       snowy: {src: '/P5_Weather_Snowy.svg', alt:'Snowy weather icon'},
     },
     special_day_modifier: {},
-    monthHeaders: gregorianMonths,
-    dayHeaders: normalDays,
+    monthHeaders: months,
+    dayHeaders: days,
     confidants: p5royal_confidants
   },
   // PLACEHOLDERS
@@ -44,8 +44,8 @@ export const ResourceMapping : GameIcons = {
       snowy: {src: '/P5_Weather_Snowy.svg', alt:'Snowy weather icon'},
     },
     special_day_modifier: {},
-    monthHeaders: gregorianMonths,
-    dayHeaders: normalDays,
+    monthHeaders: months,
+    dayHeaders: days,
     confidants: p5royal_confidants
   },
   ['/persona3_reload']: {
@@ -56,8 +56,8 @@ export const ResourceMapping : GameIcons = {
       snowy: {src: '/P5_Weather_Snowy.svg', alt:'Snowy weather icon'},
     },
     special_day_modifier: {},
-    monthHeaders: gregorianMonths,
-    dayHeaders: normalDays,
+    monthHeaders: months,
+    dayHeaders: days,
     confidants: p5royal_confidants
   }
 }

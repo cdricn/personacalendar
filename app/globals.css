@@ -55,6 +55,8 @@
   --color-lightgray-active: var(--color-lightgray-2);
   --color-muted: var(--color-lightgray-3);
 
+  --color-text-sub: var(--color-plain-400);
+
   --color-text-inactive:  var(--color-plain-800);
 
   --color-tile:           var(--color-plain-800);
@@ -89,6 +91,7 @@
   --fs-calendar-day: var(--size-16);
   --fs-calendar-number: var(--size-16);
   --fs-schedule-header: var(--size-16);
+  --fs-schedule-subheader: var(--size-14);
   --fs-schedule-body: var(--size-16);
   --fs-body: var(--size-16);
 }

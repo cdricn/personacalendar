@@ -7,10 +7,13 @@ import useOpenOnClick from '@/app/utils/useOpenOnClick';
 
 export default function MonthSelection({setMonth}:{setMonth:(item:string)=>void}) {
   const [selectedMonth, setSelectedMonth] = useState(0);
-  const game = use(GameContext);
-  const {monthHeaders} = ResourceMapping[game] || {};
   const {ref, isOpen} = useOpenOnClick();
+  const game = use(GameContext);
+  const currentGame = ResourceMapping[game];
 
+  if (!currentGame) return;
+  const {monthHeaders} = ResourceMapping[game];
+  
   function fillMonths() {
     const months = [...monthHeaders];
     return months.map((item, index)=>
