@@ -6,12 +6,14 @@ export interface CalendarDays {
   special_day_weather:    string | null,
   special_night_weather:  string | null,
   world:                  string[] | null,
-  activities:             string[] | null,
+  notice:                 string[] | null,
+  day_activities:         string[] | null,
+  night_activities:       string[] | null,
   social_events:          string[] | null,
   events:                 string[] | null,
   events_spoiler:         string[] | null,
-  day_restriction:         string | null,
-  night_restriction:       string | null,
+  day_restriction:        string | null,
+  night_restriction:      string | null,
   is_day_playable:        boolean
 }
 
