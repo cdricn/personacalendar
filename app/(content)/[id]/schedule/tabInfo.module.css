@@ -47,22 +47,6 @@
 }
 .block-info[data-display='true']  { display: none }
 
-
-.info {
-  display: flex;
-  gap: var(--size-16);
-
-  & h4 {
-    color: var(--color-muted);
-  }
-  
-  & ul {
-    list-style-type: none;
-  }
-}
-.info[data-display='false'] { display: none }
-
-
 .block-info-filler {
   border: 1px solid var(--color-muted);
   border-radius: 6px;
@@ -71,3 +55,32 @@
   width: 100%;
 }
 .block-info-filler[data-display='false']  { display: none }
+
+
+.block-day-events {
+  border: 1px solid var(--color-plain-700);
+  border-radius: 10px;
+  padding: var(--size-12) var(--size-18);
+  position: relative;
+}
+.block-day-events[data-display='false'] { display: none }
+
+.block-day-activities {
+  border: 1px solid var(--color-red-100);
+  border-radius: 10px;
+  padding: var(--size-14) var(--size-18);
+  position: relative;
+  background-color: var(--color-red-800);
+  
+  & h4 {
+    padding-bottom: var(--size-4);
+  }
+  & ul {
+    padding-left: 1rem;
+    font-size: var(--fs-schedule-subheader);
+  } 
+  & ul > li {
+    line-height: 130%;
+  }
+}
+.block-day-activities[data-display='false'] { display: none }

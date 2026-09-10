@@ -83,6 +83,7 @@
   --size-18: 18px;
   --size-16: 16px;
   --size-14: 14px;
+  --size-12: 8px;
   --size-8: 8px;
   --size-4: 4px;
 
@@ -116,8 +117,8 @@
   --font-days: var(--ff-inter);
   --font-days-number: var(--ff-inter);
   --font-schedule: var(--ff-arsenal);
-  --main-color: var(--color-persona5r);
-  --complement-color: var(--color-persona5r);
+  --main-color: var(--color-theme-persona5r);
+  --complement-color: var(--color-theme-persona5r);
 }
 
 *, *::before, *::after {

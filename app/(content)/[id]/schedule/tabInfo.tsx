@@ -23,7 +23,7 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
   const scheduleData = data[currentDay] ? data[currentDay] : data[data.length-1];
   const { 
     day_weather, night_weather, special_day_weather, special_night_weather,
-    world, activities, social_events, events, events_spoiler, day_restriction, night_restriction,
+    world, notice, day_activities, night_activities, social_events, events, events_spoiler, day_restriction, night_restriction,
     is_day_playable  
   } = scheduleData;
 
@@ -33,7 +33,9 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
 
   const blockDisplay = is_day_playable;
   const worldDisplay = Boolean(world);
-  const activityDisplay = Boolean(activities); 
+  const noticeDisplay = Boolean(notice); 
+
+  console.log(world)
 
   function InfoBlock({
     blockHeader, 
@@ -69,8 +71,15 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
 
   return (
     <>
-      <div className={styles['info']} data-display={worldDisplay}>
-        <h4>No classes ({world})</h4>
+      <div className={styles['block-day-activities']} data-display={noticeDisplay}>
+        <h4>Notice!</h4>
+        <ul>
+          {notice && notice.map((item, index)=>{
+            return (
+              <li key={item+index}>{item}</li>
+            )
+          })}
+        </ul>
       </div>
       {InfoBlock(
         {
@@ -78,7 +87,7 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
           blockRestriction: day_restriction,
           blockWeather: dayWeather,
           blockSpecialWeather: 'daySpecialWeather',
-          blockActivity: activities 
+          blockActivity: day_activities 
         })
       }
 
@@ -88,9 +97,12 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
           blockRestriction: night_restriction,
           blockWeather: nightWeather,
           blockSpecialWeather: 'nightSpecialWeather',
-          blockActivity: activities
+          blockActivity: night_activities
         })
       }
+      <div className={styles['block-day-events']} data-display={worldDisplay}>
+        <h4>{world}</h4>
+      </div>
     </>
   )
 }
