@@ -23,19 +23,16 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
   const scheduleData = data[currentDay] ? data[currentDay] : data[data.length-1];
   const { 
     day_weather, night_weather, special_day_weather, special_night_weather,
-    world, notice, day_activities, night_activities, social_events, events, events_spoiler, day_restriction, night_restriction,
+    world, notice, day_activities, night_activities, social_events, events, events_spoiler, time_day, time_night,
     is_day_playable  
   } = scheduleData;
 
-  if (!day_weather || !night_weather) return; //im dumb
-  const dayWeather = day_modifier[day_weather].src;
-  const nightWeather = day_modifier[night_weather].src;
+  const dayWeather = day_weather ? day_modifier[day_weather].src : '';
+  const nightWeather = night_weather ? day_modifier[night_weather].src : '';
 
   const blockDisplay = is_day_playable;
   const worldDisplay = Boolean(world);
-  const noticeDisplay = Boolean(notice); 
-
-  console.log(world)
+  const noticeDisplay = Boolean(notice);
 
   function InfoBlock({
     blockHeader, 
@@ -50,8 +47,6 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
       blockRestriction === 'Limited' ? 'limited' :
       'free';
 
-    if (!blockWeather) return;
-
     return (
       <div className={styles['block']} data-display={blockDisplay}>
         <div className={styles['block-header']}>
@@ -60,7 +55,9 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
             <span>{blockRestriction}</span>
           </div>
           <div className={styles['block-weather']}>
-            <img src={blockWeather} alt={''}/>
+            {blockWeather ? 
+              <img src={blockWeather} alt={''}/> :
+              <></>}
           </div>
         </div>
         <div className={styles['block-info']} data-display={dayStatus==='free'}>
@@ -84,7 +81,7 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
       {InfoBlock(
         {
           blockHeader: 'Day',
-          blockRestriction: day_restriction,
+          blockRestriction: time_day,
           blockWeather: dayWeather,
           blockSpecialWeather: 'daySpecialWeather',
           blockActivity: day_activities 
@@ -94,7 +91,7 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
       {InfoBlock(
         {
           blockHeader: 'Night',
-          blockRestriction: night_restriction,
+          blockRestriction: time_night,
           blockWeather: nightWeather,
           blockSpecialWeather: 'nightSpecialWeather',
           blockActivity: night_activities

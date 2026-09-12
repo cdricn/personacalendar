@@ -22,10 +22,11 @@ export default function calendarTile({
   const isTileSelected = isSelected === item.day;
   const weatherAlign = item.day_weather && item.night_weather ? 'double' : 'single';
   const tileColor = !item.is_day_playable ? undefined :
-    item.day_restriction === 'Unavailable' || item.night_restriction === 'Unavailable' ? 'alert' : 
-    item.day_restriction === 'Limited' || item.night_restriction === 'Limited' ? 'warning' :
-    (item.day_activities && item.night_activities) || item.social_events ? 'event' : 
+    (item.time_day === 'Unavailable' || item.time_night === 'Unavailable') ? 'alert' : 
+    (item.time_day === 'Limited' || item.time_night === 'Limited') ? 'warning' :
+    ((item.day_activities && item.night_activities) || item.social_events) ? 'event' : 
     'normal';
+  const hasNotice = item.notice ? 'hasNotice' : null;
 
   return (
     <div id={item.day.toString()} className={styles['tile']}>
@@ -33,6 +34,7 @@ export default function calendarTile({
         data-clickable={item.is_day_playable}
         data-background={tileColor}
         data-selected={isTileSelected}
+        data-hasNotice={hasNotice}
       >
         {!item.is_day_playable ? <div className={styles['stripes']}><Stripes/></div> : null}
         <div className={styles['weather-icon-container']} data-icon-alignment={weatherAlign}>

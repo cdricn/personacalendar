@@ -12,8 +12,8 @@ export interface CalendarDays {
   social_events:          string[] | null,
   events:                 string[] | null,
   events_spoiler:         string[] | null,
-  day_restriction:        string | null,
-  night_restriction:      string | null,
+  time_day:               string | null,
+  time_night:             string | null,
   is_day_playable:        boolean
 }
 
