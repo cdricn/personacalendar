@@ -1,5 +1,3 @@
-'use client';
-
 import styles from './calendarBody.module.css';
 import { useState, use } from 'react';
 import { GameContext, DataContext } from '../../../../utils/context';
@@ -16,7 +14,7 @@ export default function CalendarBody({
   const game = use(GameContext);
   const data = use(DataContext);
 
-  const {day_modifier, dayHeaders} = ResourceMapping[game];
+  const {weather_icons, dayHeaders, general_icons} = ResourceMapping[game];
 
   if (!data) return;
 
@@ -47,7 +45,8 @@ export default function CalendarBody({
             <div key={tileKey} onClick={dayIsClickable} style={dayStart}>
               <CalendarTile 
                 item={item} 
-                day_modifier={day_modifier}
+                weather_icons={weather_icons}
+                general_icons={general_icons}
                 isSelected={selectedDay}
               />
             </div>

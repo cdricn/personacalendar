@@ -21,19 +21,22 @@ export interface CalendarMonths {
   [month: string] : CalendarDays[];
 }
 
+export interface Image {
+  [modifier:string]: {
+    src: string,
+    alt: string,
+  }
+}
+
 interface IconMap {
-  day_modifier: {
-    [modifier:string]: {
-      src: string,
-      alt: string,
-    }
-  },
+  weather_icons: Image,
   special_day_modifier: {
     [modifier:string]: React.ReactElement
   },
   monthHeaders: readonly string[],
   dayHeaders: readonly string[],
-  confidants: ConfidantData
+  confidants: ConfidantData,
+  general_icons: Image
 }
 export interface GameIcons {
   [game:string]: IconMap

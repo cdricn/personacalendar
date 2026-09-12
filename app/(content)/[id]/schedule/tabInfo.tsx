@@ -17,7 +17,7 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
   const currentGame = ResourceMapping[game];
   
   if (!currentGame) return;
-  const {day_modifier, special_day_modifier} = ResourceMapping[game];
+  const {weather_icons, special_day_modifier} = ResourceMapping[game];
 
   if (!data) return;
   const scheduleData = data[currentDay] ? data[currentDay] : data[data.length-1];
@@ -27,8 +27,8 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
     is_day_playable  
   } = scheduleData;
 
-  const dayWeather = day_weather ? day_modifier[day_weather].src : '';
-  const nightWeather = night_weather ? day_modifier[night_weather].src : '';
+  const dayWeather = day_weather ? weather_icons[day_weather].src : '';
+  const nightWeather = night_weather ? weather_icons[night_weather].src : '';
 
   const blockDisplay = is_day_playable;
   const worldDisplay = Boolean(world);

@@ -23,7 +23,7 @@ const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
 
 export const ResourceMapping : GameIcons = {
   ['/persona5_royal']: {
-    day_modifier: {
+    weather_icons: {
       clear: {src: '/P5_Weather_Clear.svg', alt:'Clear weather icon'},
       cloudy: {src: '/P5_Weather_Cloudy.svg', alt:'Cloudy weather icon'},
       rainy: {src: '/P5_Weather_Rainy.svg', alt:'Rainy weather icon'},
@@ -32,12 +32,16 @@ export const ResourceMapping : GameIcons = {
     special_day_modifier: {},
     monthHeaders: months,
     dayHeaders: days,
-    confidants: p5royal_confidants
+    confidants: p5royal_confidants,
+    general_icons: {
+      unavailable: {src: '/P5_Icon_Unavailable.svg', alt: 'Unavailable'},
+      limited: {src: '/symbol_yellow.svg', alt: 'Limited'} //placeholder icon; replace
+    }
   },
   // PLACEHOLDERS
   // CHANGE TO RESPECTIVE GAMES LATER
   ['/persona4_golden']: {
-    day_modifier: {
+    weather_icons: {
       clear: {src: '/P5_Weather_Clear.svg', alt:'Clear weather icon'},
       cloudy: {src: '/P5_Weather_Cloudy.svg', alt:'Cloudy weather icon'},
       rainy: {src: '/P5_Weather_Rainy.svg', alt:'Rainy weather icon'},
@@ -46,10 +50,14 @@ export const ResourceMapping : GameIcons = {
     special_day_modifier: {},
     monthHeaders: months,
     dayHeaders: days,
-    confidants: p5royal_confidants
+    confidants: p5royal_confidants,
+    general_icons: {
+      unavailable: {src: '/', alt: 'Unavailable'},
+      limited: {src: '/', alt: 'Limited'}
+    }
   },
   ['/persona3_reload']: {
-    day_modifier: {
+    weather_icons: {
       clear: {src: '/P5_Weather_Clear.svg', alt:'Clear weather icon'},
       cloudy: {src: '/P5_Weather_Cloudy.svg', alt:'Cloudy weather icon'},
       rainy: {src: '/P5_Weather_Rainy.svg', alt:'Rainy weather icon'},
@@ -58,6 +66,10 @@ export const ResourceMapping : GameIcons = {
     special_day_modifier: {},
     monthHeaders: months,
     dayHeaders: days,
-    confidants: p5royal_confidants
+    confidants: p5royal_confidants,
+    general_icons: {
+      unavailable: {src: '/', alt: 'Unavailable'},
+      limited: {src: '/', alt: 'Limited'}
+    }
   }
 }
