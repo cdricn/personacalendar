@@ -429,7 +429,7 @@
         "Challenge Battles is unlocked."
       ],
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": [
@@ -532,7 +532,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": null,
@@ -635,7 +635,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": null,
@@ -838,7 +838,7 @@
       "events": [
         "Story event."
       ],
-      "events_spoiler": "[\"Mishima invites the protagonist to talk about his \"Phan-site\", which allows the Phantom Thieves to find targets in Mementos.\"]",
+      "events_spoiler": ["Mishima invites the protagonist to talk about his \"Phan-site\", which allows the Phantom Thieves to find targets in Mementos."],
       "time_day": "unavailable",
       "time_night": "free",
       "is_day_playable": true
@@ -1130,7 +1130,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": null,
@@ -1189,7 +1189,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": [
@@ -1317,7 +1317,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat.",
+        "Free train seat.",
         "New crossword puzzle."
       ],
       "missable_item": null,
@@ -1409,7 +1409,7 @@
       ],
       "notice": null,
       "missable_stat": [
-        "free train seat.",
+        "Free train seat.",
         "free time in class (Requires Temperance rank 1).",
         "New crossword puzzle."
       ],
@@ -1659,7 +1659,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": null,
@@ -1834,7 +1834,7 @@
       ],
       "notice": null,
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": null,
@@ -1876,7 +1876,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat.",
+        "Free train seat.",
         "TV Quiz"
       ],
       "missable_item": null,
@@ -2051,7 +2051,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": null,
@@ -2112,7 +2112,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": null,
@@ -2196,7 +2196,7 @@
       ],
       "notice": null,
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": null,
@@ -2572,7 +2572,7 @@
         "Ginza Sushi Bar is unlocked."
       ],
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": null,
@@ -2666,7 +2666,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": null,
@@ -2731,7 +2731,7 @@
       "events_spoiler": null,
       "time_day": "free",
       "time_night": "free",
-      "is_day_playable": "TRU"
+      "is_day_playable": true
     }
   ],
   "august": [
@@ -3400,7 +3400,7 @@
       "events_spoiler": null,
       "time_day": null,
       "time_night": null,
-      "is_day_playable": null
+      "is_day_playable": false
     }
   ],
   "september": [
@@ -3950,7 +3950,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": null,
@@ -4028,7 +4028,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat.",
+        "Free train seat.",
         "New crossword puzzle."
       ],
       "missable_item": null,
@@ -4195,7 +4195,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat.",
+        "Free train seat.",
         "New crossword puzzle."
       ],
       "missable_item": null,
@@ -4810,7 +4810,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": null,
@@ -4871,7 +4871,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat.",
+        "Free train seat.",
         "free time in class (Requires Temperance rank 5)."
       ],
       "missable_item": null,
@@ -4969,7 +4969,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat.",
+        "Free train seat.",
         "TV Quiz"
       ],
       "missable_item": null,
@@ -5054,7 +5054,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat.",
+        "Free train seat.",
         "New crossword puzzle."
       ],
       "missable_item": null,
@@ -5120,7 +5120,7 @@
       ],
       "notice": null,
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": null,
@@ -5421,7 +5421,7 @@
       "events_spoiler": null,
       "time_day": "free",
       "time_night": "free",
-      "is_day_playable": "TRU"
+      "is_day_playable": true
     }
   ],
   "december": [
@@ -6504,7 +6504,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat.",
+        "Free train seat.",
         "New crossword puzzle."
       ],
       "missable_item": null,
@@ -6648,7 +6648,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free train seat."
+        "Free train seat."
       ],
       "missable_item": null,
       "social_events": null,
@@ -7332,9 +7332,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7350,9 +7351,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": [
         "Story event."
@@ -7360,8 +7362,8 @@
       "events_spoiler": [
         "The protagonist make plans for the day after."
       ],
-      "time_day": "unavailable",
-      "time_night": "unavailable",
+      "time_day": "Unavailable",
+      "time_night": "Unavailable",
       "is_day_playable": true
     },
     {
@@ -7372,9 +7374,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": [
         "Story event."
@@ -7382,8 +7385,8 @@
       "events_spoiler": [
         "The Phantom Thieves members announce their plans for the future."
       ],
-      "time_day": "unavailable",
-      "time_night": "unavailable",
+      "time_day": "Unavailable",
+      "time_night": "Unavailable",
       "is_day_playable": true
     },
     {
@@ -7394,9 +7397,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7412,9 +7416,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7430,9 +7435,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7448,9 +7454,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7466,9 +7473,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7484,9 +7492,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7502,9 +7511,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7520,9 +7530,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7538,9 +7549,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7556,9 +7568,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": [
         "Story event."
@@ -7566,8 +7579,8 @@
       "events_spoiler": [
         "Sojiro helps the protagonist make plans for White Day."
       ],
-      "time_day": "unavailable",
-      "time_night": "unavailable",
+      "time_day": "Unavailable",
+      "time_night": "Unavailable",
       "is_day_playable": true
     },
     {
@@ -7580,9 +7593,10 @@
       "world": [
         "White Day."
       ],
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": [
         "The Protagonist celebrates White Day."
@@ -7590,8 +7604,8 @@
       "events_spoiler": [
         "The protagonist goes on a date with their partner."
       ],
-      "time_day": "unavailable",
-      "time_night": "unavailable",
+      "time_day": "Unavailable",
+      "time_night": "Unavailable",
       "is_day_playable": true
     },
     {
@@ -7602,9 +7616,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7620,9 +7635,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7638,9 +7654,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7656,9 +7673,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7674,9 +7692,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": [
         "Story event."
@@ -7684,8 +7703,8 @@
       "events_spoiler": [
         "The protagonist says his goodbyes to his friends."
       ],
-      "time_day": "unavailable",
-      "time_night": "unavailable",
+      "time_day": "Unavailable",
+      "time_night": "Unavailable",
       "is_day_playable": true
     },
     {
@@ -7696,11 +7715,12 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
-      "notice": [
+      "alert": [
         "End of the game."
       ],
-      "day_activities": null,
-      "night_activities": null,
+      "notice": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": [
         "Story event."
@@ -7708,8 +7728,8 @@
       "events_spoiler": [
         "The protagonist leaves Tokyo."
       ],
-      "time_day": "unavailable",
-      "time_night": "unavailable",
+      "time_day": "Unavailable",
+      "time_night": "Unavailable",
       "is_day_playable": true
     },
     {
@@ -7720,9 +7740,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7738,9 +7759,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7756,9 +7778,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7774,9 +7797,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7792,9 +7816,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7810,9 +7835,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7828,9 +7854,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7846,9 +7873,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7864,9 +7892,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7882,9 +7911,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,
@@ -7900,9 +7930,10 @@
       "special_day_weather": null,
       "special_night_weather": null,
       "world": null,
+      "alert": null,
       "notice": null,
-      "day_activities": null,
-      "night_activities": null,
+      "missable_stat": null,
+      "missable_item": null,
       "social_events": null,
       "events": null,
       "events_spoiler": null,

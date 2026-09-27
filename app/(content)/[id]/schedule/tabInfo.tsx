@@ -5,10 +5,11 @@ import { use } from 'react';
 
 interface InfoBlock {
   blockHeader: string;
-  blockRestriction: string | null;
-  blockWeather: string | null;
-  blockSpecialWeather: string | null;
-  blockActivity: string[] | null
+  blockSubHeader?: string | null;
+  blockIcon?: string | null;
+  blockSubIcon?: string | null;
+  blockInfo?: string[] | null;
+  blockColor?: string
 }
 
 export default function TabInfo({currentDay}:{currentDay:number}) {
@@ -22,8 +23,8 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
   if (!data) return;
   const scheduleData = data[currentDay] ? data[currentDay] : data[data.length-1];
   const { 
-    day_weather, night_weather, special_day_weather, special_night_weather,
-    world, notice, day_activities, night_activities, social_events, events, events_spoiler, time_day, time_night,
+    day_weather, night_weather, special_day_weather, special_night_weather, world, alert, 
+    notice, missable_stat, missable_item, social_events, events, events_spoiler, time_day, time_night,
     is_day_playable  
   } = scheduleData;
 
@@ -32,73 +33,92 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
 
   const blockDisplay = is_day_playable;
   const worldDisplay = Boolean(world);
+  const alertDisplay = Boolean(alert);
   const noticeDisplay = Boolean(notice);
+  const statDisplay = Boolean(missable_stat);
+  const itemDisplay = Boolean(missable_item);
 
   function InfoBlock({
     blockHeader, 
-    blockRestriction,
-    blockWeather,
-    blockSpecialWeather,
-    blockActivity
+    blockSubHeader, 
+    blockIcon, 
+    blockSubIcon, 
+    blockInfo,
+    blockColor
   } : InfoBlock) {
 
-    const dayStatus = !blockRestriction ? undefined :
-      blockRestriction === 'Unavailable' ? 'unavailable' : 
-      blockRestriction === 'Limited' ? 'limited' :
-      'free';
-
+    const infoDisplay = Boolean(blockInfo);
     return (
-      <div className={styles['block']} data-display={blockDisplay}>
+      <div className={styles['block']} data-bg-color={blockColor}>
         <div className={styles['block-header']}>
           <div className={styles['block-name']}>
             <h3>{blockHeader}</h3>
-            <span>{blockRestriction}</span>
+            <span className={styles['block-name-subtext']} data-text-color={blockSubHeader}>
+              {blockSubHeader && blockSubHeader.charAt(0).toUpperCase() + blockSubHeader.slice(1)}
+            </span>
           </div>
           <div className={styles['block-weather']}>
-            {blockWeather ? 
-              <img src={blockWeather} alt={''}/> :
-              <></>}
+            {blockIcon && <img src={blockIcon} alt={''}/>}
           </div>
         </div>
-        <div className={styles['block-info']} data-display={dayStatus==='free'}>
-        </div>
+        <ul className={styles['block-info']} data-display={infoDisplay}>
+          {blockInfo?.map((item, index)=> {
+            return (
+              <li key={item+index}>{item}</li>
+            )})
+          }
+        </ul>
       </div>
     )
   }
 
   return (
     <>
-      <div className={styles['block-day-activities']} data-display={noticeDisplay}>
-        <h4>Notice!</h4>
-        <ul>
-          {notice && notice.map((item, index)=>{
-            return (
-              <li key={item+index}>{item}</li>
-            )
-          })}
-        </ul>
+      <div className={styles['block-top']} data-display={blockDisplay}>
+        {InfoBlock({
+            blockHeader: 'Day', 
+            blockSubHeader: time_day, 
+            blockIcon: dayWeather, 
+            blockSubIcon: 'daySpecialWeather',
+          })
+        }
+        {InfoBlock({
+            blockHeader: 'Night', 
+            blockSubHeader: time_night, 
+            blockIcon: nightWeather, 
+            blockSubIcon: 'nightSpecialWeather',
+          })
+        }
       </div>
-      {InfoBlock(
-        {
-          blockHeader: 'Day',
-          blockRestriction: time_day,
-          blockWeather: dayWeather,
-          blockSpecialWeather: 'daySpecialWeather',
-          blockActivity: day_activities 
-        })
-      }
-
-      {InfoBlock(
-        {
-          blockHeader: 'Night',
-          blockRestriction: time_night,
-          blockWeather: nightWeather,
-          blockSpecialWeather: 'nightSpecialWeather',
-          blockActivity: night_activities
-        })
-      }
-      <div className={styles['block-day-events']} data-display={worldDisplay}>
-        <h4>{world}</h4>
+      <div className={styles['block-section']} data-display={alertDisplay}>
+        {InfoBlock({
+            blockHeader: 'Alert',
+            blockInfo: alert,
+            blockColor: 'alert'
+          })
+        }
+      </div>
+      <div className={styles['block-section']} data-display={noticeDisplay}>
+        {InfoBlock({
+            blockHeader: 'Notice',
+            blockInfo: notice,
+            blockColor: 'notice'
+          })
+        }
+      </div>
+      <div className={styles['block-section']} data-display={statDisplay}>
+        {InfoBlock({
+            blockHeader: 'Social Stats',
+            blockInfo: missable_stat
+          })
+        }
+      </div>
+      <div className={styles['block-section']} data-display={itemDisplay}>
+        {InfoBlock({
+            blockHeader: 'Items',
+            blockInfo: missable_item
+          })
+        }
       </div>
     </>
   )

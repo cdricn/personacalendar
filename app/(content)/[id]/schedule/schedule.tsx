@@ -1,5 +1,3 @@
-'use client';
-
 import styles from './schedule.module.css';
 import { GameContext, DataContext } from '@/app/utils/context';
 import { use } from 'react';

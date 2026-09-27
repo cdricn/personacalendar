@@ -14,7 +14,7 @@ export default function CalendarBody({
   const game = use(GameContext);
   const data = use(DataContext);
 
-  const {weather_icons, dayHeaders, general_icons} = ResourceMapping[game];
+  const {weather_icons, dayHeaders} = ResourceMapping[game];
 
   if (!data) return;
 
@@ -46,7 +46,6 @@ export default function CalendarBody({
               <CalendarTile 
                 item={item} 
                 weather_icons={weather_icons}
-                general_icons={general_icons}
                 isSelected={selectedDay}
               />
             </div>

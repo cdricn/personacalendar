@@ -38,4 +38,5 @@
   overflow: hidden;
   user-select: none;
   background-color: var(--color-tile-inactive);
+  opacity: .5;
 }

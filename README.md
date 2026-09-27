@@ -6,7 +6,7 @@ I would love recommendations/suggestions, so please consider opening an issue if
 
 ## Credits
 - GamePrime for their Persona 5 Royal playthrough.
-- Persona Wiki and Kal Hawke for most technical information.
+- Persona Wiki and megatenwiki for most technical information.
 
 ## Todo
 - Confidant images
