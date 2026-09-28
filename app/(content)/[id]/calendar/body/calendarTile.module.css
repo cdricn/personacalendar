@@ -84,10 +84,13 @@
   transform: translate(-1px, -3px);
 }
 
-.hint-icons-container {
+.item-indicator {
+  border-radius: 100%;
   position: absolute;
-  height: 15px;
-  top: 5px;
-  right: 5px;
-  z-index: 2;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-plain-300);
 }
+.item-indicator[data-display='false'] {display: none;}

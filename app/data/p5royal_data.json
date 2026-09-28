@@ -170,7 +170,9 @@
       "events": [
         "Story event."
       ],
-      "events_spoiler": null,
+      "events_spoiler": [ 
+        "Protagonist moves in Cafe Leblanc."
+      ],
       "time_day": "unavailable",
       "time_night": "unavailable",
       "is_day_playable": true

@@ -4,7 +4,6 @@ import { use } from 'react';
 import { useState } from 'react';
 import { ResourceMapping } from '@/app/lib/resourceMapping';
 import TabInfo from './tabInfo';
-import TabStory from './tabStory';
 
 export default function Schedule({currentDay, currentMonth}:{currentDay:number, currentMonth:string}) {
   const [selectedTab, setSelectedTab] = useState('info');
@@ -33,24 +32,16 @@ export default function Schedule({currentDay, currentMonth}:{currentDay:number, 
           <span>Info</span>
         </div>
         <div onClick={()=>isTabClickable('story')} data-selected={selectedTab === 'story'}>
-          <span>Story</span>
+          <span>Confidants</span>
         </div>
       </div>
       
       <div className={styles['info-container']}>
         { selectedTab === 'info' ? <TabInfo currentDay={currentDay} /> :
-          selectedTab === 'story' ? <TabStory currentDay={currentDay} /> :
+          selectedTab === 'confidant' ? <></> :
           <></>
         }
       </div>
     </>
   )
 }
-
-
-/*
-schedule window
-| general tab
-| social tab
-| activities tab
-*/

@@ -67,7 +67,7 @@
   --color-alert-active:   var(--color-red-700);
   --color-warning:        var(--color-yellow-700);
   --color-warning-active: var(--color-yellow-600);
-  --color-notice:         var(--color-yellow-800);
+  --color-notice:         var(--color-yellow-700);
   --color-event:          var(--color-eastern-blue-700);
   --color-event-active:   var(--color-eastern-blue-600);
 

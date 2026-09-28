@@ -19,6 +19,7 @@ export default function calendarTile({
     item.notice ? 'warning' :
     item.social_events ? 'event' : 
     'normal';
+  const itemIndicator = Boolean(item.missable_item) || Boolean(item.missable_stat);
 
   return (
     <div id={item.day.toString()} className={styles['tile']}>
@@ -34,6 +35,7 @@ export default function calendarTile({
         </div>
         <span>{item.day}</span>
       </div>
+      <div className={styles['item-indicator']} data-display={itemIndicator}></div>
     </div>
   )
 }

@@ -9,7 +9,7 @@ interface InfoBlock {
   blockIcon?: string | null;
   blockSubIcon?: string | null;
   blockInfo?: string[] | null;
-  blockColor?: string
+  blockStyling?: string
 }
 
 export default function TabInfo({currentDay}:{currentDay:number}) {
@@ -37,6 +37,7 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
   const noticeDisplay = Boolean(notice);
   const statDisplay = Boolean(missable_stat);
   const itemDisplay = Boolean(missable_item);
+  const storyDisplay = Boolean(events);
 
   function InfoBlock({
     blockHeader, 
@@ -44,12 +45,12 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
     blockIcon, 
     blockSubIcon, 
     blockInfo,
-    blockColor
+    blockStyling
   } : InfoBlock) {
 
     const infoDisplay = Boolean(blockInfo);
     return (
-      <div className={styles['block']} data-bg-color={blockColor}>
+      <div className={styles['block']} data-styling={blockStyling}>
         <div className={styles['block-header']}>
           <div className={styles['block-name']}>
             <h3>{blockHeader}</h3>
@@ -90,11 +91,19 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
           })
         }
       </div>
+      <div className={styles['block-section']} data-display={storyDisplay}>
+        {InfoBlock({
+            blockHeader: 'Story',
+            blockInfo: events_spoiler,
+            blockStyling: 'story'
+          })
+        }
+      </div>
       <div className={styles['block-section']} data-display={alertDisplay}>
         {InfoBlock({
             blockHeader: 'Alert',
             blockInfo: alert,
-            blockColor: 'alert'
+            blockStyling: 'alert'
           })
         }
       </div>
@@ -102,7 +111,7 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
         {InfoBlock({
             blockHeader: 'Notice',
             blockInfo: notice,
-            blockColor: 'notice'
+            blockStyling: 'notice'
           })
         }
       </div>

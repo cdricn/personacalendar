@@ -15,12 +15,22 @@
   position: relative;
 }
 .block[data-display='false']  { display:none }
-.block[data-bg-color='alert'] {
+.block[data-styling='alert'] {
   border-color: var(--color-plain-100);
   background-color: var(--color-alert-active);
 }
-.block[data-bg-color='notice'] {
+.block[data-styling='notice'] {
+  border-color: var(--color-plain-100);
   background-color: var(--color-notice);
+}
+
+.block[data-styling='story'] > .block-info {
+  filter: blur(5);
+  transition: .3s;
+}
+.block[data-styling='story'] > .block-info:hover {
+  filter: blur(0);
+  transition: .5s;
 }
 
 .block-header {
