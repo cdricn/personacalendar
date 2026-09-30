@@ -50,26 +50,32 @@
   --color-eastern-blue-700: #0f7d8f;
   --color-eastern-blue-800: #166574;
 
-  --color-red: red;
   --color-inactive-day: var(--color-plain-700);
   --color-lightgray-active: var(--color-lightgray-2);
   --color-muted: var(--color-lightgray-3);
 
   --color-text-sub: var(--color-plain-400);
-
   --color-text-inactive:  var(--color-plain-800);
 
   --color-tile:           var(--color-plain-800);
   --color-tile-active:    var(--color-plain-700);
   --color-tile-inactive:  var(--color-plain-900);
 
-  --color-alert:          var(--color-tosca-800);
-  --color-alert-active:   var(--color-red-700);
-  --color-warning:        var(--color-yellow-700);
-  --color-warning-active: var(--color-yellow-600);
-  --color-notice:         var(--color-yellow-700);
-  --color-event:          var(--color-eastern-blue-700);
-  --color-event-active:   var(--color-eastern-blue-600);
+  --color-alert:            var(--color-tosca-800);
+  --color-alert-active:     var(--color-red-700);
+  --color-warning:          var(--color-yellow-700);
+  --color-warning-active:   var(--color-yellow-600);
+  --color-notice:           var(--color-yellow-700);
+  --color-event:            var(--color-eastern-blue-700);
+  --color-event-active:     var(--color-eastern-blue-600);
+
+  --filter-alert: brightness(0) saturate(100%) invert(17%) sepia(100%) saturate(4538%) hue-rotate(356deg) brightness(90%) contrast(99%);
+  --filter-warning: brightness(0) saturate(100%) invert(83%) sepia(22%) saturate(3404%) hue-rotate(3deg) brightness(114%) contrast(88%);
+  --filter-notice: brightness(0) saturate(100%) invert(60%) sepia(98%) saturate(2359%) hue-rotate(142deg) brightness(100%) contrast(94%);;
+
+  --color-indicator-alert:  var(--color-red-500);
+  --color-indicator-warning: var(--color-yellow-500);
+  --color-indicator-notice: var(--color-eastern-blue-500);
 
   --color-theme-persona5r: var(--color-red-500);
   --color-theme-persona3r: var(--color-blue-500);
