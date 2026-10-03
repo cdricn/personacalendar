@@ -5,7 +5,7 @@ import { ResourceMapping } from '@/app/lib/resourceMapping';
 import { useState, use } from 'react';
 import useOpenOnClick from '@/app/utils/useOpenOnClick';
 
-export default function MonthSelection({setMonth}:{setMonth:(item:string)=>void}) {
+export default function MonthSelection({clickMonth}:{clickMonth:(item:string)=>void}) {
   const [selectedMonth, setSelectedMonth] = useState(0);
   const {ref, isOpen} = useOpenOnClick();
   const game = use(GameContext);
@@ -18,7 +18,7 @@ export default function MonthSelection({setMonth}:{setMonth:(item:string)=>void}
     const months = [...monthHeaders];
     return months.map((item, index)=>
       <li key={item} 
-        onClick={()=>{setMonth(monthHeaders[index]); setSelectedMonth(index)}}>
+        onClick={()=>{clickMonth(monthHeaders[index]); setSelectedMonth(index)}}>
           {item.slice(0,3)}
       </li>
     )

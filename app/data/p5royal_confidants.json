@@ -2,36 +2,37 @@
   "normal_arcanas": [
     {
       "name": "Makoto Nijima",
-      "short_name": "Queen",
       "arcana": "Priestess",
       "unlock_date": "june 24",
       "rank_up": {
         "initiate": "Talk to Makoto. Must have completed Kaneshiro's Palace and have Rank 3 Knowledge to initiate.",
         "conditions": ["Rank 6: Must have max rank Charm."]
       },
-      "schedule": {
+      "availability": {
         "ignoresRain": true,
         "time": "day",
-        "availability": {
+        "schedule": {
           "april": null,
           "may": null,
-          "june": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "july": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "august": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "september": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "october": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "november": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "december": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "january": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "february": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "june":       {"day":[24, 25, 26, 28, 30]},
+          "july":       {"day":[2, 3, 5, 7, 19, 26, 27, 28, 31]},
+          "august":     {"day":[1, 2, 4, 6, 7, 9, 11, 13, 14, 16, 18, 20]},
+          "september":  {"day":[20, 22, 24, 25, 27, 29]},
+          "october":    {"day":[1, 2, 4, 6, 8, 9, 15, 16, 30]},
+          "november":   {"day":[1, 3, 5, 6, 8, 10, 12, 13, 15, 17, 22]},
+          "december":   {"day":[1, 3, 4, 6, 8, 10, 11, 13, 15, 17, 22]},
+          "january":    {"day":[14, 17, 19, 21, 22, 24, 26, 28, 29, 31]},
+          "february":   {"day":[1, 2]},
           "march": null
         }
       },
-      "location": ["3rd floor, student council room, Shujin Academy", "School gate, Shujin Academy (No classes)"]
+      "location": {
+        "normal": "3rd floor, student council room, Shujin Academy", 
+        "no_classes": "School gate, Shujin Academy (No classes)" 
+      }
     },
     {
       "name": "Haru Okumura",
-      "short_name": "Noir",
       "arcana": "Empress",
       "unlock_date": "october 30",
       "rank_up": {
@@ -48,19 +49,20 @@
           "july": null,
           "august": null,
           "september": null,
-          "october": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "november": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "december": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "january": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "february": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "october":  {"day": [30, 31]},
+          "november": {"day": [1, 3, 5, 7, 8, 9, 11, 14, 15, 25, 27, 28]},
+          "december": {"day": [1, 2, 5, 6, 9, 10, 12, 16, 17, 22]},
+          "january":  {"day": [15, 18, 21, 23, 24, 28, 31]},
+          "february": {"day": [1]},
           "march": null
         }
       },
-      "location": ["School rooftop, Shujin Academy"]
+      "location": {
+        "normal": "School rooftop, Shujin Academy"
+      }
     },
     {
       "name": "Yusuke Kitagawa",
-      "short_name": "Fox",
       "arcana": "Emperor",
       "unlock_date": "june 18",
       "rank_up": {
@@ -73,114 +75,119 @@
         "availability": {
           "april": null,
           "may": null,
-          "june": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "july": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "august": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "september": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "october": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "november": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "december": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "january": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "february": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "june":       {"day": [18, 23, 24, 25, 27, 30]},
+          "july":       {"day": [2, 4, 7, 12, 17, 28, 31]},
+          "august":     {"day": [3, 6, 7, 9, 12, 13, 16, 17, 19]},
+          "september":  {"day": [2, 19, 23, 25, 26, 30]},
+          "october":    {"day": [2, 7, 9, 10, 14, 16, 30, 31]},
+          "november":   {"day": [4, 6, 7, 11, 13, 14, 25, 27, 28]},
+          "december":   {"day": [2, 4, 5, 9, 11, 12, 16, 17, 22]},
+          "january":    {"day": [13, 16, 22, 24, 25, 29, 31]},
+          "february":   {"day": [1, 2]},
           "march": null
         }
       },
-      "location": ["Underground Station, Shibuya"]
+      "location": {
+        "normal": "Underground Station, Shibuya"
+      }
     },
     {
       "name": "Sojiro Sakura",
-      "short_name": "Sojiro",
       "arcana": "Hierophant",
       "unlock_date": "april 20", 
       "rank_up": {
-        "initiate": "Talk to Sojiro. Will automatically start by May 6.",
+        "initiate": "Talk to Sojiro. Automatically unlocks by May 6.",
         "conditions": ["Rank 3: Must have brewed coffee once.", "Rank 5: Unavailable until August 22.", "Rank 7: Must have max rank Kindness.", "Rank 9: Must have completed the Mementos Request: \"The Money-Grubbing Uncle.\" "]
       },
       "schedule": {
         "ignoresRain": true,
         "time": "night",
         "availability": {
-          "april": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-          "may": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-          "june": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-          "july": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-          "august": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-          "september": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-          "october": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-          "november": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-          "december": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-          "january": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-          "february": ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+          "april":      {"night": [20, 21, 22, 23, 25, 26, 27, 28, 30]},
+          "may":        {"night": [8, 9, 19, 20, 21, 22, 26, 27, 28, 29]},
+          "june":       {"night": [2, 3, 4, 6, 8, 12, 16, 17, 21, 23, 27, 28, 30]},
+          "july":       {"night": [4, 5, 7, 11, 12, 19, 26, 28]},
+          "august":     {"night": [1, 2, 4, 8, 9, 11, 15, 16, 18, 22, 23, 25, 29, 30]},
+          "september":  {"night": [1, 5, 19, 20, 22, 26, 27, 29]},
+          "october":    {"night": [4, 6, 10, 14, 16, 23, 31]},
+          "november":   {"night": [1, 3, 6, 7, 8, 10, 14, 15, 17, 28, 29]},
+          "december":   {"night": [1, 2, 5, 6, 8, 9, 12, 13, 15, 17, 19, 22]},
+          "january":    {"night": [16, 17, 19, 23, 24, 26, 30, 31]},
+          "february":   {"night": [1]},
           "march": null
         }
       },
-      "location": ["Cafe Leblanc"]
+      "location": {
+        "normal": "Cafe Leblanc"
+      }
     },
     {
       "name": "Ann Takamaki",
-      "short_name": "Panther",
       "arcana": "Lovers",
       "unlock_date": "april 15", 
       "rank_up": {
-        "initiate": "Automatically starts on April 15.",
+        "initiate": "Automatically unlocks on April 15.",
         "conditions": ["Rank 2: Unavailable until May 6. Must have rank 2 Kindness. During this time, Ann can be found in Class 2-D."]
       },
       "schedule": {
         "ignoresRain": true,
         "time": "day",
         "availability": {
-          "april": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
-          "may": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
-          "june": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
-          "july": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
-          "august": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
-          "september": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
-          "october": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
-          "november": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
-          "december": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
-          "january": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
-          "february": ["Sunday", "Monday", "Tuesday", "Wednesday", "Friday"],
+          "april": null,
+          "may":        {"day": [6, 10, 19, 21, 23, 24, 26, 28, 29, 31]},
+          "june":       {"day": [1, 3, 4, 6, 7, 12, 22, 24, 26, 28, 29]},
+          "july":       {"day": [1, 3, 5, 6, 8, 19, 26, 27, 29, 30, 31]},
+          "august":     {"day": [2, 3, 5, 7, 8, 10, 12, 14, 15, 17, 19]},
+          "september":  {"day": [2, 20, 21, 23, 27, 28, 30]},
+          "october":    {"day": [4, 5, 7, 9, 10, 14, 16]},
+          "november":   {"day": [1, 2, 4, 8, 9, 11, 15, 16, 25, 27, 29, 30]},
+          "december":   {"day": [2, 4, 6, 7, 9, 13, 14, 16, 17, 22]},
+          "january":    {"day": [13, 16, 21, 22, 24, 25, 28, 29, 31]},
+          "february":   {"day": [1, 2]},
           "march": null
         }
       },
-      "location": ["Underground Mall, Shibuya"]
+      "location": {
+        "normal": "Underground Mall, Shibuya"
+      }
     },
     {
       "name": "Ryuji Sakamoto",
-      "short_name": "Skull",
       "arcana": "Chariot",
       "unlock_date": "april 12",
       "rank_up": {
-        "initiate": "Automatically starts on April 12.",
+        "initiate": "Automatically unlocks on April 12.",
         "conditions": ["Rank 5: Unavailable until May 6", "Rank 7: Can only be initiated by responding to Ryuji's text at certain dates."]
       },
       "schedule": {
         "ignoresRain": true,
         "time": "day",
         "availability": {
-          "april": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "may": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "june": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "july": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "august": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "september": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "october": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "november": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "december": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "january": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "february": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "april":      {"day": [19, 22, 27, 28, 29]},
+          "may":        {"day": [1, 6, 9, 10, 20, 22, 23, 25, 27, 28]},
+          "june":       {"day": [1, 3, 4, 6, 7, 18, 21, 22, 24, 25, 28, 29]},
+          "july":       {"day": [2, 5, 6, 12, 19, 26, 27, 30]},
+          "august":     {"day": [1, 2, 5, 6, 8, 9, 10, 14, 16, 17, 20]},
+          "september":  {"day": [20, 21, 23, 24, 27, 28]},
+          "october":    {"day": [1, 4, 5, 8, 10, 15, 16]},
+          "november":   {"day": [1, 2, 5, 8, 9, 12, 15, 16, 26, 29, 30]},
+          "december":   {"day": [3, 6, 7, 10, 13, 14, 17, 22]},
+          "january":    {"day": [14, 17, 21, 24, 25, 28, 31]},
+          "february":   {"day": [1, 2]},
           "march": null
         }
       },
-      "location": ["2nd floor hallway, Shujin Academy", "Central Street, Shibuya (No classes)"]
+      "location": {
+        "normal": "2nd floor hallway, Shujin Academy",
+        "no_classes": "Central Street, Shibuya (No classes)"
+      }
     },
     {
       "name": "Goro Akechi",
-      "short_name": "Akechi",
       "arcana": "Justice",
       "unlock_date":"june 10",
       "rank_up": {
-        "initiate": "Automatically starts on June 10.",
+        "initiate": "Automatically unlocks on June 10.",
         "conditions": ["Rank 3: Must have rank 3 Knowledge and Charm", "Rank 6: Unavailable until September 3. During this time, Akechi can be found in Leblanc.", "Rank 7: Unavailable until November 2. Must have rank 4 Knowledge.", "Rank 8: Must win against Akechi in billiards to progress.", "Rank 9 & 10: Automatically triggered if Rank 8 is complete."]
       },
       "schedule": {
@@ -189,27 +196,28 @@
         "availability": {
           "april": null,
           "may": null,
-          "june": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "july": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "august": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "september": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "october": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "november": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "december": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "january": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "february": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "june":       {"night": [13, 22, 23, 25, 29]},
+          "july":       {"night": [2, 6, 9, 12, 19, 26, 30]},
+          "august":     {"night": [2, 6, 9, 13, 17, 20, 24, 30]},
+          "september":  {"night": [3, 21, 24, 28]},
+          "october":    {"night": [1, 5, 8, 15, 22, 31]},
+          "november":   {"night": [2, 5, 7, 9, 12, 14, 15, 17]},
+          "december": null,
+          "january": null,
+          "february": null,
           "march": null
         }
       },
-      "location": ["Outside Darts & Billiards Penguin Sniper, Kichijoji"]
+      "location": {
+        "normal": "Outside Darts & Billiards Penguin Sniper, Kichijoji"
+      }
     },
     {
       "name": "Futaba Sakura",
-      "short_name": "Oracle",
       "arcana": "Hermit",
       "unlock_date": "august 31",
       "rank_up": {
-        "initiate": "Automatically starts on August 31.",
+        "initiate": "Automatically unlocks on August 31.",
         "conditions": ["Rank 2: Must have rank 4 Kindness", "Rank 4: Only available if there are classes.", "Rank 8: Must have completed the Mementos Request: \"Daughter's Just a Meal Ticket\". "]
       },
       "schedule": {
@@ -220,21 +228,22 @@
           "may": null,
           "june": null,
           "july": null,
-          "august": ["Sunday", "Wednesday", "Thursday", "Saturday"],
-          "september": ["Sunday", "Wednesday", "Thursday", "Saturday"],
-          "october": ["Sunday", "Wednesday", "Thursday", "Saturday"],
-          "november": ["Sunday", "Wednesday", "Thursday", "Saturday"],
-          "december": ["Sunday", "Wednesday", "Thursday", "Saturday"],
-          "january": ["Sunday", "Wednesday", "Thursday", "Saturday"],
-          "february": ["Sunday", "Wednesday", "Thursday", "Saturday"],
+          "august": null,
+          "september":  {"day": [2, 4, 5, 21,22, 24, 28, 29]},
+          "october":    {"day": [1, 5, 6, 8, 15, 16, 30]},
+          "november":   {"day": [2, 3, 5, 6, 9, 10, 12, 13, 17, 26, 27, 30]},
+          "december":   {"day": [1, 4, 7, 8, 10, 11, 14, 17, 22]},
+          "january":    {"day": [15, 18, 19, 21, 22, 25, 28]},
+          "february":   {"day": [1]},
           "march": null
         }
       },
-      "location": ["Outside Cafe Leblanc, Yongen-Jaya"]
+      "location": {
+        "normal": "Outside Cafe Leblanc, Yongen-Jaya"
+      }
     },
     {
       "name": "Chihaya Mifune",
-      "short_name": "Chihaya",
       "arcana": "Fortune",
       "unlock_date": "june 26",
       "rank_up": {
@@ -247,23 +256,24 @@
         "availability": {
           "april": null,
           "may": null,
-          "june": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "july": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "august": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "september": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "october": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "november": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "december": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "january": ["Sunday", "Tuesday", "Thursday", "Saturday"],
-          "february": ["Sunday", "Tuesday", "Thursday", "Saturday"],
+          "june":       {"night": [25, 26, 28, 30]},
+          "july":       {"night": [3, 5, 7, 12, 17, 19, 26, 28, 30, 31]},
+          "august":     {"night": [2, 4, 7, 9, 11, 14, 16, 18, 23, 25, 28, 30]},
+          "september":  {"night": [1, 4, 20, 27, 29]},
+          "october":    {"night": [2, 4, 6, 9, 16, 23, 30]},
+          "november":   {"night": [1, 3, 6, 8, 10, 13, 15, 17, 27, 29]},
+          "december":   {"night": [1, 4, 6, 8, 11, 13, 15, 19, 22]},
+          "january":    {"night": [15, 19, 22, 24, 29, 31]},
+          "february":   {"night": [1]},
           "march": null
         }
       },
-      "location": ["Red Light District, Shinjuku"]
+      "location": {
+        "normal": "Red Light District, Shinjuku"
+      }
     },
     {
       "name": "Munehisa Iwai",
-      "short_name": "Iwai",
       "arcana": "Hanged Man",
       "unlock_date": "may 6", 
       "rank_up": {
@@ -275,24 +285,25 @@
         "time": "night",
         "availability": {
           "april": null,
-          "may": ["Sunday", "Thursday", "Saturday"],
-          "june": ["Sunday", "Thursday", "Saturday"],
-          "july": ["Sunday", "Thursday", "Saturday"],
-          "august": ["Sunday", "Thursday", "Saturday"],
-          "september": ["Sunday", "Thursday", "Saturday"],
-          "october": ["Sunday", "Thursday", "Saturday"],
-          "november": ["Sunday", "Thursday", "Saturday"],
-          "december": ["Sunday", "Thursday", "Saturday"],
-          "january": ["Sunday", "Thursday", "Saturday"],
-          "february": ["Sunday", "Thursday", "Saturday"],
+          "may":        {"night": [8, 21, 22, 28, 29]},
+          "june":       {"night": [4, 5, 6, 12, 22, 25, 26]},
+          "july":       {"night": [2, 3, 6, 9, 17, 27, 30, 31]},
+          "august":     {"night": [3, 6, 7, 13, 14, 20, 23, 27, 28]},
+          "september":  {"night": [3, 4, 20, 24, 25]},
+          "october":    {"night": [1, 2, 4, 8, 9, 15, 16, 22, 23, 30]},
+          "november":   {"night": [5, 6, 8, 12, 13, 26, 27]},
+          "december":   {"night": [1, 3, 4, 8, 10, 11, 15, 17, 19, 22]},
+          "january":    {"night": [14, 15, 17, 21, 22, 24, 28, 29, 31]},
+          "february":   {"night": [1]},
           "march": null
         }
       },
-      "location": ["Airsoft Shop, Shibuya"]
+      "location": {
+        "normal": "Airsoft Shop, Shibuya"
+      }
     },
     {
       "name": "Tae Takemi",
-      "short_name": "Takemi",
       "arcana": "Death",
       "unlock_date": "april 18", 
       "rank_up": {
@@ -303,25 +314,26 @@
         "ignoresRain": true,
         "time": "day",
         "availability": {
-          "april": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "may": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "june": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "july": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "august": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "september": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "october": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "november": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "december": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "january": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "february": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "march": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+          "april":      {"day": "Everyday"},
+          "may":        {"day": "Everyday"},
+          "june":       {"day": "Everyday"},
+          "july":       {"day": "Everyday"},
+          "august":     {"day": "Everyday"},
+          "september":  {"day": "Everyday"},
+          "october":    {"day": "Everyday"},
+          "november":   {"day": "Everyday"},
+          "december":   {"day": "Everyday"},
+          "january":    {"day": "Everyday"},
+          "february":   {"day": "Everyday"},
+          "march": null
         }
       },
-      "location": ["Takemi's Medical Clinic, Yongen-Jaya"]
+      "location": {
+        "normal": "Takemi's Medical Clinic, Yongen-Jaya"
+      }
     },
     {
       "name": "Sadayo Kawakami",
-      "short_name": "Kawakami",
       "arcana": "Temperance",
       "unlock_date": "may 24", 
       "rank_up": {
@@ -332,25 +344,26 @@
         "ignoresRain": true,
         "time": "night",
         "availability": {
-          "april": ["Friday", "Saturday"],
-          "may": ["Friday", "Saturday"],
-          "june": ["Friday", "Saturday"],
-          "july": ["Friday", "Saturday"],
-          "august": ["Friday", "Saturday"],
-          "september": ["Friday", "Saturday"],
-          "october": ["Friday", "Saturday"],
-          "november": ["Friday", "Saturday"],
-          "december": ["Friday", "Saturday"],
-          "january": ["Friday", "Saturday"],
-          "february": ["Friday", "Saturday"],
-          "march": ["Friday", "Saturday"]
+          "april": null,
+          "may":        {"night": [27, 28]},
+          "june":       {"night": [3, 4, 10, 15, 17, 24, 25, 29]},
+          "july":       {"night": [1, 6, 8, 9, 19, 27, 29, 30]},
+          "august":     {"night": [3, 5, 6, 10, 12, 13, 17, 19, 20, 24, 26, 27]},
+          "september":  {"night": [2, 3, 21, 23, 24, 28, 30]},
+          "october":    {"night": [1, 5, 7, 8, 14, 15, 22]},
+          "november":   {"night": [2, 4, 5, 11, 12, 16, 25, 26, 30]},
+          "december":   {"night": [2, 3, 5, 7, 9, 10, 12, 14, 16, 17,19, 22]},
+          "january":    {"night": [13, 14, 18, 20, 21, 25, 27, 28]},
+          "february":   {"night": [1]},
+          "march": null
         }
       },
-      "location": ["Yellow phone, Leblanc"]
+      "location": {
+        "normal": "Yellow phone, Leblanc"
+      }
     },
     {
       "name": "Ichiko Ohya",
-      "short_name": "Ohya",
       "arcana": "Devil",
       "unlock_date": "june 23", 
       "rank_up": {
@@ -361,25 +374,26 @@
         "ignoresRain": true,
         "time": "night",
         "availability": {
-          "april": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "may": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "june": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "july": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "august": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "september": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "october": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "november": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "december": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "january": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "february": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "march": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+          "april": null,
+          "may": null,
+          "june":       {"night": [23, 24, 27, 28, 30]},
+          "july":       {"night": [1, 4, 5, 7, 8, 11, 12, 19, 26, 28, 29]},
+          "august":     {"night": [1, 2, 4, 5, 8, 9, 11, 12, 15, 16, 18, 19, 22, 23, 25, 26, 29, 30]},
+          "september":  {"night": [1, 2, 5, 19, 20, 22, 23, 26, 27, 29, 30]},
+          "october":    {"night": [4, 6, 7, 10, 14, 22, 24, 31]},
+          "november":   {"night": [1, 3, 4, 7, 8, 10, 11, 14, 15, 17, 25, 28, 29]},
+          "december":   {"night": [1, 2, 5, 6, 8, 9, 11, 12, 15, 16, 19, 22]},
+          "january":    {"night": [13, 16, 17, 19, 20, 23, 24, 26, 27, 30, 31]},
+          "february":   {"night": [1]},
+          "march": null
         }
       },
-      "location": ["Crossroads Bar, Shinjuku"]
+      "location": {
+        "normal": "Crossroads Bar, Shinjuku"
+      }
     },
     {
       "name": "Shinya Oda",
-      "short_name": "Shinya",
       "arcana": "Tower",
       "unlock_date": "september 5", 
       "rank_up": {
@@ -390,25 +404,26 @@
         "ignoresRain": true,
         "time": "day",
         "availability": {
-          "april": ["Monday", "Tuesday", "Thursday", "Saturday"],
-          "may": ["Monday", "Tuesday", "Thursday", "Saturday"],
-          "june": ["Monday", "Tuesday", "Thursday", "Saturday"],
-          "july": ["Monday", "Tuesday", "Thursday", "Saturday"],
-          "august": ["Monday", "Tuesday", "Thursday", "Saturday"],
-          "september": ["Monday", "Tuesday", "Thursday", "Saturday"],
-          "october": ["Monday", "Tuesday", "Thursday", "Saturday"],
-          "november": ["Monday", "Tuesday", "Thursday", "Saturday"],
-          "december": ["Monday", "Tuesday", "Thursday", "Saturday"],
-          "january": ["Monday", "Tuesday", "Thursday", "Saturday"],
-          "february": ["Monday", "Tuesday", "Thursday", "Saturday"],
-          "march": ["Monday", "Tuesday", "Thursday", "Saturday"]
+          "april": null,
+          "may": null,
+          "june": null,
+          "july": null,
+          "august": null,
+          "september":  {"day": [5, 19, 22, 24, 26, 29]},
+          "october":    {"day": [1, 6, 8, 10, 15, 30]},
+          "november":   {"day": [1, 3, 4, 7, 10, 12, 15, 17, 26, 29]},
+          "december":   {"day": [1, 3, 6, 8, 10, 13, 15, 17, 22]},
+          "january":    {"day": [14, 16, 19, 21, 23, 26, 28, 30]},
+          "february":   {"day": [1, 2]},
+          "march": null
         }
       },
-      "location": ["Arcade, Akihabara"]
+      "location": {
+        "normal": "Arcade, Akihabara"
+      }
     },
     {
       "name": "Hifumi Togo",
-      "short_name": "Hifumi",
       "arcana": "Star",
       "unlock_date": "june 25", 
       "rank_up": {
@@ -419,55 +434,56 @@
         "ignoresRain": true,
         "time": "night",
         "availability": {
-          
-          "april": ["Sunday", "Monday", "Wednesday", "Saturday"],
-          "may": ["Sunday", "Monday", "Wednesday", "Saturday"],
-          "june": ["Sunday", "Monday", "Wednesday", "Saturday"],
-          "july": ["Sunday", "Monday", "Wednesday", "Saturday"],
-          "august": ["Sunday", "Monday", "Wednesday", "Saturday"],
-          "september": ["Sunday", "Monday", "Wednesday", "Saturday"],
-          "october": ["Sunday", "Monday", "Wednesday", "Saturday"],
-          "november": ["Sunday", "Monday", "Wednesday", "Saturday"],
-          "december": ["Sunday", "Monday", "Wednesday", "Saturday"],
-          "january": ["Sunday", "Monday", "Wednesday", "Saturday"],
-          "february": ["Sunday", "Monday", "Wednesday", "Saturday"],
-          "march": ["Sunday", "Monday", "Wednesday", "Saturday"]
+          "april": null,
+          "may": null,
+          "june":       {"night": [27, 30]},
+          "july":       {"night": [2, 4, 6, 9, 11, 19, 27, 30]},
+          "august":     {"night": [1, 3, 6, 8, 10, 13, 16, 17, 20, 22, 24, 27, 29]},
+          "september":  {"night": [3, 19, 21, 24, 26, 28]},
+          "october":    {"night": [5, 8, 10, 15, 22, 24, 31]},
+          "november":   {"night": [2, 5, 7, 9, 12, 14, 16, 26, 28, 30]},
+          "december":   {"night": [3, 5, 7, 10, 12, 14, 17, 19, 22]},
+          "january":    {"night": [14, 16, 18, 21, 23, 25, 28, 30]},
+          "february":   {"night": [1]},
+          "march": null
         }
       },
-      "location": ["Kanda Church"]
+      "location": {
+        "normal": "Kanda Church"
+      }
     },
     {
       "name": "Yuuki Mishima",
-      "short_name": "Mishima",
       "arcana": "Moon",
       "unlock_date": "may 6", 
       "rank_up": {
-        "initiate": "Automatically starts on May 6.",
+        "initiate": "Automatically unlocks on May 6.",
         "conditions": ["Complete his Mementos Requests to rank up."]
       },
       "schedule": {
         "ignoresRain": true,
         "time": "night",
         "availability": {
-          "april": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "may": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "june": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "july": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "august": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "september": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "october": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "november": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "december": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "january": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "february": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "march": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+          "april": null,
+          "may": null,
+          "june":       {"night": [27, 30]},
+          "july":       {"night": [2, 4, 6, 9, 11, 19, 27, 30]},
+          "august":     {"night": [1, 3, 6, 8, 10, 13, 16, 17, 20, 22, 24, 27, 29]},
+          "september":  {"night": [3, 19, 21, 24, 26, 28]},
+          "october":    {"night": [5, 8, 10, 15, 22, 24, 31]},
+          "november":   {"night": [2, 5, 7, 9, 12, 14, 16, 26, 28, 30]},
+          "december":   {"night": [3, 5, 7, 10, 12, 14, 17, 19, 22]},
+          "january":    {"night": [14, 16, 18, 21, 23, 25, 28, 30]},
+          "february":   {"night": [1]},
+          "march": null
         }
       },
-      "location": ["Central Street, Shibuya (Initial)", "Shinjuku (After unlocking)", "Akihabara (After unlocking)"]
+      "location": {
+        "normal": "Central Street, Shibuya. Will permanently move to Shinjuku then Akihabara once unlocked."
+      }
     },
     {
       "name": "Toranosuke Yoshida",
-      "short_name": "Yoshida",
       "arcana": "Sun",
       "unlock_date": "may 10", 
       "rank_up": {
@@ -479,40 +495,59 @@
         "time": "night",
         "availability": {
           "april": null,
-          "may": ["Sunday"],
-          "june": ["Sunday"],
-          "july": ["Sunday"],
-          "august": ["Sunday"],
-          "september": ["Sunday"],
-          "october": ["Sunday"],
-          "november": ["Sunday"],
+          "may":        {"night": [22, 29]},
+          "june":       {"night": [5, 12, 26]},
+          "july":       {"night": [3, 31]},
+          "august":     {"night": [7, 11, 14, 20, 25, 28]},
+          "september":  {"night": [4, 19, 22, 25]},
+          "october":    {"night": [2, 9, 10, 16, 23, 30]},
+          "november":   {"night": [3, 6, 13 ]},
           "december": null,
           "january": null,
           "february": null,
           "march": null
         }
       },
-      "location": ["Station Square, Shibuya"]
+      "location": {
+        "normal": "Station Square, Shibuya"
+      }
     },
     {
       "name": "Yoshizawa",
-      "short_name": "Yoshizawa",
       "arcana": "Faith",
       "unlock_date": "may 30", 
       "rank_up": {
-        "initiate": "",
-        "conditions": ["Can only be ranked up by responding to her IM texts or by visiting her in Kichijoji that day.", "Permanently locked if not maxed before December 23."]
+        "initiate": "Automatically unlocks on May 30.",
+        "conditions": ["Permanently locked if not maxed before December 23."]
       },
-      "schedule": null,
-      "location": ["Kichijoji"]
+      "schedule": {
+        "ignoresRain": false,
+        "time": "day",
+        "availability": {
+          "april": null,
+          "may": null,
+          "june":       {"day": [8, 29]},
+          "july":       {"day": [7, 28, 31]},
+          "august":     {"day": [7, 28, 31]},
+          "september":  {"day": [21, 28]},
+          "october":    {"day": [5]},
+          "november":   {"day": [2, 9, 30]},
+          "december":   {"day": [4, 7, 11, 14, 22 ]},
+          "january":    {"day": [13, 14, 16, 18, 19, 21, 22, 23, 25, 28, 29, 30]},
+          "february":   {"day": [1]},
+          "march": null
+        }
+      },
+      "location": {
+        "normal": "Kichijoji Entrance"
+      }
     },
     {
       "name": "Takuto Maruki",
-      "short_name": "Maruki",
       "arcana": "Councillor",
       "unlock_date": "may 13", 
       "rank_up": {
-        "initiate": "Automatically starts on May 13.",
+        "initiate": "Automatically unlocks on May 13.",
         "conditions": ["Rank 3: Unavailable during rainy days.", "Rank 6: Available after September 20.", "Permanently unavailable after November 17.", "Rank 10: Only obtainable if rank 9 is reached before November 18."]
       },
       "schedule": {
@@ -520,50 +555,60 @@
         "time": "day",
         "availability": {
           "april": null,
-          "may": ["Monday", "Tuesday", "Wednesday", "Friday"],
-          "june": ["Monday", "Tuesday", "Wednesday", "Friday"],
-          "july": ["Monday", "Tuesday", "Wednesday", "Friday"],
-          "august": ["Monday", "Tuesday", "Wednesday", "Friday"],
-          "september": ["Monday", "Tuesday", "Wednesday", "Friday"],
-          "october": ["Monday", "Tuesday", "Wednesday", "Friday"],
-          "november": ["Monday", "Tuesday", "Wednesday", "Friday"],
+          "may":        {"day": [20, 23, 27]},
+          "june":       {"day": [3, 6, 8, 21, 24, 27]},
+          "july":       {"day": [1, 4, 8]},
+          "august":     null,
+          "september":  {"day": [2, 5, 6, 20, 21, 23, 24, 26, 27, 29, 30]},
+          "october":    {"day": [1, 5, 7, 8, 14, 15, 31]},
+          "november":   {"day": [2, 4, 5, 7, 9, 11, 12, 14, 16, 17]},
           "december": null,
           "january": null,
           "february": null,
           "march": null
         }
       },
-      "location": ["1st floor practice building, nurse's office, Shujin Academy"]
+      "location": {
+        "normal": "1st floor practice building, nurse's office, Shujin Academy"
+      }
     }
   ],
   "special_arcanas": [
     {
       "name": "Igor",
-      "short_name": "Igor",
       "arcana": "Fool",
       "unlock_date": "april 12", 
-      "condition": "Automatically unlocks and ranks up during certain story events."
+      "rank_up": {
+        "initiate": "Automatically unlocks on April 12.",
+        "condition": "Automatically ranks up during certain story events."
+      }
     },
     {
       "name": "Morgana",
-      "short_name": "Mona",
       "arcana": "Magician",
-      "unlock_date": "april 15", 
-      "condition": "Automatically unlocks and ranks up during certain story events."
+      "unlock_date": "april 15",  
+      "rank_up": {
+        "initiate": "Automatically unlocks on April 15.",
+        "condition": "Automatically ranks up during certain story events."
+      }
     },
     {
       "name": "Caroline and Justine",
-      "short_name": "Caroline and Justine",
       "arcana": "Strength",
-      "unlock_date": "may 18", 
-      "condition": "Must have Jack Frost with Mabufu to initiate. Further ranks require bringing personas with specific skills."
+      "unlock_date": "may 18",  
+      "rank_up": {
+        "initiate": "Automatically unlocks on May 18.",
+        "condition": "Must have Jack Frost with Mabufu to initiate. Further ranks require bringing Personas with specific skills."
+      }
     },
     {
       "name": "Sae Nijima",
-      "short_name": "Sae",
       "arcana": "Judgement",
-      "unlock_date": "july 9",
-      "condition": "Automatically unlocks and ranks up during certain story events."
+      "unlock_date": "july 9", 
+      "rank_up": {
+        "initiate": "Automatically unlocks on July 9.",
+        "condition": "Automatically ranks up during certain story events."
+      }
     }
   ]
 }

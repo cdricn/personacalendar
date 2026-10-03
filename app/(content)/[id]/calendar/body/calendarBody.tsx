@@ -5,9 +5,9 @@ import { ResourceMapping } from '../../../../lib/resourceMapping';
 import CalendarTile from './calendarTile';
 
 export default function CalendarBody({
-  setDay
+  clickDay
 }:{
-  setDay:(item:number)=>void
+  clickDay:(item:number)=>void
 }) {
   
   const [selectedDay, setSelectedDay] = useState<number>(0);
@@ -23,7 +23,7 @@ export default function CalendarBody({
   const bottomTilesFiller = new Array(leftOverDays).fill('bottom');
 
   function handleClickDay(currentDay:number) {
-    setDay(currentDay);
+    clickDay(currentDay);
     setSelectedDay(currentDay+1);
   }
 

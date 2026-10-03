@@ -44,31 +44,35 @@ export interface GameIcons {
 }
 
 export interface ConfidantData {
-  normal_arcanas: readonly NormalArcanas[],
-  special_arcanas: readonly SpecialArcanas[]
+  normal_arcanas: readonly NormalArcanas[]
 }
 
+
+type Day = number[] | string;
 export interface NormalArcanas {
   name: string,
-  short_name: string,
   arcana: string,
   unlock_date: string,
   rank_up: {
     initiate: string,
     conditions: string[]
   },
-  schedule: {
+  availability?: {
     ignoresRain: boolean,
     time: string,
-    availability: {[month:string]:string[] | null}
-  } | null,
-  location: string[]
+    schedule: { 
+      [month:string]: {day?: Day, night?: Day}
+    },
+  }
+  location?: {normal: string, no_classes?: string}
 }
 
-export interface SpecialArcanas {
-  name: string,
-  short_name: string,
-  arcana: string,
-  unlock_date: string,
-  condition: string
+export interface InfoBlockInterface {
+  blockHeader: string;
+  blockSubHeader?: string | null;
+  blockIcon?: string | null;
+  blockSubIcon?: string | null;
+  blockInfo?: string[] | null;
+  blockStyling?: string | null;
+  blockDisplay?: boolean | string[] | null;
 }

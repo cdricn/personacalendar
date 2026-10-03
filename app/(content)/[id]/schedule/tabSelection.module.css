@@ -1,11 +1,6 @@
-.section-container {
-  padding-top: var(--size-32);
-  position: relative;
-  display: flex;
-  align-items: center;
-}
 
-.options {
+.tabs-container {
+  padding-top: var(--size-32);
   display: flex;
   gap: var(--size-4);
 
@@ -25,17 +20,3 @@
   }
   div[data-selected='false'] {background-color: var(--color-darkgray); color: var(--color-lightgray-5);}
 }
-
-.info-container {
-  border-radius: 0px 10px 10px 10px;
-  padding: var(--size-16);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 400px;
-  background-color: var(--color-lightgray);
-  font-family: var(--font-schedule-body);
-  font-size: var(--fs-body);
-}
-

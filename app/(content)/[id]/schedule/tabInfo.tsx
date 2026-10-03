@@ -1,17 +1,8 @@
-import styles from './tabInfo.module.css';
 import { ResourceMapping } from '@/app/lib/resourceMapping';
 import { GameContext, DataContext } from '@/app/utils/context';
 import { use } from 'react';
 import InfoBlock from '@/app/components/infoBlock';
-
-interface InfoBlock {
-  blockHeader: string;
-  blockSubHeader?: string | null;
-  blockIcon?: string | null;
-  blockSubIcon?: string | null;
-  blockInfo?: string[] | null;
-  blockStyling?: string
-}
+import { InfoBlockInterface } from '@/app/lib/interface';
 
 export default function TabInfo({currentDay}:{currentDay:number}) {
   const game = use(GameContext);
@@ -32,13 +23,13 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
   const dayWeather = day_weather ? weather_icons[day_weather].src : '';
   const nightWeather = night_weather ? weather_icons[night_weather].src : '';
 
-  const blockDisplay = is_day_playable;
-  const worldDisplay = Boolean(world);
-  const alertDisplay = Boolean(alert);
-  const noticeDisplay = Boolean(notice);
-  const statDisplay = Boolean(missable_stat);
-  const itemDisplay = Boolean(missable_item);
-  const storyDisplay = Boolean(events);
+  const infoBlockDetails : InfoBlockInterface[] = [
+    {blockHeader: 'Alert', blockSubHeader: null, blockIcon: null, blockSubIcon: null, blockInfo: alert, blockStyling: 'alert', blockDisplay: alert},
+    {blockHeader: 'Notice', blockSubHeader: null, blockIcon: null, blockSubIcon: null, blockInfo: notice, blockStyling: 'notice', blockDisplay: notice},
+    {blockHeader: 'Social Stats', blockSubHeader: null, blockIcon: null, blockSubIcon: null, blockInfo: missable_stat, blockStyling: 'stats', blockDisplay: missable_stat},
+    {blockHeader: 'Items', blockSubHeader: null, blockIcon: null, blockSubIcon: null, blockInfo: missable_item, blockStyling: 'items', blockDisplay: missable_item},
+    {blockHeader: 'Story event.', blockSubHeader: null, blockIcon: null, blockSubIcon: null, blockInfo: null, blockStyling: null, blockDisplay: events},
+  ];
 
   return (
     <>
@@ -48,44 +39,31 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
           blockSubHeader={time_day}
           blockIcon={dayWeather}
           blockSubIcon={'daySpecialWeather'}
-          blockDisplay={blockDisplay} 
+          blockDisplay={is_day_playable} 
         />
         <InfoBlock 
           blockHeader={'Night'}
           blockSubHeader={time_night}
           blockIcon={nightWeather}
           blockSubIcon={'nightSpecialWeather'} 
-          blockDisplay={blockDisplay} 
+          blockDisplay={is_day_playable} 
         />
       </div>
-      <InfoBlock 
-        blockHeader={'Alert'}
-        blockInfo={alert}
-        blockStyling={'alert'}
-        blockDisplay={alertDisplay} 
-      />
-      <InfoBlock 
-        blockHeader={'Notice'}
-        blockInfo={notice}
-        blockStyling={'notice'}
-        blockDisplay={noticeDisplay} 
-      />
-      <InfoBlock 
-        blockHeader={'Social Stats'}
-        blockInfo={missable_stat}
-        blockStyling={'stats'}
-        blockDisplay={statDisplay} 
-      />
-      <InfoBlock 
-        blockHeader={'Items'}
-        blockInfo={missable_item}
-        blockStyling={'items'}
-        blockDisplay={itemDisplay} 
-      />
-      <InfoBlock 
-        blockHeader={"Story event."}
-        blockDisplay={storyDisplay} 
-      />
+      {
+        infoBlockDetails.map((item, index)=>{
+          return (
+            <InfoBlock key={item.blockHeader+index}
+              blockHeader={item.blockHeader}
+              blockSubHeader={item.blockSubHeader}
+              blockIcon={item.blockIcon}
+              blockSubIcon={item.blockSubIcon} 
+              blockInfo={item.blockInfo}
+              blockStyling={item.blockStyling}
+              blockDisplay={item.blockDisplay}
+            />
+          )
+        })
+      }
     </>
   )
 }

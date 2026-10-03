@@ -47,6 +47,19 @@
   max-width: 500px;
 }
 
+.info-container {
+  border-radius: 0px 10px 10px 10px;
+  padding: var(--size-16);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  background-color: var(--color-lightgray);
+  font-family: var(--font-schedule-body);
+  font-size: var(--fs-body);
+}
+
 @media (width < 1050px) {
   .main-content {
     width: 500px;
