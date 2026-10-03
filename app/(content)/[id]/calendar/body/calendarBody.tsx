@@ -53,7 +53,7 @@ export default function CalendarBody({
         }
 
         {bottomTilesFiller.map((item, index) => <div key={'filler'+item+index} className={styles['filler-tile']}/> )}
-      
+
       </div>
     </div>
   )

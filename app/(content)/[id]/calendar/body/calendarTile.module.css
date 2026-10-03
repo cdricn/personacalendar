@@ -34,6 +34,7 @@
 
 .tile-content[data-selected='true'] > .weather-icon-container   { opacity: 1 }
 .tile-content[data-selected='true'] > .item-indicator-container { opacity: 1 }
+.tile-content[data-selected='true']   { background-color: var(--color-tile-active); }
 
 .stripes {
   position: absolute;

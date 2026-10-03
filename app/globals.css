@@ -49,6 +49,24 @@
   --color-eastern-blue-600: #0aa0b4;
   --color-eastern-blue-700: #0f7d8f;
   --color-eastern-blue-800: #166574;
+  --color-malachite-100: #d8ffe4;
+  --color-malachite-200: #b3ffca;
+  --color-malachite-300: #77fea2;
+  --color-malachite-400: #35f372;
+  --color-malachite-500: #0ce753;
+  --color-malachite-600: #02b73d;
+  --color-malachite-700: #068f33;
+  --color-malachite-800: #0b702d;
+  --color-malachite-900: #0b5c28;
+  --color-magenta-fuchsia-100: #ffe7ff;
+  --color-magenta-fuchsia-200: #ffcfff;
+  --color-magenta-fuchsia-300: #ffa8fa;
+  --color-magenta-fuchsia-400: #fd75f4;
+  --color-magenta-fuchsia-500: #f54be9;
+  --color-magenta-fuchsia-600: #d920c8;
+  --color-magenta-fuchsia-700: #b417a2;
+  --color-magenta-fuchsia-800: #931583;
+  --color-magenta-fuchsia-900: #78176a;
 
   --color-inactive-day: var(--color-plain-700);
   --color-lightgray-active: var(--color-lightgray-2);
@@ -61,13 +79,14 @@
   --color-tile-active:    var(--color-plain-700);
   --color-tile-inactive:  var(--color-plain-900);
 
-  --color-alert:            var(--color-tosca-800);
+  --color-alert:            var(--color-red-800);
   --color-alert-active:     var(--color-red-700);
   --color-warning:          var(--color-yellow-700);
   --color-warning-active:   var(--color-yellow-600);
-  --color-notice:           var(--color-yellow-700);
   --color-event:            var(--color-eastern-blue-700);
   --color-event-active:     var(--color-eastern-blue-600);
+  --color-stats:            var(--color-yellow-400);
+  --color-items:            var(--color-magenta-fuchsia-500);
 
   --filter-alert: brightness(0) saturate(100%) invert(17%) sepia(100%) saturate(4538%) hue-rotate(356deg) brightness(90%) contrast(99%);
   --filter-warning: brightness(0) saturate(100%) invert(83%) sepia(22%) saturate(3404%) hue-rotate(3deg) brightness(114%) contrast(88%);
@@ -75,7 +94,7 @@
 
   --color-indicator-alert:  var(--color-red-500);
   --color-indicator-warning: var(--color-yellow-500);
-  --color-indicator-notice: var(--color-eastern-blue-500);
+  --color-indicator-notice: var(--color-magenta-fuchsia-500);
 
   --color-theme-persona5r: var(--color-red-500);
   --color-theme-persona3r: var(--color-blue-500);
@@ -122,12 +141,14 @@
 }
 
 [data-theme="persona5_royal"]{
-  --font-months: var(--ff-arsenal);
-  --font-days: var(--ff-inter);
+  --font-months:      var(--ff-arsenal);
+  --font-days:        var(--ff-inter);
   --font-days-number: var(--ff-inter);
-  --font-schedule: var(--ff-arsenal);
-  --main-color: var(--color-theme-persona5r);
+  --font-schedule:    var(--ff-arsenal);
+  --main-color:       var(--color-theme-persona5r);
   --complement-color: var(--color-theme-persona5r);
+  --color-stats:      var(--color-yellow-400);
+  --color-items:      var(--color-magenta-fuchsia-500);
 }
 
 *, *::before, *::after {

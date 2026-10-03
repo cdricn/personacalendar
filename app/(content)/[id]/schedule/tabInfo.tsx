@@ -2,6 +2,7 @@ import styles from './tabInfo.module.css';
 import { ResourceMapping } from '@/app/lib/resourceMapping';
 import { GameContext, DataContext } from '@/app/utils/context';
 import { use } from 'react';
+import InfoBlock from '@/app/components/infoBlock';
 
 interface InfoBlock {
   blockHeader: string;
@@ -39,96 +40,52 @@ export default function TabInfo({currentDay}:{currentDay:number}) {
   const itemDisplay = Boolean(missable_item);
   const storyDisplay = Boolean(events);
 
-  function InfoBlock({
-    blockHeader, 
-    blockSubHeader, 
-    blockIcon, 
-    blockSubIcon, 
-    blockInfo,
-    blockStyling
-  } : InfoBlock) {
-
-    const infoDisplay = Boolean(blockInfo);
-    return (
-      <div className={styles['block']} data-styling={blockStyling}>
-        <div className={styles['block-header']}>
-          <div className={styles['block-name']}>
-            <h3>{blockHeader}</h3>
-            <span className={styles['block-name-subtext']} data-text-color={blockSubHeader}>
-              {blockSubHeader && blockSubHeader.charAt(0).toUpperCase() + blockSubHeader.slice(1)}
-            </span>
-          </div>
-          <div className={styles['block-weather']}>
-            {blockIcon && <img src={blockIcon} alt={''}/>}
-          </div>
-        </div>
-        <ul className={styles['block-info']} data-display={infoDisplay}>
-          {blockInfo?.map((item, index)=> {
-            return (
-              <li key={item+index}>{item}</li>
-            )})
-          }
-        </ul>
-      </div>
-    )
-  }
-
   return (
     <>
-      <div className={styles['block-top']} data-display={blockDisplay}>
-        {InfoBlock({
-            blockHeader: 'Day', 
-            blockSubHeader: time_day, 
-            blockIcon: dayWeather, 
-            blockSubIcon: 'daySpecialWeather',
-          })
-        }
-        {InfoBlock({
-            blockHeader: 'Night', 
-            blockSubHeader: time_night, 
-            blockIcon: nightWeather, 
-            blockSubIcon: 'nightSpecialWeather',
-          })
-        }
+      <div style={{display: 'flex', gap: 'var(--size-12)'}}>
+        <InfoBlock 
+          blockHeader={'Day'}
+          blockSubHeader={time_day}
+          blockIcon={dayWeather}
+          blockSubIcon={'daySpecialWeather'}
+          blockDisplay={blockDisplay} 
+        />
+        <InfoBlock 
+          blockHeader={'Night'}
+          blockSubHeader={time_night}
+          blockIcon={nightWeather}
+          blockSubIcon={'nightSpecialWeather'} 
+          blockDisplay={blockDisplay} 
+        />
       </div>
-      <div className={styles['block-section']} data-display={storyDisplay}>
-        {InfoBlock({
-            blockHeader: 'Story',
-            blockInfo: events_spoiler,
-            blockStyling: 'story'
-          })
-        }
-      </div>
-      <div className={styles['block-section']} data-display={alertDisplay}>
-        {InfoBlock({
-            blockHeader: 'Alert',
-            blockInfo: alert,
-            blockStyling: 'alert'
-          })
-        }
-      </div>
-      <div className={styles['block-section']} data-display={noticeDisplay}>
-        {InfoBlock({
-            blockHeader: 'Notice',
-            blockInfo: notice,
-            blockStyling: 'notice'
-          })
-        }
-      </div>
-      <div className={styles['block-section']} data-display={statDisplay}>
-        {InfoBlock({
-            blockHeader: 'Social Stats',
-            blockInfo: missable_stat
-          })
-        }
-      </div>
-      <div className={styles['block-section']} data-display={itemDisplay}>
-        {InfoBlock({
-            blockHeader: 'Items',
-            blockInfo: missable_item
-          })
-        }
-      </div>
+      <InfoBlock 
+        blockHeader={'Alert'}
+        blockInfo={alert}
+        blockStyling={'alert'}
+        blockDisplay={alertDisplay} 
+      />
+      <InfoBlock 
+        blockHeader={'Notice'}
+        blockInfo={notice}
+        blockStyling={'notice'}
+        blockDisplay={noticeDisplay} 
+      />
+      <InfoBlock 
+        blockHeader={'Social Stats'}
+        blockInfo={missable_stat}
+        blockStyling={'stats'}
+        blockDisplay={statDisplay} 
+      />
+      <InfoBlock 
+        blockHeader={'Items'}
+        blockInfo={missable_item}
+        blockStyling={'items'}
+        blockDisplay={itemDisplay} 
+      />
+      <InfoBlock 
+        blockHeader={"Story event."}
+        blockDisplay={storyDisplay} 
+      />
     </>
   )
 }
