@@ -1,4 +1,4 @@
-import { GameIcons } from "./interface";
+import { ContentMap } from "./interface";
 import p5royal_confidants from '../data/p5royal_confidants.json'
 
 const months = [
@@ -21,8 +21,9 @@ export const monthsToDigits : {[month:string]: string} = {
 };
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'] as const;
 
-export const ResourceMapping : GameIcons = {
+export const ResourceMapping : ContentMap = {
   ['/persona5_royal']: {
+    title: 'Persona 5 Royal',
     weather_icons: {
       clear: {src: '/P5_Weather_Clear.svg', alt:'Clear weather icon'},
       cloudy: {src: '/P5_Weather_Cloudy.svg', alt:'Cloudy weather icon'},
@@ -35,12 +36,15 @@ export const ResourceMapping : GameIcons = {
     confidants: p5royal_confidants,
     general_icons: {
       unavailable: {src: '/P5_Icon_Unavailable.svg', alt: 'Unavailable'},
-      limited: {src: '/symbol_yellow.svg', alt: 'Limited'} //placeholder icon; replace
+      limited: {src: '/P5_Icon_Limited.svg', alt: 'Limited'} //placeholder icon; replace
     }
   },
+
+
   // PLACEHOLDERS
   // CHANGE TO RESPECTIVE GAMES LATER
   ['/persona4_golden']: {
+    title: 'Persona 4 Golden PLACEHOLDER',
     weather_icons: {
       clear: {src: '/P5_Weather_Clear.svg', alt:'Clear weather icon'},
       cloudy: {src: '/P5_Weather_Cloudy.svg', alt:'Cloudy weather icon'},
@@ -57,6 +61,7 @@ export const ResourceMapping : GameIcons = {
     }
   },
   ['/persona3_reload']: {
+    title: 'Persona 3 Reload PLACEHOLDER',
     weather_icons: {
       clear: {src: '/P5_Weather_Clear.svg', alt:'Clear weather icon'},
       cloudy: {src: '/P5_Weather_Cloudy.svg', alt:'Cloudy weather icon'},

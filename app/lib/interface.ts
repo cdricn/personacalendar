@@ -29,27 +29,22 @@ export interface Image {
   }
 }
 
-interface IconMap {
-  weather_icons: Image,
-  special_day_modifier: {
-    [modifier:string]: React.ReactElement
-  },
-  monthHeaders: readonly string[],
-  dayHeaders: readonly string[],
-  confidants: ConfidantData,
-  general_icons: Image
+export interface ContentMap {
+  [game:string] : {
+    title: string,
+    weather_icons: Image,
+    special_day_modifier: {
+      [modifier:string]: React.ReactElement
+    },
+    monthHeaders: readonly string[],
+    dayHeaders: readonly string[],
+    confidants: readonly SocialsData[],
+    general_icons: Image
+  }
 }
-export interface GameIcons {
-  [game:string]: IconMap
-}
-
-export interface ConfidantData {
-  normal_arcanas: readonly NormalArcanas[]
-}
-
 
 type Day = number[] | string;
-export interface NormalArcanas {
+export interface SocialsData {
   name: string,
   arcana: string,
   unlock_date: string,
@@ -61,7 +56,7 @@ export interface NormalArcanas {
     ignoresRain: boolean,
     time: string,
     schedule: { 
-      [month:string]: {day?: Day, night?: Day}
+      [month:string]: {day?: Day, night?: Day} | null
     },
   }
   location?: {normal: string, no_classes?: string}
