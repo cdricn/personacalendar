@@ -1,7 +1,7 @@
 import styles from './calendarBody.module.css';
 import { useState, use } from 'react';
-import { GameContext, DataContext } from '../../../../utils/context';
-import { ResourceMapping } from '../../../../lib/resourceMapping';
+import { GameContext, DataContext } from '../../../utils/context';
+import { ResourceMapping } from '../../../lib/resourceMapping';
 import CalendarTile from './calendarTile';
 
 export default function CalendarBody({

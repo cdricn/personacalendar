@@ -1,6 +1,6 @@
 import styles from './calendarTile.module.css';
-import { Image, CalendarDays } from "../../../../lib/interface";
-import { Stripes } from '../../../../components/svgItems';
+import { Image, CalendarDays } from "../../../lib/interface";
+import { Stripes } from '../../../components/svgItems';
 
 export default function calendarTile({
   item, 

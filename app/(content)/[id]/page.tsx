@@ -8,8 +8,8 @@ import { GameContext, DataContext } from "../../utils/context";
 import { CalendarMonths } from "@/app/lib/interface";
 import { ResourceMapping } from "@/app/lib/resourceMapping";
 import { RawFaCalendarAlt, RawFaTableList } from "@/app/components/svgItems";
-import CalendarBody from "@/app/(content)/[id]/calendar/body/calendarBody";
-import CalendarHeader from "./calendar/head/calendarHeader";
+import CalendarBody from "./calendar/calendarBody";
+import CalendarHeader from "./calendar/calendarHeader";
 import ScheduleContainer from "./schedule/scheduleContainer";
 
 
@@ -51,7 +51,7 @@ export default function CalendarPage() {
               <section className={styles['schedule-container']}>
                 <ScheduleContainer currentDay={currentDay} currentMonth={currentMonth}/>
               </section>
-              
+
             </DataContext>
           </GameContext>
         </div>
