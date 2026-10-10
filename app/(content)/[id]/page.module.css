@@ -1,68 +1,83 @@
 .main {
-  width: 100%;
-  padding-top: 5rem;
+  padding-top: var(--size-48);
   position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.main-content {
-  margin: auto;
+.main-header {
+  padding-block: var(--size-12);
+  position: relative;
+  display: flex;
+  align-items: end;
+  gap: var(--size-8);
+  font-size: var(--fs-page-header);
+  text-align: left;
+
+  & h1 {
+    border: 1px solid var(--color-plain-800);
+    border-radius: 10px;
+    padding: var(--size-12) var(--size-24);
+    background-color: #131313;
+  }
+}
+
+.layout-button {
   border: 1px solid var(--color-plain-800);
   border-radius: 10px;
   position: relative;
-  left: 0;
-  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--size-32);
+  height: var(--size-32);
+  color: var(--color-inactive);
+  background-color: #131313;
+  transition: .2s;
+  cursor: pointer;
+
+  & svg {
+    width: var(--size-16);
+    height: var(--size-16);
+  }
+}
+.layout-button:hover {
+  border-color: var(--color-active);
+  color: var(--color-active);
+  background-color: var(--color-tile-active);
+  transition: .2s;
+}
+
+.main-content {
+  border: 1px solid var(--color-plain-800);
+  border-radius: 10px;
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--size-96);
-  width: fit-content;
   background-color: #131313;
 }
 
 .calendar-container {
   padding: var(--size-24);
-  min-width: 320px;
-  max-width: 480px;
-}
-
-.calendar-header-container {
-  border-radius: 10px 10px 0 0;
-  margin-bottom: var(--size-16);
-  border-bottom: 2px solid var(--color-plain-800);
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-
-  h1 {
-    font-size: var(--fs-calendar-header);
-  }
-}
-.calendar-header-container > * {
-  padding-block: var(--size-16);
 }
 
 .schedule-container {
   padding: var(--size-24);
-  max-width: 500px;
-}
-
-.info-container {
-  border-radius: 0px 10px 10px 10px;
-  padding: var(--size-16);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 400px;
-  background-color: var(--color-lightgray);
-  font-family: var(--font-schedule-body);
-  font-size: var(--fs-body);
 }
 
 @media (width < 1050px) {
   .main-content {
     width: 500px;
     gap: var(--size-32);
+  }
+}
+
+@media (width < 500px) {
+  .main {
+    justify-content: start;
   }
 }

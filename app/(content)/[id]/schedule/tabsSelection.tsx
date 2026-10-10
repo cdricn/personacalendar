@@ -1,6 +1,6 @@
-import styles from './tabSelection.module.css'
+import styles from './tabs.module.css';
 
-export default function TabSelection({
+export default function TabsSelection({
   clickTab
 }:{
   clickTab:(item:string)=>void
@@ -16,7 +16,7 @@ export default function TabSelection({
         <span>Info</span>
       </div>
       <div onClick={()=>handleClickTab('social')} data-selected={'social'}>
-        <span>Confidants</span>
+        <span>Social</span>
       </div>
     </div>
   )

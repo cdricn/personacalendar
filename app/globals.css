@@ -75,6 +75,9 @@
   --color-text-sub: var(--color-plain-400);
   --color-text-inactive:  var(--color-plain-800);
 
+  --color-active: var(--color-plain-100);
+  --color-inactive: var(--color-plain-500);
+
   --color-tile:           var(--color-plain-800);
   --color-tile-active:    var(--color-plain-700);
   --color-tile-inactive:  var(--color-plain-900);
@@ -113,7 +116,7 @@
   --size-8: 8px;
   --size-4: 4px;
 
-  --fs-calendar-header: var(--size-20);
+  --fs-page-header: var(--size-32);
   --fs-calendar-month: var(--size-20);
   --fs-calendar-day: var(--size-16);
   --fs-calendar-number: var(--size-16);
@@ -125,7 +128,7 @@
 
 @media (width < 500px) {
   :root {
-    --fs-calendar-header: var(--size-18);
+    --fs-page-header: var(--size-18);
     --fs-calendar-month: var(--size-18);
     --fs-calendar-day: var(--size-14);
     --fs-calendar-number: var(--size-14);
