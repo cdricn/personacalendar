@@ -1,5 +1,22 @@
 import { createContext } from "react";
-import { CalendarDays } from "../lib/interface";
+import { CalendarMonths, ResourceMap } from "../lib/interface";
 
-export const GameContext = createContext("");
-export const DataContext = createContext<CalendarDays[] | undefined>(undefined);
+export const ResourcesContext = createContext({} as ResourceMap);
+
+export const DataContext = createContext<{
+  calendarData: CalendarMonths | null,
+  socialsData: string | null,
+  jobsData: string | null,
+}>({
+  calendarData: null, 
+  socialsData: null, 
+  jobsData: null
+});
+
+export const DateContext = createContext<{
+  currentMonth: string,
+  currentDay: number
+}>({
+  currentMonth: '',
+  currentDay: 0
+});

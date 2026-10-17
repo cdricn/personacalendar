@@ -7730,8 +7730,8 @@
       "events_spoiler": [
         "The protagonist leaves Tokyo."
       ],
-      "time_day": "Unavailable",
-      "time_night": "Unavailable",
+      "time_day": "unavailable",
+      "time_night": "unavailable",
       "is_day_playable": true
     },
     {

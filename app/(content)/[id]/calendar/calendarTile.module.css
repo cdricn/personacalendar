@@ -92,7 +92,7 @@
   width: 8px;
   height: 8px;
 }
-.item-indicator[data-display='false']    {display: none;}
+.item-indicator[data-display='false']    { display: none; }
 .item-indicator[data-display='alert']    { background-color: var(--color-indicator-alert); }
 .item-indicator[data-display='warning']  { background-color: var(--color-indicator-warning); }
 .item-indicator[data-display='notice']   { background-color: var(--color-indicator-notice); }

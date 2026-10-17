@@ -1,117 +1,73 @@
 .calendar-header {
-  border-radius: 10px 10px 0 0;
-  margin-bottom: var(--size-16);
   border-bottom: 2px solid var(--color-plain-800);
   position: relative;
   display: flex;
   justify-content: space-between;
-
-  h1 {
-    font-size: var(--fs-calendar-header);
-  }
 }
 .calendar-header > * {
-  padding-block: var(--size-16);
+  padding: var(--size-16) var(--size-24);
 }
 
-.month-nav {
-  border-radius: 10px 0 0 0;
-  padding-left: var(--size-8);
-  padding-right: var(--size-8);
+.month-selection-container {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 180px;
+  width: 496px;
+  text-align: center;
   background-color: var(--color-plain-900);
   cursor: pointer;
-}
-.month-nav:hover {
-  .nav-button {
-    background-color: var(--color-plain-800);
-    transition: .1s;
-  }
 
-  .month-hover-bg[data-active="true"] {
-    transform: scaleX(1);
-    transition: .2s ease-out;
-  }
-  .month-hover-bg[data-active="false"] {
-    border-radius: 0px 0px 0px 0px;
-    transform: scaleX(.03);
-    transition: .1s;
-  }
-}
-
-.month {
-  flex-grow: 1;
-  position: relative;
-  max-width: 150px;
-  text-align: center;
-  font-size: var(--fs-calendar-month);
-  font-family: var(--font-months);
-
-  & .month-text {
+  span {
     position: relative;
-      mix-blend-mode: difference;
+    font-size: var(--fs-calendar-month);
+    font-family: var(--font-months);
+    mix-blend-mode: difference;
     z-index: 1;
   }
+}
+.month-selection-container[data-active="true"] {
   
-  .month-hover-bg { /*unused temp*/
-    border-radius: 10px 0px 0px 0px;
-    position: absolute;
-    display: block;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--color-white);
-    transform-origin: center right;
-    transform: scaleX(0);
-    transition: .1s;
-  }
-  .month-hover-bg[data-active="true"] { 
-    transform: scaleX(1); 
-    transition: .3s;
-  }
 }
 
-
-.nav-button {
+.month-selection-button {
   border-radius: 50%;
-  position: relative;
+  position: absolute;
+  right: var(--size-24);
+  top: 0;
   height: 28px;
   width: 28px;
   user-select: none;
   transition: .1s;
+  transform: translateY(50%);
 
   & span {
     position: absolute;
-    top: 53%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 }
-.nav-button[data-active="true"] { 
+.month-selection-button[data-active="true"] { 
   background-color: var(--color-plain-800);
   transition: .1s;
 }
 
-.selection-tab {
+.selection-dropdown {
   border-radius: 0 var(--size-8) var(--size-8);
   padding: var(--size-8);
   position: absolute;
   left: 0px;
   background-color: var(--color-plain-900);
-  transform: translateY(67.5%);
+  transform: translateY(76%);
   box-shadow: 0px 3px 3px rgb(17, 17, 17);
   z-index: 5;
   visibility: hidden;
   opacity: 0;
   transition: .1s;
+}
+.selection-dropdown[data-active="true"] { visibility: visible; opacity: 1; }
 
-  .selection {
+.selections-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: var(--size-8);
     list-style-type: none;
 
@@ -130,11 +86,9 @@
       transition: .1s;
     }
   }
-}
-.selection-tab[data-active="true"] { visibility: visible; opacity: 1; }
 
-.selected-date {
-  flex-grow: 2;
+.current-date-display {
+  flex-grow: 1;
   border-radius: 0 10px 0 0;
   display: flex;
   align-items: center;

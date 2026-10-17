@@ -1,34 +1,25 @@
 import styles from './calendarHeader.module.css';
-import { GameContext, DataContext } from '@/app/utils/context';
+import { ResourcesContext, DataContext, DateContext } from '@/app/utils/context';
 import { UpButton, DownButton } from '@/app/components/svgItems';
-import { monthsToDigits, ResourceMapping } from '@/app/lib/resourceMapping';
+import { monthsToDigits } from '@/app/lib/resourceMapping';
 import { useState, use } from 'react';
 import useOpenOnClick from '@/app/utils/useOpenOnClick';
 
 export default function CalendarHeader({
-  currentDay, 
-  currentMonth,
   clickMonth
 }:{
-  currentDay: number, 
-  currentMonth: string,
   clickMonth:(item:string)=>void
 }) {
   
   const [selectedMonth, setSelectedMonth] = useState(0);
   const {ref, isOpen} = useOpenOnClick();
-  const game = use(GameContext);
-  const data = use(DataContext);
-  const currentGame = ResourceMapping[game];
+  const {calendarData} = use(DataContext);
+  const {currentDay, currentMonth} = use(DateContext);
+  const {dayHeaders, monthHeaders} = use(ResourcesContext);
 
-  if (!currentGame) return;
-  const {monthHeaders} = ResourceMapping[game];
-  
-  if (!currentGame) return;
-  const {dayHeaders} = ResourceMapping[game];
-
-  if (!data) return;
-  const scheduleData = data[currentDay] ? data[currentDay] : data[data.length-1];
+  if (!calendarData) return;
+  const currentDate = calendarData[currentMonth];
+  const scheduleData = currentDate[currentDay] ? currentDate[currentDay] : currentDate[currentDate.length-1];
 
   function fillMonths() {
     const months = [...monthHeaders];
@@ -42,23 +33,18 @@ export default function CalendarHeader({
 
   return (
     <div className={styles['calendar-header']}>
-      <div className={styles['month-nav']} ref={ref} >
-        <span className={styles['month-hover-bg']} data-active={isOpen}></span>
-        <div className={styles['month']}>
-          <span className={styles['month-text']}>
-            {monthHeaders[selectedMonth]}
-          </span>
-        </div>
-        <div className={styles['nav-button']} data-active={isOpen} >
+      <div className={styles['month-selection-container']} ref={ref} >
+        <span>{monthHeaders[selectedMonth]}</span>
+        <div className={styles['month-selection-button']} data-active={isOpen} >
           <span>{isOpen?<UpButton/>:<DownButton/>}</span>
         </div>
-        <div className={styles['selection-tab']} data-active={isOpen}>
-          <ul className={styles['selection']}>
+        <div className={styles['selection-dropdown']} data-active={isOpen}>
+          <ul className={styles['selections-list']}>
             {fillMonths()}
           </ul>
         </div>
       </div>
-      <div className={styles['selected-date']}>
+      <div className={styles['current-date-display']}>
         <p>{monthsToDigits[currentMonth]}/{scheduleData.day} {dayHeaders[scheduleData.day_code-1]}</p>
       </div>
     </div>

@@ -1,19 +1,16 @@
-import { ResourceMapping } from '@/app/lib/resourceMapping';
-import { GameContext, DataContext } from '@/app/utils/context';
 import { use } from 'react';
-import InfoBlock from '@/app/components/infoBlock';
 import { InfoBlockInterface } from '@/app/lib/interface';
+import { ResourcesContext, DataContext, DateContext } from '@/app/utils/context';
+import InfoBlock from '@/app/components/infoBlock';
 
-export default function TabInfo({currentDay}:{currentDay:number}) {
-  const game = use(GameContext);
-  const data = use(DataContext);
-  const currentGame = ResourceMapping[game];
+export default function TabInfo() {
+  const {calendarData} = use(DataContext);
+  const {currentDay, currentMonth} = use(DateContext);
+  const {weather_icons, special_day_modifier} = use(ResourcesContext);
   
-  if (!currentGame) return;
-  const {weather_icons, special_day_modifier} = ResourceMapping[game];
-
-  if (!data) return;
-  const scheduleData = data[currentDay] ? data[currentDay] : data[data.length-1];
+  if (!calendarData) return;
+  const currentDate = calendarData[currentMonth];
+  const scheduleData = currentDate[currentDay] ? currentDate[currentDay] : currentDate[currentDate.length-1];
   const { 
     day_weather, night_weather, special_day_weather, special_night_weather, world, alert, 
     notice, missable_stat, missable_item, social_events, events, events_spoiler, time_day, time_night,

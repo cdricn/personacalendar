@@ -11,7 +11,7 @@ export default function TabsSelection({
   }
 
   return (
-    <div className={styles['tabs-container']}>
+    <div className={styles['selection-container']}>
       <div onClick={()=>handleClickTab('info')} data-selected={'info'}>
         <span>Info</span>
       </div>

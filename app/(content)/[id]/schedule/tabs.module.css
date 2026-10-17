@@ -1,5 +1,4 @@
-.tabs-container {
-  padding-top: var(--size-32);
+.selection-container {
   display: flex;
   gap: var(--size-4);
 

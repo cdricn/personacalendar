@@ -54,25 +54,21 @@
   border-radius: 10px;
   position: relative;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--size-96);
+  flex-direction: column;
   background-color: #131313;
 }
 
-.calendar-container {
+.content-wrapper {
   padding: var(--size-24);
-}
-
-.schedule-container {
-  padding: var(--size-24);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--size-48);
 }
 
 @media (width < 1050px) {
   .main-content {
     width: 500px;
-    gap: var(--size-32);
   }
 }
 

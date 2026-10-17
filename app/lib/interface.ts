@@ -17,7 +17,6 @@ export interface CalendarDays {
   time_night:             string | null,
   is_day_playable:        boolean
 }
-
 export interface CalendarMonths {
   [month: string] : CalendarDays[];
 }
@@ -29,18 +28,23 @@ export interface Image {
   }
 }
 
-export interface ContentMap {
-  [game:string] : {
-    title: string,
-    weather_icons: Image,
-    special_day_modifier: {
-      [modifier:string]: React.ReactElement
-    },
-    monthHeaders: readonly string[],
-    dayHeaders: readonly string[],
-    confidants: readonly SocialsData[],
-    general_icons: Image
-  }
+export interface ResourceMap {
+  title: string,
+  weather_icons: Image,
+  dataSrc: {
+    calendarData: string,
+    socialsData: string,
+    jobsData: string,
+  },
+  special_day_modifier: {
+    [modifier:string]: React.ReactElement
+  },
+  monthHeaders: readonly string[],
+  dayHeaders: readonly string[],
+  general_icons: Image
+}
+export interface Resource {
+  [game:string] : ResourceMap
 }
 
 type Day = number[] | string;

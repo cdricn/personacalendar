@@ -1,7 +1,6 @@
 import styles from './calendarBody.module.css';
 import { useState, use } from 'react';
-import { GameContext, DataContext } from '../../../utils/context';
-import { ResourceMapping } from '../../../lib/resourceMapping';
+import { DateContext, DataContext, ResourcesContext } from '../../../utils/context';
 import CalendarTile from './calendarTile';
 
 export default function CalendarBody({
@@ -11,15 +10,15 @@ export default function CalendarBody({
 }) {
   
   const [selectedDay, setSelectedDay] = useState<number>(0);
-  const game = use(GameContext);
-  const data = use(DataContext);
+  const {weather_icons, dayHeaders} = use(ResourcesContext);
+  const {calendarData} = use(DataContext);
+  const {currentMonth} = use(DateContext);
 
-  const {weather_icons, dayHeaders} = ResourceMapping[game];
+  if (!calendarData) return;
+  const currentDate = calendarData[currentMonth];
 
-  if (!data) return;
-
-  const leftOverDays = 7 - data[data.length-1].day_code;
-  const frontTilesFiller = new Array(data[0].day_code-1).fill('top');
+  const leftOverDays = 7 - currentDate[currentDate.length-1].day_code;
+  const frontTilesFiller = new Array(currentDate[0].day_code-1).fill('top');
   const bottomTilesFiller = new Array(leftOverDays).fill('bottom');
 
   function handleClickDay(currentDay:number) {
@@ -37,9 +36,9 @@ export default function CalendarBody({
         
         {frontTilesFiller.map((item, index) => <div key={'filler'+item+index} className={styles['filler-tile']}/> )}
         
-        {data && data.map((item, index)=>{
+        {currentDate && currentDate.map((item, index)=>{
           const tileKey = 'day' + (item.day);
-          const dayStart = index === 0 ? {gridColumnStart: `${data[0].day_code}`} : undefined;
+          const dayStart = index === 0 ? {gridColumnStart: `${currentDate[0].day_code}`} : undefined;
           const dayIsClickable = item.is_day_playable ? ()=>{handleClickDay(index)} : undefined;
           return (
             <div key={tileKey} onClick={dayIsClickable} style={dayStart}>
