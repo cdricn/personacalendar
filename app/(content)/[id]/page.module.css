@@ -42,6 +42,12 @@
     height: var(--size-16);
   }
 }
+.layout-button[data-active='true'] {
+  border-color: var(--color-active);
+  color: var(--color-active);
+  background-color: var(--color-tile-active);
+  transition: .2s;
+}
 .layout-button:hover {
   border-color: var(--color-active);
   color: var(--color-active);
@@ -58,22 +64,9 @@
   background-color: #131313;
 }
 
-.content-wrapper {
-  padding: var(--size-24);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--size-48);
-}
-
-@media (width < 1050px) {
-  .main-content {
-    width: 500px;
-  }
-}
-
-@media (width < 500px) {
+@media (width < 1000px) {
   .main {
-    justify-content: start;
+    display: flex;
+    justify-content: flex-start;
   }
 }

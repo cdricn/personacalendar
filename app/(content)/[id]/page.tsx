@@ -6,10 +6,9 @@ import { useState } from "react";
 import { ResourcesContext, DataContext, DateContext } from "../../utils/context";
 import { RawFaCalendarAlt, RawFaTableList } from "@/app/components/svgItems";
 import { ResourceMapping } from "@/app/lib/resourceMapping";
-import CalendarBody from "./calendar/calendarBody";
+import CalendarViewContainer from "./calendar/calendarViewContainer";
 import CalendarHeader from "./calendar/calendarHeader";
-import ScheduleContainer from "./schedule/scheduleContainer";
-import TableContainer from "./table/tableContainer";
+import TableViewContainer from "./table/tableViewContainer";
 import useFetchData from "@/app/utils/useFetchData";
 
 export default function CalendarPage() {
@@ -36,10 +35,10 @@ export default function CalendarPage() {
       <div>
         <div className={styles['main-header']}>
           <h1>{/*game.title*/ 'HEADER'}</h1>
-          <button className={styles['layout-button']} onClick={()=>clickButton(false)}>
+          <button className={styles['layout-button']} data-active={!tableView} onClick={()=>clickButton(false)}>
               <RawFaCalendarAlt />
           </button>
-          <button className={styles['layout-button']} onClick={()=>clickButton(true)}>
+          <button className={styles['layout-button']} data-active={tableView} onClick={()=>clickButton(true)}>
               <RawFaTableList />
           </button>
         </div>
@@ -48,20 +47,12 @@ export default function CalendarPage() {
           <DateContext value={currentDayContextValue}>
             <DataContext value={gameDataValue}>
               <ResourcesContext value={resourcesValue}>
-                  <CalendarHeader clickMonth={clickMonth} />
-
-                  <section className={styles['content-wrapper']}>
-                    {tableView ?
-                      <>
-                        <TableContainer />
-                      </> 
-                      :
-                      <>
-                        <CalendarBody clickDay={clickDay} />
-                        <ScheduleContainer />
-                      </>
-                    }
-                  </section>
+                <CalendarHeader clickMonth={clickMonth} view={tableView}/>
+                {tableView ?
+                  <TableViewContainer />
+                  :
+                  <CalendarViewContainer clickDay={clickDay} />
+                }
               </ResourcesContext>
             </DataContext> 
           </DateContext>

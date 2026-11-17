@@ -125,6 +125,8 @@
   --fs-schedule-body: var(--size-16);
   --fs-body: var(--size-16);
 }
+/*COOL DEBUG
+* { outline: 1px solid red !important; }*/
 
 @media (width < 500px) {
   :root {

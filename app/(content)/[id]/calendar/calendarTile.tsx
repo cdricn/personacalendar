@@ -37,7 +37,7 @@ export default function calendarTile({
       <div className={styles['tile-content']} 
         data-clickable={item.is_day_playable}
         data-background={tileIcon}
-        data-selected={isTileSelected}
+        data-selected={item.is_day_playable && isTileSelected}
       >
         {!item.is_day_playable ? <div className={styles['stripes']}><Stripes/></div> : null}
         <div className={styles['weather-icon-container']} data-icon-alignment={weatherAlign} >

@@ -6,9 +6,11 @@ import { useState, use } from 'react';
 import useOpenOnClick from '@/app/utils/useOpenOnClick';
 
 export default function CalendarHeader({
-  clickMonth
+  clickMonth,
+  view
 }:{
-  clickMonth:(item:string)=>void
+  clickMonth:(item:string)=>void,
+  view: boolean
 }) {
   
   const [selectedMonth, setSelectedMonth] = useState(0);
@@ -33,7 +35,7 @@ export default function CalendarHeader({
 
   return (
     <div className={styles['calendar-header']}>
-      <div className={styles['month-selection-container']} ref={ref} >
+      <div className={styles['month-selection-container']} ref={ref} data-active={isOpen} data-table-view={view}>
         <span>{monthHeaders[selectedMonth]}</span>
         <div className={styles['month-selection-button']} data-active={isOpen} >
           <span>{isOpen?<UpButton/>:<DownButton/>}</span>
@@ -44,7 +46,7 @@ export default function CalendarHeader({
           </ul>
         </div>
       </div>
-      <div className={styles['current-date-display']}>
+      <div className={styles['current-date-display']} data-active={view}>
         <p>{monthsToDigits[currentMonth]}/{scheduleData.day} {dayHeaders[scheduleData.day_code-1]}</p>
       </div>
     </div>

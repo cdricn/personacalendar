@@ -9,6 +9,7 @@
 }
 
 .month-selection-container {
+  border-radius: 10px 0 0 0;
   position: relative;
   width: 496px;
   text-align: center;
@@ -23,8 +24,12 @@
     z-index: 1;
   }
 }
-.month-selection-container[data-active="true"] {
-  
+.month-selection-container[data-table-view='true'] { 
+  border-radius: 10px 10px 0 0;
+  width: 100%; 
+}
+.month-selection-container[data-active='true'], .month-selection-container:hover { 
+  background-color: var(--color-plain-800);
 }
 
 .month-selection-button {
@@ -45,18 +50,15 @@
     transform: translate(-50%, -50%);
   }
 }
-.month-selection-button[data-active="true"] { 
-  background-color: var(--color-plain-800);
-  transition: .1s;
-}
 
 .selection-dropdown {
   border-radius: 0 var(--size-8) var(--size-8);
   padding: var(--size-8);
   position: absolute;
+  bottom: 0px;
   left: 0px;
+  transform: translateY(126px);
   background-color: var(--color-plain-900);
-  transform: translateY(76%);
   box-shadow: 0px 3px 3px rgb(17, 17, 17);
   z-index: 5;
   visibility: hidden;
@@ -102,3 +104,4 @@
     color: var(--color-dark);
   }
 }
+.current-date-display[data-active='true'] { display: none; }

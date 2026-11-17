@@ -1412,7 +1412,7 @@
       "notice": null,
       "missable_stat": [
         "Free train seat.",
-        "free time in class (Requires Temperance rank 1).",
+        "Free time in class (Requires Temperance rank 1).",
         "New crossword puzzle."
       ],
       "missable_item": null,
@@ -1709,7 +1709,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free time in class (Requires Temperance rank 5).",
+        "Free time in class (Requires Temperance rank 5).",
         "New crossword puzzle."
       ],
       "missable_item": null,
@@ -1944,7 +1944,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free time in class (Requires Temperance rank 5)."
+        "Free time in class (Requires Temperance rank 5)."
       ],
       "missable_item": [
         "Trader Sakai in Kichijoji will trade Yakisoba Pan (consumable) for Black Robe (armor)."
@@ -2074,7 +2074,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free time in class (Requires Temperance rank 5)."
+        "Free time in class (Requires Temperance rank 5)."
       ],
       "missable_item": null,
       "social_events": null,
@@ -2154,7 +2154,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free time in class (Requires Temperance rank 5)."
+        "Free time in class (Requires Temperance rank 5)."
       ],
       "missable_item": null,
       "social_events": null,
@@ -3932,7 +3932,7 @@
       "notice": null,
       "missable_stat": null,
       "missable_item": [
-        "free time in class (Requires Temperance rank 5)."
+        "Free time in class (Requires Temperance rank 5)."
       ],
       "social_events": null,
       "events": null,
@@ -4176,7 +4176,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free time in class (Requires Temperance rank 1)."
+        "Free time in class (Requires Temperance rank 1)."
       ],
       "missable_item": null,
       "social_events": null,
@@ -4771,7 +4771,7 @@
         "New crossword puzzle."
       ],
       "missable_item": [
-        "free time in class (Requires Temperance rank 5)."
+        "Free time in class (Requires Temperance rank 5)."
       ],
       "social_events": null,
       "events": null,
@@ -4874,7 +4874,7 @@
       "notice": null,
       "missable_stat": [
         "Free train seat.",
-        "free time in class (Requires Temperance rank 5)."
+        "Free time in class (Requires Temperance rank 5)."
       ],
       "missable_item": null,
       "social_events": null,
@@ -4993,7 +4993,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free time in class (Requires Temperance rank 5)."
+        "Free time in class (Requires Temperance rank 5)."
       ],
       "missable_item": null,
       "social_events": null,
@@ -5099,7 +5099,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free time in class (Requires Temperance rank 5)."
+        "Free time in class (Requires Temperance rank 5)."
       ],
       "missable_item": null,
       "social_events": null,
@@ -6528,7 +6528,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free time in class (Requires Temperance rank 5)."
+        "Free time in class (Requires Temperance rank 5)."
       ],
       "missable_item": null,
       "social_events": null,
@@ -6629,7 +6629,7 @@
       "alert": null,
       "notice": null,
       "missable_stat": [
-        "free time in class (Requires Temperance rank 5)."
+        "Free time in class (Requires Temperance rank 5)."
       ],
       "missable_item": null,
       "social_events": null,
@@ -7364,8 +7364,8 @@
       "events_spoiler": [
         "The protagonist make plans for the day after."
       ],
-      "time_day": "Unavailable",
-      "time_night": "Unavailable",
+      "time_day": "unavailable",
+      "time_night": "unavailable",
       "is_day_playable": true
     },
     {
@@ -7387,8 +7387,8 @@
       "events_spoiler": [
         "The Phantom Thieves members announce their plans for the future."
       ],
-      "time_day": "Unavailable",
-      "time_night": "Unavailable",
+      "time_day": "unavailable",
+      "time_night": "unavailable",
       "is_day_playable": true
     },
     {
@@ -7581,8 +7581,8 @@
       "events_spoiler": [
         "Sojiro helps the protagonist make plans for White Day."
       ],
-      "time_day": "Unavailable",
-      "time_night": "Unavailable",
+      "time_day": "unavailable",
+      "time_night": "unavailable",
       "is_day_playable": true
     },
     {
@@ -7606,8 +7606,8 @@
       "events_spoiler": [
         "The protagonist goes on a date with their partner."
       ],
-      "time_day": "Unavailable",
-      "time_night": "Unavailable",
+      "time_day": "unavailable",
+      "time_night": "unavailable",
       "is_day_playable": true
     },
     {
@@ -7705,8 +7705,8 @@
       "events_spoiler": [
         "The protagonist says his goodbyes to his friends."
       ],
-      "time_day": "Unavailable",
-      "time_night": "Unavailable",
+      "time_day": "unavailable",
+      "time_night": "unavailable",
       "is_day_playable": true
     },
     {
