@@ -1,34 +1,28 @@
-import TabsSelection from "./tabsSelection";
-import TabInfo from "./tabInfo";
-import TabSocial from "./tabSocial";
-import { ReactNode, ReactElement, useState, use } from "react";
 import styles from './scheduleContainer.module.css';
-import { DateContext } from "@/app/utils/context";
+import ScheduleInfoBlock from './scheduleInfoBlock.tsx';
+import { ReactNode, ReactElement, use } from "react";
 
 interface ScheduleTabs {
   [selection:string] : ReactElement<ReactNode | Promise<ReactNode>>
 }
 
 export default function ScheduleContainer() {
-  
-  const [selectedTab, setSelectedTab] = useState('info');
-  const [layout, setLayout] = useState('calendar');
-  const {currentDay, currentMonth} = use(DateContext);
-  
-  const currentTabDisplay : ScheduleTabs = {
-    info: <TabInfo currentDay={currentDay} />,
-    social: <TabSocial currentDay={currentDay} currentMonth={currentMonth}/>
-  }
-
-  function clickTab(tab:string) {
-    setSelectedTab(tab)
-  }
 
   return (
     <div className={styles['info-wrapper']}>
-      <TabsSelection clickTab={clickTab}/>
+      <div className={styles['info-header']}>
+        <h2>Schedule</h2>
+        <span></span>
+      </div>
       <div className={styles['info-container']}>
-        {currentTabDisplay[selectedTab]}
+        <ScheduleInfoBlock />
+      </div>
+      <div className={styles['info-header']}>
+        <h2>Social</h2>
+        <span></span>
+      </div>
+      <div className={styles['info-container']}>
+        ConfidantsBlock
       </div>
     </div>
   )

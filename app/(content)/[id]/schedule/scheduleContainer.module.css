@@ -1,3 +1,19 @@
+.info-header {
+  padding-left: var(--size-16);
+  padding-block: var(--size-4);
+  position: relative;
+  display: flex;
+  gap: var(--size-16);
+
+  & span {
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 90%;
+    background-color: var(--color-plain-800);
+  }
+}
+
 .info-container {
   border-radius: 0px 10px 10px 10px;
   padding: var(--size-16);
@@ -9,4 +25,16 @@
   background-color: var(--color-lightgray);
   font-family: var(--font-schedule-body);
   font-size: var(--fs-body);
+}
+
+
+/* tabInfo.tsx */
+
+.info-weather {
+  display: flex; 
+  gap: var(--size-12);
+}
+
+.placeholder-block {
+  
 }

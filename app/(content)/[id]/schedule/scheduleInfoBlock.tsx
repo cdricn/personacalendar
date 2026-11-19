@@ -1,9 +1,10 @@
+import styles from './scheduleContainer.module.css';
 import { use } from 'react';
 import { InfoBlockInterface } from '@/app/lib/interface';
 import { ResourcesContext, DataContext, DateContext } from '@/app/utils/context';
 import InfoBlock from '@/app/components/infoBlock';
 
-export default function TabInfo() {
+export default function ScheduleInfoBlock() {
   const {calendarData} = use(DataContext);
   const {currentDay, currentMonth} = use(DateContext);
   const {weather_icons, special_day_modifier} = use(ResourcesContext);
@@ -28,38 +29,46 @@ export default function TabInfo() {
     {blockHeader: 'Story event.', blockSubHeader: null, blockIcon: null, blockSubIcon: null, blockInfo: null, blockStyling: null, blockDisplay: events},
   ];
 
+  if (!is_day_playable) {
+    return (
+      <div className={styles['placeholder-block']}>
+        None
+      </div>
+    )
+  }
+
   return (
     <>
-      <div style={{display: 'flex', gap: 'var(--size-12)'}}>
-        <InfoBlock 
-          blockHeader={'Day'}
-          blockSubHeader={time_day}
-          blockIcon={dayWeather}
-          blockSubIcon={'daySpecialWeather'}
-          blockDisplay={is_day_playable} 
-        />
-        <InfoBlock 
-          blockHeader={'Night'}
-          blockSubHeader={time_night}
-          blockIcon={nightWeather}
-          blockSubIcon={'nightSpecialWeather'} 
-          blockDisplay={is_day_playable} 
-        />
-      </div>
-      {
-        infoBlockDetails.map((item, index)=>{
-          return (
-            <InfoBlock key={item.blockHeader+index}
-              blockHeader={item.blockHeader}
-              blockSubHeader={item.blockSubHeader}
-              blockIcon={item.blockIcon}
-              blockSubIcon={item.blockSubIcon} 
-              blockInfo={item.blockInfo}
-              blockStyling={item.blockStyling}
-              blockDisplay={item.blockDisplay}
-            />
-          )
-        })
+      {dayWeather && nightWeather &&
+        <div className={styles['info-weather']}>
+          <InfoBlock 
+            blockHeader={'Day'}
+            blockSubHeader={time_day}
+            blockIcon={dayWeather}
+            blockSubIcon={'daySpecialWeather'}
+            blockDisplay={is_day_playable} 
+          />
+          <InfoBlock 
+            blockHeader={'Night'}
+            blockSubHeader={time_night}
+            blockIcon={nightWeather}
+            blockSubIcon={'nightSpecialWeather'} 
+            blockDisplay={is_day_playable} 
+          />
+        </div>
+      }
+      {infoBlockDetails.map((item, index)=>{
+        return (
+          <InfoBlock key={item.blockHeader+index}
+            blockHeader={item.blockHeader}
+            blockSubHeader={item.blockSubHeader}
+            blockIcon={item.blockIcon}
+            blockSubIcon={item.blockSubIcon} 
+            blockInfo={item.blockInfo}
+            blockStyling={item.blockStyling}
+            blockDisplay={item.blockDisplay}
+          />
+        )})
       }
     </>
   )
